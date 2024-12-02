@@ -1,106 +1,8 @@
-import React, { useEffect } from 'react';
-import './style.css';
+import React, {useEffect} from 'react'; 
+import './style.css'
 
-const Desktop = () => {
-    useEffect(() => {
-        const handleScroll = () => {
-            const header = document.querySelector('header');
-            if (header) {
-                if (window.scrollY >= 65) {
-                    header.classList.add('scrolled');
-                    header.classList.remove('not-scrolled');
-                } else {
-                    header.classList.add('not-scrolled');
-                    header.classList.remove('scrolled');
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    useEffect(() => {
-        const animateWords = () => {
-            const targetWords = document.querySelectorAll('.animate-word');
-            let delay = 0;
-
-            targetWords.forEach(word => {
-                const letters = Array.from(word.textContent.trim());
-                word.innerHTML = letters
-                    .map(letter =>
-                        letter === ' '
-                            ? `<span class="letter space">&nbsp;</span>`
-                            : `<span class="letter">${letter}</span>`
-                    )
-                    .join('');
-
-                const letterElements = Array.from(word.querySelectorAll('.letter'));
-
-                letterElements.forEach((letter) => {
-                    setTimeout(() => {
-                        letter.classList.add('out');
-                    }, delay);
-
-                    setTimeout(() => {
-                        letter.classList.remove('out');
-                        letter.classList.add('in');
-                    }, delay + 700);
-
-                    delay += 150;
-                });
-
-                delay += 500; 
-            });
-        };
-
-        animateWords();
-        const interval = setInterval(animateWords, 5000);
-
-        return () => clearInterval(interval);
-    }, []);
-
-    useEffect(() => {
-        const mouseCursor = document.querySelector('.cursor');
-        const links = document.querySelectorAll('a');
-    
-        const handleMouseMove = (e) => {
-            if (mouseCursor) {
-                mouseCursor.style.top = `${e.pageY}px`;
-                mouseCursor.style.left = `${e.pageX}px`;
-            }
-        };
-    
-        const handleLinkHover = () => {
-            if (mouseCursor) mouseCursor.classList.add('link-hover');
-        };
-    
-        const handleLinkLeave = () => {
-            if (mouseCursor) mouseCursor.classList.remove('link-hover');
-        };
-    
-        // Ajouter les listeners
-        window.addEventListener('mousemove', handleMouseMove);
-        links.forEach(link => {
-            link.addEventListener('mouseenter', handleLinkHover);
-            link.addEventListener('mouseleave', handleLinkLeave);
-        });
-    
-        // Supprimer les listeners au démontage du composant
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-            links.forEach(link => {
-                link.removeEventListener('mouseenter', handleLinkHover);
-                link.removeEventListener('mouseleave', handleLinkLeave);
-            });
-        };
-    }, []);
-    
-
-    return (
+const Mobile = () => {
+    return(
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <div className="cursor"></div>
@@ -240,7 +142,8 @@ const Desktop = () => {
 
             </div>
         </div>
-    );
+
+    )
 };
 
-export default Desktop;
+export default Mobile;

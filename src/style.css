@@ -1,5 +1,7 @@
 html{
     scroll-behavior: smooth;
+    scrollbar-color: #87ceeb #ff562100;
+    cursor: none;
 }
 
 body {
@@ -9,7 +11,11 @@ body {
     background-color: #fff;
     color: #4e4e4e;
     scroll-behavior: smooth;
-    cursor: none;
+    cursor: none!important;
+}
+
+html, body, * {
+    cursor: none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {

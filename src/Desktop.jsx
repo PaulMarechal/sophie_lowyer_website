@@ -213,9 +213,28 @@ const Desktop = () => {
                     </div>
                 </section>
 
-                <footer id="contact_me">
-                    <p>© 2024 Sophie Maréchal - Mentions légales - Politique de confidentialité</p>
+                <footer>
+                    <div id="contact_me">
+                        <div>
+                            <p>© 2024 Sophie Maréchal</p>
+                        </div>
+                        <div>
+                            <p> - </p>
+                        </div>
+                        <div>
+                            <p>
+                            Mentions légales
+                            </p>
+                        </div>
+                        <div>
+                            <p> - </p>
+                        </div>
+                        <div>
+                            <p>Politique de confidentialité</p>
+                        </div>
+                    </div>
                 </footer>
+
             </div>
         </div>
     );

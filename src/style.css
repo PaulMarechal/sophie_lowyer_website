@@ -277,12 +277,12 @@ header div h2{
 }
 
 .background_image_place_etoile_second, .background_image_place_etoile_second_bottom{
-    width: 19vh;
-    height: 44vh;
+    width: 21vh;
+    height: 49vh;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    top: 56vh;
+    top: 65vh;
     position: absolute;
     right: 0vh;
     background-image: url(../Images/place_etoile_second.jpg);
@@ -606,11 +606,11 @@ h1 {
     background-color: transparent;
 }
 
-#expetise_text{margin: 40vh}
+#expetise_text{margin: 0 0 0 40vh}
 
-#valeurs_text{margin: 65vh}
+#valeurs_text{margin: 0 0 0 60vh}
 
-#ecoute_text{margin: 90vh;}
+#ecoute_text{margin: 0 0 0 80vh;}
 
 #contact_me_link{
     text-decoration: none;
@@ -658,5 +658,15 @@ h1 {
 
 .icon_bottom_page a{
     text-decoration: none; 
-    color: 4e4e4e;
+    color: #4e4e4e;
+}
+
+.icon_bottom_page:hover a svg{
+    fill: #007BEE;
+    transition: fill .5s ease-out;
+}
+
+.icon_bottom_page:hover a svg{
+    text-decoration: none; 
+    fill: #fff;
 }

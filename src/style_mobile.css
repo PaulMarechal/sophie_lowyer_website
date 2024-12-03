@@ -15,8 +15,8 @@
 }
 
 #expetise_text{margin: 0 0 0 6vh; line-height: 2;}
-#valeurs_text{margin: 0 0 0 7vh; }
-#ecoute_text{margin: 0 0 0 10vh; line-height: 2;}
+#valeurs_text{margin: 0 0 0 9vh; }
+#ecoute_text{margin: 0 0 0 9vh; line-height: 2;}
 
 #contactez_span a {
     font-family: "Lato", sans-serif!important;
@@ -27,7 +27,7 @@
 }
 
 .main_div_second_section{
-    display: list-item;
+    display: block;
     width: 90%;
     margin: 0 5%;
 }

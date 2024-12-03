@@ -1,0 +1,26 @@
+.home_text h1 {
+    margin-top: -35vh;
+}
+
+.home_text h2{
+    margin-top: 7vh;
+}
+
+.scroll-downs {
+    bottom: -35vh;
+}
+
+.background_image_sophie, 
+.background_image_place_etoile, 
+.background_image_place_etoile_second{
+    display: none;
+}
+
+.first_section_h1{
+    font-size: 5vh; 
+    padding: 2vh 3vh;
+}
+
+#first_blue_text{
+    font-size: 5vh;
+}

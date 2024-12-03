@@ -2,6 +2,46 @@ import React, {useEffect} from 'react';
 import './style_mobile.css'
 
 const Mobile = () => {
+    useEffect(() => {
+        const animateWords = () => {
+            const targetWords = document.querySelectorAll('.animate-word');
+            let delay = 0;
+
+            targetWords.forEach(word => {
+                const letters = Array.from(word.textContent.trim());
+                word.innerHTML = letters
+                    .map(letter =>
+                        letter === ' '
+                            ? `<span class="letter space">&nbsp;</span>`
+                            : `<span class="letter">${letter}</span>`
+                    )
+                    .join('');
+
+                const letterElements = Array.from(word.querySelectorAll('.letter'));
+
+                letterElements.forEach((letter) => {
+                    setTimeout(() => {
+                        letter.classList.add('out');
+                    }, delay);
+
+                    setTimeout(() => {
+                        letter.classList.remove('out');
+                        letter.classList.add('in');
+                    }, delay + 700);
+
+                    delay += 150;
+                });
+
+                delay += 600; 
+            });
+        };
+
+        animateWords();
+        const interval = setInterval(animateWords, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return(
         <div id="smooth-wrapper">
             <div id="smooth-content">

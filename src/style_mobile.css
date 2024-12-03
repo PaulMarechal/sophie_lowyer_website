@@ -14,9 +14,9 @@
     padding: 2vh 3vh;
 }
 
-#expetise_text{margin: 0 0 0 2vh; line-height: 2;}
-#valeurs_text{margin: 0 0 0 5vh; }
-#ecoute_text{margin: 0 0 0 8vh; line-height: 2;}
+#expetise_text{margin: 0 0 0 6vh; line-height: 2;}
+#valeurs_text{margin: 0 0 0 7vh; }
+#ecoute_text{margin: 0 0 0 10vh; line-height: 2;}
 
 #contactez_span a {
     font-family: "Lato", sans-serif!important;
@@ -33,19 +33,34 @@
 }
 
 .parc_monceau{
-    width: 13vh;
-    height: 23vh;
-    top: 5vh;
-    left: 0;
+    width: 21vh;
+    height: 49vh;
+    top: 180vh;
+    left: 5vh;
+    margin-top: 5vh;
 }
 
 .background_image_place_etoile_second_bottom{
     top: 180vh;
-    right: 0vh;
+    right: 5vh;
+    margin-top: 5vh;
 }
 
 .main_div_contact_me_bottom_icon{
-    margin: 3vh 0;
+    margin: 0vh 10% -30vh 10%;
+    width: 80%;
+    margin-left: 10%;
 }
 
+.second_section{padding: 20vh 0 50vh 0}
 
+.second_section h2{margin-top: -10vh; margin-bottom: 15vh;}
+
+#contact_me{display: block;width: 100%; margin-left: 0; margin-top: -10vh}
+#contact_me div p{margin: 0; text-align: center;}
+
+.send_mail_bottom_icon{
+    position: fixed;
+    bottom: 4vh;
+    right: 2vh;
+}

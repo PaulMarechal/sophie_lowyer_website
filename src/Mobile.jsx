@@ -1,32 +1,11 @@
 import React, {useEffect} from 'react'; 
-import './style.css'
+import './style_mobile.css'
 
 const Mobile = () => {
     return(
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <div className="cursor"></div>
-                <header>
-                    <div>
-                        <h2>Test</h2>
-                    </div>
-                    <div>
-                        <h2>Test</h2>
-                    </div>
-                    <div id="sophie_marechal_home_header">
-                        <a className="link_header" href="#">
-                            <h2>Sophie Maréchal</h2>
-                        </a>
-                    </div>
-                    <div>
-                        <h2>Test</h2>
-                    </div>
-                    <div>
-                        <a className="link_header" href="#contact_me">
-                            <h2>Contact</h2>
-                        </a>
-                    </div>
-                </header>
 
                 <section className="homepage">
                     <div className="home_text">
@@ -53,14 +32,14 @@ const Mobile = () => {
                 {/* Section principale */}
                 <section className="first_section">
                     <h1 className="first_section_h1">
-                        <span>Avocate spécialisée en <br/></span>
+                        <span>Avocate spécialisée en </span>
                         <span>
                             <span id="first_blue_text">droit</span> de la <span className="animate-word">santé</span> <br/>et droit <span className="animate-word">public</span>
                         </span>
-                        <span> inscrite au barreau de Paris.</span><br/>
-                        <span id="expetise_text">Une expertise</span><br/>
-                        <span id="valeurs_text">des valeurs,</span><br/>
-                        <span id="ecoute_text">et une écoute.<br/></span>
+                        <span> inscrite au barreau de Paris.</span>
+                        <span id="expetise_text">Une expertise</span>
+                        <span id="valeurs_text">des valeurs,</span>
+                        <span id="ecoute_text">et une écoute.</span>
                         <span id="contactez_span">
                             <a href="mailto:" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
                             ou retrouvez-moi dans mon bureau à Paris.<br/>

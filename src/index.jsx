@@ -34,7 +34,7 @@ let root;
 const container = document.getElementById('root');
 
 if (!root) {
-    root = ReactDOM.createRoot(container); // Crée la racine si elle n'existe pas
+    root = ReactDOM.createRoot(container); 
 }
 
 root.render(<App />);

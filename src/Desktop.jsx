@@ -66,30 +66,28 @@ const Desktop = () => {
     useEffect(() => {
         const mouseCursor = document.querySelector('.cursor');
         const links = document.querySelectorAll('a');
-    
+
         const handleMouseMove = (e) => {
             if (mouseCursor) {
-                mouseCursor.style.top = `${e.pageY}px`;
-                mouseCursor.style.left = `${e.pageX}px`;
+                mouseCursor.style.top = e.pageY + 'px';
+                mouseCursor.style.left = e.pageX + 'px';
             }
         };
-    
+
         const handleLinkHover = () => {
             if (mouseCursor) mouseCursor.classList.add('link-hover');
         };
-    
+
         const handleLinkLeave = () => {
             if (mouseCursor) mouseCursor.classList.remove('link-hover');
         };
-    
-        // Ajouter les listeners
+
         window.addEventListener('mousemove', handleMouseMove);
         links.forEach(link => {
             link.addEventListener('mouseenter', handleLinkHover);
             link.addEventListener('mouseleave', handleLinkLeave);
         });
-    
-        // Supprimer les listeners au démontage du composant
+
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
             links.forEach(link => {
@@ -98,7 +96,6 @@ const Desktop = () => {
             });
         };
     }, []);
-    
 
     return (
         <div id="smooth-wrapper">

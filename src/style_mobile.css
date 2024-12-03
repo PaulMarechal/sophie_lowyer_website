@@ -1,14 +1,7 @@
-.home_text h1 {
-    margin-top: -35vh;
-}
-
-.home_text h2{
-    margin-top: 7vh;
-}
-
-.scroll-downs {
-    bottom: -35vh;
-}
+#first_blue_text, #contact_me_link, .animate-word{font-size: 5vh;}
+.home_text h1 {margin-top: -35vh;}
+.home_text h2{margin-top: 7vh;}
+.scroll-downs {bottom: -35vh;}
 
 .background_image_sophie, 
 .background_image_place_etoile, 
@@ -21,6 +14,38 @@
     padding: 2vh 3vh;
 }
 
-#first_blue_text{
+#expetise_text{margin: 0 0 0 2vh; line-height: 2;}
+#valeurs_text{margin: 0 0 0 5vh; }
+#ecoute_text{margin: 0 0 0 8vh; line-height: 2;}
+
+#contactez_span a {
+    font-family: "Lato", sans-serif!important;
+    font-style: normal;
+    margin: 0;
+    font-weight: 300;
     font-size: 5vh;
 }
+
+.main_div_second_section{
+    display: list-item;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.parc_monceau{
+    width: 13vh;
+    height: 23vh;
+    top: 5vh;
+    left: 0;
+}
+
+.background_image_place_etoile_second_bottom{
+    top: 180vh;
+    right: 0vh;
+}
+
+.main_div_contact_me_bottom_icon{
+    margin: 3vh 0;
+}
+
+

@@ -34,17 +34,22 @@ const Mobile = () => {
                     <h1 className="first_section_h1">
                         <span>Avocate spécialisée en </span>
                         <span>
-                            <span id="first_blue_text">droit</span> de la <span className="animate-word">santé</span> <br/>et droit <span className="animate-word">public</span>
+                            <span id="first_blue_text">droit</span> de la <span className="animate-word">santé</span> et droit <span className="animate-word">public</span>
                         </span>
-                        <span> inscrite au barreau de Paris.</span>
-                        <span id="expetise_text">Une expertise</span>
-                        <span id="valeurs_text">des valeurs,</span>
-                        <span id="ecoute_text">et une écoute.</span>
-                        <span id="contactez_span">
-                            <a href="mailto:" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
-                            ou retrouvez-moi dans mon bureau à Paris.<br/>
-                        </span>
-                    </h1>
+                        <span> inscrite au barreau de Paris.</span><br/>
+                    </h1>    
+                    <div>
+                        <h1 class="first_section_h1">
+                            <span id="expetise_text">Une expertise</span><br/>
+                            <span id="valeurs_text">des valeurs,</span><br/>
+                            <span id="ecoute_text">une écoute.</span> <br/>
+                        </h1>
+                    </div>
+                    <div id="contactez_span">
+                        <a href="mailto:" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
+                        <h1 class="first_section_h1">ou retrouvez-moi dans mon bureau à Paris.</h1><br/>
+                    </div>
+                    
                     <div className="background_image_sophie" ></div>
                     <div className="background_image_place_etoile"></div>
                     <div className="background_image_place_etoile_second"></div>

@@ -201,7 +201,7 @@ header div h2{
     overflow: hidden;
     padding: 0;
 
-    background-image: url("../Images/Palais-de-justice-de-Paris.webp"); 
+    background-image: url("./Images/Palais-de-justice-de-Paris.webp"); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -261,7 +261,7 @@ header div h2{
 .background_image_sophie{
     width: 26vh;
     height: 36vh;
-    background-image: url(../Images/Sophie-M.webp);
+    background-image: url(./Images/Sophie-M.webp);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -279,7 +279,7 @@ header div h2{
     top: 81vh;
     position: absolute;
     left: 15vh;
-    background-image: url(../Images/unnamed.jpg);
+    background-image: url(./Images/unnamed.jpg);
 }
 
 .icon_bottom_page{
@@ -301,7 +301,7 @@ header div h2{
     top: 65vh;
     position: absolute;
     right: 0vh;
-    background-image: url(../Images/place_etoile_second.jpg);
+    background-image: url(./Images/place_etoile_second.jpg);
 }
 
 .parc_monceau{
@@ -313,7 +313,7 @@ header div h2{
     top: 35vh;
     position: absolute;
     left: 0vh;
-    background-image: url(../Images/parc_monceau.jpg);
+    background-image: url(./Images/parc_monceau.jpg);
 }
 
 .background_image_place_etoile_second_bottom{

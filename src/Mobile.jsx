@@ -102,7 +102,7 @@ const Mobile = () => {
                 </section>
 
                 <section className="second_section">
-                    <h2>une expertise engagée</h2>
+                    <h2>Une expertise engagée</h2>
                     <div className="main_div_second_section">
                         <div className="first_div_text_second_section">
                             <p>

@@ -65,3 +65,62 @@
     right: 2vh;
 }
 
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    .home_text h1{
+        margin-top: -55vh;
+    }
+
+    .scroll-downs{
+        bottom: -5vh;
+    }
+
+    .animate-word{
+        font-size: 8vh;
+    }
+
+    .first_section{
+        padding: 5vh 25vh;
+    }
+
+    .first_section_h1{
+        word-spacing: 20px;
+    }
+
+    #expetise_text{margin: 0 0 0 30vh;}
+
+    #valeurs_text{margin: 0 0 0 50vh;}
+
+    #ecoute_text{margin: 0 0 0 70vh;}
+
+    #contact_me_link, #contactez_span a{font-size: 8vh;}
+
+    .second_section h2{font-size: 15vh;}
+
+    .second_section{padding: 30vh 25vh;}
+
+    .parc_monceau{
+        width: 30vh;
+        height: 52vh;
+        top: 40vh;
+        left: 0vh;
+        margin-top: 5vh;
+    }
+    
+    .background_image_place_etoile_second_bottom{
+        top: 180vh;
+        right: 0vh;
+        width: 30vh;
+        height: 70vh;
+        margin-top: 5vh;
+    }
+
+    .main_div_contact_me_bottom_icon{
+        margin: -20vh 10% -100vh 10%;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    #contact_me{display: inline-flex;width: 60%; margin-left: 20%; margin-top: -30vh}
+
+}

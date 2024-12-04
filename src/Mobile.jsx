@@ -1,8 +1,14 @@
 import React, {useEffect} from 'react'; 
-import './style_mobile.css'
 
 const Mobile = () => {
     useEffect(() => {
+
+        const loadMobileStyle = async () => {
+            await import('./style_mobile.css');
+        };
+
+        loadMobileStyle();
+
         const animateWords = () => {
             const targetWords = document.querySelectorAll('.animate-word');
             let delay = 0;

@@ -156,13 +156,11 @@ const Desktop = () => {
                         <span id="expetise_text">Une expertise</span><br/>
                         <span id="valeurs_text">des valeurs,</span><br/>
                         <span id="ecoute_text">et une écoute.<br/></span>
+                        <span id="contactez_span">
+                            <a href="mailto:" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
+                            ou retrouvez-moi dans mon bureau à Paris.<br/>
+                        </span>
                     </h1>
-                        
-                    <a href="mailto:" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
-                    <h1 class="first_section_h1">
-                        ou retrouvez-moi dans mon bureau à Paris.<br/>
-                    </h1>
-                        
                     <div className="background_image_sophie" ></div>
                     <div className="background_image_place_etoile"></div>
                     <div className="background_image_place_etoile_second"></div>

@@ -129,6 +129,28 @@ const Mobile = () => {
                     </div>
                 </section>
 
+                <section className="third_section">
+                    <h2>Ses domaine d'interventions</h2>
+                    <div>
+                        <p>
+                            Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de la fonction publique, droit de l’urbanisme et de la commande publique, droit des étrangers, droit public et droit de la consommation.
+                            <br/>
+                            Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. 
+                        </p>
+                    </div>
+                </section>
+
+                <section className="fourth_section">
+                    <h2>Honoraires</h2>
+                    <div>
+                        <p>
+                            Ses honoraires sont fixés en fonction de la complexité de l’affaire. 
+                            <br/>
+                            Afin que vous soyez parfaitement défendu, une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. 
+                        </p>
+                    </div>
+                </section>
+
                 <section>
                     <div className="main_div_contact_me_bottom_icon">
                         <div className="icon_bottom_page">
@@ -137,7 +159,7 @@ const Mobile = () => {
                             </a>  
                         </div>
                         <div className="icon_bottom_page">
-                            <a href="mailto:" title="Contactez moi par mail">
+                            <a href="mailto:sophie.marechal@avocat.fr" title="Contactez moi par mail">
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="#007BEE"  className="icon icon-tabler icons-tabler-filled icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" /><path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" /></svg>
                             </a>
                         </div>
@@ -147,7 +169,7 @@ const Mobile = () => {
                             </a>
                         </div>
                         <div className="icon_bottom_page">
-                            <a href="tel:+" title="Contactez moi par téléphone">
+                            <a href="tel:++01 53 43 15 34" title="Contactez moi par téléphone">
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="#007BEE"  className="icon icon-tabler icons-tabler-filled icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z" /></svg>
                             </a>
                         </div>

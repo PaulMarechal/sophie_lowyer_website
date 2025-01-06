@@ -2,6 +2,7 @@ html{
     scroll-behavior: smooth;
     scrollbar-color: #87ceeb #ff562100;
     cursor: none;
+    scrollbar-width: 5px;
 }
 
 body {
@@ -317,26 +318,26 @@ header div h2{
 }
 
 .paris_ruelle{
-    width: 30vh;
-    height: 49vh;
-    background-size: cover;
+    width: 29vh;
+    height: 32vh;
+    background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    top: 35vh;
+    top: 11vh;
     position: absolute;
     left: 0vh;
     background-image: url(./Images/paris_ruelle.jpg);
 }
 
 .paris_monument{
-    width: 30vh;
-    height: 49vh;
+    width: 23vh;
+    height: 42vh;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    top: 35vh;
+    top: 0vh;
     position: absolute;
-    left: 0vh;
+    right: 2vh;
     background-image: url(./Images/paris_monument.jpg);
 }
 

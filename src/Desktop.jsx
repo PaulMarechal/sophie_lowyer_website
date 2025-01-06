@@ -214,6 +214,7 @@ const Desktop = () => {
                             </p>
                         </div>
                     </div>
+                    <div className="paris_ruelle"></div>
                 </section>
 
                 <section className="fourth_section" id="honoraires_section">
@@ -226,6 +227,7 @@ const Desktop = () => {
                             Afin que vous soyez parfaitement défendu, une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. 
                         </p>
                     </div>
+                    <div className="paris_monument"></div>
                 </section>
 
                 <section>

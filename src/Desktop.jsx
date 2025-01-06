@@ -103,18 +103,24 @@ const Desktop = () => {
                 <div className="cursor"></div>
                 <header>
                     <div>
-                        <h2>À propos</h2>
+                        <a className="link_header" href="#a_propos_section">
+                            <h2>À propos</h2>
+                        </a>
                     </div>
                     <div>
-                        <h2>Compétences</h2>
+                        <a className="link_header" href="#competences_section">
+                            <h2>Compétences</h2>
+                        </a>
                     </div>
                     <div id="sophie_marechal_home_header">
-                        <a className="link_header" href="#">
+                        <a className="link_header">
                             <h2>Sophie Maréchal</h2>
                         </a>
                     </div>
                     <div>
-                        <h2>Honoraires</h2>
+                        <a className="link_header" href="#honoraires_section">
+                            <h2>Honoraires</h2>
+                        </a>
                     </div>
                     <div>
                         <a className="link_header" href="#contact_me">
@@ -146,7 +152,7 @@ const Desktop = () => {
                 </section>
 
                 {/* Section principale */}
-                <section className="first_section">
+                <section className="first_section" id="a_propos_section">
                     <h1 className="first_section_h1">
                         <span>Avocate spécialisée en <br/></span>
                         <span>
@@ -166,7 +172,7 @@ const Desktop = () => {
                     <div className="background_image_place_etoile_second"></div>
                 </section>
 
-                <section className="second_section">
+                <section className="second_section" id="competences_section">
                     <h2>Une expertise engagée</h2>
                     <div className="main_div_second_section">
                         <div className="first_div_text_second_section">
@@ -196,20 +202,26 @@ const Desktop = () => {
 
                 <section className="third_section">
                     <h2>Ses domaine d'interventions</h2>
-                    <div>
-                        <p>
-                            Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de la fonction publique, droit de l’urbanisme et de la commande publique, droit des étrangers, droit public et droit de la consommation.
-                            <br/>
-                            Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. 
-                        </p>
+                    <div className="main_div_third_section">
+                        <div className="first_div_third_section">
+                            <p>
+                                Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de la fonction publique, droit de l’urbanisme et de la commande publique, droit des étrangers, droit public et droit de la consommation.
+                            </p>
+                        </div>
+                        <div className="seconc_div_text_third_section">
+                            <p>
+                                Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. 
+                            </p>
+                        </div>
                     </div>
                 </section>
 
-                <section className="fourth_section">
+                <section className="fourth_section" id="honoraires_section">
                     <h2>Honoraires</h2>
-                    <div>
+                    <div className="main_div_fourth_section">
                         <p>
                             Ses honoraires sont fixés en fonction de la complexité de l’affaire. 
+                            <br/>
                             <br/>
                             Afin que vous soyez parfaitement défendu, une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. 
                         </p>

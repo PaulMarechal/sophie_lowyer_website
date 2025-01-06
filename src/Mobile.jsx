@@ -131,7 +131,7 @@ const Mobile = () => {
 
                 <section className="third_section">
                     <h2>Ses domaine d'interventions</h2>
-                    <div>
+                    <div className="main_div_third_section">
                         <p>
                             Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de la fonction publique, droit de l’urbanisme et de la commande publique, droit des étrangers, droit public et droit de la consommation.
                             <br/>
@@ -142,9 +142,10 @@ const Mobile = () => {
 
                 <section className="fourth_section">
                     <h2>Honoraires</h2>
-                    <div>
+                    <div className="main_div_fourth_section">
                         <p>
                             Ses honoraires sont fixés en fonction de la complexité de l’affaire. 
+                            <br/>
                             <br/>
                             Afin que vous soyez parfaitement défendu, une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. 
                         </p>

@@ -668,8 +668,8 @@ h1 {
 .fourth_section h2{font-size: 10vh;}
 
 .main_div_third_section{
-    display: inline-flex; 
-    width: 70%; 
+    display: inline-block; 
+    width: 50%; 
     font-size: 20px;
 }
 

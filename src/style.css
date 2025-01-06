@@ -673,13 +673,7 @@ h1 {
     font-size: 20px;
 }
 
-.main_div_second_section{
-    display: inline-flex; 
-    width: 50%; 
-    font-size: 20px;
-}
-
-.main_div_fourth_section{
+.main_div_second_section, .main_div_fourth_section{
     display: inline-flex; 
     width: 50%; 
     font-size: 20px;
@@ -690,8 +684,13 @@ h1 {
     flex:1; padding: 0 15px; text-align: justify;
 }
 
+.main_div_fourth_section{
+    padding: 0 15px; text-align: justify;
+}
+
 .first_div_text_second_section p, .seconc_div_text_second_section p, 
-.first_div_text_third_section p, .seconc_div_text_third_section p{
+.first_div_text_third_section p, .seconc_div_text_third_section p, 
+.main_div_fourth_section p{
     line-height: 1.6
 }
 

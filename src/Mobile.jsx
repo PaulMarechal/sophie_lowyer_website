@@ -145,13 +145,15 @@ const Mobile = () => {
                 <section className="fourth_section">
                     <h2>Honoraires</h2>
                     <div className="main_div_fourth_section">
-                        <p>
-                            Ses honoraires sont fixés en fonction de la complexité de l’affaire. 
-                            <br/>
-                            <br/>
-                            Afin que vous soyez parfaitement défendu, une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. 
-                        </p>
+                        <div className="first_div_text_fourth_section">
+                            <p>Ses honoraires sont fixés en fonction de la complexité de l’affaire.</p>
+                        </div>
+
+                        <div className="seconc_div_text_fourth_section">
+                            <p>Afin que vous soyez parfaitement défendu, une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. </p>
+                        </div>
                     </div>
+                    <div className="paris_monument"></div>
                 </section>
 
                 <section>

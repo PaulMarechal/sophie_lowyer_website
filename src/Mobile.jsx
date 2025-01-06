@@ -130,14 +130,16 @@ const Mobile = () => {
                 </section>
 
                 <section className="third_section">
-                    <h2>Ses domaine d'interventions</h2>
+                    <h2>Compétences</h2>
                     <div className="main_div_third_section">
-                        <p>
-                            Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de la fonction publique, droit de l’urbanisme et de la commande publique, droit des étrangers, droit public et droit de la consommation.
-                            <br/>
-                            Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. 
-                        </p>
+                        <div className="first_div_text_third_section">
+                            <p>Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de la fonction publique, droit de l’urbanisme et de la commande publique, droit des étrangers, droit public et droit de la consommation.</p>
+                        </div>
+                        <div className="seconc_div_text_third_section">
+                            <p>Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. </p>
+                        </div>
                     </div>
+                    <div className="paris_ruelle"></div>
                 </section>
 
                 <section className="fourth_section">

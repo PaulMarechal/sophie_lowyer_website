@@ -686,12 +686,12 @@ h1 {
 }
 
 .first_div_text_second_section, .seconc_div_text_second_section, 
-.first_div_third_section, .seconc_div_text_third_section{
+.first_div_text_third_section, .seconc_div_text_third_section{
     flex:1; padding: 0 15px; text-align: justify;
 }
 
 .first_div_text_second_section p, .seconc_div_text_second_section p, 
-.first_div_third_section p, .seconc_div_text_third_section p{
+.first_div_text_third_section p, .seconc_div_text_third_section p{
     line-height: 1.6
 }
 

@@ -26,7 +26,7 @@
     font-size: 5vh;
 }
 
-.main_div_second_section{
+.main_div_second_section, .main_div_third_section{
     display: block;
     width: 90%;
     margin: 0 5%;
@@ -35,13 +35,20 @@
 .parc_monceau{
     width: 21vh;
     height: 49vh;
-    top: 180vh;
+    top: 220vh;
     left: 5vh;
     margin-top: 5vh;
 }
 
+.paris_ruelle{
+    top: 95vh;
+    left: 10vh;
+    width: 40vh;
+    height: 49vh;
+}
+
 .background_image_place_etoile_second_bottom{
-    top: 180vh;
+    top: 220vh;
     right: 5vh;
     margin-top: 5vh;
 }
@@ -52,9 +59,11 @@
     margin-left: 10%;
 }
 
-.second_section{padding: 20vh 0 50vh 0}
+.second_section, .third_section{padding: 20vh 0 50vh 0}
 
 .second_section h2{margin-top: -10vh; margin-bottom: 15vh;}
+
+.third_section h2{margin-top: -5vh; margin-bottom: 5vh; font-size: 8.5vh;}
 
 #contact_me{display: block;width: 100%; margin-left: 0; margin-top: -10vh}
 #contact_me div p{margin: 0; text-align: center;}
@@ -64,7 +73,6 @@
     bottom: 4vh;
     right: 2vh;
 }
-
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .home_text h1{
@@ -105,6 +113,14 @@
         top: 40vh;
         left: 0vh;
         margin-top: 5vh;
+    }
+
+    .paris_ruelle{
+        width: 30vh;
+        height: 52vh;
+        top: 170vh;
+        left: 0vh;
+        margin-top: 50vh;
     }
     
     .background_image_place_etoile_second_bottom{

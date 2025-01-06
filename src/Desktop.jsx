@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import './style.css';
 
 const Desktop = () => {
+    console.log("Made with 🍔 by DevXR.fr - https://devxr.fr")
+
     useEffect(() => {
         const handleScroll = () => {
             const header = document.querySelector('header');

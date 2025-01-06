@@ -679,6 +679,8 @@ h1 {
     font-size: 20px;
 }
 
+.main_div_fourth_section p span{text-align: center;}
+
 .first_div_text_second_section, .seconc_div_text_second_section, 
 .first_div_text_third_section, .seconc_div_text_third_section{
     flex:1; padding: 0 15px; text-align: justify;

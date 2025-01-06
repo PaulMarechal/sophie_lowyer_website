@@ -115,7 +115,7 @@ const Desktop = () => {
                         </a>
                     </div>
                     <div id="sophie_marechal_home_header">
-                        <a className="link_header">
+                        <a className="link_header" href="#">
                             <h2>Sophie Maréchal</h2>
                         </a>
                     </div>
@@ -223,7 +223,7 @@ const Desktop = () => {
                     <h2>Honoraires</h2>
                     <div className="main_div_fourth_section">
                         <p>
-                            Ses honoraires sont fixés en fonction de la complexité de l’affaire. 
+                            <span>Ses honoraires sont fixés en fonction de la complexité de l’affaire. </span>
                             <br/>
                             <br/>
                             Afin que vous soyez parfaitement défendu, une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. 

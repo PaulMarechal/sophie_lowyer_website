@@ -4,7 +4,7 @@ const Mobile = () => {
     useEffect(() => {
 
         const loadMobileStyle = async () => {
-            await import('./style_mobile.css');
+            await import('/style_mobile.css');
         };
 
         loadMobileStyle();

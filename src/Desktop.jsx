@@ -205,7 +205,7 @@ const Desktop = () => {
                 <section className="third_section">
                     <h2>Ses domaine d'interventions</h2>
                     <div className="main_div_third_section">
-                        <div className="first_div_third_section">
+                        <div className="first_div_text_third_section">
                             <p>
                                 Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de la fonction publique, droit de l’urbanisme et de la commande publique, droit des étrangers, droit public et droit de la consommation.
                             </p>

@@ -114,9 +114,11 @@
 
     #contact_me_link, #contactez_span a{font-size: 8vh;}
 
-    .second_section h2{font-size: 15vh;}
+    .second_section h2, .third_section h2, .fourth_section h2{font-size: 15vh;}
 
-    .second_section{padding: 30vh 25vh;}
+    .second_section, .third_section, .fourth_section{padding: 30vh 25vh;}
+
+    .fourth_section{margin-top: -40vh;}
 
     .parc_monceau{
         width: 30vh;

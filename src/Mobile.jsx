@@ -106,16 +106,22 @@ const Mobile = () => {
                     <div className="main_div_second_section">
                         <div className="first_div_text_second_section">
                             <p>
-                                Au cœur du 8e arrondissement de Paris, Maître Sophie Maréchal incarne une approche moderne et humaine de la profession d’avocat. Forte d’une expertise en droit de la santé et en droit public, elle accompagne ses clients avec rigueur et bienveillance dans les moments les plus décisifs de leur vie professionnelle et personnelle.
+                                Sophie Maréchal est titulaire d’un master affaires publiques obtenu à Sciences Po Paris et d’un master en droit public général obtenu à l’Université Paris-I Panthéon Sorbonne.
                                 <br/>
-                                Plus qu’un simple service juridique, Maître Maréchal se distingue par sa capacité à écouter, à comprendre et à proposer des solutions sur mesure. 
+                                Après avoir été reçue au concours d’entrée de l’École des Hautes Études en Santé publique (EHESP), Sophie Maréchal est devenue directrice d’hôpital. Elle a exercé cette fonction pendant 7 ans dans plusieurs hôpitaux situés en Nouvelle-Aquitaine et dans les Hauts-de-France. 
+                                <br/>
+                                Après cette expérience professionnelle particulièrement riche et intéressante, Sophie Maréchal a souhaité devenir avocat. 
                             </p>
                         </div>
                         <div className="seconc_div_text_second_section">
                             <p>
-                                Convaincue que chaque situation est unique, elle s’attache à établir un dialogue clair et transparent, permettant à ses clients de naviguer sereinement dans les méandres juridiques.
+                                En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA).
                                 <br/>
-                                Implantée à deux pas de la place de l’Étoile, Maître Maréchal offre un accompagnement stratégique, alliant expertise technique et vision humaine, pour répondre aux enjeux d’aujourd’hui et bâtir les solutions de demain.      
+                                De janvier 2023 à juin 2024, elle a suivi la formation dispensée à l’EFB en droit public et droit des étrangers et le cursus dispensé par l’Institut de droit public des affaires en partenariat avec l’Université Paris-Saclay. 
+                                <br/>
+                                Lauréate du certificat d’aptitude à la profession d’avocat, elle a prêté serment en 2024. 
+                                <br/>
+                                Elle travaille en français, anglais et allemand. Elle défend les intérêts de ses clients sur l’ensemble du territoire national. 
                             </p>
                         </div>
                         <div className="parc_monceau"></div>

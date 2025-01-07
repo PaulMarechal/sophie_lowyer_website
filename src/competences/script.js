@@ -7,23 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll(".horizontal-item");
     const scrollWrapper = document.querySelector(".horizontal-scroll-wrapper");
 
-    // Set the width of the scroll container dynamically
-    const totalWidth = sections.length * window.innerWidth;
+    const totalWidth = (sections.length * window.innerWidth ) / 2  ;
     gsap.set(scrollWrapper, { width: totalWidth });
 
-    // Create the scroll trigger
     gsap.to(scrollWrapper, {
-        x: () => -(totalWidth - window.innerWidth), // Moves the wrapper horizontally
+        x: () => -(totalWidth - window.innerWidth), 
         ease: "none",
         scrollTrigger: {
             trigger: ".section_competences",
             start: "top top",
-            end: () => `+=${totalWidth}`, // Scroll distance matches total width
+            end: () => `+=${totalWidth}`, 
             scrub: 1,
-            pin: true, // Pins the section during scroll
+            pin: true
         },
     });
 });
+
 
 const mouseCursor = document.querySelector('.cursor');
 const links = document.querySelectorAll('a');

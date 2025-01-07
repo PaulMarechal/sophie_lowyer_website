@@ -360,9 +360,9 @@ header div h2{
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    top: 16vh;
+    top: 46vh;
     position: absolute;
-    left: 10vh;
+    left: 184vh;
     background-image: url(https://devxr.fr/sophie_test/Images/paris_ruelle.jpg);
 }
 
@@ -900,6 +900,14 @@ h1 {
     flex: 1; 
 }
 
+.second_text_competences{
+    margin-top: 6vh;
+    margin-left: 46vh;
+    background: #f0f0f0;
+    border-radius: 10px;
+    height: 80vh;
+}
+
 .section_competences h2{font-size: 6.5vh;}
 
 .competence_img_div{
@@ -913,7 +921,7 @@ h1 {
     width: 55vh;
     height: 31vh;
     position: absolute;
-    left: 12%;
+    left: 22%;
     top: 30%;
     padding: 4vh 4vh 4vh 18vh;
     color: #fff;
@@ -938,6 +946,8 @@ h1 {
 
 
 
+
+
 .section_competences {
     width: 100vw;
     height: 100vh;
@@ -957,11 +967,12 @@ h1 {
 .horizontal-item {
     flex: 0 0 100vw;
     height: 100vh;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     padding: 20px;
     box-sizing: border-box;
+    width: 100vh;
 }
 
 .competence_img_div, .main_div_second_section, .main_div_third_section {
@@ -969,11 +980,13 @@ h1 {
     margin: auto;
 }
 
-
 .blue_box_competence {
     background: #007BEE;
-    padding: 20px;
     color: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pin-spacer{
+    height: 3700px!important;
 }

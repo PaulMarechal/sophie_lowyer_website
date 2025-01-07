@@ -283,6 +283,19 @@ header div h2{
     right: 15vh;
 }
 
+.background_image_sophie_competences{
+    width: 26vh;
+    height: 36vh;
+    background-image: url(https://devxr.fr/sophie_test/Images/Sophie-M.webp);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 10%;
+    top: 11%;
+    border-radius: 10px;
+}
+
 .background_image_place_etoile{
     width: 23vh;
     height: 33vh;
@@ -704,10 +717,24 @@ h1 {
     font-size: 20px;
 }
 
-.main_div_second_section, .main_div_fourth_section{
-    display: inline-flex; 
-    width: 50%; 
-    font-size: 20px;
+.main_div_second_section, .main_div_fourth_section, 
+.expertise_div{
+    display: inline-flex;
+    width: 80%;
+    font-size: 18px;
+    text-align: justify;
+    gap: 40px;
+}
+
+.main_div_third_section{
+    display: inline-block;
+    width: 80%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.section_competences{
+    margin-top: 2vh;
 }
 
 .first_text_hono{
@@ -862,4 +889,91 @@ h1 {
     .intro-block p {
         font-size: 0.85rem;
     }
+}
+
+/* Page competences */
+.section_competences{
+    display: inline-flex; 
+}
+
+.section_competences div{
+    flex: 1; 
+}
+
+.section_competences h2{font-size: 6.5vh;}
+
+.competence_img_div{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+.blue_box_competence{
+    background: #007BEE;
+    width: 55vh;
+    height: 31vh;
+    position: absolute;
+    left: 12%;
+    top: 30%;
+    padding: 4vh 4vh 4vh 18vh;
+    color: #fff;
+}
+
+.text_blue_box{font-size: 2.2vh;}
+
+.first_quote{
+    text-align: left; 
+    font-size: 50px; 
+    margin: 0;
+}
+
+.second_quote{
+    text-align: right;
+    font-size: 50px; 
+    margin: 0;
+    margin-top: -35px;
+}
+
+
+
+
+
+.section_competences {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-scroll-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 300vw; 
+    height: 100vh;
+}
+
+.horizontal-item {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.competence_img_div, .main_div_second_section, .main_div_third_section {
+    width: 90%;
+    margin: auto;
+}
+
+
+.blue_box_competence {
+    background: #007BEE;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

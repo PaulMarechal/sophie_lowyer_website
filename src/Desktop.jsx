@@ -64,6 +64,7 @@ const Desktop = () => {
 
         return () => clearInterval(interval);
     }, []);
+    
 
     useEffect(() => {
         const mouseCursor = document.querySelector('.cursor');
@@ -110,7 +111,7 @@ const Desktop = () => {
                         </a>
                     </div>
                     <div>
-                        <a className="link_header" href="#competences_section">
+                        <a className="link_header" href="/competences/">
                             <h2>Compétences</h2>
                         </a>
                     </div>
@@ -120,12 +121,12 @@ const Desktop = () => {
                         </a>
                     </div>
                     <div>
-                        <a className="link_header" href="#honoraires_section">
+                        <a className="link_header" href="/honoraires/">
                             <h2>Honoraires</h2>
                         </a>
                     </div>
                     <div>
-                        <a className="link_header" href="#contact_me">
+                        <a className="link_header" href="/contact/">
                             <h2>Contact</h2>
                         </a>
                     </div>
@@ -151,6 +152,12 @@ const Desktop = () => {
                             <path d="M7 13l5 5l5 -5" />
                         </svg>
                     </div>
+                    <div className="license-details">
+                        <p>
+                            licence : <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"> CC BY-SA</a> <br/>
+                            Créateur : <a href="https://delso.photo" target="_blank">Diego Delso</a>
+                        </p>
+                    </div>
                 </section>
 
                 {/* Section principale */}
@@ -174,66 +181,42 @@ const Desktop = () => {
                     <div className="background_image_place_etoile_second"></div>
                 </section>
 
-                <section className="second_section" id="competences_section">
-                    <h2>Une expertise engagée</h2>
-                    <div className="main_div_second_section">
-                        <div className="first_div_text_second_section">
-                            <p>
-                                Sophie Maréchal est titulaire d’un master affaires publiques obtenu à Sciences Po Paris et d’un master en droit public général obtenu à l’Université Paris-I Panthéon Sorbonne.
-                                <br/>
-                                Après avoir été reçue au concours d’entrée de l’École des Hautes Études en Santé publique (EHESP), Sophie Maréchal est devenue directrice d’hôpital. Elle a exercé cette fonction pendant 7 ans dans plusieurs hôpitaux situés en Nouvelle-Aquitaine et dans les Hauts-de-France. 
-                                <br/>
-                                Après cette expérience professionnelle particulièrement riche et intéressante, Sophie Maréchal a souhaité devenir avocat. 
-                            </p>
+                <div className="parc_monceau_home"></div>
+
+                <section className="short-intros">
+                    <div className="intro-block">
+                        <div className="icon-wrapper">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="80"  height="80"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-scale"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 20l10 0" /><path d="M6 6l6 -1l6 1" /><path d="M12 3l0 17" /><path d="M9 12l-3 -6l-3 6a3 3 0 0 0 6 0" /><path d="M21 12l-3 -6l-3 6a3 3 0 0 0 6 0" /></svg>
                         </div>
-                        <div className="seconc_div_text_second_section">
-                            <p>
-                                En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA).
-                                <br/>
-                                De janvier 2023 à juin 2024, elle a suivi la formation dispensée à l’EFB en droit public et droit des étrangers et le cursus dispensé par l’Institut de droit public des affaires en partenariat avec l’Université Paris-Saclay. 
-                                <br/>
-                                Lauréate du certificat d’aptitude à la profession d’avocat, elle a prêté serment en 2024. 
-                                <br/>
-                                Elle travaille en français, anglais et allemand. Elle défend les intérêts de ses clients sur l’ensemble du territoire national. 
-                            </p>
+                        <h3>Des compétences diversifiées</h3>
+                        <p>Droit de la santé, droit public, urbanisme, fonction publique, et bien plus. Maître Sophie Maréchal met son expertise à votre service avec rigueur et détermination.</p>
+                        <a href="/competences/" className="btn">En savoir plus</a>
+                    </div>
+                    <div className="intro-block">
+                        <div className="icon-wrapper">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="80"  height="80"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-file-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" /><path d="M16.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" /><path d="M18.5 19.5l2.5 2.5" /></svg>
                         </div>
-                        <div className="parc_monceau"></div>
-                        <div className="background_image_place_etoile_second_bottom"></div>
+                        <h3>Une transparence totale</h3>
+                        <p>Chaque situation est unique : les honoraires sont définis avec précision et formalisés dans une convention claire dès le début de notre collaboration.</p>
+                        <a href="/honoraires/" className="btn">Voir les détails</a>
+                    </div>
+                    <div className="intro-block">
+                        <div className="icon-wrapper">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="80"  height="80"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-heart-handshake"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /><path d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" /><path d="M12.5 15.5l2 2" /><path d="M15 13l2 2" /></svg>
+                        </div>
+                        <h3>Un accompagnement humain</h3>
+                        <p>Prenez rendez-vous pour échanger sur votre situation. Que ce soit par téléphone, e-mail ou en personne, je suis là pour vous conseiller.</p>
+                        <a href="/contact/" className="btn">Contactez-moi</a>
                     </div>
                 </section>
 
-                <section className="third_section">
-                    <h2>Ses domaine d'interventions</h2>
-                    <div className="main_div_third_section">
-                        <div className="first_div_text_third_section">
-                            <p>
-                                Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de la fonction publique, droit de l’urbanisme et de la commande publique, droit des étrangers, droit public et droit de la consommation.
-                            </p>
-                        </div>
-                        <div className="seconc_div_text_third_section">
-                            <p>
-                                Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. 
-                            </p>
-                        </div>
-                    </div>
-                    <div className="paris_ruelle"></div>
-                </section>
-
-                <section className="fourth_section" id="honoraires_section">
-                    <h2>Honoraires</h2>
-                    <div className="main_div_fourth_section">
-                        <p>
-                            <span>Ses honoraires sont fixés en fonction de la complexité de l’affaire. </span>
-                            <br/>
-                            <br/>
-                            Afin que vous soyez parfaitement défendu, une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. 
-                        </p>
-                    </div>
-                </section>
+                <div className="paris_monument_home"></div>
 
                 <section>
+                    <p className="contact-intro">
+                    Un besoin ? Une question ? Je suis à votre écoute. Contactez-moi par le moyen qui vous convient le mieux.
+                    </p>
                     <div className="main_div_contact_me_bottom_icon">
-                    <div className="paris_monument"></div>
                         <div className="icon_bottom_page">
                             <a href="http://maps.google.com/?q=Pl Charles de Gaulle, Paris" target="_blank" rel="noopener noreferrer" title="Pour me rencontrer au bureau">
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="#007BEE"  className="icon icon-tabler icons-tabler-filled icon-tabler-location"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.891 2.006l.106 -.006l.13 .008l.09 .016l.123 .035l.107 .046l.1 .057l.09 .067l.082 .075l.052 .059l.082 .116l.052 .096c.047 .1 .077 .206 .09 .316l.005 .106c0 .075 -.008 .149 -.024 .22l-.035 .123l-6.532 18.077a1.55 1.55 0 0 1 -1.409 .903a1.547 1.547 0 0 1 -1.329 -.747l-.065 -.127l-3.352 -6.702l-6.67 -3.336a1.55 1.55 0 0 1 -.898 -1.259l-.006 -.149c0 -.56 .301 -1.072 .841 -1.37l.14 -.07l18.017 -6.506l.106 -.03l.108 -.018z" /></svg>

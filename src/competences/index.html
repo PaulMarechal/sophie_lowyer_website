@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body>
+    <div class="cursor"></div>
+    <header class="scrolled">
+        <div>
+            <a class="link_header" href="../#a_propos_section">
+                <h2>À propos</h2>
+            </a>
+        </div>
+        <div>
+            <a class="link_header" href="#competences_section">
+                <h2>Compétences</h2>
+            </a>
+        </div>
+        <div id="sophie_marechal_home_header">
+            <a class="link_header" href="../">
+                <h2>Sophie Maréchal</h2>
+            </a>
+        </div>
+        <div>
+            <a class="link_header" href="/honoraires/">
+                <h2>Honoraires</h2>
+            </a>
+        </div>
+        <div>
+            <a class="link_header" href="/contact/">
+                <h2>Contact</h2>
+            </a>
+        </div>
+    </header>
+
+    <div style="width: 100%; height: 100vh;">
+        <section className="second_section" id="competences_section">
+            <h2>Une expertise engagée</h2>
+            <div className="main_div_second_section">
+                <div className="first_div_text_second_section">
+                    <p>
+                        Sophie Maréchal est titulaire d’un master affaires publiques obtenu à Sciences Po Paris et d’un master en droit public général obtenu à l’Université Paris-I Panthéon Sorbonne.
+                        <br/>
+                        Après avoir été reçue au concours d’entrée de l’École des Hautes Études en Santé publique (EHESP), Sophie Maréchal est devenue directrice d’hôpital. Elle a exercé cette fonction pendant 7 ans dans plusieurs hôpitaux situés en Nouvelle-Aquitaine et dans les Hauts-de-France. 
+                        <br/>
+                        Après cette expérience professionnelle particulièrement riche et intéressante, Sophie Maréchal a souhaité devenir avocat. 
+                    </p>
+                </div>
+                <div className="seconc_div_text_second_section">
+                    <p>
+                        En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA).
+                        <br/>
+                        De janvier 2023 à juin 2024, elle a suivi la formation dispensée à l’EFB en droit public et droit des étrangers et le cursus dispensé par l’Institut de droit public des affaires en partenariat avec l’Université Paris-Saclay. 
+                        <br/>
+                        Lauréate du certificat d’aptitude à la profession d’avocat, elle a prêté serment en 2024. 
+                        <br/>
+                        Elle travaille en français, anglais et allemand. Elle défend les intérêts de ses clients sur l’ensemble du territoire national. 
+                    </p>
+                </div>
+                <div className="parc_monceau"></div>
+                <div className="background_image_place_etoile_second_bottom"></div>
+
+                <section className="third_section">
+                    <h2>Ses domaine d'interventions</h2>
+                    <div className="main_div_third_section">
+                        <div className="first_div_text_third_section">
+                            <p>
+                                Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de la fonction publique, droit de l’urbanisme et de la commande publique, droit des étrangers, droit public et droit de la consommation.
+                            </p>
+                        </div>
+                        <div className="seconc_div_text_third_section">
+                            <p>
+                                Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. 
+                            </p>
+                        </div>
+                    </div>
+                    <div className="paris_ruelle"></div>
+                </section>
+            </div>
+        </section>
+    </div>
+    <script>
+        const mouseCursor = document.querySelector('.cursor');
+        const links = document.querySelectorAll('a');
+
+        const handleMouseMove = (e) => {
+            if (mouseCursor) {
+                mouseCursor.style.top = `${e.pageY}px`;
+                mouseCursor.style.left = `${e.pageX}px`;
+            }
+        };
+
+        const handleLinkHover = () => {
+            if (mouseCursor) mouseCursor.classList.add('link-hover');
+        };
+
+        const handleLinkLeave = () => {
+            if (mouseCursor) mouseCursor.classList.remove('link-hover');
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+        links.forEach(link => {
+            link.addEventListener('mouseenter', handleLinkHover);
+            link.addEventListener('mouseleave', handleLinkLeave);
+        });
+
+        function cleanupEvents() {
+            window.removeEventListener('mousemove', handleMouseMove);
+            links.forEach(link => {
+                link.removeEventListener('mouseenter', handleLinkHover);
+                link.removeEventListener('mouseleave', handleLinkLeave);
+            });
+        }
+
+    </script>
+</body>
+</html>

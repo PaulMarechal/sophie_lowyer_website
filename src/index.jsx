@@ -10,7 +10,7 @@ const App = () => {
         if (isMobile) {
             document.body.style.cursor = 'none';
         } else {
-            document.body.style.cursor = 'auto'; 
+            document.body.style.cursor = 'none'; 
         }
 
         return () => {

@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     flex: 2;
 }
 
-.contact_part_others_pages{
+.contact_part_others_pages, .competences_part_others_pages{
     flex: 4;
 }
 
@@ -88,7 +88,7 @@ header {
     transition: top 0.3s ease;
 }
 header.scrolled {
-    top: 1.5vh;
+    top: 0vh;
 }
 
 #contact_me{
@@ -109,7 +109,7 @@ header.scrolled {
     stroke: rgb(0, 123, 238);
 }
 
-p, ul, li{
+p, ul, li, .expertise-item span{
     /* font-family: "Courier Prime", monospace; */
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -170,19 +170,20 @@ section:nth-child(3) {
 /* Header */
 header{
     display: inline-flex;
-    width: 70%;
+    width: 100%;
     color: #fff;
     text-align: center;
-    padding: .5vh;
-    margin-left: 15%;
-    top: -6vh;
+    padding: 2vh .5vh;
+    /* margin-left: 15%; */
+    top: 0vh;
     position: fixed;
     z-index: 13;
     background: rgb(133 133 133 / 38%);
     /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(4px);
-    border-radius: 24px;
+    /* border-radius: 24px; */
+    background: linear-gradient(180deg, rgba(14, 20, 32, .5) 0%, rgba(255, 255, 255, 0) 100%);
     transition: all .7s ease-out;
 }
 
@@ -305,15 +306,15 @@ header div h2{
 }
 
 .background_image_sophie_competences{
-    width: 26vh;
-    height: 36vh;
+    width: 35vh;
+    height: 45vh;
     background-image: url(https://devxr.fr/sophie_test/Images/Sophie-M.webp);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     position: absolute;
-    left: 10%;
-    top: 11%;
+    right: 10%;
+    top: 50%;
     border-radius: 10px;
 }
 
@@ -691,6 +692,9 @@ h1 {
     color: #fff; 
 }
 
+#sophie_marechal_home_header .link_header h2{
+    font-size: 3.5vh;
+}
 .first_section{
     background: #007BEE;
 }
@@ -703,10 +707,27 @@ h1 {
     z-index: 9;
 }
 
-#first_blue_text{
+.first_section_h1_comptetences{
+    font-size: 8vh; 
+    padding: 9vh; 
+    text-align: left; 
+    word-spacing: 41px;
+    z-index: 9;
+}
+
+.first_blue_text{
     text-decoration: none;
     color: #fff;
     font-size: 12vh;
+    -webkit-text-fill-color: #e0efff;
+    -webkit-text-stroke-width: 3px;
+    background-color: transparent;
+}
+
+.first_blue_text_small{
+    text-decoration: none;
+    color: #fff;
+    font-size: 8vh;
     -webkit-text-fill-color: #e0efff;
     -webkit-text-stroke-width: 3px;
     background-color: transparent;
@@ -1053,10 +1074,7 @@ h1 {
     position: absolute;
     bottom: 20%;
     left: 50%;
-    transform: translate(-50%, 50%); /* Centrage horizontal + ajustement vertical */
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: bold;
+    transform: translate(-50%, 50%); 
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
     background: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
@@ -1089,6 +1107,13 @@ h1 {
     justify-items: center;
 }
 
+.quote_style {
+    position: relative;
+    display: inline-block; 
+    top: -5vh; 
+    left: 3vh; 
+}
+
 .expertise-item {
     position: relative;
     width: 100%;
@@ -1111,11 +1136,10 @@ h1 {
     left: 17vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: #fff;
     text-align: center;
     padding: 10px 5px;
-    font-size: 1rem;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 500;
     transition: background 0.3s ease;
 }
 
@@ -1125,5 +1149,61 @@ h1 {
 }
 
 .expertise-item:hover span {
-    background: rgba(0, 0, 0, 0.8); /* Fonce le fond au survol */
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+/* Links */
+.contact_part_others_pages, .competences_part_others_pages {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.contact_part_others_pages > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 4vh; 
+    max-width: 200px;
+}
+
+.competences_part_others_pages > div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 4vh; 
+}
+
+.contact_part_others_pages_index > div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4vh;
+    width: 40%; 
+    text-align: center;
+    margin-left: 30%;
+}
+
+.contact_part_others_pages a, .contact_part_others_pages_index a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh; 
+    height: 10vh;
+    background: #f5f5f5; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.contact_part_others_pages_index a{
+    margin: auto;
+}
+
+.contact_part_others_pages a:hover, .contact_part_others_pages_index a:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact_part_others_pages svg, .contact_part_others_pages_index svg {
+    width: 5vh; 
+    height: 5vh;
+    color: #333; 
 }

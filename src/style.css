@@ -6,6 +6,7 @@ html {
     scroll-behavior: smooth;
     scrollbar-width: thin; 
     scrollbar-color: #87ceeb transparent; 
+    user-select: none;
 }
 
 body {

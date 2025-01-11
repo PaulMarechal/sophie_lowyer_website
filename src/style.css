@@ -1076,37 +1076,54 @@ h1 {
 
 /* Honoraires page */
 .contact_part_others_pages {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
 }
 
-.contact_part_others_pages > div {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5vh; 
-    max-width: 200px; 
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    justify-items: center;
 }
 
-.contact_part_others_pages a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 14vh; 
-    height: 14vh;
-    background: #f5f5f5; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+.expertise-item {
+    position: relative;
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact_part_others_pages a:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+.expertise-item img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.contact_part_others_pages svg {
-    width: 60px; 
-    height: 60px;
-    color: #333; 
+.expertise-item span {
+    position: absolute;
+    bottom: 3vh;
+    left: 17vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.expertise-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.expertise-item:hover span {
+    background: rgba(0, 0, 0, 0.8); /* Fonce le fond au survol */
 }

@@ -109,5 +109,39 @@
 
         </section>
     </div>
+    <script>
+        const mouseCursor = document.querySelector('.cursor');
+        const links = document.querySelectorAll('a');
+
+        const handleMouseMove = (e) => {
+            if (mouseCursor) {
+                mouseCursor.style.top = `${e.pageY}px`;
+                mouseCursor.style.left = `${e.pageX}px`;
+            }
+        };
+
+        const handleLinkHover = () => {
+            if (mouseCursor) mouseCursor.classList.add('link-hover');
+        };
+
+        const handleLinkLeave = () => {
+            if (mouseCursor) mouseCursor.classList.remove('link-hover');
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+        links.forEach(link => {
+            link.addEventListener('mouseenter', handleLinkHover);
+            link.addEventListener('mouseleave', handleLinkLeave);
+        });
+
+        function cleanupEvents() {
+            window.removeEventListener('mousemove', handleMouseMove);
+            links.forEach(link => {
+                link.removeEventListener('mouseenter', handleLinkHover);
+                link.removeEventListener('mouseleave', handleLinkLeave);
+            });
+        }
+
+    </script>
 </body>
 </html>

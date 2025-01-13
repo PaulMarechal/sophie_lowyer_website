@@ -134,8 +134,8 @@ const Desktop = () => {
 
                 <section className="homepage">
                     <div className="home_text">
-                        <h1>Maitre <br /> Sophie Maréchal</h1>
-                        <h2>Avocat inscrite au barreau de Paris</h2>
+                        <h1>Sophie Maréchal</h1>
+                        <h2>Avocat inscrit au barreau de Paris</h2>
                     </div>
 
                     <div className="scroll-downs">

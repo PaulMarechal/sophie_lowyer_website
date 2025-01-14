@@ -3,6 +3,7 @@ import './style.css';
 import Header from './Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import ScrollToTop from './ScrollToTop';
 import Home from './Home.jsx';
 import APropos from './APropos.jsx';
 import Contact from './Contact.jsx';
@@ -114,6 +115,7 @@ const Desktop = () => {
             <div id="smooth-content">
                 <div className="cursor"></div>
                 <Header />
+                <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/a-propos" element={<Home />} />

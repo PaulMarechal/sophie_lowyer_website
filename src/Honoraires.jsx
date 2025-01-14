@@ -9,9 +9,9 @@ const Honoraires = () => {
                         <span>Ensemble,<br/>trouvons les réponses à vos questions</span>
 
                     </h1>
-                    <div className="background_image_sophie" ></div>
+                    {/* <div className="background_image_sophie" ></div>
                     <div className="background_image_place_etoile"></div>
-                    <div className="background_image_place_etoile_second"></div>
+                    <div className="background_image_place_etoile_second"></div> */}
                 </section>
 
                 <section className="fourth_section" id="honoraires_section">

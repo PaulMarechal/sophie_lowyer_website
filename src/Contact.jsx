@@ -10,9 +10,9 @@ const Contact = () => {
                         <span>À chaque question, <br/>une réponse adaptée.</span>
 
                     </h1>
-                    <div className="background_image_sophie" ></div>
+                    {/* <div className="background_image_sophie" ></div>
                     <div className="background_image_place_etoile"></div>
-                    <div className="background_image_place_etoile_second"></div>
+                    <div className="background_image_place_etoile_second"></div> */}
                 </section>
 
 

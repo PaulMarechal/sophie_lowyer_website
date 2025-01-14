@@ -106,12 +106,12 @@ const Desktop = () => {
                 <div className="cursor"></div>
                 <header>
                     <div>
-                        <a className="link_header" href="#a_propos_section">
+                        <a className="link_header" href="./">
                             <h2>À propos</h2>
                         </a>
                     </div>
                     <div>
-                        <a className="link_header" href="/competences/">
+                        <a className="link_header" href="./competences/">
                             <h2>Compétences</h2>
                         </a>
                     </div>
@@ -121,12 +121,12 @@ const Desktop = () => {
                         </a>
                     </div>
                     <div>
-                        <a className="link_header" href="/honoraires/">
+                        <a className="link_header" href="./honoraires/">
                             <h2>Honoraires</h2>
                         </a>
                     </div>
                     <div>
-                        <a className="link_header" href="/contact/">
+                        <a className="link_header" href="./contact/">
                             <h2>Contact</h2>
                         </a>
                     </div>

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import { BrowserView, MobileView, isMobile } from 'react-device-detect';
 import Desktop from './Desktop';
 import Mobile from './Mobile';
@@ -20,12 +21,14 @@ const App = () => {
 
     return (
         <>
-            <BrowserView>
-                <Desktop />
-            </BrowserView>
-            <MobileView>
-                <Mobile />
-            </MobileView>
+            <BrowserRouter>
+                <BrowserView>
+                    <Desktop />
+                </BrowserView>
+                <MobileView>
+                    <Mobile />
+                </MobileView>
+            </BrowserRouter>
         </>
     );
 };

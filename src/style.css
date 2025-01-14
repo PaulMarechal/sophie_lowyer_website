@@ -217,6 +217,7 @@ header div h2{
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+    top: -80px;
 }
 
 .license-details {
@@ -698,6 +699,7 @@ h1 {
 }
 .first_section{
     background: #007BEE;
+    margin-top: -80px;
 }
 
 .first_section_h1{

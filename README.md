@@ -1,3 +1,17 @@
 # sophie_lowyer_website
 
-- Place the dist mobile elem in the right folder ( only for test on my personnal server - devxr)
+Website for Sophie Maréchal Lowyer in Paris 
+
+Website realised with React 
+
+Forst install : 
+npm i 
+
+Test : 
+npm run dev
+
+Build :
+npm run build
+
+
+© Paul Maréchal 2025

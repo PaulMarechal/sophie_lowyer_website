@@ -100,10 +100,10 @@ const Home = () => {
         <section className="short-intros domaines_intervention_texte">
             <h2>Ses domaines d’intervention</h2>
             <div className="domaine_intervention_div">
-                <div>
+                <div id="first_div_intervention">
                     <p>Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de l’urbanisme, droit de la fonction publique, droit des libertés publiques et droit des étrangers. </p>
                 </div>
-                <div>
+                <div id="second_div_intervention">
                     <p>Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. </p>
                 </div>
             </div>

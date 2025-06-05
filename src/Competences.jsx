@@ -25,14 +25,30 @@ const Competences = () => {
                             <div className="main_div_fourth_section">
                                 <h2 className="title_others_pages">Une expertise engagée</h2>
                                 <p>
-                                    Sophie Maréchal est titulaire d’un master affaires publiques obtenu à Sciences Po Paris et d’un master en droit public général obtenu à l’Université Paris-I Panthéon Sorbonne.
+                                    Sophie Maréchal est titulaire d’un master affaires publiques obtenu à Sciences Po Paris et d’un master en droit public général obtenu à l’Université Paris-I Panthéon Sorbonne. 
                                     <br />
-                                    Après avoir été reçue au concours d’entrée de l’École des Hautes Études en Santé publique (EHESP), Sophie Maréchal est devenue directrice d’hôpital. Elle a exercé cette fonction pendant 7 ans dans plusieurs hôpitaux situés en Nouvelle-Aquitaine et dans les Hauts-de-France.
+                                    Après avoir été reçue au concours d’entrée de l’École des Hautes Études en Santé publique (EHESP), Sophie Maréchal est devenue directrice d’hôpital. Elle a exercé cette fonction pendant 7 ans dans plusieurs hôpitaux situés en Nouvelle-Aquitaine et dans les Hauts-de-France. 
                                 </p>
                                 <p>
-                                    En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA).
-                                    <br />
-                                    De janvier 2023 à juin 2024, elle a suivi la formation dispensée à l’EFB en droit public et droit des étrangers.
+                                    Après cette expérience professionnelle particulièrement riche, Sophie Maréchal a souhaité devenir avocat. 
+                                </p>
+                                <p>
+                                    En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA). 
+                                </p>
+                                <p>
+                                    De janvier 2023 à juin 2024, elle a suivi la formation dispensée à l’EFB en droit public et droit des étrangers. 
+                                </p>
+                                <p>
+                                    Parallèlement, elle a étudié à l’Institut de droit public des affaires (IDPA). 
+                                </p>
+                                <p>
+                                    Lauréate du certificat d’aptitude à la profession d’avocat, elle a prêté serment en 2024. 
+                                </p>
+                                <p>
+                                    Elle travaille en français, anglais et allemand. 
+                                </p>
+                                <p>
+                                    Elle défend les intérêts de ses clients sur l’ensemble du territoire national. 
                                 </p>
                             </div>
                         </div>

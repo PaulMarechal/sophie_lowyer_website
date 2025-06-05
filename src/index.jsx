@@ -21,7 +21,8 @@ const App = () => {
 
     return (
         <>
-            <BrowserRouter basename="/sophie_test">
+        {/* basename="/sophie_test" */}
+            <BrowserRouter>
                 <BrowserView>
                     <Desktop />
                 </BrowserView>

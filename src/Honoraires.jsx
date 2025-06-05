@@ -20,9 +20,8 @@ const Honoraires = () => {
                         <div className="text_part_others_pages">
                             <div className="main_div_fourth_section">
                                 <h2 className="title_others_pages">Honoraires</h2>
-                                <p>Les honoraires sont établis en tenant compte de la complexité et des spécificités de votre affaire, dans le respect des règles déontologiques de la profession d’avocat.</p>
-                                <p>Dès le début de la procédure, une convention d’honoraires claire et détaillée sera signée, vous garantissant une parfaite transparence sur les modalités financières. Cette convention définira le cadre de notre collaboration, afin de vous offrir un accompagnement juridique optimal et adapté à vos besoins.</p>
-                                <p>Notre priorité est de vous défendre avec rigueur et engagement, tout en veillant à une relation de confiance basée sur la clarté et l'écoute.</p>
+                                <p>Ses honoraires sont fixés en fonction de la complexité de l’affaire. </p>
+                                <p>Une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. </p>
                             </div>
                         </div>
 
@@ -34,10 +33,10 @@ const Honoraires = () => {
                                 <a href="mailto:sophie.marechal@avocat.fr">
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
                                 </a>
-                                <a href="tel:+01 53 43 15 34">
+                                <a href="tel:+0625550882">
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
                                 </a>
-                                <a href="http://maps.google.com/?q=Pl Charles de Gaulle, Paris" target="_blank" rel="noopener noreferrer" title="Pour me rencontrer au bureau">
+                                <a href="http://maps.google.com/?q=11 Boulevard de Sébastopol 75001 PARIS" target="_blank" rel="noopener noreferrer" title="Pour me rencontrer au bureau">
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-map-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5" /><path d="M9 4v13" /><path d="M15 7v5.5" /><path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" /><path d="M19 18v.01" /></svg>
                                 </a>
                             </div>

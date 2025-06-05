@@ -863,9 +863,12 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.5s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
-    max-width: 360px;
+    max-width: 310px;
+    height: 350px; 
+    position: relative;
+    overflow: hidden;
 }
 
 .intro-block:hover {
@@ -874,9 +877,13 @@ h1 {
 }
 
 .icon-wrapper {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
+    width: 80px;
+    height: 75px;
+    position: absolute;
+    top: 7px;
+    right: -4px;
+    background-color: transparent;
+    z-index: 1;
 }
 
 .intro-icon {
@@ -886,9 +893,13 @@ h1 {
 }
 
 .intro-block h3 {
-    font-size: 1.25rem;
     margin-bottom: 10px;
-    color: #007BEE;
+    text-align: start;
+    z-index: 1;
+
+    font-weight: 700;
+    color: #484848;
+    font-size: 1.3vw;
 }
 
 .intro-block p {
@@ -896,6 +907,7 @@ h1 {
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
+    z-index: 1;
 }
 
 .btn {
@@ -907,13 +919,14 @@ h1 {
     font-size: 0.9rem;
     font-weight: 600;
     font-family: "Lato", sans-serif;
+    z-index: 1;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.btn:hover {
+/* .btn:hover {
     background: #0056a3;
     transform: translateY(-2px);
-}
+} */
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -1131,18 +1144,17 @@ h1 {
 
 .expertise-item img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
 .expertise-item span {
     position: absolute;
-    bottom: 3vh;
-    left: 17vh;
+    bottom: 0;
+    left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
-    padding: 10px 5px;
+    padding: 15px 5px;
     color: #fff;
     font-weight: 500;
     transition: background 0.3s ease;
@@ -1211,4 +1223,74 @@ h1 {
     width: 5vh; 
     height: 5vh;
     color: #333; 
+}
+
+/* Domaine intervention */
+.domaine_intervention_div{
+    display: inline-flex; 
+}
+
+.domaine_intervention_div div{
+    flex: 1;
+}
+
+.background_hover_transparence, .background_hover_accompagnement, 
+.background_hover_competences{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    top: -10px;
+    right: -12px;
+    border-radius: 50%;
+    background: aliceblue;
+    transition: width 0.6s ease, height 0.6s ease, right 0.6s ease-out, top .6s ease-out;
+}
+
+.background_hover_competences.expanded,
+.background_hover_transparence.expanded,
+.background_hover_accompagnement.expanded {
+    right: -88px;
+    top: -64px;
+    width: 520px;
+    height: 520px;
+}
+
+.background_hover_competences, .competence_btn{
+    background-color: #00BFA6;
+    border: 2px solid #17ebcf;
+}
+
+.background_hover_transparence, .transparence_btn{
+    background-color: #FFB400;
+    border: 2px solid #ffd777;
+}
+
+.background_hover_accompagnement, .accompagnement_btn{
+    background-color: #FF6B6B;
+    border: 2px solid #fdcece;
+}
+
+.transparence_btn, .accompagnement_btn, 
+.competence_btn{
+    width: 60%;
+    margin-left: 15%;
+}
+
+.intro-block.hover-active h3,
+.intro-block.hover-active p {
+  color: #fff;
+}
+
+.intro-block.hover-active .btn {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+  transition: all 0.6s ease;
+}
+
+
+.intro-block h3,
+.intro-block p,
+.intro-block .btn {
+  transition: all 0.6s ease;
 }

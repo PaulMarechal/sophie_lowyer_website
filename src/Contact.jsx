@@ -20,9 +20,13 @@ const Contact = () => {
                     <div class="display_text_elem_others_pages_div">
                         <div class="text_part_others_pages">
                             <div class="main_div_fourth_section">
-                                <p>Besoin d’un conseil, d’une orientation, ou simplement d’échanger sur votre situation ?</p>
-                                    
-                                <p>Nous sommes là pour vous écouter et répondre à vos attentes. Ensemble, trouvons les solutions les plus adaptées à vos besoins.</p>
+                                <p>Sophie Maréchal vous reçoit sur rendez-vous au : </p>
+                                <p>
+                                    11, Boulevard de Sébastopol<br />
+                                    75 001 PARIS 
+                                </p>
+                                <p>Par téléphone : <a href="tel:+0625550882">+06 25 55 08 82</a></p>
+                                <p>Par mail : <a href="mailto:sophie.marechal@avocat.fr">sophie.marechal@avocat.fr</a></p>
                             </div>
                         </div>
 
@@ -34,10 +38,10 @@ const Contact = () => {
                                 <a href="mailto:sophie.marechal@avocat.fr">
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
                                 </a>
-                                <a href="tel:+01 53 43 15 34">
+                                <a href="tel:+0625550882">
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
                                 </a>
-                                <a href="http://maps.google.com/?q=Pl Charles de Gaulle, Paris" target="_blank" rel="noopener noreferrer" title="Pour me rencontrer au bureau">
+                                <a href="http://maps.google.com/?q=11 Boulevard de Sébastopol 75001 PARIS" target="_blank" rel="noopener noreferrer" title="Pour me rencontrer au bureau">
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5" /><path d="M9 4v13" /><path d="M15 7v5.5" /><path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" /><path d="M19 18v.01" /></svg>
                                 </a>
                             </div>

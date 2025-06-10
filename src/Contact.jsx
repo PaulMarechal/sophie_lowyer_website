@@ -1,56 +1,148 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
-    return(
-        <>
-            <div style={{width: '100%', height: '100vh'}}>
-                <section class="first_section" id="a_propos_section" style={{background: '#007BEE'}}>
-                    <h1 class="first_section_h1">
-                        
-                        <span>À chaque question, <br/>une réponse adaptée.</span>
+  const [messageSent, setMessageSent] = useState(false);
+  const [error, setError] = useState(false);
 
-                    </h1>
-                    {/* <div className="background_image_sophie" ></div>
-                    <div className="background_image_place_etoile"></div>
-                    <div className="background_image_place_etoile_second"></div> */}
-                </section>
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
 
+    try {
+      const response = await fetch('https://formspree.io/f/mjkryzyw', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
 
-                <section>
-                    <div class="display_text_elem_others_pages_div">
-                        <div class="text_part_others_pages">
-                            <div class="main_div_fourth_section">
-                                <p>Sophie Maréchal vous reçoit sur rendez-vous au : </p>
-                                <p>
-                                    11, Boulevard de Sébastopol<br />
-                                    75 001 PARIS 
-                                </p>
-                                <p>Par téléphone : <a href="tel:+0625550882">+06 25 55 08 82</a></p>
-                                <p>Par mail : <a href="mailto:sophie.marechal@avocat.fr">sophie.marechal@avocat.fr</a></p>
-                            </div>
-                        </div>
+      if (response.ok) {
+        setMessageSent(true);
+        e.target.reset();
+      } else {
+        setError(true);
+      }
+    } catch (err) {
+      setError(true);
+    }
+  };
 
-                        <div class="contact_part_others_pages">
-                            <div>
-                                <a href="https://www.linkedin.com/in/sophie-marechal-57517037/?originalSubdomain=fr">
-                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
-                                </a>
-                                <a href="mailto:sophie.marechal@avocat.fr">
-                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
-                                </a>
-                                <a href="tel:+0625550882">
-                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
-                                </a>
-                                <a href="http://maps.google.com/?q=11 Boulevard de Sébastopol 75001 PARIS" target="_blank" rel="noopener noreferrer" title="Pour me rencontrer au bureau">
-                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5" /><path d="M9 4v13" /><path d="M15 7v5.5" /><path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" /><path d="M19 18v.01" /></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+  return (
+    <>
+      <div style={{ width: '100%', minHeight: '100vh' }}>
+        <section
+          className="first_section"
+          id="a_propos_section"
+          style={{ background: '#007BEE' }}
+        >
+          <h1 className="first_section_h1">
+            <span>
+              À chaque question, <br />
+              une réponse adaptée.
+            </span>
+          </h1>
+        </section>
+
+        <section>
+          <div className="display_text_elem_others_pages_div">
+            <div className="text_part_others_pages">
+              <div className="main_div_fourth_section">
+                <p>Sophie Maréchal vous reçoit sur rendez-vous au :</p>
+                <p>
+                  11, Boulevard de Sébastopol
+                  <br />
+                  75 001 PARIS
+                </p>
+                <p>
+                  Par téléphone :{' '}
+                  <a href="tel:+0625550882">+06 25 55 08 82</a>
+                </p>
+                <p>
+                  Par mail :{' '}
+                  <a href="mailto:sophie.marechal@avocat.fr">
+                    sophie.marechal@avocat.fr
+                  </a>
+                </p>
+              </div>
             </div>
-        </>
-    )
+
+            <div className="contact_part_others_pages">
+             
+
+
+                    <div style={{ marginTop: '2rem', maxWidth: '500px' }}>
+                    {messageSent ? (
+                        <p style={{ color: 'green' }}>
+                        Merci, je vous recontacte très vite !
+                        </p>
+                    ) : (
+                        <form onSubmit={handleSubmit}>
+                        <label>
+                            Nom :
+                            <input
+                            type="text"
+                            name="nom"
+                            style={{ width: '100%', marginBottom: '1rem' }}
+                            />
+                        </label>
+                        <label>
+                            Téléphone :
+                            <input
+                            type="tel"
+                            name="telephone"
+                            style={{ width: '100%', marginBottom: '1rem' }}
+                            />
+                        </label>
+                        <label>
+                            Email :
+                            <input
+                            type="email"
+                            name="email"
+                            style={{ width: '100%', marginBottom: '1rem' }}
+                            />
+                        </label>
+                        <label>
+                            Objet de la demande :
+                            <input
+                            type="text"
+                            name="objet"
+                            style={{ width: '100%', marginBottom: '1rem' }}
+                            />
+                        </label>
+                        <label>
+                            Message (facultatif) :
+                            <textarea
+                            name="message"
+                            rows="4"
+                            style={{ width: '100%', marginBottom: '1rem' }}
+                            />
+                        </label>
+                        <label style={{ display: 'block', marginBottom: '1rem' }}>
+                            <input
+                            type="checkbox"
+                            name="souhaite_etre_rappele"
+                            value="Oui"
+                            style={{ marginRight: '0.5rem' }}
+                            />
+                            Je souhaite être rappelé(e)
+                        </label>
+                        <button type="submit">Envoyer</button>
+                        </form>
+                    )}
+                    {error && (
+                        <p style={{ color: 'red' }}>
+                        Une erreur est survenue. Veuillez réessayer plus tard.
+                        </p>
+                    )}
+                    </div>
+                </div>
+            </div>
+
+        </section>
+      </div>
+    </>
+  );
 };
 
 export default Contact;

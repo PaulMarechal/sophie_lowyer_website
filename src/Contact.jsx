@@ -5,28 +5,28 @@ const Contact = () => {
   const [error, setError] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
+        e.preventDefault();
+        const formData = new FormData(e.target);
 
-    try {
-      const response = await fetch('https://formspree.io/f/mjkryzyw', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          Accept: 'application/json',
-        },
-      });
+        try {
+            const response = await fetch('https://formspree.io/f/mjkryzyw', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    Accept: 'application/json',
+                },
+            });
 
-      if (response.ok) {
-        setMessageSent(true);
-        e.target.reset();
-      } else {
-        setError(true);
-      }
-    } catch (err) {
-      setError(true);
-    }
-  };
+            if (response.ok) {
+                setMessageSent(true);
+                e.target.reset();
+            } else {
+                setError(true);
+            }
+        } catch (err) {
+            setError(true);
+        }
+    };
 
   return (
     <>
@@ -71,12 +71,10 @@ const Contact = () => {
                 <div className="contact_form_second_div">
                     {messageSent ? (
                         <p id="merci_text">
-                        Merci, <br/>je vous recontacte très vite !
+                            Merci, <br/>je vous recontacte très vite !
                         </p>
                     ) : (
                         <form onSubmit={handleSubmit}>
-
-
                             <div className="parent_contact_form">
                                 <div className="name_contact_div">
                                     <label>
@@ -148,7 +146,7 @@ const Contact = () => {
                     )}
                     {error && (
                         <p style={{ color: 'red' }}>
-                        Une erreur est survenue. Veuillez réessayer plus tard.
+                            Une erreur est survenue. Veuillez réessayer plus tard.
                         </p>
                     )}
                     </div>

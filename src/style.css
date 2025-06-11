@@ -332,7 +332,7 @@ header div h2{
 .background_image_sophie{
     width: 26vh;
     height: 39vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/Sophie-M.webp);
+    background-image: url(https://devxr.fr/sophie_test/Images/Sophie_Marechal.webp);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -344,7 +344,7 @@ header div h2{
 .background_image_sophie_competences{
     width: 30vh;
     height: 45vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/Sophie-M.webp);
+    background-image: url(https://devxr.fr/sophie_test/Images/Sophie_Marechal.webp);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -382,7 +382,7 @@ header div h2{
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    top: 65vh;
+    top: 77vh;
     position: absolute;
     right: 0vh;
     background-image: url(https://devxr.fr/sophie_test/Images/arc_de_triomphe_fourth.jpg);

@@ -68,11 +68,10 @@ const Contact = () => {
             </div>
 
             <div className="contact_div_form">
-
-                    <div className="contact_form_second_div">
+                <div className="contact_form_second_div">
                     {messageSent ? (
-                        <p style={{ color: 'green' }}>
-                        Merci, je vous recontacte très vite !
+                        <p id="merci_text">
+                        Merci, <br/>je vous recontacte très vite !
                         </p>
                     ) : (
                         <form onSubmit={handleSubmit}>
@@ -132,6 +131,7 @@ const Contact = () => {
                                 <div className="contact_me_btn_div">
                                     <label style={{ display: 'block', marginBottom: '1rem' }}>
                                         <input
+                                            className="ui-checkbox"
                                             type="checkbox"
                                             name="souhaite_etre_rappele"
                                             value="Oui"
@@ -154,7 +154,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-
         </section>
       </div>
     </>

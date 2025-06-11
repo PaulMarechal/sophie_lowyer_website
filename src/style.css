@@ -1388,6 +1388,14 @@ h1 {
     color: #fff;
     font-weight: 300;
     font-size: 1vw;
+    box-shadow: 0px 0px 15px 2px #b1b0b0; 
+    transition: background .5s ease-out, color .5s ease-out, box-shadow .5s ease-out;
+}
+
+.button_contact_div button:hover{
+    background: #fff;
+    color: #333333;
+    box-shadow: 0px 0px 9px 0px #b1b0b0;
 }
 
 .parent_contact_form label{
@@ -1400,3 +1408,7 @@ h1 {
 .name_contact_div {
     width: 100%;
 } 
+
+#merci_text{
+    font-size: 20px;
+}

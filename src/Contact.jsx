@@ -67,9 +67,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="contact_part_others_pages">
-             
-
+            <div className="contact_div_form">
 
                     <div style={{ marginTop: '2rem', maxWidth: '500px' }}>
                     {messageSent ? (
@@ -78,56 +76,74 @@ const Contact = () => {
                         </p>
                     ) : (
                         <form onSubmit={handleSubmit}>
-                        <label>
-                            Nom :
-                            <input
-                            type="text"
-                            name="nom"
-                            style={{ width: '100%', marginBottom: '1rem' }}
-                            />
-                        </label>
-                        <label>
-                            Téléphone :
-                            <input
-                            type="tel"
-                            name="telephone"
-                            style={{ width: '100%', marginBottom: '1rem' }}
-                            />
-                        </label>
-                        <label>
-                            Email :
-                            <input
-                            type="email"
-                            name="email"
-                            style={{ width: '100%', marginBottom: '1rem' }}
-                            />
-                        </label>
-                        <label>
-                            Objet de la demande :
-                            <input
-                            type="text"
-                            name="objet"
-                            style={{ width: '100%', marginBottom: '1rem' }}
-                            />
-                        </label>
-                        <label>
-                            Message (facultatif) :
-                            <textarea
-                            name="message"
-                            rows="4"
-                            style={{ width: '100%', marginBottom: '1rem' }}
-                            />
-                        </label>
-                        <label style={{ display: 'block', marginBottom: '1rem' }}>
-                            <input
-                            type="checkbox"
-                            name="souhaite_etre_rappele"
-                            value="Oui"
-                            style={{ marginRight: '0.5rem' }}
-                            />
-                            Je souhaite être rappelé(e)
-                        </label>
-                        <button type="submit">Envoyer</button>
+
+
+                            <div className="parent_contact_form">
+                                <div className="name_contact_div">
+                                    <label>
+                                        <input
+                                            type="text"
+                                            name="nom"
+                                            placeholder="Nom Prénom"
+                                            style={{ width: '100%', marginBottom: '1rem' }}
+                                        />
+                                    </label>
+                                </div>
+                                <div className="tel_contact_div">
+                                    <label>
+                                        <input
+                                            type="tel"
+                                            name="telephone"
+                                            placeholder="Téléphone"
+                                            style={{ width: '100%', marginBottom: '1rem' }}
+                                        />
+                                    </label>
+                                </div>
+                                <div className="email_contact_div">
+                                    <label>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            placeholder="Email"
+                                            style={{ width: '100%', marginBottom: '1rem' }}
+                                        />
+                                    </label>
+                                </div>
+                                <div className="objet_contact_div">
+                                    <label>
+                                        <input
+                                            type="text"
+                                            name="objet"
+                                            placeholder="Objet de la demande"
+                                            style={{ width: '100%', marginBottom: '1rem' }}
+                                        />
+                                    </label>
+                                </div>
+                                <div className="message_contact_div">
+                                    <label>
+                                        <textarea
+                                            name="message"
+                                            rows="4"
+                                            placeholder="Message ( facultatif )"
+                                            style={{ width: '100%', marginBottom: '1rem' }}
+                                        />
+                                    </label>
+                                </div>
+                                <div className="contact_me_btn_div">
+                                    <label style={{ display: 'block', marginBottom: '1rem' }}>
+                                        <input
+                                            type="checkbox"
+                                            name="souhaite_etre_rappele"
+                                            value="Oui"
+                                            style={{ marginRight: '0.5rem' }}
+                                        />
+                                        Je souhaite être rappelé(e)
+                                    </label>
+                                </div>
+                                <div className="button_contact_div">
+                                    <button type="submit">Envoyer</button>
+                                </div>
+                            </div>
                         </form>
                     )}
                     {error && (

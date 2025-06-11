@@ -73,12 +73,12 @@ const Competences = () => {
                                     <span>Droit des étrangers</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/droit_libertes_publiques.webp" alt="Droit des libertés public" />
-                                    <span>Droit des libertés public</span>
+                                    <img src="https://devxr.fr/sophie_test/Images/droit_libertes_publiques.webp" alt="Droit des libertés publiques" />
+                                    <span>Droit des libertés publiques</span>
                                 </div>
                                 <div className="expertise-item">
                                     <img src="https://devxr.fr/sophie_test/Images/droit_public_general.webp" alt="Droit public general" />
-                                    <span>Droit public general</span>
+                                    <span>Droit public général</span>
                                 </div>
                             </div>
                         </div>

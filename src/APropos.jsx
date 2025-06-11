@@ -57,12 +57,12 @@ const APropos = () => {
                                     <span>Droit des étrangers</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/droit_libertes_publiques.webp" alt="Droit public" />
-                                    <span>Droit des libertés public</span>
+                                    <img src="https://devxr.fr/sophie_test/Images/droit_libertes_publiques.webp" alt="Droit des libertes publiques" />
+                                    <span>Droit des libertés publiques</span>
                                 </div>
                                 <div className="expertise-item">
                                     <img src="https://devxr.fr/sophie_test/Images/droit_public_general.webp" alt="Droit de la consommation" />
-                                    <span>Droit public general</span>
+                                    <span>Droit public général</span>
                                 </div>
                             </div>
                         </div>

@@ -79,7 +79,7 @@ const Home = () => {
             <h1 className="first_section_h1">
                 <span>Avocate en <br/></span>
                 <span>
-                    <span className="first_blue_text">droit</span> de la <span className="animate-word">santé</span> <br/>et droit <span className="animate-word">public</span>
+                    <span className="first_blue_text">droit</span> <span className="animate-word">public </span> <br/> {/*  et droit <span className="animate-word">public</span> */}
                 </span>
                 <span> inscrite au barreau de Paris.</span><br/>
                 <span id="expetise_text">Une expertise</span><br/>

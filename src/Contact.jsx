@@ -69,7 +69,7 @@ const Contact = () => {
 
             <div className="contact_div_form">
 
-                    <div style={{ marginTop: '2rem', maxWidth: '500px' }}>
+                    <div className="contact_form_second_div">
                     {messageSent ? (
                         <p style={{ color: 'green' }}>
                         Merci, je vous recontacte très vite !

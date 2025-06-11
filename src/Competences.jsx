@@ -74,11 +74,11 @@ const Competences = () => {
                                 </div>
                                 <div className="expertise-item">
                                     <img src="https://devxr.fr/sophie_test/Images/droit_libertes_publiques.webp" alt="Droit des libertés public" />
-                                    <span>Droit public</span>
+                                    <span>Droit des libertés public</span>
                                 </div>
                                 <div className="expertise-item">
                                     <img src="https://devxr.fr/sophie_test/Images/droit_public_general.webp" alt="Droit public general" />
-                                    <span>Droit de la consommation</span>
+                                    <span>Droit public general</span>
                                 </div>
                             </div>
                         </div>

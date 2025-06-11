@@ -41,28 +41,28 @@ const APropos = () => {
                         
                             <div className="expertise-grid">
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/droit_public.jpg" alt="Droit de la fonction publique" />
+                                    <img src="https://devxr.fr/sophie_test/Images/droit_public.webp" alt="Droit de la fonction publique" />
                                     <span>Droit de la fonction publique</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/droit_urbanisme.jpg" alt="Droit de l’urbanisme" />
+                                    <img src="https://devxr.fr/sophie_test/Images/droit_urbanisme.webp" alt="Droit de l’urbanisme" />
                                     <span>Droit de l’urbanisme</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/commande_public.jpg" alt="Droit de la commande publique" />
+                                    <img src="https://devxr.fr/sophie_test/Images/commande_public.webp" alt="Droit de la commande publique" />
                                     <span>Droit de la commande publique</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/passeport.jpg" alt="Droit des étrangers" />
+                                    <img src="https://devxr.fr/sophie_test/Images/droit_etrangers.webp" alt="Droit des étrangers" />
                                     <span>Droit des étrangers</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/tribunal.jpg" alt="Droit public" />
-                                    <span>Droit public</span>
+                                    <img src="https://devxr.fr/sophie_test/Images/droit_libertes_publiques.webp" alt="Droit public" />
+                                    <span>Droit des libertés public</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/consommation.jpg" alt="Droit de la consommation" />
-                                    <span>Droit de la consommation</span>
+                                    <img src="https://devxr.fr/sophie_test/Images/droit_public_general.webp" alt="Droit de la consommation" />
+                                    <span>Droit public general</span>
                                 </div>
                             </div>
                         </div>

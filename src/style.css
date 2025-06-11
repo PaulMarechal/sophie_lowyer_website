@@ -1277,11 +1277,11 @@ h1 {
     position: absolute;
     height: 90px;
     width: 90px;
-    top: -10px;
-    right: -12px;
+    top: -14px;
+    right: -16px;
     border-radius: 50%;
     background: aliceblue;
-    transition: width 0.6s ease, height 0.6s ease, right 0.6s ease-out, top .6s ease-out;
+    transition: width 0.6s ease, height 0.6s ease, right 0.3s ease-out, top .3s ease-out;
 }
 
 .background_hover_competences.expanded,
@@ -1294,18 +1294,18 @@ h1 {
 }
 
 .background_hover_competences, .competence_btn{
-    background-color: #00BFA6;
-    border: 2px solid #17ebcf;
+    background-color: rgba(0, 128, 128, 0.45);
+    border: 2px solid #008080;
 }
 
 .background_hover_transparence, .transparence_btn{
-    background-color: #FFB400;
-    border: 2px solid #ffd777;
+    background-color: rgba(255, 193, 7, 0.45);
+    border: 2px solid #FFC107;
 }
 
 .background_hover_accompagnement, .accompagnement_btn{
-    background-color: #FF6B6B;
-    border: 2px solid #fdcece;
+    background-color: rgba(244, 67, 54, 0.45);
+    border: 2px solid #F44336;
 }
 
 .transparence_btn, .accompagnement_btn, 

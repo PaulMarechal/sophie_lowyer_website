@@ -1299,8 +1299,8 @@ h1 {
 }
 
 .background_hover_transparence, .transparence_btn{
-    background-color: rgba(255, 193, 7, 0.45);
-    border: 2px solid #FFC107;
+    background-color: rgb(24 124 255 / 57%);
+    border: 2px solid rgb(24 124 255 / 88%);
 }
 
 .background_hover_accompagnement, .accompagnement_btn{

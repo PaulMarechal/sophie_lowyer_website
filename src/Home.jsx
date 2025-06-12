@@ -117,7 +117,7 @@ const Home = () => {
                 <div className="background_hover_competences"></div>
                 <h3>Des compétences<br/>diversifiées</h3>
                 <p>Droit de la santé, droit public, urbanisme, fonction publique, et bien plus. Maître Sophie Maréchal met son expertise à votre service avec rigueur et détermination.</p>
-                <a href="/competences/" className="btn competence_btn">En savoir plus</a>
+                <a href="/competences" className="btn competence_btn">En savoir plus</a>
             </div>
             <div className="intro-block">
                 <div className="icon-wrapper">
@@ -126,7 +126,7 @@ const Home = () => {
                 <div className="background_hover_transparence"></div>
                 <h3>Une transparence<br/>totale</h3>
                 <p>Chaque situation est unique : les honoraires sont définis avec précision et formalisés dans une convention claire dès le début de notre collaboration.</p>
-                <a href="/honoraires/" className="btn transparence_btn">Voir les détails</a>
+                <a href="/honoraires" className="btn transparence_btn">Voir les détails</a>
             </div>
             <div className="intro-block">
                 <div className="icon-wrapper">
@@ -135,7 +135,7 @@ const Home = () => {
                 <div className="background_hover_accompagnement"></div>
                 <h3>Un accompagnement<br/>humain</h3>
                 <p>Prenez rendez-vous pour échanger sur votre situation. Que ce soit par téléphone, e-mail ou en personne, je suis là pour vous conseiller.</p>
-                <a href="/contact/" className="btn accompagnement_btn">Contactez-moi</a>
+                <a href="/contact" className="btn accompagnement_btn">Contactez-moi</a>
             </div>
         </section>
 

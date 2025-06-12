@@ -1,15 +1,17 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # Redirection HTTPS
     RewriteCond %{HTTPS} off
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    RewriteBase /sophie_test/
+    # Base du site (racine)
+    RewriteBase /
 
+    # SPA fallback (React routing)
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-
-    RewriteRule ^ index.html [L]
+    RewriteRule . /index.html [L]
 </IfModule>
 
 <IfModule mod_expires.c>

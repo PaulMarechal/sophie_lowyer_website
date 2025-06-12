@@ -247,7 +247,7 @@ header div h2{
     overflow: hidden;
     padding: 0;
 
-    background-image: url("https://devxr.fr/sophie_test/Images/Palais-de-justice-de-Paris.webp"); 
+    background-image: url("https://sophiemarechal-avocat.fr/Images/Palais-de-justice-de-Paris.webp"); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -332,7 +332,7 @@ header div h2{
 .background_image_sophie{
     width: 26vh;
     height: 39vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/Sophie_Marechal.webp);
+    background-image: url(https://sophiemarechal-avocat.fr/Images/Sophie_Marechal.webp);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -344,7 +344,7 @@ header div h2{
 .background_image_sophie_competences{
     width: 30vh;
     height: 45vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/Sophie_Marechal.webp);
+    background-image: url(https://sophiemarechal-avocat.fr/Images/Sophie_Marechal.webp);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -363,7 +363,7 @@ header div h2{
     top: 76vh;
     position: absolute;
     left: 15vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-paris.webp);
+    background-image: url(https://sophiemarechal-avocat.fr/Images/sophie-marechal-avocat-paris.webp);
 }
 
 .icon_bottom_page{
@@ -385,7 +385,7 @@ header div h2{
     top: 77vh;
     position: absolute;
     right: 0vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-arc_de_triomphe.webp);
+    background-image: url(https://sophiemarechal-avocat.fr/Images/sophie-marechal-avocat-arc_de_triomphe.webp);
 }
 
 .parc_monceau{
@@ -397,7 +397,7 @@ header div h2{
     top: 35vh;
     position: absolute;
     left: 0vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-paris-parc-monceau.webp);
+    background-image: url(https://sophiemarechal-avocat.fr/Images/sophie-marechal-avocat-paris-parc-monceau.webp);
 }
 
 .parc_monceau_home {
@@ -409,7 +409,7 @@ header div h2{
     top: 300vh;
     position: absolute;
     left: 0vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-paris-parc-monceau.webp);
+    background-image: url(https://sophiemarechal-avocat.fr/Images/sophie-marechal-avocat-paris-parc-monceau.webp);
 }
 
 .paris_ruelle{
@@ -421,7 +421,7 @@ header div h2{
     top: 46vh;
     position: absolute;
     left: 184vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-paris-droit-public.webp);
+    background-image: url(https://sophiemarechal-avocat.fr/Images/sophie-marechal-avocat-paris-droit-public.webp);
 }
 
 .paris_monument, .paris_monument_home{
@@ -433,7 +433,7 @@ header div h2{
     top: 0vh;
     position: absolute;
     right: 2vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-paris-droit-urbanisme.webp);
+    background-image: url(https://sophiemarechal-avocat.fr/Images/sophie-marechal-avocat-paris-droit-urbanisme.webp);
 }
 
 .paris_monument_home{
@@ -742,6 +742,7 @@ h1 {
     text-align: left; 
     word-spacing: 41px;
     z-index: 9;
+    position: relative;
 }
 
 .first_section_h1_comptetences{

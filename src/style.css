@@ -363,7 +363,7 @@ header div h2{
     top: 76vh;
     position: absolute;
     left: 15vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/unnamed.jpg);
+    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-paris.webp);
 }
 
 .icon_bottom_page{
@@ -385,7 +385,7 @@ header div h2{
     top: 77vh;
     position: absolute;
     right: 0vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/arc_de_triomphe_fourth.jpg);
+    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-arc_de_triomphe.webp);
 }
 
 .parc_monceau{
@@ -397,7 +397,7 @@ header div h2{
     top: 35vh;
     position: absolute;
     left: 0vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/parc_monceau.jpg);
+    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-paris-parc-monceau.webp);
 }
 
 .parc_monceau_home {
@@ -409,7 +409,7 @@ header div h2{
     top: 300vh;
     position: absolute;
     left: 0vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/parc_monceau.jpg);
+    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-paris-parc-monceau.webp);
 }
 
 .paris_ruelle{
@@ -421,7 +421,7 @@ header div h2{
     top: 46vh;
     position: absolute;
     left: 184vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/paris_ruelle.jpg);
+    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-paris-droit-public.webp);
 }
 
 .paris_monument, .paris_monument_home{
@@ -433,7 +433,7 @@ header div h2{
     top: 0vh;
     position: absolute;
     right: 2vh;
-    background-image: url(https://devxr.fr/sophie_test/Images/paris_monument.jpg);
+    background-image: url(https://devxr.fr/sophie_test/Images/sophie-marechal-avocat-paris-droit-urbanisme.webp);
 }
 
 .paris_monument_home{
@@ -882,7 +882,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    margin: 40px auto;
+    margin: 150px auto;
     padding: 20px;
     max-width: 1200px;
     text-align: center;

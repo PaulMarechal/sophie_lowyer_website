@@ -101,10 +101,24 @@ const Home = () => {
             <h2>Ses domaines d’intervention</h2>
             <div className="domaine_intervention_div">
                 <div id="first_div_intervention">
-                    <p>Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de l’urbanisme, droit de la fonction publique, droit des libertés publiques et droit des étrangers. </p>
+                    <p>
+                        Forte de son expérience, Maître Sophie Maréchal intervient en <strong>droit de la fonction publique</strong>, accompagnant aussi bien agents que collectivités dans leurs procédures administratives et contentieuses.
+                        Elle apporte également son expertise en <strong>droit de l’urbanisme</strong> pour sécuriser vos projets d’aménagement urbain et répondre aux enjeux réglementaires.
+                    </p>
+                    <p>
+                        En tant que spécialiste du <strong>droit de la commande publique</strong>, elle conseille et assiste ses clients lors de la passation, l’exécution et le contentieux des marchés publics et des contrats administratifs.
+                    </p>                
                 </div>
                 <div id="second_div_intervention">
-                    <p>Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. </p>
+                    <p>
+                        Maître Maréchal intervient en <strong>droit des étrangers</strong> pour le dépôt de titres de séjour, demandes d’asile et recours devant le tribunal administratif, garantissant une défense personnalisée.
+                    </p>
+                    <p>
+                        Passionnée par les <strong>droits et libertés publiques</strong>, elle défend vos droits fondamentaux et assure un accompagnement complet en <strong>droit public général</strong>, qu’il s’agisse de droit institutionnel, fiscal ou environnemental.
+                    </p>
+                    <p>
+                        Grâce à une approche pragmatique et humaine, Maître Maréchal propose des solutions claires et adaptées à chaque situation.
+                    </p>                
                 </div>
             </div>
         </section>

@@ -9,6 +9,9 @@ import APropos from './APropos.jsx';
 import Contact from './Contact.jsx';
 import Competences from './Competences.jsx';
 import Honoraires from './Honoraires.jsx'; 
+import Confidentialite from './Confidentialite.jsx'
+import Mentions_legales from './Mentions-legales.jsx'
+
 
 
 const Desktop = () => {
@@ -122,6 +125,8 @@ const Desktop = () => {
                     <Route path="/competences" element={<Competences />} />
                     <Route path="/honoraires" element={<Honoraires />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/confidentialite" element={<Confidentialite />} />
+                    <Route path="/mentions-legales" element={<Mentions_legales />} />
                 </Routes>
             </div>
         </div>

@@ -38,6 +38,15 @@ h1, h2, h3, h4, h5, h6 {
     left: 3vh;
 }
 
+.title_mentions_legales{
+    font-size: 4.5vh;
+}
+
+.mentions_legales_div a{
+    text-decoration: none;
+    color: #333;
+}
+
 .display_text_elem_others_pages_div{
     display: flex;
 }
@@ -47,6 +56,14 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     margin: auto;
+}
+
+.mentions_legales{
+    flex: 6!important;
+}
+
+.contact_part_others_pages_mentions_legales{
+    flex: 2!important;
 }
 
 .contact_form_second_div{
@@ -119,7 +136,18 @@ header.scrolled {
     stroke: rgb(0, 123, 238);
 }
 
-p, ul, li, .expertise-item span, label, button{
+#contact_me a{
+    text-decoration: none; 
+    color: #4e4e4e;
+    margin: 13px 0;
+}
+
+#contact_me div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+p, ul, li, .expertise-item span, label, button, #contact_me a{
     /* font-family: "Courier Prime", monospace; */
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -1413,3 +1441,4 @@ h1 {
 #merci_text{
     font-size: 20px;
 }
+

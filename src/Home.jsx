@@ -182,21 +182,23 @@ const Home = () => {
         <footer>
             <div id="contact_me">
                 <div>
-                    <p>© 2024 Sophie Maréchal</p>
+                    <p>© 2025 Sophie Maréchal</p>
                 </div>
                 <div>
                     <p> - </p>
                 </div>
                 <div>
-                    <p>
-                    Mentions légales
-                    </p>
+                    <a href="/mentions-legales">
+                        Mentions légales
+                    </a>
                 </div>
                 <div>
                     <p> - </p>
                 </div>
                 <div>
-                    <p>Politique de confidentialité</p>
+                    <a href="/confidentialite">
+                        Politique de confidentialité
+                    </a>
                 </div>
             </div>
         </footer>

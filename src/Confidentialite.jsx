@@ -6,8 +6,7 @@ const Honoraires = () => {
             <div style={{width: '100%', height: '100vh'}}>
                 <section className="first_section" id="a_propos_section" style={{background: '#007BEE'}}>
                     <h1 className="first_section_h1">
-                        <span>Ensemble,<br/>trouvons les réponses à vos questions</span>
-
+                        Confidentialité
                     </h1>
                     {/* <div className="background_image_sophie" ></div>
                     <div className="background_image_place_etoile"></div>
@@ -19,9 +18,9 @@ const Honoraires = () => {
                     <div className="display_text_elem_others_pages_div">
                         <div className="text_part_others_pages">
                             <div className="main_div_fourth_section">
-                                <h2 className="title_others_pages">Honoraires</h2>
-                                <p>Ses honoraires sont fixés en fonction de la complexité de l’affaire. </p>
-                                <p>Une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. </p>
+                                <h2 className="title_others_pages"></h2>
+                                <p></p>
+                                <p></p>
                             </div>
                         </div>
 

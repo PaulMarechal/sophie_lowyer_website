@@ -18,9 +18,25 @@ const Honoraires = () => {
                     <div className="display_text_elem_others_pages_div">
                         <div className="text_part_others_pages">
                             <div className="main_div_fourth_section">
-                                <h2 className="title_others_pages"></h2>
-                                <p></p>
-                                <p></p>
+                                <h2 className="title_others_pages">Politique de confidentialité </h2>
+                                <p>Le Cabinet d'Avocats Sophie Maréchal EI s'engage à protéger la confidentialité des données à caractère personnel de ses utilisateurs conformément aux dispositions du Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel (RGPD) et aux autres législations applicables en matière de traitement de Données Personnelles.</p>
+                                <p>Le Cabinet d'Avocats Sophie Maréchal EI met en œuvre des traitements de données à caractère personnel qui ont pour base juridique l'intérêt légitime poursuivi par le Cabinet lorsqu'il poursuit les finalités suivantes : </p>
+                                <ul>
+                                    <li>La prospection</li>
+                                    <li>La gestion de la relation avec ses clients et prospects</li>
+                                    <li>L'organisation, l'inscription et l'invitation à des événements du Cabinet</li>
+                                    <li>L'exécution de mesures précontractuelles ou contractuelles directement avec le Cabinet</li>
+                                    <li>Le traitement, l'exécution, la prospection, la production, la gestion, le suivi des demandes et des dossiers des clients</li>
+                                    <li>La rédaction d'actes pour le compte de ses clients</li>
+                                    <li>Le respect d'obligations légales et réglementaires lorsqu'il met en œuvre un traitement ayant pour finalité</li>
+                                    <li>La prévention du blanchiment et du financement du terrorisme et la lutte contre la corruption</li>
+                                    <li>La facturation</li>
+                                    <li>La comptabilité</li>
+                                </ul>
+                                <p>Le Cabinet d'Avocats Sophie Maréchal EI ne conserve les données que pour la durée nécessaire aux opérations pour lesquelles elles ont été collectées ainsi que dans le respect de la réglementation en vigueur. À cet égard, les données des clients sont conservées pendant la durée des relations contractuelles augmentée de 3 ans à des fins d'animation et prospection, sans préjudice des obligations de conservation ou des délais de prescription. En matière de prévention du blanchiment et du financement du terrorisme, les données sont conservées 5 ans après la fin des relations. En matière de comptabilité, elles sont conservées 10 ans à compter de la clôture de l'exercice comptable. Les données des prospects sont conservées pendant une durée de 3 ans si aucune participation ou inscription aux événements n'a eu lieu.</p>
+                                <p>Les personnes concernées par les traitements mis en œuvre disposent également d'un droit de s'opposer à tout moment, pour des raisons tenant à leur situation particulière, à un traitement des données à caractère personnel, ainsi que d'un droit d'accès, de rectification, de limitation, de portabilité et d'effacement de leurs données conformément aux dispositions du RGPD.</p>
+                                <p>Pour exercer ces droits, les utilisateurs peuvent contacter le Cabinet d'Avocats Sophie Maréchal EI à l'adresse suivante : <a href="mailto:sophie.marechal@avocat.fr">sophie.marechal@avocat.fr</a></p>
+                                <p>En cas de modification de la présente politique de confidentialité, le Cabinet d'Avocats Sophie Maréchal EI s'engage à en informer ses utilisateurs par tout moyen approprié.</p>
                             </div>
                         </div>
 

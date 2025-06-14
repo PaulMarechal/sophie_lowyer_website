@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-  const [messageSent, setMessageSent] = useState(false);
-  const [error, setError] = useState(false);
+    const [messageSent, setMessageSent] = useState(false);
+    const [error, setError] = useState(false);
 
-  const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
 

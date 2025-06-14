@@ -48,6 +48,33 @@ const Mobile = () => {
         return () => clearInterval(interval);
     }, []);
 
+        const [messageSent, setMessageSent] = useState(false);
+    const [error, setError] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+
+        try {
+            const response = await fetch('https://formspree.io/f/mjkryzyw', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    Accept: 'application/json',
+                },
+            });
+
+            if (response.ok) {
+                setMessageSent(true);
+                e.target.reset();
+            } else {
+                setError(true);
+            }
+        } catch (err) {
+            setError(true);
+        }
+    };
+
     return(
         <div id="smooth-wrapper">
             <div id="smooth-content">
@@ -154,6 +181,92 @@ const Mobile = () => {
                         </div>
                     </div>
                     <div className="paris_monument"></div>
+                </section>
+
+                <section>
+                    <div className="contact_form_second_div">
+                        {messageSent ? (
+                            <p id="merci_text">
+                                Merci, <br/>je vous recontacte très vite !
+                            </p>
+                        ) : (
+                            <form onSubmit={handleSubmit}>
+                                <div className="parent_contact_form">
+                                    <div className="name_contact_div">
+                                        <label>
+                                            <input
+                                                type="text"
+                                                name="nom"
+                                                placeholder="Nom Prénom"
+                                                style={{ width: '100%', marginBottom: '1rem' }}
+                                            />
+                                        </label>
+                                    </div>
+                                    <div className="tel_contact_div">
+                                        <label>
+                                            <input
+                                                type="tel"
+                                                name="telephone"
+                                                placeholder="Téléphone"
+                                                style={{ width: '100%', marginBottom: '1rem' }}
+                                            />
+                                        </label>
+                                    </div>
+                                    <div className="email_contact_div">
+                                        <label>
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                placeholder="Email"
+                                                style={{ width: '100%', marginBottom: '1rem' }}
+                                            />
+                                        </label>
+                                    </div>
+                                    <div className="objet_contact_div">
+                                        <label>
+                                            <input
+                                                type="text"
+                                                name="objet"
+                                                placeholder="Objet de la demande"
+                                                style={{ width: '100%', marginBottom: '1rem' }}
+                                            />
+                                        </label>
+                                    </div>
+                                    <div className="message_contact_div">
+                                        <label>
+                                            <textarea
+                                                name="message"
+                                                rows="4"
+                                                placeholder="Message ( facultatif )"
+                                                style={{ width: '100%', marginBottom: '1rem' }}
+                                            />
+                                        </label>
+                                    </div>
+                                    <div className="contact_me_btn_div">
+                                        <label style={{ display: 'block', marginBottom: '1rem' }}>
+                                            <input
+                                                className="ui-checkbox"
+                                                type="checkbox"
+                                                name="souhaite_etre_rappele"
+                                                value="Oui"
+                                                style={{ marginRight: '0.5rem' }}
+                                            />
+                                            Je souhaite être rappelé(e)
+                                        </label>
+                                    </div>
+                                    <div className="button_contact_div">
+                                        <button type="submit">Envoyer</button>
+                                    </div>
+                                </div>
+                            </form>
+                        )}
+                        {error && (
+                            <p style={{ color: 'red' }}>
+                                Une erreur est survenue. Veuillez réessayer plus tard.
+                            </p>
+                        )}
+                        </div>
+                    </div>
                 </section>
 
                 <section>

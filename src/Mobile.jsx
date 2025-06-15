@@ -1,6 +1,12 @@
-import React, {useEffect} from 'react'; 
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Mobile = () => {
+
+    const [messageSent, setMessageSent] = useState(false);
+    const [error, setError] = useState(false);
+
     useEffect(() => {
 
         const loadMobileStyle = async () => {
@@ -47,9 +53,6 @@ const Mobile = () => {
 
         return () => clearInterval(interval);
     }, []);
-
-        const [messageSent, setMessageSent] = useState(false);
-    const [error, setError] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -107,12 +110,12 @@ const Mobile = () => {
                     <h1 className="first_section_h1">
                         <span>Avocate en </span>
                         <span>
-                            <span id="first_blue_text">droit</span> de la <span className="animate-word">santé</span> et droit <span className="animate-word">public</span>
+                            <span id="first_blue_text">droit </span><span className="animate-word">public</span>
                         </span>
                         <span> inscrite au barreau de Paris.</span><br/>
                     </h1>    
                     <div>
-                        <h1 class="first_section_h1">
+                        <h1 className="first_section_h1">
                             <span id="expetise_text">Une expertise</span><br/>
                             <span id="valeurs_text">des valeurs,</span><br/>
                             <span id="ecoute_text">une écoute.</span> <br/>
@@ -120,7 +123,7 @@ const Mobile = () => {
                     </div>
                     <div id="contactez_span">
                         <a href="mailto:" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
-                        <h1 class="first_section_h1">ou retrouvez-moi dans mon bureau à Paris.</h1><br/>
+                        <h1 className="first_section_h1">ou retrouvez-moi dans mon bureau à Paris.</h1><br/>
                     </div>
                     
                     <div className="background_image_sophie" ></div>
@@ -128,31 +131,37 @@ const Mobile = () => {
                     <div className="background_image_place_etoile_second"></div>
                 </section>
 
-                <section className="second_section">
+                <section className="second_section second_section_mobile">
                     <h2>Une expertise engagée</h2>
                     <div className="main_div_second_section">
                         <div className="first_div_text_second_section">
                             <p>
-                                Sophie Maréchal est titulaire d’un master affaires publiques obtenu à Sciences Po Paris et d’un master en droit public général obtenu à l’Université Paris-I Panthéon Sorbonne.
-                                <br/>
+                                Sophie Maréchal est titulaire d’un master affaires publiques obtenu à Sciences Po Paris et d’un master en droit public général obtenu à l’Université Paris-I Panthéon Sorbonne. 
+                                <br />
                                 Après avoir été reçue au concours d’entrée de l’École des Hautes Études en Santé publique (EHESP), Sophie Maréchal est devenue directrice d’hôpital. Elle a exercé cette fonction pendant 7 ans dans plusieurs hôpitaux situés en Nouvelle-Aquitaine et dans les Hauts-de-France. 
-                                <br/>
-                                Après cette expérience professionnelle particulièrement riche et intéressante, Sophie Maréchal a souhaité devenir avocat. 
+                            </p>
+                            <p>
+                                Après cette expérience professionnelle particulièrement riche, Sophie Maréchal a souhaité devenir avocat. 
+                                <br />
+                                En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA). 
                             </p>
                         </div>
                         <div className="seconc_div_text_second_section">
                             <p>
-                                En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA).
-                                <br/>
-                                De janvier 2023 à juin 2024, elle a suivi la formation dispensée à l’EFB en droit public et droit des étrangers et le cursus dispensé par l’Institut de droit public des affaires en partenariat avec l’Université Paris-Saclay. 
-                                <br/>
+                                De janvier 2023 à juin 2024, elle a suivi la formation dispensée à l’EFB en droit public et droit des étrangers. 
+                                <br />
+                                Parallèlement, elle a étudié à l’Institut de droit public des affaires (IDPA). 
+                            </p>
+                            <p>
                                 Lauréate du certificat d’aptitude à la profession d’avocat, elle a prêté serment en 2024. 
-                                <br/>
-                                Elle travaille en français, anglais et allemand. Elle défend les intérêts de ses clients sur l’ensemble du territoire national. 
+                                <br />
+                                Elle travaille en français, anglais et allemand. 
+                                <br />
+                                Elle défend les intérêts de ses clients sur l’ensemble du territoire national. 
                             </p>
                         </div>
-                        <div className="parc_monceau"></div>
-                        <div className="background_image_place_etoile_second_bottom"></div>
+                        <div className="parc_monceau parc_monceau_mobile"></div>
+                        <div className="background_image_place_etoile_second_bottom background_image_place_etoile_mobile"></div>
                     </div>
                 </section>
 
@@ -183,7 +192,7 @@ const Mobile = () => {
                     <div className="paris_monument"></div>
                 </section>
 
-                <section>
+                <section className="contact_me_form">
                     <div className="contact_form_second_div">
                     {messageSent ? (
                         <p id="merci_text">
@@ -236,7 +245,7 @@ const Mobile = () => {
                                     <label>
                                         <textarea
                                             name="message"
-                                            rows="4"
+                                            rows="10"
                                             placeholder="Message ( facultatif )"
                                             style={{ width: '100%', marginBottom: '1rem' }}
                                         />
@@ -302,15 +311,13 @@ const Mobile = () => {
                             <p> - </p>
                         </div>
                         <div>
-                            <p>
-                            Mentions légales
-                            </p>
+                            <Link to="/mentions-legales">Mentions légales</Link>
                         </div>
                         <div>
                             <p> - </p>
                         </div>
                         <div>
-                            <p>Politique de confidentialité</p>
+                            <Link to="/confidentialite">Politique de confidentialité</Link>
                         </div>
                     </div>
                 </footer>

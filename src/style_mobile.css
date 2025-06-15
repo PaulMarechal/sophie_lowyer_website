@@ -70,20 +70,76 @@
     margin-left: 10%;
 }
 
-.second_section, .third_section{padding: 20vh 0 50vh 0}
+.second_section, .third_section{padding: 20vh 0 60vh 0}
 
-.second_section h2{margin-top: -10vh; margin-bottom: 15vh;}
+.second_section h2{margin-top: -1vh; margin-bottom: 20vh;}
 
 .third_section h2{margin-top: -5vh; margin-bottom: 5vh; font-size: 8.5vh;}
 
 #contact_me{display: block;width: 100%; margin-left: 0; margin-top: -10vh}
-#contact_me div p{margin: 0; text-align: center;}
+#contact_me div p, #contact_me div a{margin: 0; text-align: center;}
 
 .send_mail_bottom_icon{
     position: fixed;
     bottom: 4vh;
     right: 2vh;
 }
+
+.contact_me_form{
+    width: 100%;
+}
+
+.contact_form_second_div{
+    width: 100%;
+}
+
+.parent_contact_form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: auto;
+    align-items: center;
+    margin: auto;
+}
+
+.name_contact_div {
+    grid-area: 1 / 1 / 2 / 7;
+}
+
+.tel_contact_div {
+    grid-area: 1 / 1 / 4 / 7;
+}
+
+.email_contact_div {
+    grid-area: 4 / 1 / 5 / 7;
+}
+
+.message_contact_div {
+    grid-area: 5 / 1 / 8 / 7;
+}
+
+.contact_me_btn_div {
+    grid-area: 8 / 1 / 9 / 7;
+}
+
+.button_contact_div {
+    grid-area: 9 / 2 / 10 / 6;
+}
+
+.button_contact_div button{
+    font-size: 2vw;
+}
+
+.contact_part_others_pages_mentions_legales, .confidentialite_second_div{
+    display: none;
+}
+
+.text_part_others_pages_mobile{
+    width: 100%;
+}
+
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .home_text h1{

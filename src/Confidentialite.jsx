@@ -16,7 +16,7 @@ const Honoraires = () => {
                 <section className="fourth_section" id="honoraires_section">
 
                     <div className="display_text_elem_others_pages_div">
-                        <div className="text_part_others_pages">
+                        <div className="text_part_others_pages text_part_others_pages_mobile">
                             <div className="main_div_fourth_section">
                                 <h2 className="title_others_pages title_conf_page">Politique de confidentialité </h2>
                                 <p>Le Cabinet d'Avocats Sophie Maréchal EI s'engage à protéger la confidentialité des données à caractère personnel de ses utilisateurs conformément aux dispositions du Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel (RGPD) et aux autres législations applicables en matière de traitement de Données Personnelles.</p>

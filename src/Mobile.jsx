@@ -193,6 +193,7 @@ const Mobile = () => {
                 </section>
 
                 <section className="contact_me_form">
+                    <h2>Contactez moi</h2>
                     <div className="contact_form_second_div">
                     {messageSent ? (
                         <p id="merci_text">

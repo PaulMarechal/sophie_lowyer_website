@@ -143,11 +143,11 @@
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .home_text h1{
-        margin-top: -55vh;
+        margin-top: -32vh;
     }
 
     .scroll-downs{
-        bottom: -5vh;
+        bottom: -32vh;
     }
 
     .animate-word{
@@ -170,7 +170,7 @@
 
     #contact_me_link, #contactez_span a{font-size: 8vh;}
 
-    .second_section h2, .third_section h2, .fourth_section h2{font-size: 15vh;}
+    .second_section h2, .third_section h2, .fourth_section h2, .contact_me_form h2{font-size: 15vh;}
 
     .second_section, .third_section, .fourth_section{padding: 30vh 25vh;}
 
@@ -215,5 +215,12 @@
     }
 
     #contact_me{display: inline-flex;width: 60%; margin-left: 20%; margin-top: -30vh}
+
+    .contact_me_form{
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
 
 }

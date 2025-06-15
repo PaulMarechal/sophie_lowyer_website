@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
     left: 3vh;
 }
 
+.title_conf_page{
+    font-size: 9vh!important; 
+}
+
 .title_mentions_legales{
     font-size: 4.5vh;
 }
@@ -74,6 +78,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact_part_others_pages, .competences_part_others_pages{
     flex: 4;
+}
+
+.confidentialite_second_div{
+    flex: 1;
 }
 
 header h2 {

@@ -18,7 +18,7 @@ const Honoraires = () => {
                     <div className="display_text_elem_others_pages_div">
                         <div className="text_part_others_pages">
                             <div className="main_div_fourth_section">
-                                <h2 className="title_others_pages">Politique de confidentialité </h2>
+                                <h2 className="title_others_pages title_conf_page">Politique de confidentialité </h2>
                                 <p>Le Cabinet d'Avocats Sophie Maréchal EI s'engage à protéger la confidentialité des données à caractère personnel de ses utilisateurs conformément aux dispositions du Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel (RGPD) et aux autres législations applicables en matière de traitement de Données Personnelles.</p>
                                 <p>Le Cabinet d'Avocats Sophie Maréchal EI met en œuvre des traitements de données à caractère personnel qui ont pour base juridique l'intérêt légitime poursuivi par le Cabinet lorsqu'il poursuit les finalités suivantes : </p>
                                 <ul>
@@ -40,7 +40,7 @@ const Honoraires = () => {
                             </div>
                         </div>
 
-                        <div className="contact_part_others_pages">
+                        <div className="contact_part_others_pages confidentialite_second_div">
                             <div>
                                 <a href="https://www.linkedin.com/in/sophie-marechal-57517037/?originalSubdomain=fr">
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>

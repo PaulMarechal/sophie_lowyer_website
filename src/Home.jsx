@@ -48,8 +48,8 @@ const Home = () => {
         <>
         <section className="homepage">
             <div className="home_text">
-                <h1>Sophie Maréchal</h1>
-                <h2>Avocat inscrit au barreau de Paris</h2>
+                <h1>Sophie Maréchal<br/><span id="title_header_h1"><b>Droit Public</b> &amp; <b>droit de l'urbanisme</b></span></h1>
+                <h2>Avocate inscrit au barreau de Paris</h2>
             </div>
 
             <div className="scroll-downs">
@@ -76,10 +76,10 @@ const Home = () => {
 
         {/* Section principale */}
         <section className="first_section" id="a_propos_section">
-            <h1 className="first_section_h1">
-                <span>Avocate en <br/></span>
+            <h2 className="first_section_h1">
+                <span>Avocate en </span>
                 <span>
-                    <span className="first_blue_text">droit</span> <span className="animate-word">public </span> <br/> {/*  et droit <span className="animate-word">public</span> */}
+                    <span className="first_blue_text">droit</span> <span className="animate-word">public </span> <br/> et droit de <span className="animate-word">l'urbanisme</span> 
                 </span>
                 <span> inscrite au barreau de Paris.</span><br/>
                 <span id="expetise_text">Une expertise</span><br/>
@@ -89,7 +89,7 @@ const Home = () => {
                     <a href="mailto:sophie.marechal@avocat.fr" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
                     ou retrouvez-moi dans mon bureau à Paris.<br/>
                 </span>
-            </h1>
+            </h2>
             <div className="background_image_sophie" ></div>
             <div className="background_image_place_etoile"></div>
             <div className="background_image_place_etoile_second"></div>
@@ -117,7 +117,7 @@ const Home = () => {
                         Passionnée par les <strong>droits et libertés publiques</strong>, elle défend vos droits fondamentaux et assure un accompagnement complet en <strong>droit public général</strong>, qu’il s’agisse de droit institutionnel, fiscal ou environnemental.
                     </p>
                     <p>
-                        Grâce à une approche pragmatique et humaine, Maître Maréchal propose des solutions claires et adaptées à chaque situation.
+                        Grâce à une approche pragmatique et humaine, <strong>Maître Sophie Maréchal</strong> propose des solutions claires et adaptées à chaque situation.
                     </p>                
                 </div>
             </div>
@@ -130,7 +130,7 @@ const Home = () => {
                 </div>
                 <div className="background_hover_competences"></div>
                 <h3>Des compétences<br/>diversifiées</h3>
-                <p>Droit de la santé, droit public, urbanisme, fonction publique, et bien plus. Maître Sophie Maréchal met son expertise à votre service avec rigueur et détermination.</p>
+                <p><strong>Droit de la santé</strong>, <strong>droit public</strong>, <strong>droit de l'urbanisme</strong>, <strong>droit de la fonction publique</strong>, et bien plus. Maître Sophie Maréchal met son expertise à votre service avec rigueur et détermination.</p>
                 <a href="/competences/" className="btn competence_btn">En savoir plus</a>
             </div>
             <div className="intro-block">

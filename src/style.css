@@ -46,6 +46,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4.5vh;
 }
 
+#title_header_h1{
+    text-transform: none;
+    opacity: .8;
+    font-weight: 300;
+    color: #ffffff85;
+    letter-spacing: .65px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+}
+
 .mentions_legales_div a{
     text-decoration: none;
     color: #333;
@@ -779,6 +789,11 @@ h1 {
     word-spacing: 41px;
     z-index: 9;
     position: relative;
+    
+    font-family: "Lato", sans-serif;
+    line-height: 1.2;
+    color: #cde5ff;
+    font-weight: 200;
 }
 
 .first_section_h1_comptetences{

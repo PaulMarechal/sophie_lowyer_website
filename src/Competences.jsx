@@ -57,27 +57,27 @@ const Competences = () => {
                         
                             <div className="expertise-grid">
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/droit_public.webp" alt="Droit de la fonction publique" />
+                                    <img src="https://sophiemarechal-avocat.fr/Images/droit_public.webp" loading="lazy" alt="Sophie Maréchal avocate en droit de la fonction publique à Paris" />
                                     <span>Droit de la fonction publique</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/droit_urbanisme.webp" alt="Droit de l’urbanisme" />
+                                    <img src="https://sophiemarechal-avocat.fr/Images/droit_urbanisme.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit de l’urbanisme à Paris" />
                                     <span>Droit de l’urbanisme</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/commande_public.webp" alt="Droit de la commande publique" />
+                                    <img src="https://sophiemarechal-avocat.fr/Images/commande_public.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit de la commande publique à Paris" />
                                     <span>Droit de la commande publique</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/droit_etrangers.webp" alt="Droit des étrangers" />
+                                    <img src="https://sophiemarechal-avocat.fr/Images/droit_etrangers.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit des étrangers à Paris" />
                                     <span>Droit des étrangers</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/droit_libertes_publiques.webp" alt="Droit des libertés publiques" />
+                                    <img src="https://sophiemarechal-avocat.fr/Images/droit_libertes_publiques.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit des libertés publiques à Paris" />
                                     <span>Droit des libertés publiques</span>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://devxr.fr/sophie_test/Images/droit_public_general.webp" alt="Droit public general" />
+                                    <img src="https://sophiemarechal-avocat.fr/Images/droit_public_general.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit public general à Paris" />
                                     <span>Droit public général</span>
                                 </div>
                             </div>

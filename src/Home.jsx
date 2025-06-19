@@ -106,7 +106,7 @@ const Home = () => {
                         Elle apporte également son expertise en <strong>droit de l’urbanisme</strong> pour sécuriser vos projets d’aménagement urbain et répondre aux enjeux réglementaires.
                     </p>
                     <p>
-                        En tant que spécialiste du <strong>droit de la commande publique</strong>, elle conseille et assiste ses clients lors de la passation, l’exécution et le contentieux des marchés publics et des contrats administratifs.
+                        En tant qu'avocate du <strong>droit de la commande publique</strong>, elle conseille et assiste ses clients lors de la passation, l’exécution et le contentieux des marchés publics et des contrats administratifs.
                     </p>                
                 </div>
                 <div id="second_div_intervention">

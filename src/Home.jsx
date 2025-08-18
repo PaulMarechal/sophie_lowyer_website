@@ -49,7 +49,7 @@ const Home = () => {
         <section className="homepage">
             <div className="home_text">
                 <h1>Sophie Maréchal<br/><span id="title_header_h1"><b>Droit Public</b> &amp; <b>droit de l'urbanisme</b></span></h1>
-                <h2>Avocate inscrit au barreau de Paris</h2>
+                <h2>Avocate inscrite au barreau de Paris</h2>
             </div>
 
             <div className="scroll-downs">
@@ -169,7 +169,7 @@ const Home = () => {
                     <a href="mailto:sophie.marechal@avocat.fr">
                         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
                     </a>
-                    <a href="tel:+0625550882" title="Contactez moi par téléphone">
+                    <a href="tel:+0652609138" title="Contactez moi par téléphone">
                         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
                     </a>
                     <a href="http://maps.google.com/?q=11 Boulevard de Sébastopol 75001 PARIS" target="_blank" rel="noopener noreferrer" title="Pour me rencontrer au bureau">

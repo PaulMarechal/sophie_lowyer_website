@@ -55,7 +55,7 @@ const Contact = () => {
                   75 001 PARIS
                 </p>
                 <p>
-                  Par téléphone :{' '}
+                  Par téléphone :{' '} 
                   <a href="tel:+0652609138">+06 52 60 91 38</a>
                 </p>
                 <p>

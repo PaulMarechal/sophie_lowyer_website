@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './style_mobile.css';
 
 
 const Mobile = () => {
@@ -8,12 +9,6 @@ const Mobile = () => {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-
-        const loadMobileStyle = async () => {
-            await import('/style_mobile.css');
-        };
-
-        loadMobileStyle();
 
         const animateWords = () => {
             const targetWords = document.querySelectorAll('.animate-word');

@@ -65,9 +65,9 @@
 
 .second_section, .third_section{padding: 10vh 0 18vh 0}
 
-.second_section h2{margin-top: 0; margin-bottom: 6vh;}
+.second_section h2{margin-top: 0; margin-bottom: 6vh; font-size: 6vh!important;}
 
-.third_section h2{margin-top: 0; margin-bottom: 5vh; font-size: 6vh;}
+.third_section h2{margin-top: 0; margin-bottom: 5vh; font-size: 6vh!important;}
 
 #contact_me{display: block;width: 100%; margin-left: 0; margin-top: 4vh; margin-bottom: 6vh;}
 #contact_me div p, #contact_me div a{margin: 0; text-align: center;}
@@ -113,6 +113,7 @@ label .ui-checkbox{box-shadow: none;}
     width: 100%;
 }
 
+.second_section h2, .third_section h2, .fourth_section h2, .contact_me_form h2{font-size: 6vh;}
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .home_text h1{
@@ -143,7 +144,7 @@ label .ui-checkbox{box-shadow: none;}
 
     #contact_me_link, #contactez_span a{font-size: 6vh;}
 
-    .second_section h2, .third_section h2, .fourth_section h2, .contact_me_form h2{font-size: 8vh;}
+    .second_section h2, .third_section h2, .fourth_section h2, .contact_me_form h2{font-size: 8vh!important;}
 
     .second_section, .third_section, .fourth_section{padding: 14vh 8vh;}
 

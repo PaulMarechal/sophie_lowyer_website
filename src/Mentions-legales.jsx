@@ -23,6 +23,7 @@ const Honoraires = () => {
                             <div className="main_div_fourth_section">
                                 
                                 <div className="main_div_fourth_section mentions_legales_div">
+                                    <h2 className="title_others_pages title_mentions_legales">Mentions légales</h2>
                                     <h3 className="title_others_pages title_mentions_legales">Identité de la structure</h3>
                                     <p>
                                         Sophie Maréchal EI <br/>

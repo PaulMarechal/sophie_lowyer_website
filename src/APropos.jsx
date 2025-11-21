@@ -10,10 +10,10 @@ const APropos = () => {
                         <span className="quote_style">,,</span>
                         <span>Ma <span className="first_blue_text_small">priorité</span> est de vous proposer une réponse juridique <span className="first_blue_text_small">adaptée</span>, <span className="first_blue_text_small">claire</span> et <span className="first_blue_text_small">pragmatique</span> pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. </span>
                     </h1>
-                    <h1 className="first_section_h1_comptetences">
+                    <h2 className="first_section_h1_comptetences">
                         <span>Je m’engage à défendre vos intérêts <br/> avec <span className="first_blue_text_small">humanité</span>, <span className="first_blue_text_small">rigueur</span> et <br/> <span className="first_blue_text_small">détermination</span>.</span>
                         <span className="quote_style">,,</span>
-                    </h1>
+                    </h2>
 
                     <div className="background_image_sophie_competences"></div>
                 </section>

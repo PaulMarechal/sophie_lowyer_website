@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Fichiers sensibles qu’on ne veut jamais indexer
+Disallow: /private/
+Disallow: /admin/
+Disallow: /drafts/
+
+# Autoriser tous les bots IA modernes
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ChatGPT-GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bing Chat / Copilot
+User-agent: Bingbot
+Allow: /
+
+# Lien vers le sitemap
+Sitemap: https://sophiemarechal-avocat.fr/sitemap.xml

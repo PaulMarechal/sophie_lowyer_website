@@ -8,27 +8,27 @@ const Header = () => {
         <header>
             <div>
                 <HashLink className="link_header" smooth to="/a-propos#a_propos_section">
-                    <h2>À propos</h2>
+                    <span className="nav_label">À propos</span>
                 </HashLink>
             </div>
             <div>
                 <Link className="link_header" to="/competences">
-                    <h2>Compétences</h2>
+                    <span className="nav_label">Compétences</span>
                 </Link>
             </div>
             <div id="sophie_marechal_home_header">
                 <Link className="link_header" to="/">
-                    <h2>Sophie Maréchal</h2>
+                    <span className="nav_label">Sophie Maréchal</span>
                 </Link>
             </div>
             <div>
                 <Link className="link_header" to="/honoraires">
-                    <h2>Honoraires</h2>
+                    <span className="nav_label">Honoraires</span>
                 </Link>
             </div>
             <div>
                 <Link className="link_header" to="/contact">
-                    <h2>Contact</h2>
+                    <span className="nav_label">Contact</span>
                 </Link>
             </div>
         </header>

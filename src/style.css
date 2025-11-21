@@ -94,9 +94,10 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1;
 }
 
-header h2 {
+.nav_label {
     scroll-behavior: smooth;
     font-family: "Bebas Neue", serif;
+    display: inline-block;
 }
 
 .cursor {
@@ -272,7 +273,7 @@ header div{
     flex: 2
 }
 
-header div h2{
+.nav_label{
     font-size: 3vh;
     padding: 4px;
 }
@@ -774,7 +775,7 @@ h1 {
     color: #fff; 
 }
 
-#sophie_marechal_home_header .link_header h2{
+#sophie_marechal_home_header .link_header .nav_label{
     font-size: 3.5vh;
 }
 .first_section{
@@ -803,6 +804,8 @@ h1 {
     word-spacing: 41px;
     z-index: 9;
 }
+
+.first_section_h1_comptetences span{color: #fff;font-weight: 200;}
 
 .first_blue_text{
     text-decoration: none;
@@ -955,6 +958,7 @@ h1 {
     height: 350px; 
     position: relative;
     overflow: hidden;
+    z-index: 9;
 }
 
 .intro-block:hover {
@@ -1464,4 +1468,3 @@ h1 {
 #merci_text{
     font-size: 20px;
 }
-

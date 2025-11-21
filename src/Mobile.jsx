@@ -107,23 +107,23 @@ const Mobile = () => {
 
                 {/* Section principale */}
                 <section className="first_section">
-                    <h1 className="first_section_h1">
+                    <h2 className="first_section_h1">
                         <span>Avocate en </span>
                         <span>
                             <span id="first_blue_text">droit </span><span className="animate-word">public</span>
                         </span>
                         <span> inscrite au barreau de Paris.</span><br/>
-                    </h1>    
+                    </h2>    
                     <div>
-                        <h1 className="first_section_h1">
+                        <h3 className="first_section_h1">
                             <span id="expetise_text">Une expertise</span><br/>
                             <span id="valeurs_text">des valeurs,</span><br/>
                             <span id="ecoute_text">une écoute.</span> <br/>
-                        </h1>
+                        </h3>
                     </div>
                     <div id="contactez_span">
                         <a href="mailto:" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
-                        <h1 className="first_section_h1">ou retrouvez-moi dans mon bureau à Paris.</h1><br/>
+                        <p className="first_section_h1">ou retrouvez-moi dans mon bureau à Paris.</p><br/>
                     </div>
                     
                     <div className="background_image_sophie" ></div>

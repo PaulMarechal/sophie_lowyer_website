@@ -36,54 +36,50 @@
     width: 82%;
 }
 
-.parc_monceau{
-    width: 21vh;
-    height: 49vh;
-    top: 220vh;
-    left: 5vh;
-    margin-top: 5vh;
-}
-
-.paris_ruelle{
-    top: 95vh;
-    left: 7vh;
-    width: 40vh;
-    height: 49vh;
-}
-
-.paris_monument{
-    top: 95vh;
-    left: 10vh;
-    width: 40vh;
-    height: 49vh;
-}
-
+.parc_monceau,
+.paris_ruelle,
+.paris_monument,
 .background_image_place_etoile_second_bottom{
-    top: 220vh;
-    right: 5vh;
-    margin-top: 5vh;
+    position: relative;
+    width: 88vw;
+    max-width: 420px;
+    aspect-ratio: 4 / 3;
+    min-height: 200px;
+    height: auto;
+    margin: 6vh auto 2vh auto;
+    left: auto;
+    top: auto;
+    right: auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
 }
 
 .main_div_contact_me_bottom_icon{
-    margin: 0vh 10% -30vh 10%;
+    margin: 6vh 10% 4vh 10%;
     width: 80%;
-    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
 }
 
-.second_section, .third_section{padding: 20vh 0 60vh 0}
+.second_section, .third_section{padding: 10vh 0 18vh 0}
 
-.second_section h2{margin-top: -1vh; margin-bottom: 20vh;}
+.second_section h2{margin-top: 0; margin-bottom: 6vh;}
 
-.third_section h2{margin-top: -5vh; margin-bottom: 5vh; font-size: 8.5vh;}
+.third_section h2{margin-top: 0; margin-bottom: 5vh; font-size: 6vh;}
 
-#contact_me{display: block;width: 100%; margin-left: 0; margin-top: -10vh}
+#contact_me{display: block;width: 100%; margin-left: 0; margin-top: 4vh; margin-bottom: 6vh;}
 #contact_me div p, #contact_me div a{margin: 0; text-align: center;}
+#contact_me{text-align: center;}
 
 .send_mail_bottom_icon{
     position: fixed;
     bottom: 4vh;
     right: 2vh;
 }
+
+label .ui-checkbox{box-shadow: none;}
 
 .contact_me_form{
     width: 100%;
@@ -94,42 +90,19 @@
 }
 
 .parent_contact_form {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin: auto;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     margin: auto;
 }
 
-.name_contact_div {
-    grid-area: 1 / 1 / 2 / 7;
-}
-
-.tel_contact_div {
-    grid-area: 1 / 1 / 4 / 7;
-}
-
-.email_contact_div {
-    grid-area: 4 / 1 / 5 / 7;
-}
-
-.message_contact_div {
-    grid-area: 5 / 1 / 8 / 7;
-}
-
-.contact_me_btn_div {
-    grid-area: 8 / 1 / 9 / 7;
-}
-
-.button_contact_div {
-    grid-area: 9 / 2 / 10 / 6;
+.parent_contact_form input,
+.parent_contact_form textarea{
+    width: 100%;
 }
 
 .button_contact_div button{
-    font-size: 2vw;
+    font-size: 18px;
 }
 
 .contact_part_others_pages_mentions_legales, .confidentialite_second_div{
@@ -155,66 +128,48 @@
     }
 
     .first_section{
-        padding: 5vh 25vh;
+        padding: 8vh 10vh;
     }
 
     .first_section_h1{
-        word-spacing: 20px;
+        word-spacing: 10px;
     }
 
-    #expetise_text{margin: 0 0 0 30vh;}
+    #expetise_text{margin: 0 0 0 6vh;}
 
-    #valeurs_text{margin: 0 0 0 50vh;}
+    #valeurs_text{margin: 0 0 0 8vh;}
 
-    #ecoute_text{margin: 0 0 0 70vh;}
+    #ecoute_text{margin: 0 0 0 12vh;}
 
-    #contact_me_link, #contactez_span a{font-size: 8vh;}
+    #contact_me_link, #contactez_span a{font-size: 6vh;}
 
-    .second_section h2, .third_section h2, .fourth_section h2, .contact_me_form h2{font-size: 15vh;}
+    .second_section h2, .third_section h2, .fourth_section h2, .contact_me_form h2{font-size: 8vh;}
 
-    .second_section, .third_section, .fourth_section{padding: 30vh 25vh;}
+    .second_section, .third_section, .fourth_section{padding: 14vh 8vh;}
 
-    .fourth_section{margin-top: -40vh;}
+    .fourth_section{margin-top: 0;}
 
-    .parc_monceau{
-        width: 30vh;
-        height: 52vh;
-        top: 40vh;
-        left: 0vh;
-        margin-top: 5vh;
-    }
-
-    .paris_monument{
-        width: 30vh;
-        height: 52vh;
-        top: 40vh;
-        left: 0vh;
-        margin-top: 5vh;
-    }
-
-    .paris_ruelle{
-        width: 30vh;
-        height: 52vh;
-        top: 170vh;
-        left: 0vh;
-        margin-top: 50vh;
-    }
-    
+    .parc_monceau,
+    .paris_monument,
+    .paris_ruelle,
     .background_image_place_etoile_second_bottom{
-        top: 180vh;
-        right: 0vh;
-        width: 30vh;
-        height: 70vh;
-        margin-top: 5vh;
+        width: 60vw;
+        max-width: 360px;
+        aspect-ratio: 16 / 9;
+        min-height: 180px;
+        height: auto;
+        margin: 6vh auto 2vh auto;
+        top: auto;
+        left: auto;
+        right: auto;
     }
 
     .main_div_contact_me_bottom_icon{
-        margin: -20vh 10% -100vh 10%;
-        width: 60%;
-        margin-left: 20%;
+        margin: 8vh 15% 6vh 15%;
+        width: 70%;
     }
 
-    #contact_me{display: inline-flex;width: 60%; margin-left: 20%; margin-top: -30vh}
+    #contact_me{display: block;width: 100%; margin-left: 0; margin-top: 6vh}
 
     .contact_me_form{
         max-width: 700px;

@@ -1,6 +1,56 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Home = () => {
+
+    const [activeDomainCard, setActiveDomainCard] = useState(null);
+
+    const domainCards = [
+        {
+            title: "Droit des étrangers",
+            bg: "https://source.unsplash.com/Tp-3hrx88J4/1200x900",
+            body: (
+                <>
+                    <p>Elle assiste les personnes étrangères dans l’ensemble des démarches liées au <b>séjour en France</b> et à l’obtention de la <b>nationalité française</b>.</p>
+                    <p className="domain-subtitle">Elle intervient notamment pour :</p>
+                    <ul>
+                        <li>Les <b>demandes de titre de séjour</b> (salarié, vie privée et familiale, passeport talent, étudiant),</li>
+                        <li>Les <b>démarches de naturalisation</b> (par décret ou par déclaration)</li>
+                        <li>La <b>contestation des décisions préfectorales</b> : refus de titre de séjour, OQTF avec ou sans délai, refus de regroupement familial</li>
+                    </ul>
+                </>
+            )
+        },
+        {
+            title: "Droit de l’urbanisme",
+            bg: "https://source.unsplash.com/VtOxQ1kTWjU/1200x900",
+            body: (
+                <>
+                    <p>Elle accompagne les particuliers et les professionnels dans leurs projets de construction et d’aménagement, ainsi que dans les litiges liés aux <b>autorisations d’urbanisme</b>.</p>
+                    <p className="domain-subtitle">Elle intervient notamment pour :</p>
+                    <ul>
+                        <li>Les <b>permis de construire</b></li>
+                        <li>Les <b>permis d’aménager</b></li>
+                        <li>Les <b>déclarations préalables de travaux</b></li>
+                        <li>La <b>contestation des refus ou décisions défavorables</b> devant l’administration et le tribunal administratif.</li>
+                    </ul>
+                </>
+            )
+        },
+        {
+            title: "Droit de la fonction publique",
+            bg: "https://source.unsplash.com/ic9L0dJe2ds/1200x900",
+            body: (
+                <>
+                    <p>Elle assiste les <b>agents publics</b> confrontés à des difficultés dans leur carrière, en particulier dans le cadre de <b>procédures disciplinaires</b>.</p>
+                    <p className="domain-subtitle">Elle intervient notamment pour :</p>
+                    <ul>
+                        <li>L'<b>assistance devant le conseil de discipline</b></li>
+                        <li>La <b>contestation des sanctions disciplinaires</b> devant le tribunal administratif.</li>
+                    </ul>
+                </>
+            )
+        }
+    ];
 
     useEffect(() => {
         const btnHoverMap = [
@@ -97,9 +147,9 @@ const Home = () => {
 
         <div className="parc_monceau_home"></div>
 
-        <section className="short-intros domaines_intervention_texte">
+        <section>
             <div className="first_text_section">
-                <p><b>Ses domaines d'intervention</b></p>
+                <h2><b>Ses domaines d'intervention</b></h2>
                 <p>
                     Avocat en <b>droit public</b>, Sophie Maréchal intervient principalement en <b>droit des étrangers</b>, en <b>droit de l’urbanisme</b> et en <b>droit de la fonction publique</b>. <br /><br />
                     Elle accompagne les particuliers, les agents publics et les professionnels dans leurs démarches administratives et dans leurs contentieux devant les juridictions administratives.<br /><br />
@@ -107,42 +157,36 @@ const Home = () => {
                     Son rôle est de vous aider à comprendre vos droits, à sécuriser vos démarches et à contester les décisions injustifiées.
                 </p>   
             </div>
+        </section>
+
+        <section className="short-intros domaines_intervention_texte">
             <div className="domaine_intervention_div">
-                <div className="intervention-card">
-                    <p className="intervention-title"><b>Droit des étrangers</b></p>
-                    <p>Elle assiste les personnes étrangères dans l’ensemble des démarches liées au <b>séjour en France</b> et à l’obtention de la <b>nationalité française</b>.</p>
-                    <p className="intervention-subtitle">Elle intervient notamment pour :</p>
-                    <ul>
-                        <li>Les <b>demandes de titre de séjour</b> (salarié, vie privée et familiale, passeport talent, étudiant),</li>
-                        <li>Les <b>démarches de naturalisation</b> (par décret ou par déclaration)</li>
-                        <li>La <b>contestation des décisions préfectorales</b> : refus de titre de séjour, OQTF avec ou sans délai, refus de regroupement familial</li>
-                    </ul>
-                </div>
-
-                <div className="intervention-card">
-                    <p className="intervention-title"><b>Droit de l’urbanisme</b></p>
-                    <p>Elle accompagne les particuliers et les professionnels dans leurs projets de construction et d’aménagement, ainsi que dans les litiges liés aux <b>autorisations d’urbanisme</b>.</p>
-                    <p className="intervention-subtitle">Elle intervient notamment pour :</p>
-                    <ul>
-                        <li>Les <b>permis de construire</b></li>
-                        <li>Les <b>permis d’aménager</b></li>
-                        <li>Les <b>déclarations préalables de travaux</b></li>
-                        <li>La <b>contestation des refus ou décisions défavorables</b> devant l’administration et le tribunal administratif.</li>
-                    </ul>
-                </div>
-
-                <div className="intervention-card">
-                    <p className="intervention-title"><b>Droit de la fonction publique</b></p>
-                    <p>Elle assiste les <b>agents publics</b> confrontés à des difficultés dans leur carrière, en particulier dans le cadre de <b>procédures disciplinaires</b>.</p>
-                    <p className="intervention-subtitle">Elle intervient notamment pour :</p>
-                    <ul>
-                        <li>L'<b>assistance devant le conseil de discipline</b></li>
-                        <li>La <b>contestation des sanctions disciplinaires</b> devant le tribunal administratif.</li>
-                    </ul>
+                <div className="domain-options" role="list">
+                    {domainCards.map((card, idx) => (
+                        <div
+                            key={card.title}
+                            role="listitem"
+                            className={`domain-option ${idx === activeDomainCard ? 'active' : ''}`}
+                            style={{ '--domainBg': `url(${card.bg})` }}
+                            tabIndex={0}
+                            onMouseEnter={() => setActiveDomainCard(idx)}
+                            onMouseLeave={() => setActiveDomainCard(null)}
+                            aria-label={card.title}
+                        >
+                            <div className="domain-shadow" />
+                            <div className="domain-label">
+                                <div className="domain-title"><b>{card.title}</b></div>
+                            </div>
+                            <div className="domain-content">{card.body}</div>
+                        </div>
+                    ))}
                 </div>
             </div>
-            <div>
-                <p><b>Un accompagnement clair et personnalisé</b></p>
+        </section>
+
+        <section>
+            <div className="last_text_section">
+                <h2><b>Un accompagnement clair et personnalisé</b></h2>
                 <p>
                     Quelle que soit votre situation, elle vous propose un <b>accompagnement personnalisé</b>, avec une information claire, accessible et un suivi rigoureux de votre dossier.<br />
                     En tant qu’<b>avocat en droit public</b>, son objectif est de défendre vos droits et de vous accompagner efficacement. <br />
@@ -151,7 +195,7 @@ const Home = () => {
             </div>
         </section>
 
-        <section className="short-intros">
+        <section className="short-intros cards_second">
             <div className="intro-block">
                 <div className="icon-wrapper">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="none"  stroke="#FFF"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-scale"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 20l10 0" /><path d="M6 6l6 -1l6 1" /><path d="M12 3l0 17" /><path d="M9 12l-3 -6l-3 6a3 3 0 0 0 6 0" /><path d="M21 12l-3 -6l-3 6a3 3 0 0 0 6 0" /></svg>

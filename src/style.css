@@ -453,7 +453,7 @@ header div{
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    top: 304vh;
+    top: 289vh;
     position: absolute;
     left: 0vh;
     background-image: url(https://sophiemarechal-avocat.fr/Images/sophie-marechal-avocat-paris-parc-monceau.webp);
@@ -486,8 +486,8 @@ header div{
 .paris_monument_home{
     width: 28vh;
     height: 43vh;
-    top: 333vh;
-    right: 0vh;
+    top: 249vh;
+    right: 3vh;
 }
 
 .background_image_place_etoile_second_bottom{
@@ -937,7 +937,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    margin: 150px auto;
+    margin: 70px auto;
     padding: 20px;
     max-width: 1200px;
     text-align: center;
@@ -1013,6 +1013,10 @@ h1 {
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
+strong, b {
+    font-weight: 500;
+    /* color: #686868; */
+}
 /* .btn:hover {
     background: #0056a3;
     transform: translateY(-2px);
@@ -1505,15 +1509,79 @@ label .ui-checkbox{box-shadow: none;}
 
 /* Domaine intervention */
 .domaine_intervention_div{
-    display: inline-flex; 
-    text-align: justify;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 28px;
+    text-align: left;
 }
 
-.domaine_intervention_div div{
-    flex: 1;
+.intervention-card{
+    position: relative;
+    padding: 26px 22px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.05);
+    overflow: hidden;
+
+    transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
 }
 
-#second_div_intervention{margin: 0 7vw 0 1vw;}
+.intervention-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(800px 200px at 20% 0%, rgba(0,123,238,0.14), transparent 55%);
+    pointer-events: none;
+}
+
+.intervention-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.10);
+    border-color: rgba(0,123,238,0.28);
+}
+
+.intervention-title{
+    margin: 0 0 10px 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1f2a37;
+}
+
+.intervention-subtitle{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #1f2a37;
+}
+
+.intervention-card p{
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
+.intervention-card ul{
+    margin: 0;
+    padding-left: 18px;
+}
+
+.intervention-card li{
+    margin: 8px 0;
+    line-height: 1.55;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+    .domaine_intervention_div{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+.first_text_section{text-align: justify; width: 600px;}
+.first_text_section p:first-child{text-align: center;}
+#second_div_intervention{margin: 0 1vw;}
 #first_div_intervention{margin: 0 1vw 0 7vw;}
 
 .background_hover_transparence, .background_hover_accompagnement, 

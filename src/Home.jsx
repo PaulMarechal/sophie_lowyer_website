@@ -98,28 +98,56 @@ const Home = () => {
         <div className="parc_monceau_home"></div>
 
         <section className="short-intros domaines_intervention_texte">
-            <h2>Ses domaines d’intervention</h2>
+            <div className="first_text_section">
+                <p><b>Ses domaines d'intervention</b></p>
+                <p>
+                    Avocat en <b>droit public</b>, Sophie Maréchal intervient principalement en <b>droit des étrangers</b>, en <b>droit de l’urbanisme</b> et en <b>droit de la fonction publique</b>. <br /><br />
+                    Elle accompagne les particuliers, les agents publics et les professionnels dans leurs démarches administratives et dans leurs contentieux devant les juridictions administratives.<br /><br />
+                    Même s’ils sont très différents, ces domaines ont un point commun : <b>ils concernent des décisions prises par l’administration</b>, souvent complexes et lourdes de conséquences. <br />
+                    Son rôle est de vous aider à comprendre vos droits, à sécuriser vos démarches et à contester les décisions injustifiées.
+                </p>   
+            </div>
             <div className="domaine_intervention_div">
-                <div id="first_div_intervention">
-                    <p>
-                        Forte de son expérience, Maître Sophie Maréchal intervient en <strong>droit de la fonction publique</strong>, accompagnant aussi bien agents que collectivités dans leurs procédures administratives et contentieuses.
-                        Elle apporte également son expertise en <strong>droit de l’urbanisme</strong> pour sécuriser vos projets d’aménagement urbain et répondre aux enjeux réglementaires.
-                    </p>
-                    <p>
-                        En tant qu'avocate du <strong>droit de la commande publique</strong>, elle conseille et assiste ses clients lors de la passation, l’exécution et le contentieux des marchés publics et des contrats administratifs.
-                    </p>                
+                <div className="intervention-card">
+                    <p className="intervention-title"><b>Droit des étrangers</b></p>
+                    <p>Elle assiste les personnes étrangères dans l’ensemble des démarches liées au <b>séjour en France</b> et à l’obtention de la <b>nationalité française</b>.</p>
+                    <p className="intervention-subtitle">Elle intervient notamment pour :</p>
+                    <ul>
+                        <li>Les <b>demandes de titre de séjour</b> (salarié, vie privée et familiale, passeport talent, étudiant),</li>
+                        <li>Les <b>démarches de naturalisation</b> (par décret ou par déclaration)</li>
+                        <li>La <b>contestation des décisions préfectorales</b> : refus de titre de séjour, OQTF avec ou sans délai, refus de regroupement familial</li>
+                    </ul>
                 </div>
-                <div id="second_div_intervention">
-                    <p>
-                        Maître Maréchal intervient en <strong>droit des étrangers</strong> pour le dépôt de titres de séjour, demandes d’asile et recours devant le tribunal administratif, garantissant une défense personnalisée.
-                    </p>
-                    <p>
-                        Passionnée par les <strong>droits et libertés publiques</strong>, elle défend vos droits fondamentaux et assure un accompagnement complet en <strong>droit public général</strong>, qu’il s’agisse de droit institutionnel, fiscal ou environnemental.
-                    </p>
-                    <p>
-                        Grâce à une approche pragmatique et humaine, <strong>Maître Sophie Maréchal</strong> propose des solutions claires et adaptées à chaque situation.
-                    </p>                
+
+                <div className="intervention-card">
+                    <p className="intervention-title"><b>Droit de l’urbanisme</b></p>
+                    <p>Elle accompagne les particuliers et les professionnels dans leurs projets de construction et d’aménagement, ainsi que dans les litiges liés aux <b>autorisations d’urbanisme</b>.</p>
+                    <p className="intervention-subtitle">Elle intervient notamment pour :</p>
+                    <ul>
+                        <li>Les <b>permis de construire</b></li>
+                        <li>Les <b>permis d’aménager</b></li>
+                        <li>Les <b>déclarations préalables de travaux</b></li>
+                        <li>La <b>contestation des refus ou décisions défavorables</b> devant l’administration et le tribunal administratif.</li>
+                    </ul>
                 </div>
+
+                <div className="intervention-card">
+                    <p className="intervention-title"><b>Droit de la fonction publique</b></p>
+                    <p>Elle assiste les <b>agents publics</b> confrontés à des difficultés dans leur carrière, en particulier dans le cadre de <b>procédures disciplinaires</b>.</p>
+                    <p className="intervention-subtitle">Elle intervient notamment pour :</p>
+                    <ul>
+                        <li>L'<b>assistance devant le conseil de discipline</b></li>
+                        <li>La <b>contestation des sanctions disciplinaires</b> devant le tribunal administratif.</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p><b>Un accompagnement clair et personnalisé</b></p>
+                <p>
+                    Quelle que soit votre situation, elle vous propose un <b>accompagnement personnalisé</b>, avec une information claire, accessible et un suivi rigoureux de votre dossier.<br />
+                    En tant qu’<b>avocat en droit public</b>, son objectif est de défendre vos droits et de vous accompagner efficacement. <br />
+                    Si elle constate qu’une action en justice n’est pas nécessaire ou n’est pas adaptée à votre situation, elle vous en informera en toute transparence.<br />
+                </p>
             </div>
         </section>
 

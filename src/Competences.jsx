@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Competences = () => {
     return(
@@ -33,7 +34,7 @@ const Competences = () => {
                                     Après cette expérience professionnelle particulièrement riche, Sophie Maréchal a souhaité devenir avocat. 
                                 </p>
                                 <p>
-                                    En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA). 
+                                    En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional de formation à la profession d’avocat (CRFPA). 
                                 </p>
                                 <p>
                                     De janvier 2023 à juin 2024, elle a suivi la formation dispensée à l’EFB en droit public et droit des étrangers. 
@@ -57,29 +58,37 @@ const Competences = () => {
                         
                             <div className="expertise-grid">
                                 <div className="expertise-item">
-                                    <img src="https://sophiemarechal-avocat.fr/Images/droit_public.webp" loading="lazy" alt="Sophie Maréchal avocate en droit de la fonction publique à Paris" />
-                                    <span>Droit de la fonction publique</span>
+                                    <Link to="/droit-de-la-fonction-publique">
+                                        <img src="https://sophiemarechal-avocat.fr/Images/droit_public.webp" loading="lazy" alt="Sophie Maréchal avocate en droit de la fonction publique à Paris" />
+                                        <span>Droit de la fonction publique</span>
+                                    </Link>
                                 </div>
                                 <div className="expertise-item">
-                                    <img src="https://sophiemarechal-avocat.fr/Images/droit_urbanisme.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit de l’urbanisme à Paris" />
-                                    <span>Droit de l’urbanisme</span>
+                                    <Link to="/droit-de-urbanisme">
+                                        <img src="https://sophiemarechal-avocat.fr/Images/droit_urbanisme.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit de l’urbanisme à Paris" />
+                                        <span>Droit de l’urbanisme</span>
+                                    </Link>
                                 </div>
-                                <div className="expertise-item">
+                                {/* <div className="expertise-item">
                                     <img src="https://sophiemarechal-avocat.fr/Images/commande_public.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit de la commande publique à Paris" />
                                     <span>Droit de la commande publique</span>
                                 </div>
-                                <div className="expertise-item">
-                                    <img src="https://sophiemarechal-avocat.fr/Images/droit_etrangers.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit des étrangers à Paris" />
-                                    <span>Droit des étrangers</span>
+                                 */}
+                                <div className="expertise-item" >
+                                    <Link to="/droit-des-etrangers">
+                                        <img src="https://sophiemarechal-avocat.fr/Images/droit_etrangers.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit des étrangers à Paris" />
+                                        <span>Droit des étrangers</span>
+                                    </Link>
                                 </div>
-                                <div className="expertise-item">
+
+                                {/* <div className="expertise-item">
                                     <img src="https://sophiemarechal-avocat.fr/Images/droit_libertes_publiques.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit des libertés publiques à Paris" />
                                     <span>Droit des libertés publiques</span>
-                                </div>
-                                <div className="expertise-item">
+                                </div> */}
+                                {/* <div className="expertise-item">
                                     <img src="https://sophiemarechal-avocat.fr/Images/droit_public_general.webp" loading="lazy" alt="Sophie Maréchal, avocate en droit public general à Paris" />
                                     <span>Droit public général</span>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     

@@ -30,7 +30,7 @@ const APropos = () => {
                                     Après avoir été reçue au concours d’entrée de l’École des Hautes Études en Santé publique (EHESP), Sophie Maréchal est devenue directrice d’hôpital. Elle a exercé cette fonction pendant 7 ans dans plusieurs hôpitaux situés en Nouvelle-Aquitaine et dans les Hauts-de-France.
                                 </p>
                                 <p>
-                                    En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA).
+                                    En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional de formation à la profession d’avocat (CRFPA).
                                     <br />
                                     De janvier 2023 à juin 2024, elle a suivi la formation dispensée à l’EFB en droit public et droit des étrangers.
                                 </p>
@@ -48,22 +48,24 @@ const APropos = () => {
                                     <img src="https://devxr.fr/sophie_test/Images/droit_urbanisme.webp" alt="Droit de l’urbanisme" />
                                     <span>Droit de l’urbanisme</span>
                                 </div>
-                                <div className="expertise-item">
+                                
+                                {/* <div className="expertise-item">
                                     <img src="https://devxr.fr/sophie_test/Images/commande_public.webp" alt="Droit de la commande publique" />
                                     <span>Droit de la commande publique</span>
-                                </div>
+                                </div> */}
+                                
                                 <div className="expertise-item">
                                     <img src="https://devxr.fr/sophie_test/Images/droit_etrangers.webp" alt="Droit des étrangers" />
                                     <span>Droit des étrangers</span>
                                 </div>
-                                <div className="expertise-item">
+                                {/* <div className="expertise-item">
                                     <img src="https://devxr.fr/sophie_test/Images/droit_libertes_publiques.webp" alt="Droit des libertes publiques" />
                                     <span>Droit des libertés publiques</span>
-                                </div>
-                                <div className="expertise-item">
+                                </div> */}
+                                {/* <div className="expertise-item">
                                     <img src="https://devxr.fr/sophie_test/Images/droit_public_general.webp" alt="Droit de la consommation" />
                                     <span>Droit public général</span>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     

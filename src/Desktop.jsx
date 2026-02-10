@@ -9,13 +9,17 @@ import APropos from './APropos.jsx';
 import Contact from './Contact.jsx';
 import Competences from './Competences.jsx';
 import Honoraires from './Honoraires.jsx'; 
-import Confidentialite from './Confidentialite.jsx'
-import Mentions_legales from './Mentions-legales.jsx'
+import Confidentialite from './Confidentialite.jsx';
+import Mentions_legales from './Mentions-legales.jsx';
+import Droit_des_etrangers from './DroitEtrangers.jsx';
+import Droit_de_urbanisme from './DroitUrbanisme.jsx'
+import Droit_fonction_publique from './DroitFonctionPublique.jsx'
 
 
 
 const Desktop = () => {
-    console.log("Made with 🍔 by DevXR.fr - https://devxr.fr")
+    console.log('Developed with 🍔 by Paul Maréchal')
+    console.log('https://paulmarechal.xyz | https://devxr.fr')
 
     useEffect(() => {
         const handleScroll = () => {
@@ -127,6 +131,9 @@ const Desktop = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/confidentialite" element={<Confidentialite />} />
                     <Route path="/mentions-legales" element={<Mentions_legales />} />
+                    <Route path="/droit-des-etrangers" element={<Droit_des_etrangers />} />
+                    <Route path="/droit-de-urbanisme" element={<Droit_de_urbanisme />} />
+                    <Route path="/droit-de-la-fonction-publique" element={<Droit_fonction_publique />} />
                 </Routes>
             </div>
         </div>

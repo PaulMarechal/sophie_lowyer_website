@@ -834,7 +834,7 @@ h1 {
 #contact_me_link{
     text-decoration: none;
     color: #fff;
-    font-size: 12vmin;
+    font-size: 9vmin;
     -webkit-text-fill-color: #e0efff;
     -webkit-text-stroke-width: 3px;
     background-color: transparent;
@@ -1539,15 +1539,20 @@ text-align: justify;
     min-width: 72px;
 
     border-radius: 24px;
-    background: var(--domainBg, #e7edf6);
+    /* background: var(--domainBg, #e7edf6);
     background-size: auto 120%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
     box-shadow: 0 10px 26px rgba(0,0,0,0.10);
     border: 1px solid rgba(0,0,0,0.06);
     z-index: 999;
     cursor: pointer;
+
+    background: var(--domainBg, #e7edf6);
+    background-size: auto 120%;
+    background-position: center;
+    background-repeat: no-repeat;
     transition: flex .55s cubic-bezier(0.05, 0.61, 0.41, 0.95),
                 transform .25s ease,
                 border-radius .55s cubic-bezier(0.05, 0.61, 0.41, 0.95),
@@ -1591,30 +1596,65 @@ text-align: justify;
     font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: .2px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 120px;
 }
 
-.domain-content{
-    position: absolute;
-    left: 18px;
-    right: 18px;
-    top: 18px;
-    bottom: 64px;
-
-    padding: 14px 16px;
-    border-radius: 16px;
-
-    background: rgba(255,255,255,0.92);
-    color: #1f2a37;
-
-    overflow: auto;
-
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity .35s ease, transform .35s ease;
+.domain-title b{
+    font-size: 5.5vmin;
+    font-family: 'Bebas Neue';
 }
+
+ .domain-content{
+     position: absolute;
+     left: 0px;
+     right: 0px;
+     top: 0px;
+     bottom: 64px;
+
+     padding: 14px 16px;
+     border-radius: 16px;
+
+     /* Glassmorphism + fade to transparent */
+     background: transparent;
+     border: 1px solid rgba(255,255,255,0.55);
+     box-shadow: 0 10px 26px rgba(0,0,0,0.10);
+     backdrop-filter: blur(12px);
+     -webkit-backdrop-filter: blur(12px);
+
+     color: #1f2a37;
+
+     overflow: auto;
+
+     opacity: 0;
+     transform: translateY(10px);
+     transition: opacity .35s ease, transform .35s ease;
+ }
+
+ /* Top is fully opaque, fades to transparent towards the bottom */
+ .domain-content::before{
+     content: "";
+     position: absolute;
+     inset: 0;
+     border-radius: 16px;
+     background: linear-gradient(
+         180deg,
+         rgba(255,255,255,1) 0%,
+         rgba(255,255,255,0.92) 35%,
+         rgba(255,255,255,0.70) 60%,
+         rgba(255,255,255,0.00) 100%
+     );
+     pointer-events: none;
+     z-index: 0;
+ }
+
+ /* Ensure text sits above the glass overlay */
+ .domain-content > *{
+     position: relative;
+     z-index: 1;
+ }
 
 .domain-content p{
     margin: 0 0 10px 0;
@@ -1639,8 +1679,12 @@ text-align: justify;
 .domain-option.active{
     flex: 12 1 0;
     border-radius: 30px;
-    background-size: auto 110%;
+    /* background-size: auto 110%; */
     box-shadow: 0 18px 45px rgba(0,0,0,0.16);
+    background: var(--domainBg, #e7edf6);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .domain-option.active .domain-shadow{

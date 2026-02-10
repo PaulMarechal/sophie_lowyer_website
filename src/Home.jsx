@@ -7,7 +7,7 @@ const Home = () => {
     const domainCards = [
         {
             title: "Droit des étrangers",
-            bg: "https://source.unsplash.com/Tp-3hrx88J4/1200x900",
+            bg: "../Images/droit-des-etrangers-passeports.webp",
             body: (
                 <>
                     <p>Elle assiste les personnes étrangères dans l’ensemble des démarches liées au <b>séjour en France</b> et à l’obtention de la <b>nationalité française</b>.</p>
@@ -22,7 +22,7 @@ const Home = () => {
         },
         {
             title: "Droit de l’urbanisme",
-            bg: "https://source.unsplash.com/VtOxQ1kTWjU/1200x900",
+            bg: "../Images/droit-urbanisme-plan.webp",
             body: (
                 <>
                     <p>Elle accompagne les particuliers et les professionnels dans leurs projets de construction et d’aménagement, ainsi que dans les litiges liés aux <b>autorisations d’urbanisme</b>.</p>
@@ -38,7 +38,7 @@ const Home = () => {
         },
         {
             title: "Droit de la fonction publique",
-            bg: "https://source.unsplash.com/ic9L0dJe2ds/1200x900",
+            bg: "../Images/droit-fonction-publique-marianne.webp",
             body: (
                 <>
                     <p>Elle assiste les <b>agents publics</b> confrontés à des difficultés dans leur carrière, en particulier dans le cadre de <b>procédures disciplinaires</b>.</p>
@@ -135,7 +135,7 @@ const Home = () => {
                 <span id="expetise_text">Une expertise</span><br/>
                 <span id="valeurs_text">des valeurs,</span><br/>
                 <span id="ecoute_text">et une écoute.<br/></span>
-                <span id="contactez_span">
+                <span id="contactez_span"><br/>
                     <a href="mailto:sophie.marechal@avocat.fr" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
                     ou retrouvez-moi dans mon bureau à Paris.<br/>
                 </span>
@@ -188,9 +188,9 @@ const Home = () => {
             <div className="last_text_section">
                 <h2><b>Un accompagnement clair et personnalisé</b></h2>
                 <p>
-                    Quelle que soit votre situation, elle vous propose un <b>accompagnement personnalisé</b>, avec une information claire, accessible et un suivi rigoureux de votre dossier.<br />
-                    En tant qu’<b>avocat en droit public</b>, son objectif est de défendre vos droits et de vous accompagner efficacement. <br />
-                    Si elle constate qu’une action en justice n’est pas nécessaire ou n’est pas adaptée à votre situation, elle vous en informera en toute transparence.<br />
+                    Quelle que soit votre situation, elle vous propose un <b>accompagnement personnalisé</b>, avec une information claire, accessible et un suivi rigoureux de votre dossier.<br /><br />
+                    En tant qu’<b>avocat en droit public</b>, son objectif est de défendre vos droits et de vous accompagner efficacement. <br /><br />
+                    Si elle constate qu’une action en justice n’est pas nécessaire ou n’est pas adaptée à votre situation, elle vous en informera en toute transparence.<br /><br />
                 </p>
             </div>
         </section>
@@ -254,7 +254,7 @@ const Home = () => {
         <footer>
             <div id="contact_me">
                 <div>
-                    <p>© 2025 Sophie Maréchal</p>
+                    <p>© 2026 Sophie Maréchal</p>
                 </div>
                 <div>
                     <p> - </p>

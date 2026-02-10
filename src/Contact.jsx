@@ -36,12 +36,12 @@ const Contact = () => {
           id="a_propos_section"
           style={{ background: '#007BEE' }}
         >
-          <h1 className="first_section_h1">
-            <span>
-              À chaque question, <br />
-              une réponse adaptée.
-            </span>
-          </h1>
+            <h1 className="first_section_h1">
+                <span>
+                    À chaque question, <br />
+                    une réponse adaptée.
+                </span>
+            </h1>
         </section>
 
         <section>

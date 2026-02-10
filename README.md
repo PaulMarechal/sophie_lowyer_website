@@ -14,4 +14,4 @@ Build :
 npm run build
 
 
-© Paul Maréchal 2025
+© Paul Maréchal 2026

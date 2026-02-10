@@ -453,7 +453,7 @@ header div{
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    top: 380vh;
+    top: 425vh;
     position: absolute;
     left: 0vh;
     background-image: url(https://sophiemarechal-avocat.fr/Images/sophie-marechal-avocat-paris-parc-monceau.webp);
@@ -1607,48 +1607,44 @@ text-align: justify;
     font-family: 'Bebas Neue';
 }
 
- .domain-content{
-     position: absolute;
-     left: 0px;
-     right: 0px;
-     top: 0px;
-     bottom: 64px;
+.domain-content{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 64px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    /* Glassmorphism + fade to transparent */
+    background: transparent;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.10);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #1f2a37;
+    overflow: auto;
+    opacity: 0;
+    transform: translateY(10px);
+    margin: 4vh;
+    height: 77%;
+    transition: opacity .35s ease, transform .35s ease;
+}
 
-     padding: 14px 16px;
-     border-radius: 16px;
+.domain-content::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
 
-     /* Glassmorphism + fade to transparent */
-     background: transparent;
-     border: 1px solid rgba(255,255,255,0.55);
-     box-shadow: 0 10px 26px rgba(0,0,0,0.10);
-     backdrop-filter: blur(12px);
-     -webkit-backdrop-filter: blur(12px);
+    background: linear-gradient(
+        180deg,
+        rgba(255,255,255,1) 0%,     
+        rgba(255,255,255,0.5) 30%, 
+        rgba(255,255,255,0.0) 100% 
+    );
 
-     color: #1f2a37;
-
-     overflow: auto;
-
-     opacity: 0;
-     transform: translateY(10px);
-     transition: opacity .35s ease, transform .35s ease;
- }
-
- /* Top is fully opaque, fades to transparent towards the bottom */
- .domain-content::before{
-     content: "";
-     position: absolute;
-     inset: 0;
-     border-radius: 16px;
-     background: linear-gradient(
-         180deg,
-         rgba(255,255,255,1) 0%,
-         rgba(255,255,255,0.92) 35%,
-         rgba(255,255,255,0.70) 60%,
-         rgba(255,255,255,0.00) 100%
-     );
-     pointer-events: none;
-     z-index: 0;
- }
+    pointer-events: none;
+    z-index: 0;
+}
 
  /* Ensure text sits above the glass overlay */
  .domain-content > *{
@@ -1749,15 +1745,20 @@ text-align: justify;
     margin-top: 2vw;
 }
 
+.first_text_section p{font-size: 3vh; width: 900px;}
+.first_text_section h2{font-size: 4vh;}
+
 .last_text_section{
     text-align: justify; 
-    width: 600px;  
-    margin-left: 45vw;
+    width: 900px;  
+    margin-left: 29vw;
     position: relative;
+    font-size: 3vh;
 }
 .last_text_section h2:first-child{
     text-align: right;
 }
+.last_text_section h2{font-size: 4vh;}
 .first_text_section p:first-child{text-align: center;}
 #second_div_intervention{margin: 0 1vw;}
 #first_div_intervention{margin: 0 1vw 0 7vw;}

@@ -1497,11 +1497,15 @@ label .ui-checkbox{box-shadow: none;}
     margin-top: -35px;
 }
 
+.last_text_fonction_publique{
+    text-align: justify;
+    width: 900px;
+    margin-left: 20vw;
+    position: relative;
+    font-size: 3vh;
+}
 
-
-
-
-
+.last_text_fonction_publique h2{text-align: center;font-size: 4vh;}
 
 .section_competences {
     width: 100vw;

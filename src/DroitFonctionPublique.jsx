@@ -113,7 +113,7 @@ const DroitFonctionPublique = () => {
                     
                 </section>
 
-                <section>
+                <section className="last_text_fonction_publique">
                     <h2><b>Un accompagnement dédié aux agents publics</b></h2>
                     <p>
                         En tant qu’<b>avocat en droit de la fonction publique</b>, elle propose un accompagnement personnalisé, adapté à votre statut et à votre administration d’appartenance, avec une information claire et accessible tout au long de la procédure. <br /><br />

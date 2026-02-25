@@ -27,7 +27,7 @@ const DroitFonctionPublique = () => {
                 <section className="fp-cards" aria-label="Accompagnement en droit de la fonction publique">
                     <div
                         className={`fp-card ${activeCard === 0 ? 'active' : ''}`}
-                        style={{ '--fpBg': "url(/Images/fonction-publique-discipline.webp)" }}
+                        style={{ '--fpBg': "url(/Images/assistance-conseil-de-discipline-maitre-marechal.webp)" }}
                         role="button"
                         tabIndex={0}
                         aria-pressed={activeCard === 0}
@@ -68,7 +68,7 @@ const DroitFonctionPublique = () => {
 
                     <div
                         className={`fp-card ${activeCard === 1 ? 'active' : ''}`}
-                        style={{ '--fpBg': "url(/Images/fonction-publique-tribunal.webp)" }}
+                        style={{ '--fpBg': "url(/Images/contestation-sanctions-disciplinaires.webp)" }}
                         role="button"
                         tabIndex={0}
                         aria-pressed={activeCard === 1}
@@ -107,10 +107,6 @@ const DroitFonctionPublique = () => {
                             </p>
                         </div>
                     </div>
-                </section>
-
-                <section>
-                    
                 </section>
 
                 <section className="last_text_fonction_publique">

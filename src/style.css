@@ -86,8 +86,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 700px;
 }
 
-.contact_part_others_pages, .competences_part_others_pages{
+.contact_part_others_pages{
     flex: 4;
+}
+
+.competences_part_others_pages{
+    flex: 2;
 }
 
 .confidentialite_second_div{
@@ -1580,8 +1584,8 @@ label .ui-checkbox{box-shadow: none;}
 .expertise-item {
     position: relative;
     width: 30%;
-    max-width: 300px;
-    height: 30vh; 
+    max-width: 226px;
+    height: 415px; 
     overflow: hidden;
     border-radius: 10px; 
 }
@@ -1641,7 +1645,8 @@ label .ui-checkbox{box-shadow: none;}
 .expertise-item {
     position: relative;
     width: 100%;
-    max-width: 300px; 
+    max-width: 226px; 
+    height: 415px;
     border-radius: 10px;
     overflow: hidden; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1693,6 +1698,7 @@ label .ui-checkbox{box-shadow: none;}
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 4vh; 
+    margin-right: 4vh;
 }
 
 .contact_part_others_pages_index > div{

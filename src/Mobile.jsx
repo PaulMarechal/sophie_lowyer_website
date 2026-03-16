@@ -118,7 +118,7 @@ const Mobile = () => {
                     </div>
                     <div id="contactez_span">
                         <a href="mailto:" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
-                        <h3 className="first_section_h1"><span>ou retrouvez-moi dans mon bureau à Paris.</span></h3><br/>
+                        <h3 className="first_section_h1"><span>ou retrouvez-moi dans mon bureau à Paris.</span></h3>
                     </div>
                     
                     <div className="background_image_sophie" ></div>
@@ -138,10 +138,12 @@ const Mobile = () => {
                             <p>
                                 Après cette expérience professionnelle particulièrement riche, Sophie Maréchal a souhaité devenir avocat. 
                                 <br />
-                                En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA). 
                             </p>
                         </div>
                         <div className="seconc_div_text_second_section">
+                            <p>
+                                En 2022, Sophie Maréchal a passé avec succès l’examen d’entrée dans un centre régional d’étude à la profession d’avocat (CRFPA). <br/>
+                            </p>
                             <p>
                                 De janvier 2023 à juin 2024, elle a suivi la formation dispensée à l’EFB en droit public et droit des étrangers. 
                                 <br />
@@ -170,7 +172,10 @@ const Mobile = () => {
                             <p>Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. </p>
                         </div>
                     </div>
-                    <div className="paris_ruelle"></div>
+                    <div className="third_section_images">
+                        <div className="paris_ruelle"></div>
+                        <div className="paris_monument"></div>
+                    </div>
                 </section>
 
                 <section className="fourth_section">
@@ -184,7 +189,7 @@ const Mobile = () => {
                             <p>Afin que vous soyez parfaitement défendu, une convention d’honoraires sera signée dès le début de la procédure, conformément aux règles déontologiques de la profession d’avocat. </p>
                         </div>
                     </div>
-                    <div className="paris_monument"></div>
+                    {/* <div className="paris_monument"></div> */}
                 </section>
 
                 <section className="contact_me_form">
@@ -248,13 +253,12 @@ const Mobile = () => {
                                     </label>
                                 </div>
                                 <div className="contact_me_btn_div">
-                                    <label style={{ display: 'block', marginBottom: '1rem' }}>
+                                    <label>
                                         <input
                                             className="ui-checkbox"
                                             type="checkbox"
                                             name="souhaite_etre_rappele"
                                             value="Oui"
-                                            style={{ marginRight: '0.5rem' }}
                                         />
                                         Je souhaite être rappelé(e)
                                     </label>

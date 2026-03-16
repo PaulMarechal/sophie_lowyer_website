@@ -118,7 +118,7 @@ const Mobile = () => {
                     </div>
                     <div id="contactez_span">
                         <a href="mailto:" title="Contactez-moi par e-mail ✉️" id="contact_me_link">Contactez-moi </a>
-                        <p className="first_section_h1">ou retrouvez-moi dans mon bureau à Paris.</p><br/>
+                        <h3 className="first_section_h1"><span>ou retrouvez-moi dans mon bureau à Paris.</span></h3><br/>
                     </div>
                     
                     <div className="background_image_sophie" ></div>

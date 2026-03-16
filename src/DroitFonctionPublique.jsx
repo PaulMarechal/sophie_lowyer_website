@@ -17,7 +17,7 @@ const DroitFonctionPublique = () => {
                     </h1>
                 </section>
 
-                <section class="text_section_droit_public">
+                <section className="text_section_droit_public">
                     <p>
                         Avocat en <b>droit de la fonction publique</b>, Sophie Maréchal accompagne les <b>agents publics</b> (titulaires ou contractuels) confrontés à des difficultés dans leur carrière, notamment en cas d’engagement d’une procédure <b>disciplinaire</b>. <br /><br />
                         Les procédures disciplinaires peuvent avoir des conséquences importantes sur la situation professionnelle et personnelle de l’agent. Son rôle est de vous informer, de vous assister et de défendre vos droits à chaque étape de la procédure.

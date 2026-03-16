@@ -1265,111 +1265,198 @@ strong, b {
     display: none;
 }
 
-.first_section_h1{
-    font-size: 5vh; 
-    padding: 2vh 3vh;
-}
+    .first_section_h1{
+        font-size: clamp(2.2rem, 8vw, 3rem);
+        padding: 4vh 5vw 0 5vw;
+        word-spacing: normal;
+        line-height: 1.2;
+    }
 
-#expetise_text{margin: 0 0 0 6vh; line-height: 2;}
-#valeurs_text{margin: 0 0 0 9vh; }
-#ecoute_text{margin: 0 0 0 9vh; line-height: 2;}
+    #expetise_text,
+    #valeurs_text,
+    #ecoute_text{
+        margin: 0;
+        line-height: 1.25;
+        display: inline-block;
+    }
 
-#contactez_span a {
-    font-family: "Lato", sans-serif!important;
-    font-style: normal;
-    margin: 0;
-    font-weight: 300;
-    font-size: 5vh;
-}
+    #contactez_span{
+        padding: 0 5vw 5vh 5vw;
+        text-align: left;
+    }
 
-.main_div_second_section, .main_div_third_section, .main_div_fourth_section{
-    display: block;
-    width: 90%;
-    margin: 0 5%;
-}
+    #contactez_span a {
+        font-family: "Lato", sans-serif!important;
+        font-style: normal;
+        margin: 0;
+        font-weight: 300;
+        font-size: clamp(2rem, 8vw, 2.8rem);
+        line-height: 1.2;
+    }
 
-.main_div_fourth_section{
-    width: 82%;
-}
+    #contactez_span p{
+        margin: 10px 0 0 0;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0;
+    }
 
-.parc_monceau,
-.paris_ruelle,
-.paris_monument,
-.background_image_place_etoile_second_bottom{
-    position: relative;
-    width: 88vw;
-    max-width: 420px;
-    aspect-ratio: 4 / 3;
-    min-height: 200px;
-    height: auto;
-    margin: 6vh auto 2vh auto;
-    left: auto;
-    top: auto;
-    right: auto;
-    background-position: center;
-    background-size: cover;
-    border-radius: 12px;
-}
+    .main_div_second_section, .main_div_third_section, .main_div_fourth_section{
+        display: block;
+        width: min(100% - 32px, 680px);
+        margin: 0 auto;
+    }
 
-.main_div_contact_me_bottom_icon{
-    margin: 6vh 10% 4vh 10%;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.5rem;
-}
+    .main_div_fourth_section{
+        width: min(100% - 32px, 680px);
+        margin: 0 auto;
+    }
 
-.second_section, .third_section{padding: 10vh 0 18vh 0}
+    .parc_monceau,
+    .paris_ruelle,
+    .paris_monument,
+    .background_image_place_etoile_second_bottom{
+        position: relative;
+        width: 88vw;
+        max-width: 420px;
+        aspect-ratio: 4 / 3;
+        min-height: 200px;
+        height: auto;
+        margin: 6vh auto 2vh auto;
+        left: auto;
+        top: auto;
+        right: auto;
+        background-position: center;
+        background-size: cover;
+        border-radius: 12px;
+    }
 
-.second_section h2{margin-top: 0; margin-bottom: 6vh; font-size: 6vh!important;}
+    .main_div_contact_me_bottom_icon{
+        margin: 6vh 10% 4vh 10%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
 
-.third_section h2{margin-top: 0; margin-bottom: 5vh; font-size: 6vh!important;}
+    .second_section, .third_section{
+        padding: 8vh 0 10vh 0;
+    }
 
-#contact_me{display: block;width: 100%; margin-left: 0; margin-top: 4vh; margin-bottom: 6vh;}
-#contact_me div p, #contact_me div a{margin: 0; text-align: center;}
-#contact_me{text-align: center;}
+    .second_section h2,
+    .third_section h2,
+    .fourth_section h2,
+    .contact_me_form h2{
+        margin-top: 0;
+        margin-bottom: 4vh;
+        font-size: clamp(2rem, 8vw, 2.8rem) !important;
+        line-height: 1.15;
+        padding: 0 5vw;
+    }
 
-.send_mail_bottom_icon{
-    position: fixed;
-    bottom: 4vh;
-    right: 2vh;
-}
+    #contact_me{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 4vh;
+        margin-bottom: 6vh;
+        text-align: center;
+    }
 
-label .ui-checkbox{box-shadow: none;}
+    #contact_me div p,
+    #contact_me div a{
+        margin: 0;
+        text-align: center;
+    }
 
-.contact_me_form{
-    width: 100%;
-}
+    .send_mail_bottom_icon{
+        position: fixed;
+        bottom: 4vh;
+        right: 2vh;
+    }
 
-.contact_form_second_div{
-    width: 100%;
-}
+    label .ui-checkbox{box-shadow: none;}
 
-.parent_contact_form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: auto;
-}
+    .contact_me_form{
+        width: 100%;
+        padding: 6vh 0 4vh 0;
+    }
 
-.parent_contact_form input,
-.parent_contact_form textarea{
-    width: 100%;
-}
+    .contact_form_second_div{
+        width: min(100% - 32px, 680px);
+        margin: 2rem auto 0 auto;
+    }
 
-.button_contact_div button{
-    font-size: 18px;
-}
+    .parent_contact_form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: auto;
+    }
 
-.contact_part_others_pages_mentions_legales, .confidentialite_second_div{
-    display: none;
-}
+    .name_contact_div,
+    .tel_contact_div,
+    .email_contact_div,
+    .objet_contact_div,
+    .message_contact_div,
+    .contact_me_btn_div,
+    .button_contact_div{
+        width: 100%;
+    }
 
-.text_part_others_pages_mobile{
-    width: 100%;
-}
+    .parent_contact_form input,
+    .parent_contact_form textarea{
+        width: 100%;
+    }
 
-.second_section h2, .third_section h2, .fourth_section h2, .contact_me_form h2{font-size: 6vh;}
+    .button_contact_div button{
+        font-size: 18px;
+    }
+
+    .contact_part_others_pages_mentions_legales, .confidentialite_second_div{
+        display: none;
+    }
+
+    .text_part_others_pages_mobile{
+        width: 100%;
+    }
+
+    .second_section h2, .third_section h2, .fourth_section h2, .contact_me_form h2{font-size: clamp(2rem, 8vw, 2.8rem);}
+    .first_div_text_second_section,
+    .seconc_div_text_second_section,
+    .first_div_text_third_section,
+    .seconc_div_text_third_section,
+    .main_div_fourth_section{
+        padding: 0;
+    }
+
+    .first_div_text_second_section p,
+    .seconc_div_text_second_section p,
+    .first_div_text_third_section p,
+    .seconc_div_text_third_section p,
+    .main_div_fourth_section p{
+        margin: 0 0 18px 0;
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .main_div_contact_me_bottom_icon{
+        margin: 3vh auto 2vh auto;
+        width: min(100% - 32px, 420px);
+        gap: 22px;
+    }
+
+    .icon_bottom_page{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer{
+        margin-top: 1vh;
+    }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .home_text h1{
@@ -1783,7 +1870,7 @@ text-align: justify;
     background-repeat: no-repeat; */
 
     box-shadow: 0 10px 26px rgba(0,0,0,0.10);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 0px solid rgba(0,0,0,0.06);
     z-index: 999;
     cursor: pointer;
 
@@ -1862,8 +1949,7 @@ text-align: justify;
     overflow: auto;
     opacity: 0;
     transform: translateY(10px);
-    margin: 4vh;
-    height: 77%;
+    height: 100%;
     transition: opacity .35s ease, transform .35s ease;
 }
 
@@ -2419,5 +2505,279 @@ text-align: justify;
     .contact_part_others_pages_hono > div{
         grid-template-columns: repeat(2, 1fr);
         max-width: 100%;
+    }
+
+    .contact_me_btn_div{
+        margin-top: 4px;
+    }
+
+    .contact_me_btn_div label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .contact_me_btn_div .ui-checkbox{
+        width: auto;
+        margin: 0;
+    }
+
+    .button_contact_div{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #contact_me div:nth-child(2),
+    #contact_me div:nth-child(4){
+        display: none;
+    }
+
+    .send_mail_bottom_icon{
+        display: none;
+    }
+}
+
+/* Competences section */
+.competences_page_wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+}
+
+.competences_first_section{
+    margin-top: -80px;
+}
+
+.competences_header_content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6vh 0 5vh 0;
+    text-align: left;
+}
+
+.competences_first_section_h1{
+    word-spacing: normal;
+    max-width: 1300px;
+    padding: 8vh 3vh 0vh 0vh;
+}
+
+.competences_header_subtitle{
+    max-width: 820px;
+    padding: 0 9vh;
+    color: rgba(255,255,255,0.90);
+    font-size: 1.15rem;
+    line-height: 1.75;
+    text-align: left;
+    margin: 0;
+}
+
+.competences_header_subtitle_second{
+    margin-top: 14px;
+    max-width: 760px;
+}
+
+.competences_header_subtitle strong{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.competences_content_section{
+    padding: 7vh 0 10vh 0;
+}
+
+.competences_intro_block,
+.competences_cards_section{
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.competences_intro_block{
+    border-radius: 28px;
+    padding: 55px;
+    text-align: left;
+}
+
+.competences_main_title{
+    font-size: clamp(2.2rem, 4vw, 4.2rem);
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+
+.competences_intro_columns{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+    margin-top: 18px;
+}
+
+.competences_intro_column p{
+    margin: 0 0 5px 0;
+    font-size: 1.06rem;
+    line-height: 1.8;
+    color: #4e4e4e;
+}
+
+@media (max-width: 768px){
+    .competences_intro_columns{
+        grid-template-columns: 1fr;
+    }
+}
+
+.competences_cards_section{
+    margin-top: 36px;
+}
+
+.competences_display_card{
+    background: #ffffff;
+    border-radius: 40px;
+    padding: 34px 30px;
+    text-align: left;
+    box-shadow: 0 14px 35px rgba(13, 44, 84, 0.08);
+    border: 1px solid rgba(16, 24, 40, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.competences_display_card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 18px 42px rgba(13, 44, 84, 0.12);
+}
+
+.competences_display_card_highlight{
+    background: linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%);
+    margin-bottom: 24px;
+}
+
+.competences_display_card h3{
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+    color: #1f2a37;
+}
+
+.competences_display_card p{
+    margin: 0 0 2vw 0;
+    line-height: 1.75;
+    font-size: 1rem;
+    color: #4e4e4e;
+}
+
+.competences_expertise_grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.competences_expertise_item{
+    max-width: none;
+    width: 100%;
+    height: 430px;
+    border-radius: 24px;
+    box-shadow: 0 14px 35px rgba(13, 44, 84, 0.08);
+}
+
+.competences_expertise_item img{
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.competences_expertise_item span{
+    padding: 18px 12px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.4;
+    white-space: normal;
+    text-overflow: initial;
+}
+
+@media (max-width: 980px){
+    .competences_intro_text,
+    .competences_expertise_grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px){
+    .competences_header_content{
+        padding: 10vh 0 4vh 0;
+    }
+
+    .competences_header_subtitle{
+        padding: 0 3vh;
+        font-size: 1rem;
+    }
+
+    .competences_intro_block{
+        padding: 30px 22px;
+    }
+
+    .competences_intro_text,
+    .competences_expertise_grid{
+        grid-template-columns: 1fr;
+    }
+
+    .competences_expertise_item{
+        height: 360px;
+    }
+}
+
+@media (max-width: 768px) and (orientation: portrait){
+    .homepage{
+        height: 92vh;
+        min-height: 640px;
+        top: 0;
+    }
+
+    .home_text h1{
+        margin-top: -18vh;
+        font-size: clamp(3rem, 14vw, 4.5rem);
+        line-height: 1;
+    }
+
+    .home_text h2{
+        margin-top: 4vh;
+        font-size: clamp(1.1rem, 4.6vw, 1.5rem);
+        padding: 0 20px;
+    }
+
+    .scroll-downs{
+        bottom: -42vh;
+    }
+
+    .first_section{
+        margin-top: 0;
+        padding: 5vh 0 3vh 0;
+    }
+
+    .second_section,
+    .third_section,
+    .fourth_section,
+    .contact_me_form{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home_text{
+        width: calc(100% - 32px);
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .home_text h1,
+    .home_text h2{
+        text-align: center;
+    }
+
+    .contact_form_second_div{
+        margin-top: 1.25rem;
+    }
+
+    .button_contact_div button{
+        font-size: 4vw;
     }
 }

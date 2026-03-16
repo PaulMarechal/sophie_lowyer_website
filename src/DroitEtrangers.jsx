@@ -32,7 +32,7 @@ const DroitEtrangers = () => {
                 <section className="fp-cards" aria-label="Accompagnement en droit des étrangers">
                     <div
                         className={`fp-card ${activeCard === 0 ? 'active' : ''}`}
-                        style={{ '--fpBg': "url(/Images/etrangers-titre-sejour.webp)" }}
+                        style={{ '--fpBg': "url(../Images/droit-des-etrangers-passeports.webp)" }}
                         role="button"
                         tabIndex={0}
                         aria-pressed={activeCard === 0}
@@ -71,7 +71,7 @@ const DroitEtrangers = () => {
 
                     <div
                         className={`fp-card ${activeCard === 1 ? 'active' : ''}`}
-                        style={{ '--fpBg': "url(/Images/etrangers-recours.webp)" }}
+                        style={{ '--fpBg': "url(/Images/droit-etrangers-recours-sophie-marechal.webp)" }}
                         role="button"
                         tabIndex={0}
                         aria-pressed={activeCard === 1}

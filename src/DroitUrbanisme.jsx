@@ -30,7 +30,7 @@ const DroitUrbanisme = () => {
                 <section className="fp-cards" aria-label="Accompagnement en droit de l’urbanisme">
                     <div
                         className={`fp-card ${activeCard === 0 ? 'active' : ''}`}
-                        style={{ '--fpBg': "url(/Images/urbanisme-autorisations.webp)" }}
+                        style={{ '--fpBg': "url(../Images/droit-urbanisme-plan.webp)" }}
                         role="button"
                         tabIndex={0}
                         aria-pressed={activeCard === 0}
@@ -67,7 +67,7 @@ const DroitUrbanisme = () => {
 
                     <div
                         className={`fp-card ${activeCard === 1 ? 'active' : ''}`}
-                        style={{ '--fpBg': "url(/Images/urbanisme-recours.webp)" }}
+                        style={{ '--fpBg': "url(/Images/Contestation-des-décisions-permis-construire.webp)" }}
                         role="button"
                         tabIndex={0}
                         aria-pressed={activeCard === 1}

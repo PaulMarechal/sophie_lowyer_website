@@ -1,0 +1,92 @@
+.page {
+}
+
+.asideLabel {
+  margin: 0 0 0.6rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  color: var(--navy);
+}
+
+.asideText {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+.page :global {
+  .first_section {
+    min-height: 48vh;
+  }
+
+  .first_section_h1 {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .fourth_section {
+    padding: 2rem 0 5rem;
+  }
+
+  .display_text_elem_others_pages_div {
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .mentions_legales_div {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    padding: 2.2rem;
+  }
+
+  .mentions_legales_div p,
+  .mentions_legales_div li {
+    text-align: left;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--ink-soft);
+  }
+
+  .mentions_legales_div a {
+    color: var(--navy);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(22, 35, 54, 0.18);
+  }
+
+  .mentions_legales_div h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .contact_part_others_pages.contact_part_others_pages_mentions_legales {
+    padding-top: 0;
+  }
+
+  .contact_part_others_pages.contact_part_others_pages_mentions_legales > div {
+    position: sticky;
+    top: 110px;
+    background: linear-gradient(180deg, #fff 0%, #f8f1e6 100%);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page :global {
+    .contact_part_others_pages.contact_part_others_pages_mentions_legales {
+      padding-top: 0;
+    }
+
+    .display_text_elem_others_pages_div {
+      padding: 0 1.25rem;
+    }
+  }
+}

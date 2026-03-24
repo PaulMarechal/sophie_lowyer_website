@@ -1,0 +1,36 @@
+.footer {
+}
+
+.footer :global(#contact_me) {
+  display: flex;
+  justify-content: space-between;
+  width: min(720px, calc(100% - 3rem));
+  margin: 0 auto;
+  bottom: 0;
+  position: relative;
+  font-size: 13px;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.footer :global(#contact_me a) {
+  text-decoration: none;
+  color: var(--navy);
+  margin: 13px 0;
+}
+
+.footer :global(#contact_me div) {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 768px) {
+  .footer :global(#contact_me) {
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    text-align: center;
+  }
+}

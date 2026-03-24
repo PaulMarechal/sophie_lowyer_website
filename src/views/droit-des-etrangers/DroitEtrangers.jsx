@@ -1,0 +1,159 @@
+"use client";
+
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Footer from '../../components/layout/Footer';
+import styles from './PracticeArea.module.css';
+
+const DroitEtrangers = () => {
+    const [activeCard, setActiveCard] = useState(null);
+    
+    return(
+        <div className={styles.page}>
+            <div style={{ width: '100%', minHeight: '100vh' }}>
+                <section className="first_section" id="a_propos_section">
+                    <div className="practice_hero_inner">
+                        <p className="practice_eyebrow">Droit des étrangers</p>
+                        <h1 className="first_section_h1">
+                            <span>
+                                Séjour, naturalisation, OQTF :
+                                <br />
+                                un accompagnement clair à chaque étape
+                            </span>
+                        </h1>
+                        <p className="practice_hero_lead">
+                            Une intervention stratégique pour sécuriser vos démarches, défendre vos droits et anticiper les difficultés face à l’administration.
+                        </p>
+                    </div>
+                </section>
+
+                <section className="text_section_droit_public">
+                    <div className="practice_intro_shell">
+                    <div className="practice_intro_card">
+                        <p className="practice_section_eyebrow">Présentation</p>
+                        <h2 className="practice_section_title">Un contentieux humain, technique et décisif</h2>
+                        <p>
+                            Le <b>droit des étrangers</b> regroupe l’ensemble des règles qui concernent le <b>séjour</b>, le <b>travail</b> et l’installation des personnes étrangères en France.
+                        </p>
+                        <p>
+                            Ces démarches peuvent être complexes, longues et source de stress. Le rôle d’un avocat intervenant en droit des étrangers est de vous <b>accompagner à chaque étape</b>, de sécuriser votre dossier et de défendre vos droits.
+                        </p>
+                        <p>
+                            Vous pouvez notamment consulter un avocat si vous souhaitez déposer une demande de titre de séjour, engager une démarche de naturalisation, ou contester une décision défavorable comme un refus, une OQTF ou certaines décisions en matière d’asile.
+                        </p>
+                    </div>
+                    </div>
+                </section>
+
+                <section className="fp-cards" aria-label="Accompagnement en droit des étrangers">
+                    <div
+                        className={`fp-card ${activeCard === 0 ? 'active' : ''}`}
+                        style={{ '--fpBg': "url(/Images/droit-des-etrangers-passeports.webp)" }}
+                        role="button"
+                        tabIndex={0}
+                        aria-pressed={activeCard === 0}
+                        onMouseEnter={() => setActiveCard(0)}
+                        onMouseLeave={() => setActiveCard(null)}
+                        onFocus={() => setActiveCard(0)}
+                        onClick={() => setActiveCard(0)}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') setActiveCard(0);
+                        }}
+                    >
+                        <div className="fp-shadow" />
+
+                        <div className="fp-badge">Démarches</div>
+                        <div className="fp-title">
+                            <h2>Titre de séjour & naturalisation</h2>
+                            <p>Constitution du dossier, stratégie et suivi auprès de l’administration.</p>
+                        </div>
+
+                        <div className="fp-content">
+                            <p>
+                                Sophie Maréchal vous aide à préparer et déposer votre <b>demande de titre de séjour</b>, en fonction de votre situation personnelle et professionnelle.
+                            </p>
+                            <p>Elle vous accompagne notamment pour :</p>
+                            <ul>
+                                <li><b>Titre de séjour “salarié”</b> ou <b>“métiers en tension”</b></li>
+                                <li>Titre de séjour <b>“vie privée et familiale”</b> (conjoint, enfants, liens personnels en France)</li>
+                                <li><b>Passeport talent</b></li>
+                                <li><b>Titre de séjour “étudiant”</b></li>
+                            </ul>
+                            <p>
+                                Elle intervient également pour vos démarches de <b>naturalisation française</b> (par décret) ou par <b>déclaration</b> (mariage, filiation), afin de constituer un dossier complet et d’anticiper les difficultés.
+                            </p>
+                        </div>
+
+                        <div className="fp-footer">
+                            <Link href="/contact" className="fp-link">Prendre rendez-vous</Link>
+                        </div>
+                    </div>
+
+                    <div
+                        className={`fp-card ${activeCard === 1 ? 'active' : ''}`}
+                        style={{ '--fpBg': "url(/Images/droit-etrangers-recours-sophie-marechal.webp)" }}
+                        role="button"
+                        tabIndex={0}
+                        aria-pressed={activeCard === 1}
+                        onMouseEnter={() => setActiveCard(1)}
+                        onMouseLeave={() => setActiveCard(null)}
+                        onFocus={() => setActiveCard(1)}
+                        onClick={() => setActiveCard(1)}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') setActiveCard(1);
+                        }}
+                    >
+                        <div className="fp-shadow" />
+
+                        <div className="fp-badge">Recours</div>
+                        <div className="fp-title">
+                            <h2>Contestations & procédures</h2>
+                            <p>Recours gracieux / contentieux et représentation.</p>
+                        </div>
+
+                        <div className="fp-content">
+                            <p>
+                                Lorsque l’administration refuse une demande, il est souvent possible de <b>contester la décision</b>.
+                            </p>
+                            <p>Elle vous assiste et vous représente notamment en cas de :</p>
+                            <ul>
+                                <li><b>Refus de titre de séjour</b></li>
+                                <li><b>Refus de regroupement familial</b></li>
+                                <li><b>Obligation de Quitter le Territoire Français (OQTF)</b>, avec ou sans délai</li>
+                            </ul>
+                            <p>
+                                Elle intervient également au soutien des demandeurs d’asile dans le cadre des recours contre les décisions de refus de protection (OFPRA) devant la <b>CNDA</b> : analyse du dossier, préparation du recours, constitution des preuves et représentation.
+                            </p>
+                        </div>
+
+                        <div className="fp-footer">
+                            <Link href="/contact" className="fp-link">Prendre rendez-vous</Link>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="last_text_fonction_publique">
+                    <div className="practice_close_shell">
+                    <p className="practice_section_eyebrow">Méthode</p>
+                    <h2><b>Le rôle de conseil de l’avocat</b></h2>
+                    <p>
+                        Dans tous les cas, le rôle de l’avocat est de vous conseiller au mieux de vos intérêts.
+                        <br /><br />
+                        Si vous souhaitez recourir aux services de Sophie Maréchal, elle procède toujours à une analyse juridique détaillée et personnalisée de votre situation au cours d’un entretien.
+                        <br /><br />
+                        À l’issue de l’entretien, si elle considère que les conditions d’obtention d’un titre de séjour ou d’une naturalisation ne sont pas réunies, elle vous en informera en toute transparence.
+                    </p>
+                    <div className="practice_bottom_links">
+                        <Link href="/contact" className="practice_cta_primary">Contacter le cabinet</Link>
+                        <Link href="/honoraires" className="practice_cta_secondary">Consulter les honoraires</Link>
+                    </div>
+                    </div>
+                </section>
+
+                <Footer year={2026} />
+            </div>
+        </div>
+    )
+}
+
+export default DroitEtrangers;

@@ -1,0 +1,287 @@
+.page {
+  background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
+}
+
+.page :global {
+  .first_section {
+    width: min(1200px, calc(100% - 2rem));
+    min-height: 52vh;
+    margin: 2rem auto 0;
+    border-radius: 34px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--navy) 0%, #243753 100%) !important;
+  }
+
+  .practice_hero_inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 7.5rem 2rem 4rem;
+    text-align: left;
+  }
+
+  .practice_eyebrow,
+  .practice_section_eyebrow {
+    margin: 0 0 1rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .practice_eyebrow {
+    color: rgba(248, 243, 235, 0.72);
+  }
+
+  .first_section_h1 {
+    max-width: 1100px;
+    margin: 0;
+    color: #f5efe3;
+  }
+
+  .practice_hero_lead {
+    max-width: 700px;
+    margin: 1.5rem 0 0;
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: rgba(245, 239, 227, 0.8);
+  }
+
+  .text_section_droit_public,
+  .last_text_fonction_publique {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0;
+  }
+
+  .practice_intro_shell,
+  .practice_close_shell {
+    border-radius: 30px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .practice_intro_card {
+    padding: 2rem;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(247, 241, 230, 0.9) 100%);
+  }
+
+  .practice_section_eyebrow {
+    color: #6d7f93;
+  }
+
+  .practice_section_title {
+    margin: 0 0 1rem;
+    color: var(--navy);
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-align: left;
+  }
+
+  .practice_intro_card p {
+    color: var(--ink-soft);
+    text-align: left;
+  }
+
+  .last_text_fonction_publique h2 {
+    margin: 0 0 1rem;
+    padding: 0;
+    text-align: left;
+    color: var(--navy);
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
+
+  .practice_close_shell {
+    padding: 2rem;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(247, 241, 230, 0.9) 100%);
+  }
+
+  .practice_close_shell > p:not(.practice_section_eyebrow),
+  .practice_intro_card p {
+    color: var(--ink-soft);
+    text-align: left;
+  }
+
+  .fp-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .fp-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 560px;
+    padding: 2rem;
+    border-radius: 30px;
+    color: #fff;
+    background-image: var(--fpBg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .fp-shadow {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(5, 11, 21, 0.12), rgba(7, 16, 29, 0.94)),
+      radial-gradient(circle at top left, rgba(182, 147, 90, 0.16), transparent 26%);
+  }
+
+  .fp-badge,
+  .fp-title,
+  .fp-content {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+  }
+
+  .fp-badge {
+    display: inline-flex;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #f7ead5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+  }
+
+  .fp-title h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    color: #fff7ea;
+  }
+
+  .fp-title p {
+    color: rgba(255, 247, 234, 0.82);
+  }
+
+  .fp-content {
+    margin-top: 1.5rem;
+    font-size: 1.03rem;
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  .fp-content p,
+  .fp-content li {
+    color: #f4efe8;
+  }
+
+  .fp-content ul {
+    padding-left: 1.25rem;
+  }
+
+  .fp-card.active,
+  .fp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 34px 70px rgba(20, 31, 48, 0.18);
+  }
+
+  .fp-footer {
+    position: relative;
+    z-index: 1;
+    margin-top: 1.4rem;
+    text-align: left;
+  }
+
+  .fp-link,
+  .practice_cta_primary,
+  .practice_cta_secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.8rem 1.15rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .fp-link {
+    color: #fff7ea;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(8px);
+  }
+
+  .fp-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .practice_bottom_links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem 0 0;
+  }
+
+  .practice_cta_primary {
+    color: #fff;
+    background: linear-gradient(135deg, #3f6fa7 0%, #6f9cd6 100%);
+    box-shadow: 0 18px 35px rgba(40, 82, 135, 0.2);
+  }
+
+  .practice_cta_secondary {
+    color: var(--navy);
+    background: rgba(22, 35, 54, 0.06);
+    border: 1px solid rgba(22, 35, 54, 0.1);
+  }
+}
+
+@media (max-width: 980px) {
+  .page :global {
+    .fp-cards {
+      grid-template-columns: 1fr;
+      padding: 1.25rem;
+    }
+
+    .fp-card {
+      min-height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page :global {
+    .first_section {
+      width: min(100%, calc(100% - 1rem));
+      margin-top: 1rem;
+    }
+
+    .practice_hero_inner {
+      padding: 7rem 1.25rem 3rem;
+    }
+
+    .text_section_droit_public,
+    .last_text_fonction_publique {
+      padding: 1.25rem 1.25rem 0;
+    }
+
+    .practice_intro_card,
+    .practice_close_shell,
+    .fp-card {
+      padding: 1.4rem;
+    }
+
+    .last_text_fonction_publique h2 {
+      padding: 0;
+    }
+
+    .practice_bottom_links {
+      padding-left: 0;
+    }
+  }
+}

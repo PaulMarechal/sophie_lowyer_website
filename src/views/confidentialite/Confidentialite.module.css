@@ -1,0 +1,100 @@
+.page {
+}
+
+.asideLabel {
+  margin: 0 0 0.6rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  color: var(--navy);
+}
+
+.asideText {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+.page :global {
+  .first_section {
+    min-height: 42vh;
+  }
+
+  .first_section_h1 {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .fourth_section {
+    padding: 2rem 0 5rem;
+  }
+
+  .display_text_elem_others_pages_div {
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .text_part_others_pages {
+    padding: 0;
+  }
+
+  .contact_part_others_pages.confidentialite_second_div {
+    padding-top: 0;
+  }
+
+  .main_div_fourth_section {
+    width: 100%;
+    max-width: 1100px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    padding: 2.2rem;
+  }
+
+  .main_div_fourth_section p,
+  .main_div_fourth_section li {
+    text-align: left;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--ink-soft);
+  }
+
+  .main_div_fourth_section ul {
+    padding-left: 1.4rem;
+  }
+
+  .main_div_fourth_section a {
+    color: var(--navy);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(22, 35, 54, 0.18);
+  }
+
+  .contact_part_others_pages.confidentialite_second_div > div {
+    position: sticky;
+    top: 110px;
+    background: linear-gradient(180deg, #fff 0%, #f8f1e6 100%);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page :global {
+    .text_part_others_pages {
+      padding: 0;
+    }
+
+    .contact_part_others_pages.confidentialite_second_div {
+      padding-top: 0;
+    }
+
+    .display_text_elem_others_pages_div {
+      padding: 0 1.25rem;
+    }
+  }
+}

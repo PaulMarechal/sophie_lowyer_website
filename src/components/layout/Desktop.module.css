@@ -1,0 +1,6 @@
+.shell {
+}
+
+.shell :global(.cursor) {
+  display: none;
+}

@@ -5,6 +5,7 @@
   "homepage": "https://devxr.fr/sophie_test",
   "scripts": {
     "dev": "next dev",
+    "clean:dev": "rm -rf .next && next dev",
     "build": "next build",
     "start": "next start"
   },

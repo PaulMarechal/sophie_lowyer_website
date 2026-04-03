@@ -68,35 +68,53 @@ const Desktop = ({ children }) => {
     
 
     useEffect(() => {
+        const supportsCustomCursor = window.matchMedia('(hover: hover) and (pointer: fine)');
+        if (!supportsCustomCursor.matches) {
+            return undefined;
+        }
+
         const mouseCursor = document.querySelector('.cursor');
-        const links = document.querySelectorAll('a');
+        if (!mouseCursor) {
+            return undefined;
+        }
+
+        document.body.classList.add('custom-cursor-enabled');
+
+        const interactiveElements = document.querySelectorAll('a, button, [role="button"]');
 
         const handleMouseMove = (e) => {
-            if (mouseCursor) {
-                mouseCursor.style.top = e.pageY + 'px';
-                mouseCursor.style.left = e.pageX + 'px';
-            }
+            mouseCursor.style.top = `${e.clientY}px`;
+            mouseCursor.style.left = `${e.clientX}px`;
+            mouseCursor.classList.add('is-visible');
         };
 
         const handleLinkHover = () => {
-            if (mouseCursor) mouseCursor.classList.add('link-hover');
+            mouseCursor.classList.add('link-hover');
         };
 
         const handleLinkLeave = () => {
-            if (mouseCursor) mouseCursor.classList.remove('link-hover');
+            mouseCursor.classList.remove('link-hover');
+        };
+
+        const handleMouseLeaveWindow = () => {
+            mouseCursor.classList.remove('is-visible');
         };
 
         window.addEventListener('mousemove', handleMouseMove);
-        links.forEach(link => {
-            link.addEventListener('mouseenter', handleLinkHover);
-            link.addEventListener('mouseleave', handleLinkLeave);
+        document.addEventListener('mouseleave', handleMouseLeaveWindow);
+
+        interactiveElements.forEach((element) => {
+            element.addEventListener('mouseenter', handleLinkHover);
+            element.addEventListener('mouseleave', handleLinkLeave);
         });
 
         return () => {
+            document.body.classList.remove('custom-cursor-enabled');
             window.removeEventListener('mousemove', handleMouseMove);
-            links.forEach(link => {
-                link.removeEventListener('mouseenter', handleLinkHover);
-                link.removeEventListener('mouseleave', handleLinkLeave);
+            document.removeEventListener('mouseleave', handleMouseLeaveWindow);
+            interactiveElements.forEach((element) => {
+                element.removeEventListener('mouseenter', handleLinkHover);
+                element.removeEventListener('mouseleave', handleLinkLeave);
             });
         };
     }, []);

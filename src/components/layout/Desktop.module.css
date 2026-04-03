@@ -1,6 +1,43 @@
 .shell {
 }
 
-.shell :global(.cursor) {
-  display: none;
+@media (hover: hover) and (pointer: fine) {
+  .shell :global(.cursor) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(22, 35, 54, 0.7);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition:
+      opacity 120ms ease,
+      transform 180ms ease,
+      border-color 180ms ease,
+      background-color 180ms ease,
+      width 180ms ease,
+      height 180ms ease;
+  }
+
+  .shell :global(.cursor.is-visible) {
+    opacity: 1;
+  }
+
+  .shell :global(.cursor.link-hover) {
+    width: 36px;
+    height: 36px;
+    border-color: rgba(182, 147, 90, 0.68);
+    background: rgba(182, 147, 90, 0.12);
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+
+  .shell :global(*:not(input):not(textarea):not(select):not(option)) {
+    cursor: none !important;
+  }
 }

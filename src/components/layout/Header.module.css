@@ -1,8 +1,8 @@
 .header {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  color: var(--navy);
-  text-align: center;
   padding: 1.1rem 1.5rem;
   top: 0;
   position: fixed;
@@ -18,14 +18,39 @@
   top: 0;
 }
 
-.header > div {
-  flex: 2;
+.menuOpen {
+}
+
+.brandRow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: max-content;
+}
+
+.menuToggle {
+  display: none;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: center;
+  width: 100%;
+  max-width: 1180px;
+}
+
+.navItem,
+.desktopBrandSpacer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header :global(.nav_label) {
+.navLabel {
   scroll-behavior: smooth;
   font-family: "Helvetica Neue", Arial, sans-serif;
   display: inline-block;
@@ -36,11 +61,7 @@
   color: var(--navy);
 }
 
-.header :global(#sophie_marechal_home_header) {
-  flex: 8;
-}
-
-.header :global(#sophie_marechal_home_header .link_header .nav_label) {
+.brandLabel {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.35rem;
   letter-spacing: 0.04em;
@@ -48,12 +69,144 @@
   color: var(--navy);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px), (max-height: 540px) and (orientation: landscape) {
   .header {
-    padding: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.9rem 1rem;
   }
 
-  .header :global(.nav_label) {
-    font-size: 1.2rem;
+  .brandRow {
+    position: relative;
+    left: auto;
+    transform: none;
+    z-index: 2;
+    gap: 0.85rem;
+  }
+
+  .menuToggle {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid rgba(22, 35, 54, 0.12);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+  }
+
+  .menuToggle span {
+    width: 16px;
+    height: 1.5px;
+    border-radius: 999px;
+    background: var(--navy);
+    transition: transform 0.25s ease, opacity 0.2s ease;
+  }
+
+  .menuOpen .menuToggle span:nth-child(1) {
+    transform: translateY(5.5px) rotate(45deg);
+  }
+
+  .menuOpen .menuToggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menuOpen .menuToggle span:nth-child(3) {
+    transform: translateY(-5.5px) rotate(-45deg);
+  }
+
+  .brandLabel {
+    font-size: 1.08rem;
+    line-height: 1.1;
+  }
+
+  .nav {
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    left: 1rem;
+    right: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+    padding: 0.8rem;
+    border-radius: 22px;
+    border: 1px solid rgba(22, 35, 54, 0.08);
+    background: rgba(251, 248, 243, 0.98);
+    box-shadow: 0 24px 48px rgba(20, 31, 48, 0.12);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    max-height: calc(100vh - 6.5rem);
+    overflow: auto;
+    transition: opacity 0.22s ease, transform 0.22s ease;
+  }
+
+  .menuOpen .nav {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .navItem {
+    justify-content: stretch;
+  }
+
+  .navItem a {
+    width: 100%;
+  }
+
+  .navLabel {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+    text-align: left;
+    border-radius: 16px;
+    background: rgba(22, 35, 54, 0.04);
+  }
+
+  .desktopBrandSpacer {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) and (orientation: portrait) {
+  .header {
+    padding: 0.85rem 0.85rem;
+  }
+
+  .brandRow {
+    gap: 0.7rem;
+  }
+
+  .brandLabel {
+    font-size: 1rem;
+  }
+
+  .nav {
+    left: 0.75rem;
+    right: 0.75rem;
+    padding: 0.7rem;
+  }
+
+  .navLabel {
+    padding: 0.8rem 0.9rem;
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-height: 540px) and (orientation: landscape) {
+  .nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    max-height: calc(100vh - 5.5rem);
+  }
+
+  .navLabel {
+    text-align: center;
   }
 }

@@ -34,6 +34,15 @@ body {
   scroll-behavior: smooth;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -611,5 +620,85 @@ footer {
   .contact_me_btn_div,
   .button_contact_div {
     grid-area: auto;
+  }
+}
+
+@media (max-width: 820px) and (orientation: portrait) {
+  section {
+    padding: 40px 0;
+  }
+
+  .first_section_h1 {
+    padding: 6.5rem 1rem 3rem;
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .first_blue_text_small,
+  .first_blue_text,
+  .animate-word,
+  #contact_me_link {
+    font-size: clamp(1.9rem, 9vw, 2.9rem);
+  }
+
+  .quote_style {
+    font-size: clamp(3.2rem, 18vw, 5.4rem);
+  }
+
+  .text_section_droit_public {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .last_text_fonction_publique {
+    padding: 2rem 1rem 0;
+  }
+
+  .last_text_fonction_publique p,
+  .text_section_droit_public p,
+  .main_div_fourth_section p,
+  .main_div_fourth_section li {
+    font-size: 1rem;
+  }
+
+  footer {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 900px), (max-height: 540px) and (orientation: landscape) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+  }
+
+  .first_section_h1 {
+    padding-top: 7.5rem;
+  }
+
+  .first_blue_text_small {
+    font-size: clamp(2rem, 7vw, 3.4rem);
+  }
+
+  footer {
+    margin-top: 3rem;
+  }
+
+  .text_section_droit_public {
+    padding: 2rem 1.25rem 1rem;
+  }
+
+  .last_text_fonction_publique {
+    padding: 2rem 1.25rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .title_others_pages,
+  .title_conf_page,
+  .title_mentions_legales {
+    font-size: 1.8rem !important;
   }
 }

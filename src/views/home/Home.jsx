@@ -168,11 +168,13 @@ const Home = () => {
                   <span className={styles.domainBadge}>{card.label}</span>
                   <div className={styles.domainTitle}><b>{card.title}</b></div>
                 </div>
-                <div className={styles.domainContent}>{card.body}</div>
-                <div className={styles.domainFooter}>
-                  <Link href={card.href} className={styles.domainLink}>
-                    Découvrir ce domaine
-                  </Link>
+                <div className={styles.domainReveal}>
+                  <div className={styles.domainContent}>{card.body}</div>
+                  <div className={styles.domainFooter}>
+                    <Link href={card.href} className={styles.domainLink}>
+                      Découvrir ce domaine
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}

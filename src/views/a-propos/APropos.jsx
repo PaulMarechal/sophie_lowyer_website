@@ -62,7 +62,7 @@ const APropos = () => {
             </Link>
             <Link href="/droit-des-etrangers" className={styles.expertiseItem}>
               <img src="/Images/droit_etrangers.webp" alt="Droit des étrangers" />
-              <span>Droit des étrangers</span>
+              <span>Droit des étrangers et de la nationalité</span>
             </Link>
           </div>
         </aside>

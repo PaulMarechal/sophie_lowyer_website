@@ -52,9 +52,9 @@ const DroitEtrangers = () => {
     <div className={styles.page}>
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <p className={styles.eyebrow}>Droit des étrangers</p>
+          <p className={styles.eyebrow}>Droit des étrangers et de la nationalité</p>
           <h1 className={styles.heroTitle}>
-            Séjour, naturalisation, OQTF :
+            Demande de titre de séjour, naturalisation, refus de séjour (OQTF) :
             <br />
             un accompagnement clair à chaque étape
           </h1>

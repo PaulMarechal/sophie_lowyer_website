@@ -15,7 +15,7 @@
   grid-template-columns: 1.15fr 0.85fr;
   gap: 2rem;
   align-items: end;
-  padding: 7.5rem 2rem 3rem;
+  padding: 3.5rem 2rem 3rem;
 }
 
 .eyebrow,
@@ -195,7 +195,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px), (max-height: 540px) and (orientation: landscape) {
   .hero {
     width: min(100%, calc(100% - 1rem));
     margin-top: 1rem;
@@ -212,5 +212,61 @@
   .articleCard,
   .sideCard {
     padding: 1.4rem;
+  }
+}
+
+@media (max-width: 820px) and (orientation: portrait) {
+  .hero {
+    width: min(100%, calc(100% - 1rem));
+    margin-top: 1rem;
+  }
+
+  .heroInner {
+    gap: 1.25rem;
+    padding: 6.5rem 1.1rem 1.5rem;
+  }
+
+  .heroQuote {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .heroSubquote {
+    margin-top: 1rem;
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
+  }
+
+  .actions,
+  .content,
+  .textColumns {
+    gap: 1rem;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .portraitCard {
+    min-height: 280px;
+    border-radius: 24px;
+  }
+
+  .content {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .articleCard,
+  .sideCard {
+    padding: 1.25rem;
+    border-radius: 24px;
+  }
+
+  .articleCard p,
+  .expertiseItem span {
+    font-size: 1rem;
+  }
+
+  .expertiseItem img {
+    height: 160px;
   }
 }

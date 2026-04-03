@@ -34,7 +34,10 @@ const Honoraires = () => {
             <p className={styles.cardEyebrow}>Forfait</p>
             <h3>Une facturation au forfait</h3>
             <p>
-              Une facturation au forfait est plus sécurisante pour le client car elle permet de connaître dès le début de la procédure le montant des honoraires qui seront facturés.
+              Une facturation au forfait est plus sécurisante pour le client car elle permet de connaître dès le début de la procédure le montant des honoraires qui seront facturés. 
+            </p>
+            <p>
+              Les modalités de facturation font l’objet d’une convention préalable, garantissant une information claire et loyale du client. 
             </p>
           </article>
 

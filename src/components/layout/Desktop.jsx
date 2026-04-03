@@ -119,6 +119,93 @@ const Desktop = ({ children }) => {
         };
     }, []);
 
+    useEffect(() => {
+        const trackEvent = (eventName, params = {}) => {
+            if (typeof window === 'undefined' || typeof window.gtag !== 'function') {
+                return;
+            }
+
+            window.gtag('event', eventName, {
+                event_category: 'engagement',
+                ...params,
+            });
+        };
+
+        const getNormalizedLabel = (element) => {
+            const label = (
+                element.getAttribute('aria-label') ||
+                element.getAttribute('title') ||
+                element.textContent ||
+                ''
+            ).replace(/\s+/g, ' ').trim();
+
+            return label;
+        };
+
+        const handleDocumentClick = (event) => {
+            const target = event.target.closest('a, button');
+            if (!target) {
+                return;
+            }
+
+            const href = target.getAttribute('href') || '';
+            const label = getNormalizedLabel(target);
+
+            if (href.startsWith('mailto:')) {
+                trackEvent('email_click', {
+                    link_text: label,
+                    link_url: href,
+                });
+                return;
+            }
+
+            if (href.startsWith('tel:')) {
+                trackEvent('phone_click', {
+                    link_text: label,
+                    link_url: href,
+                });
+                return;
+            }
+
+            if (href.includes('linkedin.com')) {
+                trackEvent('linkedin_click', {
+                    link_text: label || 'LinkedIn',
+                    link_url: href,
+                });
+                return;
+            }
+
+            if (href === '/contact' || /prendre rendez-vous|contactez-moi|contacter le cabinet/i.test(label)) {
+                trackEvent('contact_cta_click', {
+                    link_text: label,
+                    link_url: href || window.location.pathname,
+                });
+                return;
+            }
+
+            if (href === '/honoraires' || /honoraires/i.test(label)) {
+                trackEvent('honoraires_cta_click', {
+                    link_text: label,
+                    link_url: href || window.location.pathname,
+                });
+                return;
+            }
+
+            if (href === '/competences' || /compétences|en savoir plus/i.test(label)) {
+                trackEvent('competences_cta_click', {
+                    link_text: label,
+                    link_url: href || window.location.pathname,
+                });
+            }
+        };
+
+        document.addEventListener('click', handleDocumentClick);
+
+        return () => {
+            document.removeEventListener('click', handleDocumentClick);
+        };
+    }, []);
+
     return (
         <div className={styles.shell} id="smooth-wrapper">
             <div id="smooth-content">

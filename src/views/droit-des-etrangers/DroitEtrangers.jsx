@@ -45,6 +45,24 @@ const cards = [
   }
 ];
 
+const faqItems = [
+  {
+    question: "Quand consulter un avocat en droit des étrangers ?",
+    answer:
+      "Il est utile de consulter un avocat pour préparer une demande de titre de séjour, une naturalisation, ou pour contester un refus de séjour, une OQTF ou un refus de regroupement familial.",
+  },
+  {
+    question: "Un refus de titre de séjour peut-il être contesté ?",
+    answer:
+      "Oui. Selon la situation, un refus de titre de séjour peut faire l'objet d'un recours gracieux ou contentieux, après analyse du dossier et des délais applicables.",
+  },
+  {
+    question: "L'avocat peut-il accompagner une demande de naturalisation ?",
+    answer:
+      "Oui. L'accompagnement permet de constituer un dossier plus solide, d'anticiper les difficultés et de sécuriser la démarche de naturalisation.",
+  },
+];
+
 const DroitEtrangers = () => {
   const [activeCard, setActiveCard] = useState(null);
 
@@ -113,6 +131,19 @@ const DroitEtrangers = () => {
           <div className={styles.bottomLinks}>
             <Link href="/contact" className={styles.primaryBtn}>Contacter le cabinet</Link>
             <Link href="/honoraires" className={styles.secondaryBtn}>Consulter les honoraires</Link>
+          </div>
+        </div>
+
+        <div className={styles.faqCard}>
+          <p className={styles.cardEyebrow}>Questions fréquentes</p>
+          <h2 className={styles.sectionTitle}>FAQ droit des étrangers</h2>
+          <div className={styles.faqGrid}>
+            {faqItems.map((item) => (
+              <article key={item.question} className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>{item.question}</h3>
+                <p className={styles.faqAnswer}>{item.answer}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

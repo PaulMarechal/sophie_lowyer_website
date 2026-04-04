@@ -67,7 +67,7 @@ const Home = () => {
       <section className={styles.homepage}>
         <div className={styles.heroVeil} />
         <div className={styles.heroFrame}>
-          <p className={styles.heroEyebrow}>Cabinet d’avocat · Paris</p>
+          <p className={styles.heroEyebrow}>Avocate en droit public à Paris</p>
           <div className={styles.homeText}>
             <h1>
               Sophie Maréchal
@@ -75,7 +75,7 @@ const Home = () => {
                 Droit public & droit de l’urbanisme
               </span>
             </h1>
-            <h2>Avocate inscrite au barreau de Paris</h2>
+            <h2>Avocate inscrite au barreau de Paris · urbanisme, étrangers, fonction publique</h2>
             <div className={styles.heroActions}>
               <Link href="/contact" className={styles.primaryBtn}>Prendre rendez-vous</Link>
               <Link href="/competences" className={styles.secondaryBtn}>Découvrir le cabinet</Link>
@@ -108,7 +108,7 @@ const Home = () => {
             <span> et en droit de l’urbanisme, inscrite au barreau de Paris.</span>
           </h2>
           <p className={styles.introLead}>
-            Une approche rigoureuse, accessible et engagée pour défendre vos intérêts face à l’administration.
+            Une approche rigoureuse, accessible et engagée pour défendre vos intérêts face à l’administration à Paris, en droit public, droit de l’urbanisme, droit des étrangers et droit de la fonction publique.
           </p>
           <div className={styles.introTags}>
             <span className={styles.accentChip}>Une expertise</span>
@@ -136,6 +136,9 @@ const Home = () => {
           </p>
           <p>
             Ces matières ont un point commun : elles concernent des décisions prises par l’administration, souvent techniques et lourdes de conséquences. Son rôle est de vous aider à comprendre vos droits, sécuriser vos démarches et contester les décisions injustifiées.
+          </p>
+          <p>
+            Le cabinet accompagne ainsi une clientèle recherchant une <b>avocate en droit public à Paris</b>, en <b>droit de l’urbanisme</b>, en <b>droit des étrangers</b> et en <b>droit de la fonction publique</b>.
           </p>
         </div>
       </section>

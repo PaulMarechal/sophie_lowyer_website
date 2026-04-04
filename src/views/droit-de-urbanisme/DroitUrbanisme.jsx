@@ -44,6 +44,24 @@ const cards = [
   }
 ];
 
+const faqItems = [
+  {
+    question: "Quand faire appel à un avocat en droit de l’urbanisme ?",
+    answer:
+      "Un avocat peut intervenir avant le dépôt d'une demande d'autorisation d'urbanisme pour sécuriser le projet, ou après une décision défavorable pour étudier les recours possibles.",
+  },
+  {
+    question: "Un refus de permis de construire peut-il être contesté ?",
+    answer:
+      "Oui. Un refus de permis de construire peut, selon le dossier, faire l'objet d'un recours gracieux ou d'un recours devant le tribunal administratif.",
+  },
+  {
+    question: "L’avocat peut-il aider à préparer un dossier de permis ?",
+    answer:
+      "Oui. L'accompagnement permet de vérifier les règles applicables, d'anticiper les points de blocage et de constituer un dossier juridiquement plus solide.",
+  },
+];
+
 const DroitUrbanisme = () => {
   const [activeCard, setActiveCard] = useState(null);
 
@@ -112,6 +130,19 @@ const DroitUrbanisme = () => {
           <div className={styles.bottomLinks}>
             <Link href="/contact" className={styles.primaryBtn}>Contacter le cabinet</Link>
             <Link href="/honoraires" className={styles.secondaryBtn}>Consulter les honoraires</Link>
+          </div>
+        </div>
+
+        <div className={styles.faqCard}>
+          <p className={styles.cardEyebrow}>Questions fréquentes</p>
+          <h2 className={styles.sectionTitle}>FAQ droit de l’urbanisme</h2>
+          <div className={styles.faqGrid}>
+            {faqItems.map((item) => (
+              <article key={item.question} className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>{item.question}</h3>
+                <p className={styles.faqAnswer}>{item.answer}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

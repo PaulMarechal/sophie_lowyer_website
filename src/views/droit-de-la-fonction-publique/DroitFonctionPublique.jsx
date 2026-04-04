@@ -47,6 +47,24 @@ const cards = [
   }
 ];
 
+const faqItems = [
+  {
+    question: "Quand consulter un avocat en droit de la fonction publique ?",
+    answer:
+      "Il est pertinent de consulter un avocat en cas de procédure disciplinaire, de difficulté de carrière ou lorsque vous envisagez un recours contre une sanction administrative.",
+  },
+  {
+    question: "Une sanction disciplinaire peut-elle être contestée ?",
+    answer:
+      "Oui. Selon la situation, une sanction disciplinaire peut être contestée devant le tribunal administratif afin d'en demander l'annulation ou la réduction.",
+  },
+  {
+    question: "L’avocat peut-il assister un agent devant le conseil de discipline ?",
+    answer:
+      "Oui. L'avocat peut préparer la défense de l'agent, vérifier la régularité de la procédure et l'assister ou le représenter devant le conseil de discipline.",
+  },
+];
+
 const DroitFonctionPublique = () => {
   const [activeCard, setActiveCard] = useState(null);
 
@@ -115,6 +133,19 @@ const DroitFonctionPublique = () => {
           <div className={styles.bottomLinks}>
             <Link href="/contact" className={styles.primaryBtn}>Contacter le cabinet</Link>
             <Link href="/honoraires" className={styles.secondaryBtn}>Consulter les honoraires</Link>
+          </div>
+        </div>
+
+        <div className={styles.faqCard}>
+          <p className={styles.cardEyebrow}>Questions fréquentes</p>
+          <h2 className={styles.sectionTitle}>FAQ fonction publique</h2>
+          <div className={styles.faqGrid}>
+            {faqItems.map((item) => (
+              <article key={item.question} className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>{item.question}</h3>
+                <p className={styles.faqAnswer}>{item.answer}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

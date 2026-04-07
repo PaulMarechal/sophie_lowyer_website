@@ -1,11 +1,10 @@
 import {
   createPageOgImage,
   ogImageContentType,
-  ogImageRuntime,
   ogImageSize,
 } from "../og-page-template";
 
-export const runtime = ogImageRuntime;
+export const runtime = "edge";
 export const alt = "Droit des étrangers - Sophie Maréchal";
 export const size = ogImageSize;
 export const contentType = ogImageContentType;

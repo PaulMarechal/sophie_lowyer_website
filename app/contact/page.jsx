@@ -7,6 +7,7 @@ export const metadata = buildMetadata({
   description:
     "Contactez Sophie Maréchal, avocate à Paris, pour un premier échange en droit public, urbanisme, droit des étrangers ou fonction publique.",
   path: "/contact",
+  image: "/Images/og_pages/contact.png",
 });
 
 export default function Page() {

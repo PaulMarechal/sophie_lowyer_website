@@ -146,6 +146,18 @@ const DroitEtrangers = () => {
             ))}
           </div>
         </div>
+
+        <div className={styles.relatedCard}>
+          <p className={styles.cardEyebrow}>Guide associé</p>
+          <h2 className={styles.sectionTitle}>Aller plus loin sur les recours contre une OQTF à Paris</h2>
+          <p className={styles.relatedText}>
+            Si votre situation concerne une obligation de quitter le territoire français, un contenu dédié détaille les délais, les recours envisageables et les enjeux d’une stratégie contentieuse rapide.
+          </p>
+          <div className={styles.relatedLinks}>
+            <Link href="/avocat-oqtf-paris" className={styles.primaryBtn}>Consulter la page OQTF</Link>
+            <Link href="/contact" className={styles.secondaryBtn}>Parler de votre dossier</Link>
+          </div>
+        </div>
       </section>
 
       <Footer year={2026} />

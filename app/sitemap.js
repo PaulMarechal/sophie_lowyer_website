@@ -12,6 +12,9 @@ export default function sitemap() {
     "/honoraires",
     "/confidentialite",
     "/mentions-legales",
+    "/avocat-oqtf-paris",
+    "/avocat-refus-permis-construire-paris",
+    "/avocat-conseil-discipline-paris",
   ];
 
   return routes.map((route) => ({

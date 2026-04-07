@@ -1,0 +1,220 @@
+.page {
+  background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
+}
+
+.hero {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 2rem auto 0;
+  border-radius: 34px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--navy) 0%, #243753 100%);
+}
+
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 7.5rem 2rem 4rem;
+  text-align: left;
+}
+
+.eyebrow,
+.cardEyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  color: rgba(248, 243, 235, 0.72);
+}
+
+.heroTitle {
+  max-width: 980px;
+  font-size: clamp(2.3rem, 4vw, 4.6rem);
+  line-height: 1.12;
+  color: #f5efe3;
+}
+
+.heroText {
+  max-width: 760px;
+  margin: 1.5rem 0 0;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: rgba(245, 239, 227, 0.82);
+}
+
+.contentSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+}
+
+.sectionsGrid,
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.sectionCard,
+.faqCard,
+.ctaCard {
+  border-radius: 28px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.sectionCard,
+.faqCard {
+  background: var(--surface);
+}
+
+.sectionCard {
+  padding: 1.6rem;
+}
+
+.cardEyebrow {
+  color: #6d7f93;
+}
+
+.sectionTitle {
+  margin: 0 0 2rem;
+  font-size: clamp(1.7rem, 2.3vw, 2.5rem);
+  color: var(--navy);
+}
+
+.copy p,
+.copy li,
+.ctaText,
+.faqAnswer {
+  text-align: left;
+  font-size: 1.03rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+
+.copy ul {
+  padding-left: 1.2rem;
+  margin: 0.75rem 0 0;
+}
+
+.faqCard,
+.ctaCard {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.faqQuestion {
+  margin-bottom: 0.75rem;
+  font-size: 1.22rem;
+  color: var(--navy);
+}
+
+.faqItem {
+  padding: 1.2rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(22, 35, 54, 0.08);
+}
+
+.ctaCard {
+  background: linear-gradient(180deg, #fff 0%, #f7f1e6 100%);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.8rem 1.15rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.primaryBtn {
+  color: #fff;
+  background: linear-gradient(135deg, #3f6fa7 0%, #6f9cd6 100%);
+}
+
+.secondaryBtn {
+  color: var(--navy);
+  background: rgba(22, 35, 54, 0.06);
+  border: 1px solid rgba(22, 35, 54, 0.1);
+}
+
+@media (max-width: 980px) {
+  .sectionsGrid,
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px), (max-height: 540px) and (orientation: landscape) {
+  .hero {
+    width: min(100%, calc(100% - 1rem));
+    margin-top: 1rem;
+  }
+
+  .heroInner {
+    padding: 7rem 1.25rem 3rem;
+  }
+
+  .contentSection {
+    padding: 2rem 1.25rem 4rem;
+  }
+
+  .sectionCard,
+  .faqCard,
+  .ctaCard {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 820px) and (orientation: portrait) {
+  .hero {
+    width: min(100%, calc(100% - 1rem));
+    margin-top: 1rem;
+  }
+
+  .heroInner {
+    padding: 6.5rem 1.1rem 2.5rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .heroText,
+  .copy p,
+  .copy li,
+  .ctaText,
+  .faqAnswer {
+    font-size: 1rem;
+  }
+
+  .contentSection {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .sectionCard,
+  .faqCard,
+  .ctaCard {
+    padding: 1.25rem;
+    border-radius: 24px;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+}

@@ -7,6 +7,7 @@ export const metadata = buildMetadata({
   description:
     "Consultez la politique de confidentialité du cabinet Sophie Maréchal relative au traitement des données personnelles.",
   path: "/confidentialite",
+  image: "/confidentialite/opengraph-image",
 });
 
 export default function Page() {

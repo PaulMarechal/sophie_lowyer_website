@@ -7,6 +7,7 @@ export const metadata = buildMetadata({
   description:
     "Sophie Maréchal défend les agents publics à Paris en matière de carrière, procédures disciplinaires et contentieux de la fonction publique.",
   path: "/droit-de-la-fonction-publique",
+  image: "/droit-de-la-fonction-publique/opengraph-image",
 });
 
 const faqSchema = buildFaqSchema([

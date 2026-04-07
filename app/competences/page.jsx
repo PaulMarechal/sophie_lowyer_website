@@ -7,6 +7,7 @@ export const metadata = buildMetadata({
   description:
     "Le cabinet intervient en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique à Paris.",
   path: "/competences",
+  image: "/Images/og_pages/competences.png",
 });
 
 export default function Page() {

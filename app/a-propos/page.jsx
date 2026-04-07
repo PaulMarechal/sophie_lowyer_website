@@ -7,6 +7,7 @@ export const metadata = buildMetadata({
   description:
     "Découvrez le parcours de Sophie Maréchal, avocate à Paris, et l'approche du cabinet en droit public, urbanisme, droit des étrangers et fonction publique.",
   path: "/a-propos",
+  image: "/Images/og_pages/a-propos.png",
 });
 
 export default function Page() {

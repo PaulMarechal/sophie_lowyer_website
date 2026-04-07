@@ -59,6 +59,30 @@ const domainCards = [
   }
 ];
 
+const seoResources = [
+  {
+    eyebrow: "Droit des étrangers",
+    title: "Recours contre une OQTF à Paris",
+    text: "Un guide dédié pour comprendre les délais, la stratégie de recours et les points de vigilance en cas d’obligation de quitter le territoire français.",
+    href: "/avocat-oqtf-paris",
+    cta: "Consulter le guide OQTF"
+  },
+  {
+    eyebrow: "Droit de l’urbanisme",
+    title: "Refus de permis de construire à Paris",
+    text: "Une page ciblée pour analyser les motifs de refus, les recours possibles et l’intérêt d’un accompagnement avant le tribunal administratif.",
+    href: "/avocat-refus-permis-construire-paris",
+    cta: "Voir le guide permis"
+  },
+  {
+    eyebrow: "Fonction publique",
+    title: "Conseil de discipline à Paris",
+    text: "Un point d’entrée utile pour les agents publics qui doivent préparer leur défense et anticiper une éventuelle contestation de sanction.",
+    href: "/avocat-conseil-discipline-paris",
+    cta: "Découvrir le guide discipline"
+  }
+];
+
 const Home = () => {
   const [activeDomainCard, setActiveDomainCard] = useState(null);
 
@@ -140,6 +164,30 @@ const Home = () => {
           <p>
             Le cabinet accompagne ainsi une clientèle recherchant une <b>avocate en droit public à Paris</b>, en <b>droit de l’urbanisme</b>, en <b>droit des étrangers</b> et en <b>droit de la fonction publique</b>.
           </p>
+        </div>
+      </section>
+
+      <section className={styles.resourceSection}>
+        <div className={styles.resourceWrap}>
+          <div className={styles.resourceIntro}>
+            <p className={styles.cardEyebrow}>Guides pratiques</p>
+            <h2 className={styles.resourceHeading}>Des guides utiles sur les recours les plus fréquents</h2>
+            <p className={styles.resourceLead}>
+              Ces contenus permettent d’aller plus loin sur les recours les plus fréquents en droit des étrangers, en urbanisme et en fonction publique.
+            </p>
+          </div>
+          <div className={styles.resourceGrid}>
+            {seoResources.map((resource) => (
+              <article key={resource.href} className={styles.resourceCard}>
+                <p className={styles.resourceMeta}>{resource.eyebrow}</p>
+                <h3 className={styles.resourceTitle}>{resource.title}</h3>
+                <p className={styles.resourceText}>{resource.text}</p>
+                <Link href={resource.href} className={styles.resourceLink}>
+                  {resource.cta}
+                </Link>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

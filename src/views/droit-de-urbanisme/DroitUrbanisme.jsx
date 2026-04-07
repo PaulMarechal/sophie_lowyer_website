@@ -145,6 +145,18 @@ const DroitUrbanisme = () => {
             ))}
           </div>
         </div>
+
+        <div className={styles.relatedCard}>
+          <p className={styles.cardEyebrow}>Guide associé</p>
+          <h2 className={styles.sectionTitle}>Approfondir les recours contre un refus de permis de construire à Paris</h2>
+          <p className={styles.relatedText}>
+            Une page dédiée revient sur les motifs de refus les plus fréquents, les recours envisageables et l’intérêt d’un accompagnement juridique avant toute saisine du tribunal administratif.
+          </p>
+          <div className={styles.relatedLinks}>
+            <Link href="/avocat-refus-permis-construire-paris" className={styles.primaryBtn}>Consulter la page permis</Link>
+            <Link href="/contact" className={styles.secondaryBtn}>Échanger sur votre projet</Link>
+          </div>
+        </div>
       </section>
 
       <Footer year={2026} />

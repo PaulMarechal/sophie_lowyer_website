@@ -7,6 +7,7 @@ export const metadata = buildMetadata({
   description:
     "Consultez les modalités d'honoraires du cabinet de Sophie Maréchal, avocate à Paris, en toute transparence avant toute intervention.",
   path: "/honoraires",
+  image: "/Images/og_pages/honoraires.png",
 });
 
 const faqSchema = buildFaqSchema([

@@ -11,6 +11,7 @@ export function buildMetadata({
   description,
   path = "/",
   keywords = [],
+  image = defaultOgImage,
 }) {
   const fullTitle = title ? `${title} | ${siteName}` : siteName;
   const url = absoluteUrl(path);
@@ -31,9 +32,9 @@ export function buildMetadata({
       siteName,
       images: [
         {
-          url: defaultOgImage,
-          width: 1200,
-          height: 600,
+          url: image,
+          width: 1162,
+          height: 630,
           alt: `${siteName} - ${title ?? "Cabinet d'avocat"}`,
         },
       ],
@@ -42,7 +43,7 @@ export function buildMetadata({
       card: "summary_large_image",
       title: fullTitle,
       description,
-      images: [defaultOgImage],
+      images: [image],
     },
   };
 }

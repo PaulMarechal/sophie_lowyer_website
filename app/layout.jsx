@@ -8,6 +8,13 @@ export const metadata = {
   title: "Sophie Maréchal | Avocate en droit public à Paris",
   description:
     "Cabinet de Sophie Maréchal, avocate à Paris en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: ["/icon.svg"],
+    apple: ["/icon.svg"],
+  },
   alternates: {
     canonical: absoluteUrl("/"),
   },

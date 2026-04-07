@@ -7,6 +7,7 @@ export const metadata = buildMetadata({
   description:
     "Le cabinet conseille et assiste en droit de l'urbanisme à Paris pour permis de construire, autorisations d'urbanisme et recours administratifs.",
   path: "/droit-de-urbanisme",
+  image: "/droit-de-urbanisme/opengraph-image",
 });
 
 const faqSchema = buildFaqSchema([

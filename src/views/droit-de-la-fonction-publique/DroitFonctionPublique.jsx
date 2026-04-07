@@ -148,6 +148,18 @@ const DroitFonctionPublique = () => {
             ))}
           </div>
         </div>
+
+        <div className={styles.relatedCard}>
+          <p className={styles.cardEyebrow}>Guide associé</p>
+          <h2 className={styles.sectionTitle}>Préparer sa défense devant un conseil de discipline à Paris</h2>
+          <p className={styles.relatedText}>
+            Cette page complémentaire précise les étapes de la procédure, le rôle de l’avocat et les réflexes utiles pour un agent public convoqué devant un conseil de discipline.
+          </p>
+          <div className={styles.relatedLinks}>
+            <Link href="/avocat-conseil-discipline-paris" className={styles.primaryBtn}>Consulter la page discipline</Link>
+            <Link href="/contact" className={styles.secondaryBtn}>Discuter de votre situation</Link>
+          </div>
+        </div>
       </section>
 
       <Footer year={2026} />

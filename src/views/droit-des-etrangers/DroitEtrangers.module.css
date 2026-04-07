@@ -297,6 +297,61 @@
   margin-top: 2rem;
 }
 
+.relatedCard {
+  position: relative;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(circle at top right, rgba(103, 156, 226, 0.22), transparent 26%),
+    radial-gradient(circle at left bottom, rgba(182, 147, 90, 0.12), transparent 20%),
+    linear-gradient(135deg, var(--navy) 0%, #243753 100%);
+  box-shadow: 0 24px 50px rgba(20, 31, 48, 0.12);
+}
+
+.relatedCard::before {
+  content: "";
+  position: absolute;
+  inset: 1.1rem 1.1rem auto;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(221, 196, 154, 0.6), rgba(221, 196, 154, 0));
+}
+
+.relatedCard .cardEyebrow {
+  color: rgba(245, 239, 227, 0.72);
+}
+
+.relatedCard .sectionTitle,
+.relatedText {
+  color: #f8f3eb;
+}
+
+.relatedText {
+  max-width: 780px;
+  margin: 0;
+  line-height: 1.75;
+}
+
+.relatedLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.relatedCard .secondaryBtn {
+  color: #f8f3eb;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+}
+
+.relatedCard .secondaryBtn:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
 .faqGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -394,6 +449,7 @@
 
   .introCard,
   .closeCard,
+  .relatedCard,
   .card {
     padding: 1.4rem;
   }
@@ -426,6 +482,7 @@
 
   .introCard,
   .closeCard,
+  .relatedCard,
   .card {
     padding: 1.25rem;
     border-radius: 24px;

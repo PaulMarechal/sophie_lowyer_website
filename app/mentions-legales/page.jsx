@@ -7,6 +7,7 @@ export const metadata = buildMetadata({
   description:
     "Consultez les mentions légales du site du cabinet Sophie Maréchal : identité, hébergement, contact et informations réglementaires.",
   path: "/mentions-legales",
+  image: "/mentions-legales/opengraph-image",
 });
 
 export default function Page() {

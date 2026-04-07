@@ -7,6 +7,7 @@ export const metadata = buildMetadata({
   description:
     "Sophie Maréchal accompagne les démarches de séjour, naturalisation, nationalité française et contentieux des étrangers à Paris.",
   path: "/droit-des-etrangers",
+  image: "/droit-des-etrangers/opengraph-image",
 });
 
 const faqSchema = buildFaqSchema([

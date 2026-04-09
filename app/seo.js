@@ -10,7 +10,6 @@ export function buildMetadata({
   title,
   description,
   path = "/",
-  keywords = [],
   image = defaultOgImage,
 }) {
   const fullTitle = title ? `${title} | ${siteName}` : siteName;
@@ -19,7 +18,6 @@ export function buildMetadata({
   return {
     title: fullTitle,
     description,
-    keywords,
     alternates: {
       canonical: url,
     },
@@ -55,7 +53,7 @@ export const lawFirmSchema = {
   url: siteUrl,
   image: absoluteUrl(defaultOgImage),
   description:
-    "Cabinet de Sophie Maréchal, avocate à Paris en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
+    "Cabinet de Sophie Maréchal, avocate en droit public à Paris, intervenant en droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
   telephone: "+33 6 52 60 91 38",
   email: "sophie.marechal@avocat.fr",
   address: {
@@ -66,6 +64,16 @@ export const lawFirmSchema = {
     addressCountry: "FR",
   },
   areaServed: "Paris",
+  availableLanguage: ["fr"],
+  serviceType: [
+    "Avocate en droit public à Paris",
+    "Avocate en droit de l'urbanisme à Paris",
+    "Avocate en droit des étrangers à Paris",
+    "Avocate en droit de la fonction publique à Paris",
+    "Avocate OQTF à Paris",
+    "Avocate pour refus de permis de construire à Paris",
+    "Avocate pour conseil de discipline à Paris",
+  ],
   sameAs: [
     "https://www.linkedin.com/in/sophie-marechal-57517037/?originalSubdomain=fr",
   ],
@@ -74,6 +82,10 @@ export const lawFirmSchema = {
     "Droit de l'urbanisme",
     "Droit des étrangers",
     "Droit de la fonction publique",
+    "OQTF",
+    "Permis de construire",
+    "Conseil de discipline",
+    "Contentieux administratif",
   ],
 };
 

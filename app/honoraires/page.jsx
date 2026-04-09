@@ -3,9 +3,9 @@ import Honoraires from "../../src/views/honoraires/Honoraires";
 import { buildFaqSchema, buildMetadata } from "../seo";
 
 export const metadata = buildMetadata({
-  title: "Honoraires",
+  title: "Honoraires avocate à Paris",
   description:
-    "Consultez les modalités d'honoraires du cabinet de Sophie Maréchal, avocate à Paris, en toute transparence avant toute intervention.",
+    "Consultez les honoraires du cabinet de Sophie Maréchal, avocate à Paris, en droit public, urbanisme, droit des étrangers et fonction publique.",
   path: "/honoraires",
   image: "/Images/og_pages/honoraires.png",
 });

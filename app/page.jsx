@@ -4,15 +4,9 @@ import { buildMetadata } from "./seo";
 export const metadata = buildMetadata({
   title: "Avocate en droit public à Paris",
   description:
-    "Sophie Maréchal, avocate à Paris, accompagne particuliers et professionnels en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
+    "Sophie Maréchal, avocate en droit public à Paris, accompagne particuliers, professionnels et agents publics en droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
   path: "/",
   image: "/Images/og_pages/home.png",
-  keywords: [
-    "avocate droit public Paris",
-    "avocate urbanisme Paris",
-    "avocate droit des étrangers Paris",
-    "avocate fonction publique Paris",
-  ],
 });
 
 export default function Page() {

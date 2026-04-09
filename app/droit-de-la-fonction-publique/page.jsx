@@ -5,7 +5,7 @@ import { buildFaqSchema, buildMetadata } from "../seo";
 export const metadata = buildMetadata({
   title: "Avocate en droit de la fonction publique à Paris",
   description:
-    "Sophie Maréchal défend les agents publics à Paris en matière de carrière, procédures disciplinaires et contentieux de la fonction publique.",
+    "Sophie Maréchal, avocate en droit de la fonction publique à Paris, défend les agents publics en matière de carrière, conseil de discipline, sanctions disciplinaires et contentieux administratifs.",
   path: "/droit-de-la-fonction-publique",
   image: "/droit-de-la-fonction-publique/opengraph-image",
 });

@@ -5,7 +5,7 @@ import { buildFaqSchema, buildMetadata } from "../seo";
 export const metadata = buildMetadata({
   title: "Avocate en droit des étrangers à Paris",
   description:
-    "Sophie Maréchal accompagne les démarches de séjour, naturalisation, nationalité française et contentieux des étrangers à Paris.",
+    "Sophie Maréchal, avocate en droit des étrangers à Paris, accompagne les demandes de titre de séjour, naturalisation, refus de séjour, OQTF et contentieux administratifs.",
   path: "/droit-des-etrangers",
   image: "/droit-des-etrangers/opengraph-image",
 });

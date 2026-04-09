@@ -5,7 +5,7 @@ import { buildFaqSchema, buildMetadata } from "../seo";
 export const metadata = buildMetadata({
   title: "Avocate en droit de l'urbanisme à Paris",
   description:
-    "Le cabinet conseille et assiste en droit de l'urbanisme à Paris pour permis de construire, autorisations d'urbanisme et recours administratifs.",
+    "Sophie Maréchal, avocate en droit de l'urbanisme à Paris, accompagne les permis de construire, autorisations d'urbanisme, refus de permis et recours administratifs.",
   path: "/droit-de-urbanisme",
   image: "/droit-de-urbanisme/opengraph-image",
 });

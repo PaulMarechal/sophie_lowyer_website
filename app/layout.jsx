@@ -7,7 +7,7 @@ export const metadata = {
   metadataBase: new URL("https://sophiemarechal-avocat.fr"),
   title: "Sophie Maréchal | Avocate en droit public à Paris",
   description:
-    "Cabinet de Sophie Maréchal, avocate à Paris en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
+    "Cabinet de Sophie Maréchal, avocate en droit public à Paris, intervenant en droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "Sophie Maréchal",
     title: "Sophie Maréchal | Avocate en droit public à Paris",
     description:
-      "Cabinet de Sophie Maréchal, avocate à Paris en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
+      "Cabinet de Sophie Maréchal, avocate en droit public à Paris, intervenant en droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
     images: [
       {
         url: "/Images/og_images/og_image_1200_600.png",
@@ -39,7 +39,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Sophie Maréchal | Avocate en droit public à Paris",
     description:
-      "Cabinet de Sophie Maréchal, avocate à Paris en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
+      "Cabinet de Sophie Maréchal, avocate en droit public à Paris, intervenant en droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
     images: ["/Images/og_images/og_image_1200_600.png"],
   },
 };

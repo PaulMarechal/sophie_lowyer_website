@@ -5,13 +5,8 @@ import { buildFaqSchema, buildMetadata } from "../seo";
 export const metadata = buildMetadata({
   title: "Avocate conseil de discipline à Paris",
   description:
-    "Sophie Maréchal assiste les agents publics convoqués devant un conseil de discipline à Paris : préparation du dossier, stratégie de défense et représentation.",
+    "Sophie Maréchal, avocate pour conseil de discipline à Paris, assiste les agents publics : préparation du dossier, stratégie de défense et contestation des sanctions disciplinaires.",
   path: "/avocat-conseil-discipline-paris",
-  keywords: [
-    "avocate conseil de discipline paris",
-    "avocat conseil de discipline fonction publique paris",
-    "sanction disciplinaire fonction publique avocat paris",
-  ],
   image: "/droit-de-la-fonction-publique/opengraph-image",
 });
 

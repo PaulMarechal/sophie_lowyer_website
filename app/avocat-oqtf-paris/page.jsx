@@ -5,9 +5,8 @@ import { buildFaqSchema, buildMetadata } from "../seo";
 export const metadata = buildMetadata({
   title: "Avocate OQTF à Paris",
   description:
-    "Sophie Maréchal accompagne les personnes faisant l'objet d'une OQTF à Paris : analyse de la décision, délais de recours et stratégie contentieuse.",
+    "Sophie Maréchal, avocate OQTF à Paris, accompagne les recours contre les obligations de quitter le territoire : analyse de la décision, délais de recours et stratégie contentieuse.",
   path: "/avocat-oqtf-paris",
-  keywords: ["avocate oqtf paris", "avocat oqtf paris", "recours oqtf paris"],
   image: "/droit-des-etrangers/opengraph-image",
 });
 

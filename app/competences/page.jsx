@@ -3,9 +3,9 @@ import Competences from "../../src/views/competences/Competences";
 import { buildMetadata } from "../seo";
 
 export const metadata = buildMetadata({
-  title: "Compétences",
+  title: "Compétences en droit public à Paris",
   description:
-    "Le cabinet intervient en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique à Paris.",
+    "Le cabinet intervient à Paris en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
   path: "/competences",
   image: "/Images/og_pages/competences.png",
 });

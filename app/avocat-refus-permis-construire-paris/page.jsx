@@ -5,13 +5,8 @@ import { buildFaqSchema, buildMetadata } from "../seo";
 export const metadata = buildMetadata({
   title: "Avocate refus de permis de construire à Paris",
   description:
-    "Sophie Maréchal accompagne les recours contre les refus de permis de construire à Paris : analyse du dossier, stratégie et contentieux administratif.",
+    "Sophie Maréchal, avocate pour refus de permis de construire à Paris, accompagne l'analyse du dossier, la stratégie de recours et le contentieux administratif.",
   path: "/avocat-refus-permis-construire-paris",
-  keywords: [
-    "avocate refus permis de construire paris",
-    "avocat permis de construire paris",
-    "recours refus permis construire paris",
-  ],
   image: "/droit-de-urbanisme/opengraph-image",
 });
 

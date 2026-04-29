@@ -28,13 +28,8 @@ const APropos = () => {
         <div className={styles.articleCard}>
           <p className={styles.cardEyebrow}>Parcours</p>
           <h2 className={styles.sectionTitle}>Une expertise engagée</h2>
-          <p className={styles.articleLead}>
-            Le parcours de Sophie Maréchal associe une formation exigeante en droit public,
-            une expérience concrète de l’administration et une pratique tournée vers les
-            contentieux administratifs.
-          </p>
           <div className={styles.textColumns}>
-            <div className={styles.storyColumn}>
+            <div>
               <p>
                 Sophie Maréchal est titulaire d’un master affaires publiques obtenu à Sciences Po Paris et d’un master en droit public général obtenu à l’Université Paris-I Panthéon Sorbonne.
               </p>
@@ -53,28 +48,10 @@ const APropos = () => {
                 Le cabinet de Sophie Maréchal, parfois recherché sous l’orthographe sans accent Sophie Marechal, intervient à Paris en droit public, droit de l’urbanisme, droit des étrangers et droit de la fonction publique.
               </p>
             </div>
-            <div className={styles.timelineColumn} aria-label="Repères du parcours">
-              <div className={styles.timelineItem}>
-                <span>Formation</span>
-                <strong>Sciences Po Paris · Paris-I Panthéon Sorbonne</strong>
-              </div>
-              <div className={styles.timelineItem}>
-                <span>Administration</span>
-                <strong>7 ans comme directrice d’hôpital</strong>
-              </div>
-              <div className={styles.timelineItem}>
-                <span>Avocature</span>
-                <strong>CRFPA en 2022 · EFB de 2023 à 2024</strong>
-              </div>
-              <div className={styles.timelineItem}>
-                <span>Pratique</span>
-                <strong>Droit public, urbanisme, étrangers, fonction publique</strong>
-              </div>
-            </div>
           </div>
         </div>
 
-        <aside className={styles.sideCard}>
+        <section className={styles.sideCard}>
           <p className={styles.cardEyebrow}>Intervention</p>
           <h3 className={styles.sideCardTitle}>Domaines du cabinet</h3>
           <div className={styles.expertiseList}>
@@ -99,7 +76,7 @@ const APropos = () => {
               <span>Recours contre OQTF à Paris</span>
             </Link>
           </div>
-        </aside>
+        </section>
       </section>
     </div>
   );

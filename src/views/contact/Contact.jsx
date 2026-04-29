@@ -3,6 +3,11 @@
 import React, { useState } from 'react';
 import styles from './Contact.module.css';
 
+const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL?.trim() || '';
+const calendlyEmbedUrl = calendlyUrl
+  ? `${calendlyUrl}${calendlyUrl.includes('?') ? '&' : '?'}hide_gdpr_banner=1&primary_color=315987`
+  : '';
+
 const Contact = () => {
   const [messageSent, setMessageSent] = useState(false);
   const [error, setError] = useState(false);
@@ -131,6 +136,39 @@ const Contact = () => {
             )}
           </div>
         </div>
+
+        <section className={styles.bookingPanel} aria-labelledby="booking-title">
+          <div className={styles.bookingHeader}>
+            <p className={styles.cardEyebrow}>Rendez-vous</p>
+            <h2 id="booking-title" className={styles.bookingTitle}>
+              Réserver un créneau avec le cabinet
+            </h2>
+            <p className={styles.bookingText}>
+              Vous pouvez choisir directement un créneau disponible pour un premier échange.
+              Le cabinet confirmera ensuite les modalités du rendez-vous selon la nature de la demande.
+            </p>
+          </div>
+
+          {calendlyEmbedUrl ? (
+            <div className={styles.calendlyFrameWrap}>
+              <iframe
+                className={styles.calendlyFrame}
+                src={calendlyEmbedUrl}
+                title="Réserver un rendez-vous avec Sophie Maréchal"
+              />
+            </div>
+          ) : (
+            <div className={styles.bookingFallback}>
+              <p>
+                La réservation en ligne sera disponible prochainement. En attendant, vous pouvez
+                contacter le cabinet par téléphone, e-mail ou via le formulaire.
+              </p>
+              <a href="mailto:sophie.marechal@avocat.fr" className={styles.bookingBtn}>
+                Demander un rendez-vous
+              </a>
+            </div>
+          )}
+        </section>
       </section>
     </div>
   );

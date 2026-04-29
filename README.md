@@ -13,5 +13,10 @@ npm run dev
 Build :
 npm run build
 
+Calendly :
+Créer un fichier `.env.local` avec :
+
+NEXT_PUBLIC_CALENDLY_URL=https://calendly.com/votre-compte/votre-evenement
+
 
 © Paul Maréchal 2026

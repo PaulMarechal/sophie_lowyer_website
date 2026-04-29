@@ -154,7 +154,9 @@ const DroitEtrangers = () => {
             Si votre situation concerne une obligation de quitter le territoire français, un contenu dédié détaille les délais, les recours envisageables et les enjeux d’une stratégie contentieuse rapide.
           </p>
           <div className={styles.relatedLinks}>
+            <Link href="/avocate-droit-des-etrangers-paris" className={styles.primaryBtn}>Avocate droit des étrangers Paris</Link>
             <Link href="/avocat-oqtf-paris" className={styles.primaryBtn}>Consulter la page OQTF</Link>
+            <Link href="/recours-oqtf-paris" className={styles.secondaryBtn}>Recours OQTF Paris</Link>
             <Link href="/contact" className={styles.secondaryBtn}>Parler de votre dossier</Link>
           </div>
         </div>

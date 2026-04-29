@@ -61,10 +61,31 @@ const domainCards = [
 
 const seoResources = [
   {
+    eyebrow: "Droit public",
+    title: "Avocate en droit public à Paris",
+    text: "Une page dédiée aux dossiers de droit public : décisions administratives, recours, urbanisme, étrangers et fonction publique.",
+    href: "/avocate-droit-public-paris",
+    cta: "Voir la page droit public"
+  },
+  {
+    eyebrow: "Droit de l’urbanisme",
+    title: "Avocate en droit de l’urbanisme à Paris",
+    text: "Un point d’entrée ciblé pour les autorisations d’urbanisme, permis de construire, déclarations préalables et recours.",
+    href: "/avocate-droit-urbanisme-paris",
+    cta: "Voir la page urbanisme"
+  },
+  {
+    eyebrow: "Droit des étrangers",
+    title: "Avocate en droit des étrangers à Paris",
+    text: "Une page pour les demandes de titre de séjour, naturalisation, refus préfectoraux et recours administratifs.",
+    href: "/avocate-droit-des-etrangers-paris",
+    cta: "Voir la page étrangers"
+  },
+  {
     eyebrow: "Droit des étrangers",
     title: "Recours contre une OQTF à Paris",
     text: "Un guide dédié pour comprendre les délais, la stratégie de recours et les points de vigilance en cas d’obligation de quitter le territoire français.",
-    href: "/avocat-oqtf-paris",
+    href: "/recours-oqtf-paris",
     cta: "Consulter le guide OQTF"
   },
   {
@@ -163,6 +184,7 @@ const Home = () => {
           </p>
           <p>
             Le cabinet accompagne ainsi une clientèle recherchant une <b>avocate en droit public à Paris</b>, en <b>droit de l’urbanisme</b>, en <b>droit des étrangers</b> et en <b>droit de la fonction publique</b>.
+            Sophie Maréchal est aussi parfois recherchée sans accent sous la forme <b>Sophie Marechal</b>.
           </p>
         </div>
       </section>
@@ -178,14 +200,12 @@ const Home = () => {
           </div>
           <div className={styles.resourceGrid}>
             {seoResources.map((resource) => (
-              <article key={resource.href} className={styles.resourceCard}>
+              <Link key={resource.href} href={resource.href} className={styles.resourceCard}>
                 <p className={styles.resourceMeta}>{resource.eyebrow}</p>
                 <h3 className={styles.resourceTitle}>{resource.title}</h3>
                 <p className={styles.resourceText}>{resource.text}</p>
-                <Link href={resource.href} className={styles.resourceLink}>
-                  {resource.cta}
-                </Link>
-              </article>
+                <span className={styles.resourceLink}>{resource.cta}</span>
+              </Link>
             ))}
           </div>
         </div>

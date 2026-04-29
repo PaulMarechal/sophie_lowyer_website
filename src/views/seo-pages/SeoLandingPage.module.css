@@ -45,33 +45,48 @@
 }
 
 .contentSection {
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 3rem 2rem 5rem;
+  padding: 3.5rem 2rem 5rem;
 }
 
-.sectionsGrid,
+.sectionsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.15rem;
+}
+
 .faqGrid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
 .sectionCard,
 .faqCard,
-.ctaCard {
+.ctaCard,
+.proofCard,
+.relatedCard {
   border-radius: 28px;
   border: 1px solid var(--line);
-  box-shadow: var(--shadow);
+  box-shadow: 0 16px 34px rgba(20, 31, 48, 0.06);
 }
 
 .sectionCard,
-.faqCard {
+.faqCard,
+.proofCard,
+.relatedCard {
   background: var(--surface);
 }
 
 .sectionCard {
-  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: minmax(130px, 180px) minmax(0, 1fr);
+  column-gap: clamp(1.5rem, 4vw, 3.5rem);
+  row-gap: 0.75rem;
+  padding: clamp(1.55rem, 3vw, 2.4rem);
+  border-radius: 18px;
+  box-shadow: none;
 }
 
 .cardEyebrow {
@@ -79,9 +94,25 @@
 }
 
 .sectionTitle {
-  margin: 0 0 2rem;
-  font-size: clamp(1.7rem, 2.3vw, 2.5rem);
+  grid-column: 2;
+  max-width: 760px;
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.45rem, 2vw, 2.2rem);
+  line-height: 1.18;
+  text-align: left;
   color: var(--navy);
+}
+
+.sectionCard .cardEyebrow {
+  grid-row: 1 / span 2;
+  margin-top: 0.25rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(109, 127, 147, 0.34);
+}
+
+.copy {
+  grid-column: 2;
+  max-width: 760px;
 }
 
 .copy p,
@@ -100,22 +131,166 @@
 }
 
 .faqCard,
+.proofCard,
+.relatedCard,
 .ctaCard {
-  margin-top: 2rem;
-  padding: 2rem;
+  margin-top: 1.5rem;
+  padding: clamp(1.5rem, 3vw, 2.3rem);
+  border-radius: 18px;
+}
+
+.proofCard,
+.faqCard,
+.relatedCard {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(250, 247, 241, 0.9)),
+    var(--surface);
+}
+
+.proofCard {
+  display: grid;
+  grid-template-columns: minmax(190px, 270px) minmax(0, 1fr);
+  gap: 1.4rem clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.proofCard .cardEyebrow,
+.proofCard .sectionTitle {
+  grid-column: 1;
+}
+
+.proofCard .cardEyebrow {
+  margin: 0;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(109, 127, 147, 0.34);
+  text-align: left;
+}
+
+.proofCard .sectionTitle {
+  margin: 0;
+  font-size: clamp(1.65rem, 2.4vw, 2.45rem);
 }
 
 .faqQuestion {
   margin-bottom: 0.75rem;
-  font-size: 1.22rem;
+  font-size: 1.08rem;
+  line-height: 1.25;
+  text-align: left;
   color: var(--navy);
 }
 
 .faqItem {
   padding: 1.2rem;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.68);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.62);
   border: 1px solid rgba(22, 35, 54, 0.08);
+}
+
+.proofGrid,
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.proofGrid {
+  grid-column: 2;
+}
+
+.proofItem,
+.relatedLink {
+  padding: 1.05rem 1.15rem 1.15rem;
+  border-radius: 14px;
+  background:
+    linear-gradient(90deg, rgba(49, 89, 135, 0.08), rgba(49, 89, 135, 0) 38%),
+    rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(22, 35, 54, 0.08);
+}
+
+.proofItem {
+  position: relative;
+  overflow: hidden;
+}
+
+.proofItem::before {
+  content: "";
+  position: absolute;
+  top: 1.15rem;
+  left: 0;
+  width: 3px;
+  height: 2.15rem;
+  border-radius: 999px;
+  background: #315987;
+  opacity: 0.78;
+}
+
+.proofItem .faqQuestion,
+.faqItem .faqQuestion {
+  margin: 0 0 0.55rem;
+  font-size: 1.02rem;
+}
+
+.proofItem .faqAnswer,
+.faqItem .faqAnswer {
+  font-size: 0.98rem;
+  line-height: 1.62;
+}
+
+.relatedLink {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 118px;
+  gap: 0.45rem;
+  color: var(--navy);
+  text-decoration: none;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.relatedLink::after {
+  content: "→";
+  position: absolute;
+  right: 1.1rem;
+  top: 1rem;
+  color: #315987;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.relatedLink:hover {
+  transform: translateY(-2px);
+  border-color: rgba(49, 89, 135, 0.22);
+  background:
+    linear-gradient(90deg, rgba(49, 89, 135, 0.11), rgba(49, 89, 135, 0.02) 48%),
+    rgba(255, 255, 255, 0.78);
+}
+
+.relatedLink:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.relatedTitle {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.45rem, 2vw, 2.05rem);
+  line-height: 1.2;
+  text-align: left;
+  color: var(--navy);
+}
+
+.relatedLabel {
+  max-width: calc(100% - 2rem);
+  font-size: 1.06rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.relatedText {
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  text-align: left;
 }
 
 .ctaCard {
@@ -154,8 +329,20 @@
 
 @media (max-width: 980px) {
   .sectionsGrid,
-  .faqGrid {
+  .faqGrid,
+  .proofGrid,
+  .relatedGrid {
     grid-template-columns: 1fr;
+  }
+
+  .proofCard {
+    grid-template-columns: 1fr;
+  }
+
+  .proofGrid,
+  .proofCard .cardEyebrow,
+  .proofCard .sectionTitle {
+    grid-column: 1;
   }
 }
 
@@ -175,6 +362,8 @@
 
   .sectionCard,
   .faqCard,
+  .proofCard,
+  .relatedCard,
   .ctaCard {
     padding: 1.5rem;
   }
@@ -208,9 +397,20 @@
 
   .sectionCard,
   .faqCard,
+  .proofCard,
+  .relatedCard,
   .ctaCard {
     padding: 1.25rem;
     border-radius: 24px;
+  }
+
+  .sectionCard {
+    display: block;
+  }
+
+  .sectionCard .cardEyebrow {
+    border-top: 0;
+    padding-top: 0;
   }
 
   .primaryBtn,

@@ -35,16 +35,16 @@ const faqSchema = buildFaqSchema([
 
 const sections = [
   {
-    eyebrow: "Décision défavorable",
-    title: "Refus de permis de construire : quelle réaction adopter ?",
+    eyebrow: "Refus",
+    title: "Comprendre les motifs avant de modifier ou contester le projet",
     paragraphs: [
       "Un refus de permis de construire ne signifie pas nécessairement que le projet est juridiquement impossible. Il faut d'abord comprendre les motifs exacts retenus par l'administration.",
       "Une lecture technique du dossier et des règles d'urbanisme applicables permet souvent d'identifier les marges de recours ou les ajustements envisageables.",
     ],
   },
   {
-    eyebrow: "Vérifications",
-    title: "Les points clés analysés par le cabinet",
+    eyebrow: "Analyse",
+    title: "PLU, pièces, motivation : les vérifications utiles",
     paragraphs: [
       "Le cabinet examine la cohérence du refus, les pièces déposées, le règlement applicable au terrain et la possibilité d'un recours gracieux ou contentieux.",
     ],
@@ -56,8 +56,8 @@ const sections = [
     ],
   },
   {
-    eyebrow: "Recours",
-    title: "Défendre le projet à Paris",
+    eyebrow: "Suite du projet",
+    title: "Recours gracieux, contentieux ou nouveau dépôt",
     paragraphs: [
       "L'objectif est de sécuriser la meilleure stratégie : obtenir le retrait de la décision, préparer une nouvelle demande ou engager un contentieux devant le tribunal administratif.",
       "Le cabinet accompagne particuliers et professionnels à Paris dans la contestation des refus de permis de construire et autres autorisations d'urbanisme.",

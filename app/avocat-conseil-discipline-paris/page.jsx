@@ -35,16 +35,16 @@ const faqSchema = buildFaqSchema([
 
 const sections = [
   {
-    eyebrow: "Procédure disciplinaire",
-    title: "Préparer efficacement une comparution devant le conseil de discipline",
+    eyebrow: "Convocation",
+    title: "Relire le dossier avant le conseil de discipline",
     paragraphs: [
       "Une convocation devant le conseil de discipline est une étape sensible pour un agent public. La procédure doit être examinée avec rigueur avant la séance.",
       "Le cabinet aide à comprendre les griefs reprochés, à relire le dossier disciplinaire et à préparer des observations adaptées à la situation administrative de l'agent.",
     ],
   },
   {
-    eyebrow: "Défense",
-    title: "Ce que le cabinet met en place avant l'audience",
+    eyebrow: "Préparation",
+    title: "Structurer les observations et les pièces de défense",
     paragraphs: [
       "La préparation ne consiste pas seulement à intervenir le jour de la séance. Elle implique une véritable stratégie de défense et une revue détaillée du dossier.",
     ],
@@ -56,8 +56,8 @@ const sections = [
     ],
   },
   {
-    eyebrow: "Suite du dossier",
-    title: "Après le conseil de discipline",
+    eyebrow: "Décision",
+    title: "Anticiper la suite après l'avis ou la sanction",
     paragraphs: [
       "Selon la décision prise, il peut être nécessaire de préparer la suite : recours gracieux, stratégie administrative ou contentieux devant le tribunal administratif.",
       "Le cabinet accompagne les agents publics à Paris à chaque étape, avec un conseil clair et une défense structurée.",

@@ -7,6 +7,10 @@ export default function SeoLandingPage({
   title,
   intro,
   sections,
+  proofTitle = "Pourquoi contacter le cabinet ?",
+  proofItems = [],
+  relatedTitle = "Pages utiles",
+  relatedItems = [],
   faqTitle,
   faqItems,
 }) {
@@ -42,6 +46,21 @@ export default function SeoLandingPage({
           ))}
         </div>
 
+        {proofItems.length > 0 ? (
+          <div className={styles.proofCard}>
+            <p className={styles.cardEyebrow}>Expertise</p>
+            <h2 className={styles.sectionTitle}>{proofTitle}</h2>
+            <div className={styles.proofGrid}>
+              {proofItems.map((item) => (
+                <article key={item.title} className={styles.proofItem}>
+                  <h3 className={styles.faqQuestion}>{item.title}</h3>
+                  <p className={styles.faqAnswer}>{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        ) : null}
+
         <div className={styles.faqCard}>
           <p className={styles.cardEyebrow}>Questions fréquentes</p>
           <h2 className={styles.sectionTitle}>{faqTitle}</h2>
@@ -54,6 +73,20 @@ export default function SeoLandingPage({
             ))}
           </div>
         </div>
+
+        {relatedItems.length > 0 ? (
+          <div className={styles.relatedCard}>
+            <h2 className={styles.relatedTitle}>À lire aussi</h2>
+            <div className={styles.relatedGrid}>
+              {relatedItems.map((item) => (
+                <Link key={item.href} href={item.href} className={styles.relatedLink}>
+                  <span className={styles.relatedLabel}>{item.label}</span>
+                  <small className={styles.relatedText}>{item.text}</small>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ) : null}
 
         <div className={styles.ctaCard}>
           <p className={styles.cardEyebrow}>Premier échange</p>

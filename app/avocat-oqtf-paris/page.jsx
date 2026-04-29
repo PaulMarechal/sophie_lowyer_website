@@ -31,16 +31,16 @@ const faqSchema = buildFaqSchema([
 
 const sections = [
   {
-    eyebrow: "Recours",
-    title: "Comprendre l'OQTF et réagir rapidement",
+    eyebrow: "Notification",
+    title: "Comprendre la décision reçue avant d'agir",
     paragraphs: [
       "Lorsqu'une personne reçoit une obligation de quitter le territoire français, il est essentiel d'identifier rapidement les délais applicables et la portée exacte de la décision.",
       "Une OQTF peut être accompagnée d'un refus de titre de séjour, d'une interdiction de retour ou d'une désignation du pays de renvoi. Chaque élément doit être analysé séparément.",
     ],
   },
   {
-    eyebrow: "Analyse",
-    title: "Ce que l'avocat vérifie dans le dossier",
+    eyebrow: "Contrôle",
+    title: "Les points juridiques à relire dans une OQTF",
     paragraphs: [
       "L'analyse porte notamment sur la motivation de la décision, le respect de la procédure, la prise en compte de la vie privée et familiale, l'ancienneté du séjour et les pièces du dossier.",
     ],
@@ -52,8 +52,8 @@ const sections = [
     ],
   },
   {
-    eyebrow: "Stratégie",
-    title: "Préparer un recours contre une OQTF à Paris",
+    eyebrow: "Recours",
+    title: "Préparer le dossier avant le tribunal administratif",
     paragraphs: [
       "Le recours doit être construit avec méthode : lecture de la décision, identification des arguments sérieux, réunion des justificatifs et préparation de la procédure contentieuse.",
       "Le cabinet accompagne les personnes concernées à Paris pour défendre leurs droits et sécuriser au mieux la suite de leur situation administrative.",

@@ -1,6 +1,22 @@
 .footer {
 }
 
+.seoNav {
+  width: min(920px, calc(100% - 3rem));
+  margin: 0 auto 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem 1.1rem;
+  font-size: 0.88rem;
+}
+
+.seoNav a {
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(22, 35, 54, 0.18);
+}
+
 .footer :global(#contact_me) {
   display: flex;
   justify-content: space-between;

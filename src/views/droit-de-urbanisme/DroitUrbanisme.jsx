@@ -153,6 +153,7 @@ const DroitUrbanisme = () => {
             Une page dédiée revient sur les motifs de refus les plus fréquents, les recours envisageables et l’intérêt d’un accompagnement juridique avant toute saisine du tribunal administratif.
           </p>
           <div className={styles.relatedLinks}>
+            <Link href="/avocate-droit-urbanisme-paris" className={styles.primaryBtn}>Avocate droit urbanisme Paris</Link>
             <Link href="/avocat-refus-permis-construire-paris" className={styles.primaryBtn}>Consulter la page permis</Link>
             <Link href="/contact" className={styles.secondaryBtn}>Échanger sur votre projet</Link>
           </div>

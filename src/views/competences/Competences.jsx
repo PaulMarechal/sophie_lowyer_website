@@ -54,6 +54,9 @@ const Competences = () => {
           <p className={styles.displayText}>
             Le cabinet intervient principalement en <strong>droit public</strong>, avec une approche rigoureuse, claire et adaptée aux réalités concrètes de chaque dossier.
           </p>
+          <p className={styles.displayText}>
+            Pour les recherches ciblées, consultez aussi les pages dédiées à l&apos;<Link href="/avocate-droit-public-paris">avocate en droit public à Paris</Link>, à l&apos;<Link href="/avocate-droit-urbanisme-paris">avocate en droit de l&apos;urbanisme à Paris</Link> et aux <Link href="/recours-oqtf-paris">recours contre OQTF à Paris</Link>.
+          </p>
           <div className={styles.expertiseGrid}>
             <Link href="/droit-de-la-fonction-publique" className={styles.expertiseItem}>
               <img src="/Images/droit_public.webp" loading="lazy" alt="Droit de la fonction publique" />

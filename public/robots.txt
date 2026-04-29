@@ -27,4 +27,4 @@ User-agent: Bingbot
 Allow: /
 
 # Lien vers le sitemap
-Sitemap: https://sophiemarechal-avocat.fr/sitemap.xml
+Sitemap: https://www.sophiemarechal-avocat.fr/sitemap.xml

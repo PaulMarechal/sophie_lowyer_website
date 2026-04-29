@@ -1,4 +1,4 @@
-const siteUrl = "https://sophiemarechal-avocat.fr";
+const siteUrl = "https://www.sophiemarechal-avocat.fr";
 const siteName = "Sophie Maréchal";
 const defaultOgImage = "/opengraph-image";
 

@@ -4,7 +4,7 @@ import Script from "next/script";
 import { absoluteUrl, lawFirmSchema } from "./seo";
 
 export const metadata = {
-  metadataBase: new URL("https://sophiemarechal-avocat.fr"),
+  metadataBase: new URL("https://www.sophiemarechal-avocat.fr"),
   title: "Sophie Maréchal | Avocate en droit public à Paris",
   description:
     "Cabinet de Sophie Maréchal, avocate à Paris en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",

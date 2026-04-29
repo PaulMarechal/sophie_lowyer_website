@@ -18,14 +18,14 @@ Le cabinet accompagne particuliers, agents publics et professionnels dans leurs 
 
 ## Important URLs
 
-- https://sophiemarechal-avocat.fr/
-- https://sophiemarechal-avocat.fr/a-propos
-- https://sophiemarechal-avocat.fr/competences
-- https://sophiemarechal-avocat.fr/droit-des-etrangers
-- https://sophiemarechal-avocat.fr/droit-de-urbanisme
-- https://sophiemarechal-avocat.fr/droit-de-la-fonction-publique
-- https://sophiemarechal-avocat.fr/honoraires
-- https://sophiemarechal-avocat.fr/contact
+- https://www.sophiemarechal-avocat.fr/
+- https://www.sophiemarechal-avocat.fr/a-propos
+- https://www.sophiemarechal-avocat.fr/competences
+- https://www.sophiemarechal-avocat.fr/droit-des-etrangers
+- https://www.sophiemarechal-avocat.fr/droit-de-urbanisme
+- https://www.sophiemarechal-avocat.fr/droit-de-la-fonction-publique
+- https://www.sophiemarechal-avocat.fr/honoraires
+- https://www.sophiemarechal-avocat.fr/contact
 
 ## Contact
 

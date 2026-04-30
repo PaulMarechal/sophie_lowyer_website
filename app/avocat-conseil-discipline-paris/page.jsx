@@ -5,7 +5,7 @@ import { buildFaqSchema, buildMetadata } from "../seo";
 export const metadata = buildMetadata({
   title: "Avocate conseil de discipline à Paris",
   description:
-    "Sophie Maréchal assiste les agents publics convoqués devant un conseil de discipline à Paris : préparation du dossier, stratégie de défense et représentation.",
+    "Sophie Maréchal accompagne les agents publics convoqués devant un conseil de discipline à Paris : accès au dossier, défense, séance et recours.",
   path: "/avocat-conseil-discipline-paris",
   keywords: [
     "avocate conseil de discipline paris",
@@ -19,17 +19,17 @@ const faqSchema = buildFaqSchema([
   {
     question: "Pourquoi consulter un avocat avant un conseil de discipline ?",
     answer:
-      "Un avocat permet d'analyser le dossier disciplinaire, de vérifier la régularité de la procédure et de préparer une défense structurée avant la séance.",
+      "Être convoqué devant un conseil de discipline est souvent source de stress, d'incompréhension et de peur pour l'avenir professionnel. Un avocat aide à comprendre ce qui est reproché, vérifier la procédure, préparer les explications et choisir la stratégie de défense.",
   },
   {
     question: "L'avocat peut-il assister l'agent pendant la séance ?",
     answer:
-      "Oui, l'avocat peut assister ou représenter l'agent selon le cadre applicable et défendre ses observations devant le conseil de discipline.",
+      "Oui, l'agent public peut être assisté par un avocat lors de la séance. L'avocat peut rester à ses côtés, présenter des observations, poser des questions et veiller au respect de ses droits.",
   },
   {
     question: "Une sanction disciplinaire peut-elle être contestée après la décision ?",
     answer:
-      "Oui, selon la situation, la sanction peut ensuite faire l'objet d'un recours devant le tribunal administratif.",
+      "Oui, une sanction disciplinaire peut, dans certains cas, être contestée par un recours gracieux, un recours hiérarchique ou un recours devant le juge administratif.",
   },
 ]);
 
@@ -39,7 +39,8 @@ const sections = [
     title: "Relire le dossier avant le conseil de discipline",
     paragraphs: [
       "Une convocation devant le conseil de discipline est une étape sensible pour un agent public. La procédure doit être examinée avec rigueur avant la séance.",
-      "Le cabinet aide à comprendre les griefs reprochés, à relire le dossier disciplinaire et à préparer des observations adaptées à la situation administrative de l'agent.",
+      "La procédure doit être examinée avec rigueur avant la séance, afin de vérifier le respect de vos droits et d'anticiper les conséquences possibles sur votre situation professionnelle.",
+      "Le cabinet aide à comprendre les griefs reprochés, à relire le dossier disciplinaire et à préparer des observations adaptées à votre situation. Il vous accompagne également pour formuler vos explications et rassembler les éléments utiles à votre défense.",
     ],
   },
   {
@@ -49,18 +50,26 @@ const sections = [
       "La préparation ne consiste pas seulement à intervenir le jour de la séance. Elle implique une véritable stratégie de défense et une revue détaillée du dossier.",
     ],
     points: [
-      "Analyse des faits et de la procédure",
-      "Lecture du dossier disciplinaire",
-      "Préparation des observations écrites et orales",
-      "Assistance pendant la séance",
+      "Analyse des faits reprochés et de la procédure disciplinaire",
+      "Lecture approfondie du dossier disciplinaire : rapports, témoignages, pièces administratives",
+      "Préparation des observations écrites et orales, dans un langage clair et adapté à votre situation",
+      "Assistance pendant la séance du conseil de discipline : présentation des arguments, réponses aux questions, rappel de vos droits",
     ],
   },
   {
     eyebrow: "Décision",
-    title: "Anticiper la suite après l'avis ou la sanction",
+    title: "Anticiper la suite après l'avis du conseil ou la sanction disciplinaire",
     paragraphs: [
-      "Selon la décision prise, il peut être nécessaire de préparer la suite : recours gracieux, stratégie administrative ou contentieux devant le tribunal administratif.",
-      "Le cabinet accompagne les agents publics à Paris à chaque étape, avec un conseil clair et une défense structurée.",
+      "Selon la décision prise, il peut être nécessaire de préparer la suite : recours gracieux, recours hiérarchique ou recours contentieux devant le tribunal administratif.",
+      "Le cabinet accompagne les agents publics, fonctionnaires titulaires et contractuels, avec un conseil clair et une défense structurée, depuis la convocation devant le conseil de discipline jusqu'à un éventuel recours contentieux devant le tribunal administratif.",
+    ],
+  },
+  {
+    eyebrow: "Recours",
+    title: "Former un recours contre une sanction disciplinaire",
+    paragraphs: [
+      "Après avoir reçu la sanction disciplinaire, il est possible de la contester en formant un recours contentieux devant le tribunal administratif, dans un certain délai.",
+      "L'avocat vous aide à vérifier ce délai, à analyser la régularité de la procédure, la proportion de la sanction par rapport aux faits reprochés et les chances de succès d'un recours.",
     ],
   },
 ];

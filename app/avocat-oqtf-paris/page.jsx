@@ -13,50 +13,51 @@ export const metadata = buildMetadata({
 
 const faqSchema = buildFaqSchema([
   {
-    question: "Combien de temps a-t-on pour contester une OQTF ?",
+    question: "Qu'est-ce qu'une OQTF ?",
     answer:
-      "Le délai dépend du type d'OQTF et de la situation de la personne concernée. Une analyse immédiate de la décision est importante pour éviter toute forclusion.",
+      "Une OQTF est une décision administrative prise par le préfet qui ordonne à un étranger de quitter la France. Elle peut être accompagnée d'un délai de départ volontaire ou être prise sans délai.",
   },
   {
-    question: "Un avocat est-il utile pour un recours contre une OQTF ?",
+    question: "Quels sont les délais de recours contre une OQTF ?",
     answer:
-      "Oui, un avocat peut analyser la légalité de la décision, vérifier la procédure, préparer les arguments et représenter la personne devant le tribunal administratif.",
+      "Le délai dépend de la situation : 30 jours dans le cas général, 7 jours en cas d'assignation à résidence et 48 heures en cas de placement en centre de rétention administrative.",
   },
   {
-    question: "Peut-on contester en même temps le refus de séjour et l'OQTF ?",
+    question: "Que faut-il faire dès réception d'une OQTF ?",
     answer:
-      "Oui, selon la décision reçue, le recours peut porter à la fois sur le refus de séjour, l'obligation de quitter le territoire et les mesures qui l'accompagnent.",
+      "Il faut lire la décision, vérifier la date de notification, identifier le délai de recours, consulter rapidement un avocat ou une association spécialisée et rassembler les pièces utiles.",
   },
 ]);
 
 const sections = [
   {
-    eyebrow: "Notification",
-    title: "Comprendre la décision reçue avant d'agir",
+    eyebrow: "Définition",
+    title: "Ce que signifie une obligation de quitter le territoire français",
     paragraphs: [
-      "Lorsqu'une personne reçoit une obligation de quitter le territoire français, il est essentiel d'identifier rapidement les délais applicables et la portée exacte de la décision.",
-      "Une OQTF peut être accompagnée d'un refus de titre de séjour, d'une interdiction de retour ou d'une désignation du pays de renvoi. Chaque élément doit être analysé séparément.",
+      "Une OQTF est une décision administrative prise par le préfet qui ordonne à un étranger de quitter la France. Elle est souvent accompagnée d'un délai pour partir volontairement, en général 30 jours, parfois sans aucun délai.",
+      "Recevoir une OQTF ne signifie pas forcément que votre expulsion est inévitable. Vous avez le droit de contester cette décision devant un juge.",
     ],
   },
   {
-    eyebrow: "Contrôle",
-    title: "Les points juridiques à relire dans une OQTF",
+    eyebrow: "Délais",
+    title: "Les délais de recours à retenir absolument",
     paragraphs: [
-      "L'analyse porte notamment sur la motivation de la décision, le respect de la procédure, la prise en compte de la vie privée et familiale, l'ancienneté du séjour et les pièces du dossier.",
+      "Le délai commence à courir dès la notification, c'est-à-dire le jour où vous recevez ou signez le document, et non à partir du moment où vous en prenez connaissance plus tard.",
     ],
     points: [
-      "Régularité de la procédure préfectorale",
-      "Motivation du refus et de l'OQTF",
-      "Atteinte disproportionnée à la vie privée et familiale",
-      "Pièces utiles à réunir rapidement",
+      "30 jours pour une OQTF avec délai de départ volontaire",
+      "7 jours pour une OQTF avec assignation à résidence",
+      "48 heures pour une OQTF avec placement en centre de rétention administrative",
+      "Consultation rapide d'un avocat pour éviter toute erreur de procédure",
     ],
   },
   {
-    eyebrow: "Recours",
-    title: "Préparer le dossier avant le tribunal administratif",
+    eyebrow: "Pièces",
+    title: "Les premiers réflexes après réception de l'OQTF",
     paragraphs: [
-      "Le recours doit être construit avec méthode : lecture de la décision, identification des arguments sérieux, réunion des justificatifs et préparation de la procédure contentieuse.",
-      "Le cabinet accompagne les personnes concernées à Paris pour défendre leurs droits et sécuriser au mieux la suite de leur situation administrative.",
+      "Lisez attentivement le document et repérez la date de notification, le délai indiqué et les voies de recours mentionnées.",
+      "Rassemblez vos documents : preuves de résidence, de travail, de vie familiale, documents d'identité et tout justificatif de votre présence et de votre durée de séjour en France.",
+      "Ne quittez pas le territoire avant d'avoir consulté un avocat, sauf si vous avez décidé de partir volontairement.",
     ],
   },
 ];
@@ -67,7 +68,7 @@ export default function Page() {
       <SeoLandingPage
         eyebrow="Droit des étrangers · Paris"
         title="Avocate OQTF à Paris"
-        intro="Le cabinet accompagne les recours contre les obligations de quitter le territoire français, avec une analyse rapide des délais et des moyens de contestation."
+        intro="Le cabinet accompagne les personnes visées par une OQTF afin d'identifier les délais, les voies de recours et les pièces à réunir rapidement."
         sections={sections}
         faqTitle="FAQ OQTF à Paris"
         faqItems={faqSchema.mainEntity.map((item) => ({

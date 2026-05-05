@@ -26,11 +26,11 @@ const cards = [
   {
     label: "Recours",
     title: "Contestation des décisions",
-    subtitle: "Recours gracieux ou contentieux et défense devant le tribunal.",
+    subtitle: "Recours gracieux, recours contentieux et défense devant le tribunal.",
     bg: "/Images/Contestation-des-décisions-permis-construire.webp",
     content: (
       <>
-        <p>En cas de décision défavorable, il est souvent possible de <b>la contester</b>.</p>
+        <p>En cas de décision défavorable, il est souvent possible de <b>la contester</b> par un recours gracieux, c’est-à-dire une demande de réexamen adressée à l’administration, ou par un recours contentieux devant le tribunal administratif.</p>
         <p>Me Sophie Maréchal intervient notamment pour contester :</p>
         <ul>
           <li>Un <b>refus de permis de construire</b></li>
@@ -48,17 +48,17 @@ const faqItems = [
   {
     question: "Quand faire appel à un avocat en droit de l’urbanisme ?",
     answer:
-      "Un avocat peut intervenir avant le dépôt d'une demande d'autorisation d'urbanisme pour sécuriser le projet, ou après une décision défavorable pour étudier les recours possibles.",
+      "Un avocat en droit de l'urbanisme peut intervenir avant le dépôt d'une demande d'autorisation d'urbanisme pour sécuriser votre projet, vérifier les règles applicables et analyser les risques de refus, ou après une décision défavorable pour étudier les recours possibles et vous aider à choisir la meilleure stratégie.",
   },
   {
     question: "Un refus de permis de construire peut-il être contesté ?",
     answer:
-      "Oui. Un refus de permis de construire peut, selon le dossier, faire l'objet d'un recours gracieux ou d'un recours devant le tribunal administratif.",
+      "Oui. Un refus de permis de construire peut, selon le dossier, faire l'objet d'un recours gracieux ou d'un recours contentieux devant le tribunal administratif. Votre avocat vous aide à apprécier l'utilité de ces démarches et leurs chances de succès.",
   },
   {
-    question: "L’avocat peut-il aider à préparer un dossier de permis ?",
+    question: "Un avocat peut-il vous aider à préparer un dossier de permis de construire ?",
     answer:
-      "Oui. L'accompagnement permet de vérifier les règles applicables, d'anticiper les points de blocage et de constituer un dossier juridiquement plus solide.",
+      "Oui. L'accompagnement permet de vérifier les règles applicables à votre terrain, comme le règlement national d'urbanisme, le plan local d'urbanisme, la carte communale ou les servitudes, d'anticiper les points de blocage et de constituer un dossier juridiquement plus solide.",
   },
 ];
 
@@ -73,10 +73,10 @@ const DroitUrbanisme = () => {
           <h1 className={styles.heroTitle}>
             Construire, aménager, contester :
             <br />
-            sécuriser juridiquement votre projet
+            sécuriser juridiquement votre projet d’urbanisme
           </h1>
           <p className={styles.heroText}>
-            Un accompagnement en amont des autorisations et en aval des décisions défavorables, avec une lecture claire des risques et des recours.
+            Un accompagnement en amont des autorisations d’urbanisme et en aval des décisions défavorables, avec une lecture claire des risques et des recours possibles.
           </p>
         </div>
       </section>
@@ -87,8 +87,9 @@ const DroitUrbanisme = () => {
           <h2 className={styles.sectionTitle}>Sécuriser le projet avant et après la décision</h2>
           <div className={styles.introText}>
             <p>Avocat en <b>droit de l’urbanisme</b>, Me Sophie Maréchal accompagne les <b>particuliers</b>, <b>professionnels</b> et <b>collectivités</b> dans leurs démarches liées aux autorisations d’urbanisme et dans les litiges avec l’administration.</p>
-            <p>Le droit de l’urbanisme encadre les règles de construction et d’aménagement. Les procédures peuvent être complexes et les décisions administratives lourdes de conséquences.</p>
-            <p>Son rôle est de vous aider à sécuriser vos projets et à défendre vos intérêts, avec une information claire à chaque étape.</p>
+            <p>Le droit de l’urbanisme regroupe les règles qui encadrent la construction et l’aménagement des terrains : ce que vous avez le droit de construire, à quelle hauteur, à quelle distance de la limite de propriété, et selon quelles contraintes.</p>
+            <p>Les procédures peuvent être complexes et les décisions de l’administration, mairie ou préfecture, peuvent avoir des conséquences importantes sur votre projet.</p>
+            <p>Son rôle est de vous aider à sécuriser vos projets et à défendre vos intérêts, en vous donnant une information claire et compréhensible à chaque étape, depuis la préparation du dossier jusqu’à un éventuel recours.</p>
           </div>
         </div>
 
@@ -122,10 +123,10 @@ const DroitUrbanisme = () => {
           <p className={styles.cardEyebrow}>Méthode</p>
           <h2 className={styles.sectionTitle}>Défense et sécurisation des projets d’urbanisme</h2>
           <p className={styles.closeText}>
-            En tant qu’<b>avocat en droit de l’urbanisme</b>, elle vous propose un accompagnement personnalisé, que vous soyez porteur de projet ou confronté à une décision administrative défavorable.
+            En tant qu’<b>avocat en droit de l’urbanisme</b>, elle vous propose un accompagnement personnalisé, que vous soyez porteur de projet — construction, extension, division parcellaire, changement de destination — ou confronté à une décision administrative défavorable concernant une autorisation d’urbanisme.
           </p>
           <p className={styles.closeText}>
-            Elle attache une importance particulière à son devoir de conseil. Si, à l’issue de l’entretien, elle constate qu’une action n’est pas nécessaire ou qu’elle n’est pas adaptée à votre situation, elle vous en informera en toute transparence.
+            Elle attache une importance particulière à son devoir de conseil. Si, à l’issue de l’entretien, elle constate qu’une action en justice n’est pas nécessaire ou qu’elle n’est pas adaptée à votre situation, elle vous l’expliquera en toute transparence et vous proposera, le cas échéant, d’autres solutions : nouvelle demande, modification du projet ou recours gracieux.
           </p>
           <div className={styles.bottomLinks}>
             <Link href="/contact" className={styles.primaryBtn}>Contacter le cabinet</Link>

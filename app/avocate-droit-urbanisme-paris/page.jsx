@@ -5,7 +5,7 @@ import { buildBreadcrumbSchema, buildFaqSchema, buildMetadata } from "../seo";
 export const metadata = buildMetadata({
   title: "Avocate en droit de l'urbanisme à Paris",
   description:
-    "Avocate en droit de l'urbanisme à Paris, Sophie Maréchal accompagne permis de construire, autorisations d'urbanisme et recours administratifs.",
+    "Avocate en droit de l'urbanisme à Paris, Sophie Maréchal accompagne permis de construire, déclarations préalables, autorisations d'urbanisme et recours.",
   path: "/avocate-droit-urbanisme-paris",
   keywords: [
     "avocate droit de l'urbanisme paris",
@@ -20,12 +20,12 @@ const faqSchema = buildFaqSchema([
   {
     question: "Quand consulter une avocate en droit de l'urbanisme à Paris ?",
     answer:
-      "Un avocat peut intervenir avant le dépôt d'une autorisation d'urbanisme, après un refus ou lorsqu'un projet fait l'objet d'un recours ou d'un litige avec l'administration.",
+      "Un avocat en droit de l'urbanisme peut intervenir avant le dépôt d'une demande d'autorisation d'urbanisme pour sécuriser votre projet, vérifier les règles applicables et analyser les risques de refus, ou après une décision défavorable pour étudier les recours possibles.",
   },
   {
     question: "Un refus de permis de construire peut-il être contesté ?",
     answer:
-      "Oui, un refus peut être contesté par un recours gracieux ou devant le tribunal administratif, selon les délais et les motifs retenus par l'administration.",
+      "Oui. Un refus de permis de construire peut, selon le dossier, faire l'objet d'un recours gracieux ou d'un recours contentieux devant le tribunal administratif.",
   },
   {
     question: "Le cabinet accompagne-t-il les particuliers et les professionnels ?",
@@ -49,22 +49,22 @@ const sections = [
     eyebrow: "Projet",
     title: "Vérifier le cadre juridique avant de construire ou d'aménager",
     paragraphs: [
-      "Le droit de l'urbanisme encadre les conditions dans lesquelles un projet peut être construit, modifié ou aménagé. À Paris, ces règles peuvent être particulièrement techniques : plan local d'urbanisme, servitudes, prescriptions architecturales, destination des constructions et contraintes patrimoniales.",
-      "Sophie Maréchal accompagne les particuliers, professionnels et collectivités dans l'analyse juridique de leurs projets. L'objectif est d'anticiper les difficultés, de comprendre les règles applicables et de préparer une démarche cohérente face à l'administration.",
+      "Le droit de l'urbanisme regroupe les règles qui encadrent la construction et l'aménagement des terrains : ce que vous avez le droit de construire, à quelle hauteur, à quelle distance de la limite de propriété, et selon quelles contraintes.",
+      "Avocat en droit de l'urbanisme, Sophie Maréchal accompagne les particuliers, les professionnels et les collectivités dans leurs démarches liées aux autorisations d'urbanisme, comme les permis de construire et déclarations préalables, et dans les litiges avec l'administration.",
     ],
   },
   {
     eyebrow: "Autorisations",
     title: "Permis, déclaration préalable, prescriptions : lire la décision",
     paragraphs: [
-      "Le cabinet intervient sur les demandes d'autorisation d'urbanisme : permis de construire, permis d'aménager, déclaration préalable de travaux ou prescriptions imposées par l'administration.",
-      "L'accompagnement peut porter sur la faisabilité juridique du projet, l'analyse du règlement applicable, la relecture des pièces et la préparation d'une stratégie avant dépôt ou après décision.",
+      "Le cabinet intervient en amont des autorisations d'urbanisme pour conseiller, constituer le dossier et sécuriser le projet.",
+      "Il intervient également en aval des décisions défavorables, avec une lecture claire des risques et des recours possibles.",
     ],
     points: [
-      "Analyse du PLU et des règles applicables au terrain",
-      "Vérification des motifs de refus ou de prescription",
-      "Préparation d'un recours gracieux",
-      "Contentieux devant le tribunal administratif",
+      "Permis de construire et déclarations préalables",
+      "Conseil, constitution du dossier et sécurisation du projet",
+      "Recours gracieux : demande de réexamen adressée à l'administration",
+      "Recours contentieux : saisine du tribunal administratif",
     ],
   },
   {
@@ -72,7 +72,7 @@ const sections = [
     title: "Choisir entre recours, régularisation ou nouveau dépôt",
     paragraphs: [
       "Un refus de permis de construire, une opposition à déclaration préalable ou une prescription contestable doit être lu précisément. Tous les motifs invoqués par l'administration ne sont pas nécessairement fondés, et certains projets peuvent être régularisés ou défendus.",
-      "La stratégie dépend du dossier : échange avec l'administration, recours gracieux, nouvelle demande ou recours contentieux. Le cabinet aide à choisir l'option la plus adaptée à la situation et aux délais.",
+      "La stratégie dépend du dossier : échange avec l'administration, recours gracieux, nouvelle demande, modification du projet ou recours contentieux. Le cabinet aide à choisir l'option la plus adaptée à la situation et aux délais.",
     ],
   },
   {
@@ -91,7 +91,7 @@ export default function Page() {
       <SeoLandingPage
         eyebrow="Droit de l'urbanisme · Paris"
         title="Avocate en droit de l'urbanisme à Paris"
-        intro="Le cabinet accompagne les projets de construction, autorisations d'urbanisme et recours contre les décisions défavorables à Paris."
+        intro="Un accompagnement en amont des autorisations d'urbanisme et en aval des décisions défavorables, avec une lecture claire des risques et des recours possibles."
         sections={sections}
         proofItems={[
           {

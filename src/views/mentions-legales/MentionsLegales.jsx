@@ -57,13 +57,22 @@ const legalSections = [
     ),
   },
   {
-    title: 'Hébergement',
+    title: 'Hébergement et déploiement',
     eyebrow: 'Technique',
     content: (
       <>
-        <p>OVH, 424 761 419 RCS Roubaix - Tourcoing</p>
+        <p>
+          <strong>Infrastructure d&apos;hébergement :</strong> OVH SAS, région eu-west-gra
+          (Gravelines, France).
+        </p>
+        <p>OVH SAS, 424 761 419 RCS Lille Métropole</p>
         <p>2 rue Kellermann, 59100 Roubaix, France</p>
         <p>Téléphone : +33 9 72 10 10 07</p>
+        <p>
+          <strong>Plateforme de déploiement et de diffusion :</strong> Vercel Inc. Le site est
+          déployé via Vercel et distribué au moyen de son réseau de diffusion.
+        </p>
+        <p>440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis</p>
       </>
     ),
   },

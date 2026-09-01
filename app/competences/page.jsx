@@ -5,7 +5,7 @@ import { buildMetadata } from "../seo";
 export const metadata = buildMetadata({
   title: "Compétences",
   description:
-    "Le cabinet intervient en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique à Paris.",
+    "Le cabinet intervient en droit public, droit de l'urbanisme, droit des étrangers et droit de la nationalité à Paris.",
   path: "/competences",
   image: "/Images/og_pages/competences.png",
 });

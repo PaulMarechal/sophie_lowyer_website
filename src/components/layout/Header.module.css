@@ -22,10 +22,10 @@
 }
 
 .brandRow {
+  display: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
   align-items: center;
   justify-content: center;
   min-width: max-content;
@@ -35,16 +35,40 @@
   display: none;
 }
 
+.languageSwitch {
+  position: absolute;
+  right: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  min-height: 36px;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(22, 35, 54, 0.16);
+  border-radius: 999px;
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.72);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+}
+
+.languageSwitch:hover {
+  background: #fff;
+}
+
 .nav {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   align-items: center;
-  width: 100%;
+  width: calc(100% - 8rem);
   max-width: 1180px;
 }
 
 .navItem,
-.desktopBrandSpacer {
+.desktopBrandItem {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,6 +101,7 @@
   }
 
   .brandRow {
+    display: flex;
     position: relative;
     left: auto;
     transform: none;
@@ -90,13 +115,22 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     padding: 0;
     border: 1px solid rgba(22, 35, 54, 0.12);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.7);
     cursor: pointer;
+  }
+
+  .languageSwitch {
+    position: relative;
+    right: auto;
+    z-index: 2;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.4rem 0.65rem;
   }
 
   .menuToggle span {
@@ -129,6 +163,7 @@
     top: calc(100% + 0.6rem);
     left: 1rem;
     right: 1rem;
+    width: auto;
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.45rem;
@@ -138,17 +173,20 @@
     background: rgba(251, 248, 243, 0.98);
     box-shadow: 0 24px 48px rgba(20, 31, 48, 0.12);
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transform: translateY(-10px);
     max-height: calc(100vh - 6.5rem);
     overflow: auto;
-    transition: opacity 0.22s ease, transform 0.22s ease;
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0s linear 0.22s;
   }
 
   .menuOpen .nav {
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     transform: translateY(0);
+    transition-delay: 0s;
   }
 
   .navItem {
@@ -169,7 +207,7 @@
     background: rgba(22, 35, 54, 0.04);
   }
 
-  .desktopBrandSpacer {
+  .desktopBrandItem {
     display: none;
   }
 }

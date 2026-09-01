@@ -79,7 +79,7 @@
 
 .primaryBtn {
   color: #fff;
-  background: linear-gradient(135deg, #3f6fa7 0%, #6f9cd6 100%);
+  background: linear-gradient(135deg, #315987 0%, #3f6fa7 100%);
 }
 
 .secondaryBtn {
@@ -89,14 +89,26 @@
 }
 
 .portraitCard {
+  position: relative;
   align-self: stretch;
   min-height: 420px;
+  overflow: hidden;
   border-radius: 32px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
-    url("/Images/Sophie_Marechal.webp") center top/cover no-repeat;
   box-shadow: 0 28px 60px rgba(7, 13, 22, 0.2);
+}
+
+.portraitCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  pointer-events: none;
+}
+
+.portraitImage {
+  object-fit: cover;
+  object-position: center top;
 }
 
 .content {
@@ -131,7 +143,7 @@
 }
 
 .cardEyebrow {
-  color: #6d7f93;
+  color: var(--ink-soft);
 }
 
 .textColumns {
@@ -154,7 +166,7 @@
 
 .expertiseList {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 1.25rem;
 }
@@ -172,11 +184,14 @@
   transform: translateY(-4px);
 }
 
-.expertiseItem img {
-  width: 100%;
+.expertiseImage {
+  position: relative;
   height: 145px;
+  overflow: hidden;
+}
+
+.expertiseImage img {
   object-fit: cover;
-  display: block;
 }
 
 .expertiseItem span {
@@ -274,7 +289,7 @@
     font-size: 1rem;
   }
 
-  .expertiseItem img {
+  .expertiseImage {
     height: 140px;
   }
 }

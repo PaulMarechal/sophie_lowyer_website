@@ -67,7 +67,7 @@
 }
 
 .cardEyebrow {
-  color: #6d7f93;
+  color: var(--ink-soft);
 }
 
 .sectionTitle {
@@ -135,6 +135,20 @@
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 0.8rem;
+}
+
+.estimateBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, #315987 0%, #3f6fa7 100%);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .contactLinks a {

@@ -5,7 +5,7 @@ import { buildBreadcrumbSchema, buildFaqSchema, buildMetadata } from "../seo";
 export const metadata = buildMetadata({
   title: "Avocate en droit public à Paris",
   description:
-    "Sophie Maréchal, aussi recherchée comme Sophie Marechal, accompagne particuliers, agents publics et professionnels en droit public à Paris.",
+    "Sophie Maréchal, aussi recherchée comme Sophie Marechal, accompagne particuliers et professionnels en droit public à Paris.",
   path: "/avocate-droit-public-paris",
   keywords: [
     "avocate droit public paris",
@@ -19,12 +19,12 @@ const faqSchema = buildFaqSchema([
   {
     question: "Dans quels cas consulter une avocate en droit public à Paris ?",
     answer:
-      "Il est utile de consulter une avocate en droit public lorsqu'une décision administrative affecte une situation personnelle, professionnelle ou patrimoniale : refus, sanction, autorisation, procédure disciplinaire ou recours devant le tribunal administratif.",
+      "Il est utile de consulter une avocate en droit public lorsqu'une décision administrative affecte une situation personnelle, professionnelle ou patrimoniale : refus, autorisation, obligation de quitter le territoire ou recours devant le tribunal administratif.",
   },
   {
     question: "Le droit public concerne-t-il seulement les administrations ?",
     answer:
-      "Non. Le droit public concerne aussi les particuliers, agents publics, associations, entreprises et porteurs de projet lorsqu'ils sont confrontés à une décision ou à une procédure administrative.",
+      "Non. Le droit public concerne aussi les particuliers, associations, entreprises et porteurs de projet lorsqu'ils sont confrontés à une décision ou à une procédure administrative.",
   },
   {
     question: "Le cabinet intervient-il devant le tribunal administratif de Paris ?",
@@ -49,14 +49,14 @@ const sections = [
     title: "Quand une décision de l'administration appelle une réponse juridique",
     paragraphs: [
       "Le droit public regroupe les règles applicables aux relations avec l'administration, aux décisions administratives et aux recours devant le juge administratif. Il intervient dans des situations très concrètes : refus, sanctions, autorisations, démarches bloquées ou décisions difficiles à comprendre.",
-      "Sophie Maréchal, avocate inscrite au barreau de Paris, accompagne les particuliers, agents publics et professionnels confrontés à ces situations. Le cabinet intervient en conseil comme en contentieux, avec une analyse juridique structurée et une explication claire des options possibles.",
+      "Sophie Maréchal, avocate inscrite au barreau de Paris, accompagne les particuliers et professionnels confrontés à ces situations. Le cabinet intervient en conseil comme en contentieux, avec une analyse juridique structurée et une explication claire des options possibles.",
     ],
   },
   {
     eyebrow: "Champs d'intervention",
-    title: "Urbanisme, étrangers, fonction publique : trois pratiques du droit public",
+    title: "Urbanisme, étrangers et nationalité : trois pratiques du droit public",
     paragraphs: [
-      "Le cabinet intervient principalement en droit de l'urbanisme, droit des étrangers et droit de la fonction publique. Ces matières ont un point commun : elles reposent souvent sur une décision administrative qu'il faut analyser, sécuriser ou contester dans des délais précis.",
+      "Le cabinet intervient principalement en droit de l'urbanisme, droit des étrangers et droit de la nationalité. Ces matières ont un point commun : elles reposent souvent sur une décision administrative qu'il faut analyser, sécuriser ou contester dans des délais précis.",
       "Une même méthode s'applique : identifier la décision, vérifier sa motivation, contrôler la procédure suivie par l'administration, évaluer les pièces disponibles et déterminer si un recours gracieux ou contentieux est pertinent.",
     ],
     points: [
@@ -90,7 +90,7 @@ export default function Page() {
       <SeoLandingPage
         eyebrow="Droit public · Paris"
         title="Avocate en droit public à Paris"
-        intro="Le cabinet de Sophie Maréchal accompagne les dossiers de droit public à Paris : urbanisme, droit des étrangers, fonction publique et recours administratifs."
+        intro="Le cabinet de Sophie Maréchal accompagne les dossiers de droit public à Paris : urbanisme, droit des étrangers, nationalité et recours administratifs."
         sections={sections}
         proofTitle="Éléments de parcours utiles à la pratique"
         proofItems={[
@@ -124,14 +124,14 @@ export default function Page() {
             text: "Titres de séjour, naturalisation, OQTF et refus préfectoraux.",
           },
           {
-            href: "/droit-de-la-fonction-publique",
-            label: "Droit de la fonction publique",
-            text: "Agents publics, conseil de discipline et sanctions.",
+            href: "/droit-de-la-nationalite",
+            label: "Droit de la nationalité",
+            text: "Naturalisation française, instruction et décisions défavorables.",
           },
           {
-            href: "/contact",
-            label: "Contacter le cabinet",
-            text: "Échanger sur un dossier administratif ou contentieux.",
+            href: "/avocat-oqtf-paris",
+            label: "Avocate OQTF à Paris",
+            text: "Délais, décision préfectorale et stratégie contentieuse.",
           },
         ]}
         faqTitle="FAQ droit public à Paris"

@@ -1,0 +1,150 @@
+.banner {
+  position: fixed;
+  z-index: 10020;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: 1.25rem 2rem;
+  width: min(1040px, calc(100% - 2rem));
+  max-height: calc(100vh - 2rem);
+  margin: 0 auto;
+  padding: 1.35rem;
+  overflow: auto;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 26px;
+  color: #f8f2e7;
+  background: rgba(22, 35, 54, 0.98);
+  box-shadow: 0 28px 80px rgba(7, 13, 22, 0.32);
+}
+
+.copy {
+  text-align: left;
+}
+
+.eyebrow {
+  margin: 0 0 0.45rem;
+  color: #d9c39e;
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.copy h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.35rem, 2.1vw, 1.8rem);
+}
+
+.copy p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 0.65rem 0;
+  color: rgba(248, 242, 231, 0.82);
+  line-height: 1.55;
+}
+
+.copy a {
+  color: #fff;
+  text-underline-offset: 0.2em;
+}
+
+.preferences {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.preferences label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.9rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.preferences input {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.15rem;
+  accent-color: #d9c39e;
+}
+
+.preferences span,
+.preferences strong,
+.preferences small {
+  display: block;
+}
+
+.preferences small {
+  margin-top: 0.28rem;
+  color: rgba(248, 242, 231, 0.72);
+  line-height: 1.4;
+}
+
+.preferenceDisabled {
+  opacity: 0.82;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.actions button {
+  min-height: 46px;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary {
+  color: #fff;
+  border: 1px solid #3f6fa7;
+  background: #315987;
+}
+
+.secondary {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+}
+
+.banner :focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 820px) {
+  .banner {
+    right: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    grid-template-columns: 1fr;
+    width: calc(100% - 1rem);
+    max-height: calc(100vh - 1rem);
+    padding: 1rem;
+    border-radius: 22px;
+  }
+
+  .preferences {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    justify-content: stretch;
+  }
+
+  .actions button {
+    flex: 1 1 140px;
+  }
+}

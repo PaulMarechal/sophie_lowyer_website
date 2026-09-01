@@ -68,7 +68,7 @@
 }
 
 .cardEyebrow {
-  color: #6d7f93;
+  color: var(--ink-soft);
 }
 
 .sectionTitle {
@@ -84,9 +84,38 @@
   color: var(--ink-soft);
 }
 
+.quickActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.primaryAction {
+  color: #fff;
+  background: linear-gradient(135deg, #315987 0%, #3f6fa7 100%);
+}
+
+.secondaryAction {
+  color: var(--navy);
+  border: 1px solid rgba(22, 35, 54, 0.14);
+  background: rgba(255, 255, 255, 0.72);
+}
+
 .cardsSection {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 1.5rem;
   margin-top: 2rem;
 }
@@ -128,10 +157,12 @@
 
 .formPanel {
   background: var(--surface);
+  scroll-margin-top: 6rem;
 }
 
 .bookingPanel {
   margin-top: 2rem;
+  scroll-margin-top: 6rem;
   padding: 2rem;
   border-radius: 30px;
   background:
@@ -186,6 +217,7 @@
   border: 0;
 }
 
+.bookingConsent,
 .bookingFallback {
   display: flex;
   align-items: center;
@@ -197,6 +229,12 @@
   border: 1px solid rgba(22, 35, 54, 0.08);
 }
 
+.bookingConsent h3 {
+  margin: 0 0 0.55rem;
+  color: var(--navy);
+}
+
+.bookingConsent p,
 .bookingFallback p {
   max-width: 720px;
   margin: 0;
@@ -210,15 +248,27 @@
   justify-content: center;
   min-height: 48px;
   padding: 0.8rem 1.15rem;
+  border: 0;
   border-radius: 999px;
   color: #fff;
-  background: linear-gradient(135deg, #3f6fa7 0%, #6f9cd6 100%);
+  background: linear-gradient(135deg, #315987 0%, #3f6fa7 100%);
+  font: inherit;
+  font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .form {
   margin-top: 1rem;
+}
+
+.fieldLabel {
+  display: block;
+  margin: 0 0 0.4rem 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
 }
 
 .formGrid {
@@ -229,7 +279,7 @@
 
 .field,
 .fieldLarge,
-.checkboxRow,
+.responseFieldset,
 .buttonRow {
   text-align: left;
 }
@@ -242,29 +292,81 @@
   border-radius: 18px;
   background: #fbf8f3;
   color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
   outline: none;
 }
 
-.field input:focus,
-.field textarea:focus {
+.field input:focus-visible,
+.field textarea:focus-visible {
   border-color: rgba(88, 143, 224, 0.7);
   box-shadow: 0 0 0 4px rgba(88, 143, 224, 0.12);
+  outline: 3px solid #315987;
+  outline-offset: 2px;
+}
+
+.fieldHelp {
+  display: block;
+  margin: 0.35rem 0.2rem 0;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 .fieldLarge {
   grid-column: 1 / -1;
 }
 
-.checkboxRow {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+.responseFieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 1rem;
   grid-column: 1 / -1;
+  border: 1px solid rgba(22, 35, 54, 0.12);
+  border-radius: 18px;
+}
+
+.responseFieldset legend {
+  padding: 0 0.35rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.responseOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
   color: var(--ink-soft);
 }
 
-.checkboxRow input {
+.responseOptions label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.responseOptions input {
   accent-color: var(--navy);
+}
+
+.formNotice {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.formNotice a {
+  color: var(--navy);
+}
+
+.honeypot {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
 }
 
 .buttonRow {
@@ -278,8 +380,13 @@
   border: 0;
   border-radius: 999px;
   color: #fff;
-  background: linear-gradient(135deg, #3f6fa7 0%, #6f9cd6 100%);
+  background: linear-gradient(135deg, #315987 0%, #3f6fa7 100%);
   cursor: pointer;
+}
+
+.submitBtn:disabled {
+  cursor: wait;
+  opacity: 0.68;
 }
 
 .successText {
@@ -294,6 +401,26 @@
   color: #a12b2b;
 }
 
+.errorText a {
+  color: currentColor;
+  font-weight: 600;
+}
+
+.successText:focus-visible,
+.errorText:focus-visible {
+  outline: 3px solid #315987;
+  outline-offset: 3px;
+}
+
+.bookingLinkRow {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.bookingLinkRow a {
+  color: var(--navy);
+}
+
 @media (max-width: 980px) {
   .cardsSection,
   .formGrid,
@@ -305,6 +432,7 @@
     grid-row: auto;
   }
 
+  .bookingConsent,
   .bookingFallback {
     align-items: flex-start;
     flex-direction: column;
@@ -377,8 +505,15 @@
     border-radius: 16px;
   }
 
-  .checkboxRow {
-    align-items: flex-start;
+  .quickActions,
+  .responseOptions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .primaryAction,
+  .secondaryAction {
+    width: 100%;
   }
 
   .submitBtn {

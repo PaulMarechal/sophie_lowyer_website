@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Competences.module.css';
 
@@ -55,20 +56,26 @@ const Competences = () => {
             Le cabinet intervient principalement en <strong>droit public</strong>, avec une approche rigoureuse, claire et adaptée aux réalités concrètes de chaque dossier.
           </p>
           <p className={styles.displayText}>
-            Pour les recherches ciblées, consultez aussi les pages dédiées à l&apos;<Link href="/avocate-droit-public-paris">avocate en droit public à Paris</Link>, à l&apos;<Link href="/avocate-droit-urbanisme-paris">avocate en droit de l&apos;urbanisme à Paris</Link> et aux <Link href="/recours-oqtf-paris">recours contre OQTF à Paris</Link>.
+            Pour les recherches ciblées, consultez aussi les pages dédiées à l&apos;<Link href="/avocate-droit-public-paris">avocate en droit public à Paris</Link>, aux <Link href="/avocat-oqtf-paris">recours contre OQTF à Paris</Link>, aux <Link href="/avocat-carte-talent-carte-resident-paris">cartes talent et cartes de résident</Link> et à la <Link href="/avocat-naturalisation-paris">naturalisation à Paris</Link>.
           </p>
           <div className={styles.expertiseGrid}>
-            <Link href="/droit-de-la-fonction-publique" className={styles.expertiseItem}>
-              <img src="/Images/droit_public.webp" loading="lazy" alt="Droit de la fonction publique" />
-              <span>Droit de la fonction publique</span>
-            </Link>
             <Link href="/droit-de-urbanisme" className={styles.expertiseItem}>
-              <img src="/Images/droit_urbanisme.webp" loading="lazy" alt="Droit de l’urbanisme" />
+              <div className={styles.expertiseImage}>
+                <Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />
+              </div>
               <span>Droit de l’urbanisme</span>
             </Link>
             <Link href="/droit-des-etrangers" className={styles.expertiseItem}>
-              <img src="/Images/droit_etrangers.webp" loading="lazy" alt="Droit des étrangers" />
+              <div className={styles.expertiseImage}>
+                <Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />
+              </div>
               <span>Droit des étrangers</span>
+            </Link>
+            <Link href="/droit-de-la-nationalite" className={styles.expertiseItem}>
+              <div className={styles.expertiseImage}>
+                <Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />
+              </div>
+              <span>Droit de la nationalité</span>
             </Link>
           </div>
         </article>

@@ -3,7 +3,7 @@ import DroitUrbanisme from "../../src/views/droit-de-urbanisme/DroitUrbanisme";
 import { buildFaqSchema, buildMetadata } from "../seo";
 
 export const metadata = buildMetadata({
-  title: "Avocate en droit de l'urbanisme à Paris",
+  title: "Droit de l'urbanisme : autorisations et recours",
   description:
     "Sophie Maréchal accompagne les projets d'urbanisme à Paris : permis de construire, déclaration préalable, autorisations d'urbanisme et recours.",
   path: "/droit-de-urbanisme",

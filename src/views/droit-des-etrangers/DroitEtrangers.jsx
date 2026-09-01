@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Footer from '../../components/layout/Footer';
 import styles from './DroitEtrangers.module.css';
 
 const cards = [
@@ -156,13 +155,12 @@ const DroitEtrangers = () => {
           <div className={styles.relatedLinks}>
             <Link href="/avocate-droit-des-etrangers-paris" className={styles.primaryBtn}>Avocate droit des étrangers Paris</Link>
             <Link href="/avocat-oqtf-paris" className={styles.primaryBtn}>Consulter la page OQTF</Link>
-            <Link href="/recours-oqtf-paris" className={styles.secondaryBtn}>Recours OQTF Paris</Link>
+            <Link href="/avocat-oqtf-paris" className={styles.secondaryBtn}>Recours OQTF Paris</Link>
             <Link href="/contact" className={styles.secondaryBtn}>Parler de votre dossier</Link>
           </div>
         </div>
       </section>
 
-      <Footer year={2026} />
     </div>
   );
 };

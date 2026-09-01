@@ -3,7 +3,7 @@ import DroitEtrangers from "../../src/views/droit-des-etrangers/DroitEtrangers";
 import { buildFaqSchema, buildMetadata } from "../seo";
 
 export const metadata = buildMetadata({
-  title: "Avocate en droit des étrangers à Paris",
+  title: "Droit des étrangers : séjour, OQTF et recours",
   description:
     "Sophie Maréchal accompagne les démarches de séjour, naturalisation, nationalité française et contentieux des étrangers à Paris.",
   path: "/droit-des-etrangers",

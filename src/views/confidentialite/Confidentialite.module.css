@@ -65,7 +65,7 @@
 }
 
 .cardEyebrow {
-  color: #6d7f93;
+  color: var(--ink-soft);
 }
 
 .cardEyebrowAlt,

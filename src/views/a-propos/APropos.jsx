@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './APropos.module.css';
 
@@ -20,7 +21,16 @@ const APropos = () => {
               <Link href="/competences" className={styles.secondaryBtn}>Voir les compétences</Link>
             </div>
           </div>
-          <div className={styles.portraitCard} />
+          <div className={styles.portraitCard}>
+            <Image
+              className={styles.portraitImage}
+              src="/Images/Sophie_Marechal.webp"
+              alt="Portrait de Sophie Maréchal, avocate au barreau de Paris"
+              fill
+              priority
+              sizes="(max-width: 900px) calc(100vw - 3rem), 40vw"
+            />
+          </div>
         </div>
       </section>
 
@@ -45,7 +55,7 @@ const APropos = () => {
                 Ce parcours nourrit aujourd’hui une pratique exigeante, tournée vers le conseil stratégique, le contentieux administratif et l’accompagnement personnalisé des clients.
               </p>
               <p>
-                Le cabinet de Sophie Maréchal, parfois recherché sous l’orthographe sans accent Sophie Marechal, intervient à Paris en droit public, droit de l’urbanisme, droit des étrangers et droit de la fonction publique.
+                Le cabinet de Sophie Maréchal, parfois recherché sous l’orthographe sans accent Sophie Marechal, intervient à Paris en droit public, droit de l’urbanisme, droit des étrangers et droit de la nationalité.
               </p>
             </div>
           </div>
@@ -55,25 +65,23 @@ const APropos = () => {
           <p className={styles.cardEyebrow}>Intervention</p>
           <h3 className={styles.sideCardTitle}>Domaines du cabinet</h3>
           <div className={styles.expertiseList}>
-            <Link href="/droit-de-la-fonction-publique" className={styles.expertiseItem}>
-              <img src="/Images/droit_public.webp" alt="Droit de la fonction publique" />
-              <span>Droit de la fonction publique</span>
-            </Link>
             <Link href="/droit-de-urbanisme" className={styles.expertiseItem}>
-              <img src="/Images/droit_urbanisme.webp" alt="Droit de l’urbanisme" />
+              <div className={styles.expertiseImage}>
+                <Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" />
+              </div>
               <span>Droit de l’urbanisme</span>
             </Link>
-            <Link href="/avocate-droit-urbanisme-paris" className={styles.expertiseItem}>
-              <img src="/Images/droit-urbanisme-plan.webp" alt="Avocate en droit de l’urbanisme à Paris" />
-              <span>Avocate en droit de l’urbanisme à Paris</span>
-            </Link>
             <Link href="/droit-des-etrangers" className={styles.expertiseItem}>
-              <img src="/Images/droit_etrangers.webp" alt="Droit des étrangers" />
-              <span>Droit des étrangers et de la nationalité</span>
+              <div className={styles.expertiseImage}>
+                <Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" />
+              </div>
+              <span>Droit des étrangers</span>
             </Link>
-            <Link href="/recours-oqtf-paris" className={styles.expertiseItem}>
-              <img src="/Images/droit-etrangers-recours-sophie-marechal.webp" alt="Recours contre OQTF à Paris" />
-              <span>Recours contre OQTF à Paris</span>
+            <Link href="/droit-de-la-nationalite" className={styles.expertiseItem}>
+              <div className={styles.expertiseImage}>
+                <Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" />
+              </div>
+              <span>Droit de la nationalité</span>
             </Link>
           </div>
         </section>

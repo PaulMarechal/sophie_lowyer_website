@@ -1,17 +1,22 @@
 import Desktop from "../../src/components/layout/Desktop";
 import SeoLandingPage from "../../src/views/seo-pages/SeoLandingPage";
-import { buildBreadcrumbSchema, buildFaqSchema, buildMetadata } from "../seo";
+import {
+  buildBreadcrumbSchema,
+  buildFaqSchema,
+  buildMetadata,
+  buildServiceSchema,
+} from "../seo";
 
 export const metadata = buildMetadata({
-  title: "Avocate en droit des étrangers et de la nationalité à Paris",
+  title: "Avocate en droit des étrangers à Paris",
   description:
-    "Sophie Maréchal accompagne les demandes de titre de séjour, naturalisation, refus de séjour, OQTF et recours en droit des étrangers à Paris.",
+    "Sophie Maréchal accompagne à Paris les demandes de titre de séjour, cartes talent et de résident, refus de séjour, OQTF et recours.",
   path: "/avocate-droit-des-etrangers-paris",
   keywords: [
     "avocate droit des étrangers paris",
     "avocat titre de séjour paris",
     "recours oqtf paris",
-    "avocate naturalisation paris",
+    "avocate carte talent paris",
   ],
   image: "/droit-des-etrangers/opengraph-image",
 });
@@ -20,7 +25,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "Quand consulter une avocate en droit des étrangers à Paris ?",
     answer:
-      "Vous pouvez consulter une avocate en droit des étrangers au moment du dépôt d'une demande de titre de séjour, lorsque vous êtes sans nouvelles de votre dossier depuis plus de quatre mois, après une décision de refus ou lorsque vous recevez une obligation de quitter le territoire français.",
+      "Vous pouvez consulter une avocate en droit des étrangers avant une demande ou un renouvellement de titre de séjour, après une difficulté d'instruction, à la réception d'une décision de refus ou d'une obligation de quitter le territoire français.",
   },
   {
     question: "Le cabinet défend-il les personnes visées par une OQTF ?",
@@ -33,23 +38,33 @@ const faqSchema = buildFaqSchema([
       "Oui, un refus de délivrance ou de renouvellement d'un titre de séjour peut être contesté, sous réserve de vérifier d'abord que le délai pour saisir le tribunal n'est pas dépassé.",
   },
   {
-    question: "L'avocat peut-il aider avant le dépôt d'une demande ?",
+    question: "L'avocate peut-elle aider avant le dépôt d'une demande de titre de séjour ?",
     answer:
-      "Oui, l'avocat peut vous recevoir, étudier votre situation, identifier les options possibles et vérifier les conditions de recevabilité d'une demande de titre de séjour ou de naturalisation.",
+      "Oui. Elle peut étudier la situation, identifier les titres envisageables, vérifier les conditions propres au fondement retenu et organiser les pièces avant le dépôt.",
   },
 ]);
 
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: "Accueil", path: "/" },
+  { name: "Compétences", path: "/competences" },
+  { name: "Droit des étrangers", path: "/droit-des-etrangers" },
   { name: "Avocate en droit des étrangers à Paris", path: "/avocate-droit-des-etrangers-paris" },
 ]);
+
+const serviceSchema = buildServiceSchema({
+  name: "Avocate en droit des étrangers à Paris",
+  description:
+    "Accompagnement des demandes de titre de séjour et des recours contre les décisions préfectorales en droit des étrangers.",
+  path: "/avocate-droit-des-etrangers-paris",
+  serviceType: "Droit des étrangers",
+});
 
 const sections = [
   {
     eyebrow: "Démarches",
-    title: "Constituer un dossier de demande de titre de séjour ou de naturalisation clair, complet et cohérent",
+    title: "Constituer un dossier de demande de titre de séjour clair, complet et cohérent",
     paragraphs: [
-      "Le droit des étrangers concerne des démarches administratives importantes : demande de titre de séjour, changement de statut, renouvellement de titre de séjour, regroupement familial, demande de naturalisation.",
+      "Le droit des étrangers concerne des démarches administratives importantes : demande de titre de séjour, changement de statut, renouvellement, carte talent, carte de résident ou regroupement familial.",
       "La qualité du dossier et la cohérence des pièces sont souvent déterminantes pour obtenir une décision favorable de l'administration.",
       "Le cabinet accompagne la préparation des demandes en tenant compte de la situation personnelle, familiale, professionnelle ou universitaire de la personne concernée. L'objectif est de présenter un dossier lisible, complet et juridiquement cohérent pour faciliter l'examen par l'administration.",
     ],
@@ -59,7 +74,7 @@ const sections = [
     title: "Former un recours contre le refus de délivrance d'un titre de séjour, une OQTF ou une autre mesure défavorable",
     paragraphs: [
       "Lorsqu'une décision défavorable est reçue, les délais pour agir peuvent être très courts. Il faut identifier la nature exacte de la décision, vérifier sa date de notification, lire attentivement les motifs et réunir rapidement les pièces utiles.",
-      "Sophie Maréchal vous représente dans la procédure de recours contre les refus de délivrance de titres de séjour, implicites ou explicites, les obligations de quitter le territoire français, les refus de regroupement familial et certaines décisions liées à la nationalité.",
+      "Sophie Maréchal vous représente dans la procédure de recours contre les refus de délivrance de titres de séjour, implicites ou explicites, les obligations de quitter le territoire français et les refus de regroupement familial.",
       "Elle vous assiste également en cas de rejet de votre demande d'asile par l'OFPRA, l'Office français de protection des réfugiés et apatrides.",
     ],
     points: [
@@ -91,9 +106,15 @@ export default function Page() {
   return (
     <Desktop>
       <SeoLandingPage
+        breadcrumbs={[
+          { label: "Accueil", href: "/" },
+          { label: "Compétences", href: "/competences" },
+          { label: "Droit des étrangers", href: "/droit-des-etrangers" },
+          { label: "Avocate en droit des étrangers à Paris" },
+        ]}
         eyebrow="Droit des étrangers · Paris"
-        title="Avocate en droit des étrangers et de la nationalité à Paris"
-        intro="Le cabinet accompagne les demandes de titre de séjour, naturalisation, refus de séjour, OQTF et recours en droit des étrangers à Paris."
+        title="Avocate en droit des étrangers à Paris"
+        intro="Le cabinet accompagne les demandes de titre de séjour, les refus de séjour, les OQTF et les recours en droit des étrangers à Paris."
         sections={sections}
         proofItems={[
           {
@@ -126,14 +147,14 @@ export default function Page() {
             text: "Comprendre les recours contre une obligation de quitter le territoire.",
           },
           {
-            href: "/recours-oqtf-paris",
-            label: "Recours contre OQTF à Paris",
-            text: "Page ciblée pour la recherche recours OQTF Paris.",
+            href: "/avocat-carte-talent-carte-resident-paris",
+            label: "Carte talent et carte de résident à Paris",
+            text: "Distinguer les titres, préparer une demande ou anticiper un renouvellement.",
           },
           {
-            href: "/contact",
-            label: "Contacter le cabinet",
-            text: "Présenter une décision préfectorale ou une demande de séjour.",
+            href: "/droit-de-la-nationalite",
+            label: "Droit de la nationalité",
+            text: "Retrouver séparément les informations relatives à la naturalisation française.",
           },
         ]}
         faqTitle="FAQ droit des étrangers à Paris"
@@ -144,7 +165,9 @@ export default function Page() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([faqSchema, breadcrumbSchema]) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([faqSchema, breadcrumbSchema, serviceSchema]),
+        }}
       />
     </Desktop>
   );

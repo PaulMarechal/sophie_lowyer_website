@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Footer from '../../components/layout/Footer';
 import styles from './Mobile.module.css';
 
 
@@ -169,7 +168,7 @@ const Mobile = () => {
                     <h2>Compétences</h2>
                     <div className="main_div_third_section">
                         <div className="first_div_text_third_section">
-                            <p>Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de la fonction publique, droit de l’urbanisme et de la commande publique, droit des étrangers, droit public et droit de la consommation.</p>
+                            <p>Sophie Maréchal met à disposition son expertise pour défendre vos intérêts en droit de l’urbanisme, droit des étrangers, droit de la nationalité et droit public.</p>
                         </div>
                         <div className="seconc_div_text_third_section">
                             <p>Sa priorité est de vous proposer une réponse juridique adaptée, claire et pragmatique pour vous accompagner et vous aider dans les difficultés que vous pouvez rencontrer. Elle s’engage à défendre vos intérêts avec humanité, rigueur et détermination. </p>
@@ -200,7 +199,7 @@ const Mobile = () => {
                     <div className="contact_form_second_div">
                     {messageSent ? (
                         <p id="merci_text">
-                            Merci, <br/>je vous recontacte très vite !
+                            Merci, <br/>le cabinet reviendra vers vous dans les meilleurs délais.
                         </p>
                     ) : (
                         <form onSubmit={handleSubmit}>
@@ -298,14 +297,13 @@ const Mobile = () => {
                             </a>
                         </div>
                         <div className="icon_bottom_page">
-                            <a href="tel:+0652609138" title="Contactez moi par téléphone">
+                            <a href="tel:+33652609138" title="Contactez-moi par téléphone">
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="#007BEE"  className="icon icon-tabler icons-tabler-filled icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z" /></svg>
                             </a>
                         </div>
                     </div>
                 </section>
 
-                <Footer year={2024} />
 
             </div>
         </div>

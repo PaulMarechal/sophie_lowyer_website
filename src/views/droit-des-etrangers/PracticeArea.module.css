@@ -68,7 +68,7 @@
   }
 
   .practice_section_eyebrow {
-    color: #6d7f93;
+    color: var(--ink-soft);
   }
 
   .practice_section_title {
@@ -230,7 +230,7 @@
 
   .practice_cta_primary {
     color: #fff;
-    background: linear-gradient(135deg, #3f6fa7 0%, #6f9cd6 100%);
+    background: linear-gradient(135deg, #315987 0%, #3f6fa7 100%);
     box-shadow: 0 18px 35px rgba(40, 82, 135, 0.2);
   }
 

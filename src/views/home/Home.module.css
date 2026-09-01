@@ -12,17 +12,23 @@
   overflow: hidden;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  background:
-    linear-gradient(180deg, rgba(11, 20, 33, 0.14) 0%, rgba(11, 20, 33, 0.75) 100%),
-    url("/Images/Palais-de-justice-de-Paris.webp") center/cover no-repeat;
+  background: var(--navy);
+}
+
+.heroImage {
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .heroVeil {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background:
     radial-gradient(circle at top left, rgba(182, 147, 90, 0.24), transparent 34%),
-    radial-gradient(circle at 80% 20%, rgba(103, 156, 226, 0.22), transparent 28%);
+    radial-gradient(circle at 80% 20%, rgba(103, 156, 226, 0.22), transparent 28%),
+    linear-gradient(180deg, rgba(11, 20, 33, 0.14) 0%, rgba(11, 20, 33, 0.75) 100%);
 }
 
 .heroFrame {
@@ -99,7 +105,7 @@
 
 .primaryBtn {
   color: #fff;
-  background: linear-gradient(135deg, #3f6fa7 0%, #6f9cd6 100%);
+  background: linear-gradient(135deg, #315987 0%, #3f6fa7 100%);
   box-shadow: 0 18px 35px rgba(40, 82, 135, 0.28);
 }
 
@@ -273,17 +279,41 @@
 .cityGlow,
 .cityGlowSoft {
   position: absolute;
+  overflow: hidden;
   border-radius: 30px;
 }
 
 .portraitGlow {
   inset: 2rem 1.5rem 2rem auto;
   width: min(360px, calc(100% - 3rem));
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
-    url("/Images/Sophie_Marechal.webp") center top/cover no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 28px 60px rgba(7, 13, 22, 0.2);
+}
+
+.portraitGlow::after,
+.cityGlow::after,
+.cityGlowSoft::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.portraitGlow::after {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+}
+
+.portraitImage,
+.cityImage {
+  object-fit: cover;
+}
+
+.portraitImage {
+  object-position: center top;
+}
+
+.cityImage {
+  object-position: center;
 }
 
 .cityGlow {
@@ -291,10 +321,11 @@
   bottom: 1rem;
   width: 220px;
   height: 150px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
-    url("/Images/arc_de_triomphe_fourth.jpg") center/cover no-repeat;
   opacity: 0.82;
+}
+
+.cityGlow::after {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
 }
 
 .cityGlowSoft {
@@ -302,11 +333,12 @@
   top: 1.75rem;
   width: 160px;
   height: 110px;
-  background:
-    linear-gradient(180deg, rgba(88, 143, 224, 0.18), rgba(88, 143, 224, 0.04)),
-    url("/Images/place_etoile_second.jpg") center/cover no-repeat;
   opacity: 0.7;
   display: none;
+}
+
+.cityGlowSoft::after {
+  background: linear-gradient(180deg, rgba(88, 143, 224, 0.18), rgba(88, 143, 224, 0.04));
 }
 
 .editorialSection,
@@ -332,7 +364,7 @@
   font-size: 0.82rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #6d7f93;
+  color: var(--ink-soft);
 }
 
 .textCard h2 {
@@ -386,7 +418,7 @@
 
 .resourceGrid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -427,7 +459,7 @@
   font-size: 0.78rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #6d7f93;
+  color: var(--ink-soft);
 }
 
 .resourceTitle {
@@ -490,6 +522,16 @@
   margin: 5vw auto;
 }
 
+.domainOptions {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1180px) {
+  .resourceGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .domainOption {
   position: relative;
   min-height: 470px;
@@ -502,17 +544,21 @@
   padding: 2rem;
   border-radius: 30px;
   color: #fff;
-  background-image: var(--domainBg);
-  background-size: cover;
-  background-position: center;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: var(--shadow);
   transition: transform 0.25s ease;
 }
 
+.domainImage {
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
 .domainShadow {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: linear-gradient(180deg, rgba(8, 16, 28, 0.12), rgba(22, 35, 54, 0.92));
 }
 
@@ -520,7 +566,7 @@
 .domainReveal,
 .domainContent {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-align: left;
 }
 
@@ -648,20 +694,14 @@
   transform: translateY(-1px);
 }
 
-.active {
-  transform: translateY(-6px);
-}
-
 .domainOption:hover .domainLabel,
-.domainOption:focus-within .domainLabel,
-.active .domainLabel {
+.domainOption:focus-within .domainLabel {
   opacity: 0;
   transform: translateY(18px);
 }
 
 .domainOption:hover .domainReveal,
-.domainOption:focus-within .domainReveal,
-.active .domainReveal {
+.domainOption:focus-within .domainReveal {
   opacity: 1;
   transform: translateY(0);
 }
@@ -789,6 +829,64 @@
   .cityGlowSoft,
   .licenseDetails {
     display: none;
+  }
+
+  .domainOption {
+    min-height: 420px;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .domainLabel,
+  .domainReveal {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    max-width: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .domainLabel {
+    margin-bottom: 1rem;
+    padding: 0.9rem 1rem 1rem;
+  }
+
+  .domainReveal {
+    width: 100%;
+    inset: auto;
+  }
+
+  .domainContent,
+  .domainFooter {
+    backdrop-filter: none;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .domainOption {
+    height: auto;
+  }
+
+  .domainLabel,
+  .domainReveal {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    max-width: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .domainLabel {
+    margin-bottom: 1rem;
+  }
+
+  .domainReveal {
+    width: 100%;
+    inset: auto;
   }
 }
 

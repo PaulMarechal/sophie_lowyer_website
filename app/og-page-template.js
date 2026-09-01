@@ -13,7 +13,11 @@ export function createPageOgImage({
   title,
   subtitle,
   accent,
+  locale = "fr",
 }) {
+  const nav = locale === "en"
+    ? ["About", "Practice areas", "Fees", "Contact"]
+    : ["A propos", "Compétences", "Honoraires", "Contact"];
   return new ImageResponse(
     (
       <div
@@ -55,8 +59,8 @@ export function createPageOgImage({
           }}
         >
           <div style={{ display: "flex", gap: 42 }}>
-            <span>A propos</span>
-            <span>Compétences</span>
+            <span>{nav[0]}</span>
+            <span>{nav[1]}</span>
           </div>
           <div
             style={{
@@ -69,8 +73,8 @@ export function createPageOgImage({
             Sophie Maréchal
           </div>
           <div style={{ display: "flex", gap: 42 }}>
-            <span>Honoraires</span>
-            <span>Contact</span>
+            <span>{nav[2]}</span>
+            <span>{nav[3]}</span>
           </div>
         </div>
 
@@ -107,7 +111,6 @@ export function createPageOgImage({
             <div
               style={{
                 display: "flex",
-                width: "fit-content",
                 maxWidth: 1020,
                 padding: "22px 28px 26px",
                 borderRadius: 34,
@@ -127,7 +130,6 @@ export function createPageOgImage({
               <div
                 style={{
                   display: "flex",
-                  width: "fit-content",
                   padding: "10px 18px 14px",
                   borderRadius: 22,
                   background: "rgba(97, 140, 211, 0.28)",

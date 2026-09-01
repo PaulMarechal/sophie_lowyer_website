@@ -68,7 +68,7 @@
 }
 
 .cardEyebrow {
-  color: #6d7f93;
+  color: var(--ink-soft);
 }
 
 .sectionTitle,
@@ -117,11 +117,14 @@
   transform: translateY(-4px);
 }
 
-.expertiseItem img {
-  width: 100%;
+.expertiseImage {
+  position: relative;
   height: 210px;
+  overflow: hidden;
+}
+
+.expertiseImage img {
   object-fit: cover;
-  display: block;
 }
 
 .expertiseItem span {
@@ -194,7 +197,7 @@
     gap: 1rem;
   }
 
-  .expertiseItem img {
+  .expertiseImage {
     height: 170px;
   }
 

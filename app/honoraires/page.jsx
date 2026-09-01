@@ -24,7 +24,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "L'aide juridictionnelle est-elle acceptée ?",
     answer:
-      "Oui, l'aide juridictionnelle est acceptée sous réserve d'éligibilité du dossier et de la situation du client.",
+      "Oui, l'aide juridictionnelle est acceptée sous réserve d'éligibilité et de résidence du justiciable en région Île-de-France.",
   },
 ]);
 

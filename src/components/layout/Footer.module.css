@@ -9,6 +9,57 @@
   border-top: 1px solid var(--line);
 }
 
+.identityRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: rgba(22, 35, 54, 0.045);
+}
+
+.identityCopy {
+  text-align: left;
+}
+
+.identityName {
+  margin: 0 0 0.4rem;
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+}
+
+.identityCopy address {
+  color: var(--ink-soft);
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.identityCopy a {
+  color: var(--navy);
+}
+
+.contactActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.55rem;
+}
+
+.contactActions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid rgba(22, 35, 54, 0.1);
+  border-radius: 999px;
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+}
+
 .seoNav {
   margin: 0 auto 1rem;
   display: flex;
@@ -48,6 +99,25 @@
   margin: 13px 0;
 }
 
+.cookieButton {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.35rem 0;
+  border: 0;
+  color: var(--navy);
+  background: transparent;
+  font: inherit;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
+.cookieButton:hover {
+  text-decoration-color: currentColor;
+}
+
 .footer :global(#contact_me div) {
   margin-top: auto;
   margin-bottom: auto;
@@ -58,6 +128,15 @@
 }
 
 @media (max-width: 900px), (max-height: 540px) and (orientation: landscape) {
+  .identityRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contactActions {
+    justify-content: flex-start;
+  }
+
   .footer :global(#contact_me) {
     width: 100%;
     margin: 0 auto;
@@ -69,6 +148,15 @@
 }
 
 @media (max-width: 820px) and (orientation: portrait) {
+  .identityRow {
+    padding: 1rem;
+  }
+
+  .contactActions a {
+    flex: 1 1 110px;
+    justify-content: center;
+  }
+
   .footer :global(#contact_me) {
     gap: 0.35rem;
   }

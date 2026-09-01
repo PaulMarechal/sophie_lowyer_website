@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Footer from '../../components/layout/Footer';
 import styles from './DroitUrbanisme.module.css';
 
 const cards = [
@@ -161,7 +160,6 @@ const DroitUrbanisme = () => {
         </div>
       </section>
 
-      <Footer year={2026} />
     </div>
   );
 };

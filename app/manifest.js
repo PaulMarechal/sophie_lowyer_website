@@ -5,7 +5,7 @@ export default function manifest() {
     name: "Sophie Maréchal",
     short_name: "Sophie Maréchal",
     description:
-      "Cabinet de Sophie Maréchal, avocate à Paris en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique.",
+      "Sophie Maréchal, avocate à Paris / Paris lawyer in public law, planning law, immigration law and French nationality law.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

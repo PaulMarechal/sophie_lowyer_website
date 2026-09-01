@@ -1,18 +1,20 @@
 # Sophie Maréchal
 
-> Cabinet d'avocat à Paris intervenant en droit public, droit de l'urbanisme, droit des étrangers et droit de la fonction publique.
+> Cabinet d'avocat à Paris intervenant en droit public, droit de l'urbanisme, droit des étrangers et droit de la nationalité.
 
 ## Summary
 
 Le site présente l'activité du cabinet de Sophie Maréchal, avocate inscrite au barreau de Paris.
-Le cabinet accompagne particuliers, agents publics et professionnels dans leurs démarches administratives et contentieux.
+Le cabinet accompagne particuliers et professionnels dans leurs démarches administratives et contentieux.
 
 ## Main topics
 
 - Droit public
 - Droit de l'urbanisme
 - Droit des étrangers
-- Droit de la fonction publique
+- Droit de la nationalité
+- Naturalisation française
+- Carte talent et carte de résident
 - Honoraires
 - Contact
 
@@ -22,8 +24,12 @@ Le cabinet accompagne particuliers, agents publics et professionnels dans leurs 
 - https://www.sophiemarechal-avocat.fr/a-propos
 - https://www.sophiemarechal-avocat.fr/competences
 - https://www.sophiemarechal-avocat.fr/droit-des-etrangers
+- https://www.sophiemarechal-avocat.fr/avocat-carte-talent-carte-resident-paris
+- https://www.sophiemarechal-avocat.fr/droit-de-la-nationalite
+- https://www.sophiemarechal-avocat.fr/avocat-naturalisation-paris
 - https://www.sophiemarechal-avocat.fr/droit-de-urbanisme
-- https://www.sophiemarechal-avocat.fr/droit-de-la-fonction-publique
+- https://www.sophiemarechal-avocat.fr/avocat-oqtf-paris
+- https://www.sophiemarechal-avocat.fr/avocat-refus-permis-construire-paris
 - https://www.sophiemarechal-avocat.fr/honoraires
 - https://www.sophiemarechal-avocat.fr/contact
 
@@ -33,3 +39,35 @@ Le cabinet accompagne particuliers, agents publics et professionnels dans leurs 
 - Adresse : 11 boulevard de Sebastopol, 75001 Paris
 - Téléphone : +33 6 52 60 91 38
 - Email : sophie.marechal@avocat.fr
+
+## English version
+
+The full website is available in English. Each English page has a French equivalent linked with
+`hreflang`, and the language switch keeps visitors on the corresponding page.
+
+### Main English topics
+
+- French public and administrative law
+- French planning law, building permits and appeals
+- French immigration law, residence permits and OQTF appeals
+- French nationality law and naturalisation
+- Talent residence permits and resident cards
+- Fees, contact, privacy and legal information
+
+### Important English URLs
+
+- https://www.sophiemarechal-avocat.fr/en
+- https://www.sophiemarechal-avocat.fr/en/about
+- https://www.sophiemarechal-avocat.fr/en/practice-areas
+- https://www.sophiemarechal-avocat.fr/en/public-law-lawyer-paris
+- https://www.sophiemarechal-avocat.fr/en/planning-law
+- https://www.sophiemarechal-avocat.fr/en/planning-law-lawyer-paris
+- https://www.sophiemarechal-avocat.fr/en/building-permit-refusal-lawyer-paris
+- https://www.sophiemarechal-avocat.fr/en/immigration-law
+- https://www.sophiemarechal-avocat.fr/en/immigration-lawyer-paris
+- https://www.sophiemarechal-avocat.fr/en/oqtf-lawyer-paris
+- https://www.sophiemarechal-avocat.fr/en/talent-passport-resident-card-lawyer-paris
+- https://www.sophiemarechal-avocat.fr/en/french-nationality-law
+- https://www.sophiemarechal-avocat.fr/en/naturalisation-lawyer-paris
+- https://www.sophiemarechal-avocat.fr/en/fees
+- https://www.sophiemarechal-avocat.fr/en/contact

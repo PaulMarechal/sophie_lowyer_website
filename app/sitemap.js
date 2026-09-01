@@ -1,30 +1,24 @@
 import { absoluteUrl } from "./seo";
+import { ROUTE_PAIRS } from "../src/lib/i18n";
 
 export default function sitemap() {
-  const routes = [
-    "/",
-    "/a-propos",
-    "/competences",
-    "/contact",
-    "/droit-de-la-fonction-publique",
-    "/droit-de-urbanisme",
-    "/droit-des-etrangers",
-    "/honoraires",
-    "/confidentialite",
-    "/mentions-legales",
-    "/avocate-droit-public-paris",
-    "/avocate-droit-urbanisme-paris",
-    "/avocate-droit-des-etrangers-paris",
-    "/recours-oqtf-paris",
-    "/avocat-oqtf-paris",
-    "/avocat-refus-permis-construire-paris",
-    "/avocat-conseil-discipline-paris",
-  ];
+  const routes = ROUTE_PAIRS.flatMap(({ fr, en }) => [fr, en]);
 
-  return routes.map((route) => ({
-    url: absoluteUrl(route),
-    lastModified: new Date(),
-    changeFrequency: route === "/" ? "weekly" : "monthly",
-    priority: route === "/" ? 1 : 0.7,
-  }));
+  return routes.map((route) => {
+    const pair = ROUTE_PAIRS.find(({ fr, en }) => fr === route || en === route);
+    const isHome = route === "/" || route === "/en";
+
+    return {
+      url: absoluteUrl(route),
+      changeFrequency: isHome ? "weekly" : "monthly",
+      priority: isHome ? 1 : 0.7,
+      alternates: {
+        languages: {
+          "fr-FR": absoluteUrl(pair.fr),
+          "en-GB": absoluteUrl(pair.en),
+          "x-default": absoluteUrl(pair.fr),
+        },
+      },
+    };
+  });
 }

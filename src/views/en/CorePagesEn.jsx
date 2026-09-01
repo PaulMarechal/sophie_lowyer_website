@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import PhotoCredit from "../../components/media/PhotoCredit";
 import aboutStyles from "../a-propos/APropos.module.css";
 import practiceStyles from "../competences/Competences.module.css";
 import feeStyles from "../honoraires/Honoraires.module.css";
@@ -46,7 +47,7 @@ export function AboutEn() {
           <h3 className={styles.sideCardTitle}>The firm’s areas of practice</h3>
           <div className={styles.expertiseList}>
             <Link href="/en/planning-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" /></div><span>Planning law</span></Link>
-            <Link href="/en/immigration-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" /></div><span>Immigration law</span></Link>
+            <Link href="/en/immigration-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" /><PhotoCredit language="en" /></div><span>Immigration law</span></Link>
             <Link href="/en/french-nationality-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" /></div><span>French nationality law</span></Link>
           </div>
         </section>
@@ -87,7 +88,7 @@ export function PracticeAreasEn() {
           <p className={styles.displayText}>For specific information, also see the pages on <Link href="/en/public-law-lawyer-paris">public law services in Paris</Link>, <Link href="/en/oqtf-lawyer-paris">appeals against OQTFs in Paris</Link>, <Link href="/en/talent-passport-resident-card-lawyer-paris">talent residence permits and resident cards</Link> and <Link href="/en/naturalisation-lawyer-paris">naturalisation in Paris</Link>.</p>
           <div className={styles.expertiseGrid}>
             <Link href="/en/planning-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /></div><span>Planning law</span></Link>
-            <Link href="/en/immigration-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /></div><span>Immigration law</span></Link>
+            <Link href="/en/immigration-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /><PhotoCredit language="en" /></div><span>Immigration law</span></Link>
             <Link href="/en/french-nationality-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /></div><span>French nationality law</span></Link>
           </div>
         </article>
@@ -122,4 +123,3 @@ export function FeesEn() {
     </div>
   );
 }
-

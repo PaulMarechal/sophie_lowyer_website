@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import PhotoCredit from '../../components/media/PhotoCredit';
 import styles from './Competences.module.css';
 
 const Competences = () => {
@@ -68,6 +69,7 @@ const Competences = () => {
             <Link href="/droit-des-etrangers" className={styles.expertiseItem}>
               <div className={styles.expertiseImage}>
                 <Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />
+                <PhotoCredit />
               </div>
               <span>Droit des étrangers</span>
             </Link>

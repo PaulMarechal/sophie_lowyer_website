@@ -90,6 +90,16 @@ const legalSections = [
         <p>Entreprise individuelle</p>
         <p>SIRET : 931 264 592 00011</p>
         <p>Siège social : 19 rue Bellier-Dedouvre, 75013 Paris</p>
+        <p>
+          Photographie des passeports :{' '}
+          <a
+            href="https://stock.adobe.com/images/mixed-biometric-passports-of-many-countries-of-the-world-in-the-foreground-is-a-european-union-passport/261703628"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Sergey / Adobe Stock, fichier n° 261703628
+          </a>
+        </p>
       </>
     ),
   },

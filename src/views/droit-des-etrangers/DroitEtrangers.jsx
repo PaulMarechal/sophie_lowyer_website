@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import PhotoCredit from '../../components/media/PhotoCredit';
 import styles from './DroitEtrangers.module.css';
 
 const cards = [
@@ -10,6 +11,7 @@ const cards = [
     title: "Titre de séjour & naturalisation",
     subtitle: "Constitution du dossier, stratégie et suivi auprès de l’administration.",
     bg: "/Images/droit-des-etrangers-passeports.webp",
+    photoCredit: true,
     content: (
       <>
         <p>Sophie Maréchal vous aide à préparer et déposer votre <b>demande de titre de séjour</b>, en fonction de votre situation personnelle et professionnelle.</p>
@@ -105,6 +107,7 @@ const DroitEtrangers = () => {
               tabIndex={0}
             >
               <div className={styles.cardOverlay} />
+              {card.photoCredit && <PhotoCredit placement="top" />}
               <div className={styles.cardTop}>
                 <span className={styles.cardBadge}>{card.label}</span>
                 <h3 className={styles.cardTitle}>{card.title}</h3>

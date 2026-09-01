@@ -8,6 +8,7 @@ import styles from './Header.module.css';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const menuToggleRef = useRef(null);
     const navigationRef = useRef(null);
     const pathname = usePathname();
@@ -15,9 +16,19 @@ const Header = () => {
     const isEnglish = locale === 'en';
     const homeHref = isEnglish ? '/en' : '/';
     const alternateHref = getAlternatePath(pathname);
+    const isHome = pathname === '/' || pathname === '/en';
 
     useEffect(() => {
         setIsMenuOpen(false);
+    }, [pathname]);
+
+    useEffect(() => {
+        const updateHeader = () => setIsScrolled(window.scrollY > 28);
+
+        updateHeader();
+        window.addEventListener('scroll', updateHeader, { passive: true });
+
+        return () => window.removeEventListener('scroll', updateHeader);
     }, [pathname]);
 
     useEffect(() => {
@@ -64,7 +75,14 @@ const Header = () => {
         ];
 
     return (
-        <header className={`${styles.header} ${isMenuOpen ? styles.menuOpen : ''}`}>
+        <header
+            className={[
+                styles.header,
+                isHome ? styles.homeHeader : '',
+                isScrolled ? styles.scrolled : '',
+                isMenuOpen ? styles.menuOpen : '',
+            ].filter(Boolean).join(' ')}
+        >
             <div className={styles.brandRow}>
                 <button
                     ref={menuToggleRef}
@@ -81,7 +99,7 @@ const Header = () => {
                     <span></span>
                     <span></span>
                 </button>
-                <Link className="link_header" href={homeHref} aria-current={pathname === homeHref ? 'page' : undefined}>
+                <Link className={styles.navLink} href={homeHref} aria-current={pathname === homeHref ? 'page' : undefined}>
                     <span className={`${styles.navLabel} ${styles.brandLabel}`}>Sophie Maréchal</span>
                 </Link>
             </div>
@@ -94,7 +112,7 @@ const Header = () => {
                 {navItems.slice(0, 2).map((item) => (
                     <div key={item.href} className={styles.navItem}>
                         <Link
-                            className="link_header"
+                            className={styles.navLink}
                             href={item.href}
                             aria-current={pathname === item.href ? 'page' : undefined}
                         >
@@ -103,14 +121,14 @@ const Header = () => {
                     </div>
                 ))}
                 <div className={`${styles.navItem} ${styles.desktopBrandItem}`}>
-                    <Link className="link_header" href={homeHref} aria-current={pathname === homeHref ? 'page' : undefined}>
+                    <Link className={styles.navLink} href={homeHref} aria-current={pathname === homeHref ? 'page' : undefined}>
                         <span className={`${styles.navLabel} ${styles.brandLabel}`}>Sophie Maréchal</span>
                     </Link>
                 </div>
                 {navItems.slice(2).map((item) => (
                     <div key={item.href} className={styles.navItem}>
                         <Link
-                            className="link_header"
+                            className={styles.navLink}
                             href={item.href}
                             aria-current={pathname === item.href ? 'page' : undefined}
                         >

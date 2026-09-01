@@ -63,7 +63,7 @@ const legalSections = [
   {
     title: "Credits",
     eyebrow: "Creation",
-    content: <><p>Graphic design and development: <a href="https://devxr.fr" target="_blank" rel="noreferrer">DevXR</a></p><p>Sole trader</p><p>SIRET number: 931 264 592 00011</p><p>Registered office: 19 rue Bellier-Dedouvre, 75013 Paris</p></>,
+    content: <><p>Graphic design and development: <a href="https://devxr.fr" target="_blank" rel="noreferrer">DevXR</a></p><p>Sole trader</p><p>SIRET number: 931 264 592 00011</p><p>Registered office: 19 rue Bellier-Dedouvre, 75013 Paris</p><p>Passport photograph: <a href="https://stock.adobe.com/images/mixed-biometric-passports-of-many-countries-of-the-world-in-the-foreground-is-a-european-union-passport/261703628" target="_blank" rel="noreferrer">Sergey / Adobe Stock, file no. 261703628</a></p></>,
   },
 ];
 

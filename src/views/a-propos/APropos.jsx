@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import PhotoCredit from '../../components/media/PhotoCredit';
 import styles from './APropos.module.css';
 
 const APropos = () => {
@@ -74,6 +75,7 @@ const APropos = () => {
             <Link href="/droit-des-etrangers" className={styles.expertiseItem}>
               <div className={styles.expertiseImage}>
                 <Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" />
+                <PhotoCredit />
               </div>
               <span>Droit des étrangers</span>
             </Link>

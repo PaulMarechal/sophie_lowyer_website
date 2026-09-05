@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "./SeoLandingPage.module.css";
 
 export default function SeoLandingPage({
+  children,
   locale = "fr",
   breadcrumbs = [],
   eyebrow,
@@ -106,6 +107,7 @@ export default function SeoLandingPage({
         ) : null}
 
         <div className={styles.sectionsGrid}>
+          {children}
           {sections.map((section) => (
             <article key={section.title} className={styles.sectionCard}>
               <p className={styles.cardEyebrow}>{section.eyebrow}</p>

@@ -1,9 +1,9 @@
 import styles from "./SeoLandingPage.module.css";
 
 // This template only renders supplied copy, without generated FAQ or CTA text.
-export default function DocumentLandingPage({ content }) {
+export default function DocumentLandingPage({ content, locale = "fr" }) {
   return (
-    <div className={styles.page} lang="fr" data-document-page>
+    <div className={styles.page} lang={locale} data-document-page>
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <h1 className={styles.heroTitle}>{content.title}</h1>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import PhotoCredit from "../../components/media/PhotoCredit";
+import { legalAid } from "../../content/en/word-pages";
 import aboutStyles from "../a-propos/APropos.module.css";
 import practiceStyles from "../competences/Competences.module.css";
 import feeStyles from "../honoraires/Honoraires.module.css";
@@ -88,7 +89,7 @@ export function PracticeAreasEn() {
           <p className={styles.displayText}>For specific information, also see the pages on <Link href="/en/public-law-lawyer-paris">public law services in Paris</Link>, <Link href="/en/oqtf-lawyer-paris">appeals against OQTFs in Paris</Link>, <Link href="/en/talent-passport-resident-card-lawyer-paris">talent residence permits and resident cards</Link> and <Link href="/en/naturalisation-lawyer-paris">naturalisation in Paris</Link>.</p>
           <div className={styles.expertiseGrid}>
             <Link href="/en/planning-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /></div><span>Planning law</span></Link>
-            <Link href="/en/immigration-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /><PhotoCredit language="en" /></div><span>Immigration law</span></Link>
+            <Link href="/en/talent-passport-resident-card-lawyer-paris" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /><PhotoCredit language="en" /></div><span>Immigration law</span></Link>
             <Link href="/en/french-nationality-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /></div><span>French nationality law</span></Link>
           </div>
         </article>
@@ -114,7 +115,7 @@ export function FeesEn() {
         <div className={styles.cardsSection}>
           <article className={styles.displayCard}><p className={styles.cardEyebrow}>Fixed fee</p><h3>Fixed-fee billing</h3><p>A fixed fee gives clients greater certainty because the total legal fee is known from the outset of the matter.</p><p>Billing arrangements are set out in a written fee agreement in advance, ensuring that the client receives clear and transparent information.</p></article>
           <article className={styles.displayCard}><p className={styles.cardEyebrow}>Time spent</p><h3>Billing based on time spent</h3><p>The more time the lawyer spends on a matter, the higher the fee. This method is suited to the most complex disputes.</p><p>Billing arrangements are set out in a written fee agreement in advance, ensuring that the client receives clear and transparent information.</p></article>
-          <article className={`${styles.displayCard} ${styles.highlightCard}`}><p className={styles.cardEyebrowAlt}>The firm</p><h3>The firm’s fee arrangements</h3><p>The hourly rate is <strong>€180 including VAT (TTC)</strong>.</p><p>Fees reflect the complexity of your matter.</p><p>In most cases, a fixed fee is proposed.</p><p>French legal aid (<i>aide juridictionnelle</i>) is accepted subject to eligibility and provided the client resides in Île-de-France.</p></article>
+          <article className={`${styles.displayCard} ${styles.highlightCard}`}><p className={styles.cardEyebrowAlt}>The firm</p><h3>The firm’s fee arrangements</h3><p>The hourly rate is <strong>€180 including VAT (TTC)</strong>.</p><p>Fees reflect the complexity of your matter.</p><p>In most cases, a fixed fee is proposed.</p><p data-document-legal-aid>{legalAid}</p></article>
         </div>
         <div className={styles.bottomCta}><div className={styles.bottomCtaText}><p className={styles.cardEyebrow}>Initial discussion</p><h2 className={styles.sectionTitle}>Would you like a fee estimate?</h2><p>Every situation is different. An initial discussion allows the firm to assess your matter and recommend the most suitable fee arrangement.</p><Link href="/en/contact#contact-form" className={styles.estimateBtn}>Request an estimate</Link></div>
           <div className={styles.contactLinks}><a href="mailto:sophie.marechal@avocat.fr" aria-label="Send an email">Email</a><a href="tel:+33652609138" aria-label="Call the firm">Phone</a><a href="https://maps.google.com/?q=11 Boulevard de Sébastopol 75001 PARIS" target="_blank" rel="noopener noreferrer" title="Directions to the office" aria-label="Office address">Map</a></div>

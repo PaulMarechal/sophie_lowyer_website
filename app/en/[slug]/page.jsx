@@ -1,10 +1,14 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import Desktop from "../../../src/components/layout/Desktop";
 import Contact from "../../../src/views/contact/Contact";
 import { AboutEn, FeesEn, PracticeAreasEn } from "../../../src/views/en/CorePagesEn";
 import { CookieSettingsEn, LegalNoticeEn, PrivacyEn } from "../../../src/views/en/LegalPagesEn";
 import SeoLandingPage from "../../../src/views/seo-pages/SeoLandingPage";
+import DocumentLandingPage from "../../../src/views/seo-pages/DocumentLandingPage";
+import styles from "../../../src/views/seo-pages/SeoLandingPage.module.css";
 import { englishLandingPages } from "../../../src/content/en/landing-pages";
+import { englishDocumentPages, immigrationNotice, legalAid } from "../../../src/content/en/word-pages";
 import {
   buildBreadcrumbSchema,
   buildFaqSchema,
@@ -39,7 +43,7 @@ const customPages = {
     faqItems: [
       { question: "How does the firm set its fees?", answer: "Fees are set based, in particular, on the nature and complexity of the matter, the time involved and the urgency of the situation." },
       { question: "Does the firm offer fixed fees?", answer: "Yes. Wherever appropriate, a fixed fee may be offered to give the client greater certainty about the cost of the work." },
-      { question: "Does the firm accept legal aid?", answer: "Yes. French legal aid (aide juridictionnelle) is accepted subject to eligibility and provided the client resides in Île-de-France." },
+      { question: "Does the firm accept legal aid?", answer: legalAid },
     ],
   },
   contact: {
@@ -77,12 +81,12 @@ const customPages = {
 };
 
 export function generateStaticParams() {
-  return [...Object.keys(customPages), ...Object.keys(englishLandingPages)].map((slug) => ({ slug }));
+  return [...Object.keys(customPages), ...Object.keys(englishLandingPages), ...Object.keys(englishDocumentPages)].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const page = customPages[slug] ?? englishLandingPages[slug];
+  const page = customPages[slug] ?? englishDocumentPages[slug] ?? englishLandingPages[slug];
 
   if (!page) {
     return {};
@@ -105,6 +109,24 @@ export default async function Page({ params }) {
         {faqSchema ? (
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         ) : null}
+      </Desktop>
+    );
+  }
+
+  const documentPage = englishDocumentPages[slug];
+  if (documentPage) {
+    const { content, metadata } = documentPage;
+    const serviceSchema = buildServiceSchema({
+      name: content.title,
+      description: metadata.description,
+      path: metadata.path,
+      serviceType: content.title,
+    });
+
+    return (
+      <Desktop>
+        <DocumentLandingPage content={content} locale="en" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       </Desktop>
     );
   }
@@ -133,9 +155,27 @@ export default async function Page({ params }) {
 
   return (
     <Desktop>
-      <SeoLandingPage locale="en" {...pageProps} />
+      <SeoLandingPage locale="en" {...pageProps}>
+        {slug === "immigration-law" ? (
+          <section className={styles.sectionCard} data-document-notice>
+            <h2 className={styles.sectionTitle}>{immigrationNotice.title}</h2>
+            <div className={styles.copy}>
+              <p>{immigrationNotice.paragraphs[0]}</p>
+              <p>
+                {immigrationNotice.paragraphs[1].split('Naturalisation')[0]}
+                <Link href="/en/french-nationality-law">Naturalisation</Link>
+                {' and '}
+                <Link href="/en/talent-passport-resident-card-lawyer-paris">Talent &amp; international mobility</Link>.
+              </p>
+              <p>
+                {immigrationNotice.paragraphs[2].split('OQTF lawyer in Paris')[0]}
+                <Link href="/en/oqtf-lawyer-paris">OQTF lawyer in Paris</Link>.
+              </p>
+            </div>
+          </section>
+        ) : null}
+      </SeoLandingPage>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }} />
     </Desktop>
   );
 }
-

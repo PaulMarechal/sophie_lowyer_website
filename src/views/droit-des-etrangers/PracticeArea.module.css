@@ -6,8 +6,8 @@
   .first_section {
     width: min(1200px, calc(100% - 2rem));
     min-height: 52vh;
-    margin: 2rem auto 0;
-    border-radius: 34px;
+    margin: 0 auto;
+    border-radius: 0px 0px 34px 34px;
     overflow: hidden;
     background: linear-gradient(135deg, var(--navy) 0%, #243753 100%) !important;
   }
@@ -258,7 +258,6 @@
   .page :global {
     .first_section {
       width: min(100%, calc(100% - 1rem));
-      margin-top: 1rem;
     }
 
     .practice_hero_inner {
@@ -290,7 +289,6 @@
   .page :global {
     .first_section {
       width: min(100%, calc(100% - 1rem));
-      margin-top: 1rem;
     }
 
     .practice_hero_inner {

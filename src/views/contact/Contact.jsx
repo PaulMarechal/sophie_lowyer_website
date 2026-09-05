@@ -28,7 +28,7 @@ const Contact = ({ locale = 'fr' }) => {
     contactIntro: 'The form is the preferred way to outline your enquiry. You can also contact the firm by email or text message.',
     quickLabel: 'Preferred contact options',
     formAction: 'Complete the form',
-    appointmentAction: 'View appointment options',
+    appointmentAction: 'Book an appointment',
     emailAction: 'Send an email',
     smsAction: 'Send a text message',
     formEyebrow: 'Form',
@@ -70,7 +70,7 @@ const Contact = ({ locale = 'fr' }) => {
     heroText: 'Le cabinet vous reçoit sur rendez-vous au cabinet ou vous répond à distance selon la nature de votre demande.',
     contactEyebrow: 'Prendre contact', contactTitle: 'Échanger avec le cabinet',
     contactIntro: 'Le formulaire est le moyen privilégié pour présenter votre demande. Vous pouvez également écrire au cabinet par e-mail ou par SMS.',
-    quickLabel: 'Moyens de contact privilégiés', formAction: 'Remplir le formulaire', appointmentAction: 'Voir les rendez-vous', emailAction: 'Envoyer un e-mail', smsAction: 'Envoyer un SMS',
+    quickLabel: 'Moyens de contact privilégiés', formAction: 'Remplir le formulaire', appointmentAction: 'Prendre rendez-vous', emailAction: 'Envoyer un e-mail', smsAction: 'Envoyer un SMS',
     formEyebrow: 'Formulaire', formTitle: 'Envoyer un message', success: 'Merci, votre message a bien été envoyé.', successNext: 'Le cabinet reviendra vers vous dans les meilleurs délais.',
     name: 'Nom et prénom *', email: 'E-mail *', phone: 'Téléphone', phoneHelp: 'Obligatoire si vous souhaitez une réponse par SMS ou téléphone.', subject: 'Objet de la demande *', message: 'Message *', responseLegend: 'Mode de réponse souhaité', responseEmail: 'E-mail', responseSms: 'SMS', responsePhone: 'Téléphone', honeypot: 'Ne pas remplir ce champ',
     privacyStart: 'Les informations saisies sont acheminées au cabinet par Formspree afin de traiter votre demande. Pour ce premier contact, évitez de transmettre des informations hautement sensibles ou des pièces confidentielles. Consultez la ', privacyLabel: 'politique de confidentialité', submit: 'Envoyer le message', submitting: 'Envoi en cours…', errorStart: 'Une erreur est survenue. Vous pouvez réessayer ou écrire au cabinet par ',
@@ -157,13 +157,60 @@ const Contact = ({ locale = 'fr' }) => {
       </section>
 
       <section className={styles.contentSection}>
+        <section id="rendez-vous" className={styles.bookingPanel} aria-labelledby="booking-title">
+          <div className={styles.bookingHeader}>
+            <p className={styles.cardEyebrow}>{copy.bookingEyebrow}</p>
+            <h2 id="booking-title" className={styles.bookingTitle}>
+              {copy.bookingTitle}
+            </h2>
+            <p className={styles.bookingText}>
+              {copy.bookingText}
+            </p>
+          </div>
+
+          {calendlyEmbedUrl && calendlyAllowed ? (
+            <div className={styles.calendlyFrameWrap}>
+              <iframe
+                className={styles.calendlyFrame}
+                src={calendlyEmbedUrl}
+                title={copy.iframeTitle}
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            </div>
+          ) : calendlyEmbedUrl ? (
+            <div className={styles.bookingConsent}>
+              <div>
+                <h3>{copy.consentTitle}</h3>
+                <p>{copy.consentText}</p>
+              </div>
+              <button type="button" className={styles.bookingBtn} onClick={handleCalendlyActivation}>
+                {copy.showCalendar}
+              </button>
+            </div>
+          ) : (
+            <div className={styles.bookingFallback}>
+              <p>{copy.fallbackText}</p>
+              <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={styles.bookingBtn}>
+                {copy.openCalendly}
+              </a>
+            </div>
+          )}
+
+          <div className={styles.bookingLinkRow}>
+            <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+              {copy.openNewTab}
+            </a>
+          </div>
+        </section>
+
         <div className={styles.introBlock}>
           <p className={styles.cardEyebrow}>{copy.contactEyebrow}</p>
           <h2 className={styles.sectionTitle}>{copy.contactTitle}</h2>
           <p className={styles.introText}>{copy.contactIntro}</p>
           <div className={styles.quickActions} aria-label={copy.quickLabel}>
-            <a href="#contact-form" className={styles.primaryAction}>{copy.formAction}</a>
-            <a href="#rendez-vous" className={styles.secondaryAction}>{copy.appointmentAction}</a>
+            <a href="#rendez-vous" className={styles.primaryAction}>{copy.appointmentAction}</a>
+            <a href="#contact-form" className={styles.secondaryAction}>{copy.formAction}</a>
             <a href="mailto:sophie.marechal@avocat.fr" className={styles.secondaryAction}>{copy.emailAction}</a>
             <a href="sms:+33652609138" className={styles.secondaryAction}>{copy.smsAction}</a>
           </div>
@@ -223,17 +270,19 @@ const Contact = ({ locale = 'fr' }) => {
 
                   <label className={`${styles.field} ${styles.fieldLarge}`} htmlFor="contact-message">
                     <span className={styles.fieldLabel}>{copy.message}</span>
-                    <textarea id="contact-message" name="message" rows="6" required />
+                    <textarea id="contact-message" name="message" rows="4" required />
                   </label>
 
-                  <fieldset className={styles.responseFieldset}>
-                    <legend>{copy.responseLegend}</legend>
-                    <div className={styles.responseOptions}>
-                      <label><input type="radio" name="preference_reponse" value="E-mail" checked={preferredResponse === 'E-mail'} onChange={(event) => setPreferredResponse(event.target.value)} /> {copy.responseEmail}</label>
-                      <label><input type="radio" name="preference_reponse" value="SMS" checked={preferredResponse === 'SMS'} onChange={(event) => setPreferredResponse(event.target.value)} /> {copy.responseSms}</label>
-                      <label><input type="radio" name="preference_reponse" value="Téléphone" checked={preferredResponse === 'Téléphone'} onChange={(event) => setPreferredResponse(event.target.value)} /> {copy.responsePhone}</label>
-                    </div>
-                  </fieldset>
+                  <div className={styles.responseGroup}>
+                    <fieldset className={styles.responseFieldset}>
+                      <legend>{copy.responseLegend}</legend>
+                      <div className={styles.responseOptions}>
+                        <label><input type="radio" name="preference_reponse" value="E-mail" checked={preferredResponse === 'E-mail'} onChange={(event) => setPreferredResponse(event.target.value)} /> {copy.responseEmail}</label>
+                        <label><input type="radio" name="preference_reponse" value="SMS" checked={preferredResponse === 'SMS'} onChange={(event) => setPreferredResponse(event.target.value)} /> {copy.responseSms}</label>
+                        <label><input type="radio" name="preference_reponse" value="Téléphone" checked={preferredResponse === 'Téléphone'} onChange={(event) => setPreferredResponse(event.target.value)} /> {copy.responsePhone}</label>
+                      </div>
+                    </fieldset>
+                  </div>
 
                   <label className={styles.honeypot} aria-hidden="true">
                     {copy.honeypot}
@@ -275,53 +324,6 @@ const Contact = ({ locale = 'fr' }) => {
             </div>
           </article>
         </div>
-
-        <section id="rendez-vous" className={styles.bookingPanel} aria-labelledby="booking-title">
-          <div className={styles.bookingHeader}>
-            <p className={styles.cardEyebrow}>{copy.bookingEyebrow}</p>
-            <h2 id="booking-title" className={styles.bookingTitle}>
-              {copy.bookingTitle}
-            </h2>
-            <p className={styles.bookingText}>
-              {copy.bookingText}
-            </p>
-          </div>
-
-          {calendlyEmbedUrl && calendlyAllowed ? (
-            <div className={styles.calendlyFrameWrap}>
-              <iframe
-                className={styles.calendlyFrame}
-                src={calendlyEmbedUrl}
-                title={copy.iframeTitle}
-                loading="lazy"
-                referrerPolicy="strict-origin-when-cross-origin"
-              />
-            </div>
-          ) : calendlyEmbedUrl ? (
-            <div className={styles.bookingConsent}>
-              <div>
-                <h3>{copy.consentTitle}</h3>
-                <p>{copy.consentText}</p>
-              </div>
-              <button type="button" className={styles.bookingBtn} onClick={handleCalendlyActivation}>
-                {copy.showCalendar}
-              </button>
-            </div>
-          ) : (
-            <div className={styles.bookingFallback}>
-              <p>{copy.fallbackText}</p>
-              <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={styles.bookingBtn}>
-                {copy.openCalendly}
-              </a>
-            </div>
-          )}
-
-          <div className={styles.bookingLinkRow}>
-            <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
-              {copy.openNewTab}
-            </a>
-          </div>
-        </section>
       </section>
     </div>
   );

@@ -6,7 +6,6 @@ export const metadata = buildMetadata({
   description:
     "Sophie Maréchal, avocate à Paris, accompagne particuliers et professionnels en droit public, droit de l'urbanisme, droit des étrangers et droit de la nationalité.",
   path: "/",
-  image: "/og.png",
   keywords: [
     "avocate droit public Paris",
     "avocate urbanisme Paris",

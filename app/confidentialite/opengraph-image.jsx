@@ -1,20 +1,11 @@
-import {
-  createPageOgImage,
-  ogImageContentType,
-  ogImageSize,
-} from "../og-page-template";
+import { createPageOgImage } from "../og-page-template";
+import { socialCards } from "../../src/lib/social-images";
 
 export const runtime = "edge";
-export const alt = "Politique de confidentialité - Sophie Maréchal";
-export const size = ogImageSize;
-export const contentType = ogImageContentType;
+export const alt = "Sophie Maréchal — Cabinet d’avocat à Paris";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
 
 export default function OpengraphImage() {
-  return createPageOgImage({
-    eyebrow: "Confidentialité",
-    title: "Protection des données personnelles",
-    accent: "Traitement clair et transparent",
-    subtitle:
-      "Consultez la politique de confidentialité du cabinet concernant la collecte, l'usage et la conservation des données.",
-  });
+  return createPageOgImage({ ...socialCards["confidentialite"].fr, locale: "fr" });
 }

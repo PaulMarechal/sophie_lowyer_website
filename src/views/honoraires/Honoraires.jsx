@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { legalAid } from '../../content/fr/word-pages';
 import styles from './Honoraires.module.css';
 
 const Honoraires = () => {
@@ -59,7 +60,7 @@ const Honoraires = () => {
             <p>Le taux horaire est de <strong>180 euros TTC</strong>.</p>
             <p>Les modalités de facturation tiennent compte de la complexité de votre affaire.</p>
             <p>Le plus souvent, un honoraire au forfait est proposé.</p>
-            <p>L’aide juridictionnelle est acceptée sous réserve d’éligibilité et de résidence du justiciable en région Île-de-France.</p>
+            <p data-document-legal-aid>{legalAid}</p>
           </article>
         </div>
 

@@ -7,7 +7,6 @@ export const metadata = buildMetadata({
   description:
     "Sophie Maréchal accompagne les projets d'urbanisme à Paris : permis de construire, déclaration préalable, autorisations d'urbanisme et recours.",
   path: "/droit-de-urbanisme",
-  image: "/droit-de-urbanisme/opengraph-image",
 });
 
 const faqSchema = buildFaqSchema([

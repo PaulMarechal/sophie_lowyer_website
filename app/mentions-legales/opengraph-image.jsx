@@ -1,20 +1,11 @@
-import {
-  createPageOgImage,
-  ogImageContentType,
-  ogImageSize,
-} from "../og-page-template";
+import { createPageOgImage } from "../og-page-template";
+import { socialCards } from "../../src/lib/social-images";
 
 export const runtime = "edge";
-export const alt = "Mentions légales - Sophie Maréchal";
-export const size = ogImageSize;
-export const contentType = ogImageContentType;
+export const alt = "Sophie Maréchal — Cabinet d’avocat à Paris";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
 
 export default function OpengraphImage() {
-  return createPageOgImage({
-    eyebrow: "Mentions légales",
-    title: "Informations légales du cabinet",
-    accent: "Identité, contact, hébergement",
-    subtitle:
-      "Retrouvez les informations légales, réglementaires et de publication du site du cabinet Sophie Maréchal.",
-  });
+  return createPageOgImage({ ...socialCards["mentions-legales"].fr, locale: "fr" });
 }

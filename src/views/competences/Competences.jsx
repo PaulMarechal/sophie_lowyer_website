@@ -66,7 +66,7 @@ const Competences = () => {
               </div>
               <span>Droit de l’urbanisme</span>
             </Link>
-            <Link href="/droit-des-etrangers" className={styles.expertiseItem}>
+            <Link href="/avocat-carte-talent-carte-resident-paris" className={styles.expertiseItem}>
               <div className={styles.expertiseImage}>
                 <Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />
                 <PhotoCredit />

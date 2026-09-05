@@ -8,7 +8,6 @@ export const metadata = buildMetadata({
     "Sophie Maréchal accompagne les personnes faisant l'objet d'une OQTF à Paris : analyse de la décision, délais de recours et stratégie contentieuse.",
   path: "/avocat-oqtf-paris",
   keywords: ["avocate oqtf paris", "avocat oqtf paris", "recours oqtf paris"],
-  image: "/droit-des-etrangers/opengraph-image",
 });
 
 const faqSchema = buildFaqSchema([

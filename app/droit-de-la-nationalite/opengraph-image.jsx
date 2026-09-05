@@ -1,20 +1,11 @@
-import {
-  createPageOgImage,
-  ogImageContentType,
-  ogImageSize,
-} from "../og-page-template";
+import { createPageOgImage } from "../og-page-template";
+import { socialCards } from "../../src/lib/social-images";
 
 export const runtime = "edge";
-export const alt = "Droit de la nationalité et naturalisation française - Sophie Maréchal";
-export const size = ogImageSize;
-export const contentType = ogImageContentType;
+export const alt = "Sophie Maréchal — Cabinet d’avocat à Paris";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
 
 export default function OpengraphImage() {
-  return createPageOgImage({
-    eyebrow: "Droit de la nationalité · Paris",
-    title: "Naturalisation française",
-    accent: "Demande, instruction et recours",
-    subtitle:
-      "Une information claire et vérifiée pour comprendre la procédure et faire analyser chaque situation individuellement.",
-  });
+  return createPageOgImage({ ...socialCards["nationalite"].fr, locale: "fr" });
 }

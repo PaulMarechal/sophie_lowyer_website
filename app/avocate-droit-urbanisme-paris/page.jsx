@@ -13,7 +13,6 @@ export const metadata = buildMetadata({
     "avocate permis de construire paris",
     "recours urbanisme paris",
   ],
-  image: "/droit-de-urbanisme/opengraph-image",
 });
 
 const faqSchema = buildFaqSchema([

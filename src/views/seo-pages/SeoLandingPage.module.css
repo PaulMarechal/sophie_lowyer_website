@@ -191,6 +191,23 @@
   margin: 0.75rem 0 0;
 }
 
+.documentCard {
+  grid-template-columns: minmax(200px, 0.8fr) minmax(0, 1.8fr);
+  align-items: start;
+}
+
+.documentCard .sectionTitle {
+  grid-column: 1;
+}
+
+.documentCard .copy > :first-child {
+  margin-top: 0;
+}
+
+.documentCard .copy > :last-child {
+  margin-bottom: 0;
+}
+
 .faqCard,
 .proofCard,
 .relatedCard,

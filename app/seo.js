@@ -1,8 +1,9 @@
 import { getLanguagePaths, getLocaleFromPath } from "../src/lib/i18n";
+import { getSocialImages } from "../src/lib/social-images";
 
 const siteUrl = "https://www.sophiemarechal-avocat.fr";
 const siteName = "Sophie Maréchal";
-const defaultOgImage = "/og.png";
+const defaultOgImage = "/social/fr/home-og.png";
 
 export function absoluteUrl(path = "/") {
   return new URL(path, siteUrl).toString();
@@ -13,14 +14,12 @@ export function buildMetadata({
   description,
   path = "/",
   keywords = [],
-  image = defaultOgImage,
   locale: requestedLocale,
 }) {
   const locale = requestedLocale ?? getLocaleFromPath(path);
-  const resolvedImage = locale === "en" && image === defaultOgImage ? "/en/opengraph-image" : image;
+  const socialImages = getSocialImages(path, locale);
   const fullTitle = title ? `${title} | ${siteName}` : siteName;
   const url = absoluteUrl(path);
-  const imageWidth = resolvedImage === defaultOgImage || resolvedImage.includes("opengraph-image") ? 1200 : 1162;
   const languagePaths = getLanguagePaths(path);
   const languages = Object.fromEntries(
     Object.entries(languagePaths).map(([language, languagePath]) => [
@@ -45,20 +44,13 @@ export function buildMetadata({
       title: fullTitle,
       description,
       siteName,
-      images: [
-        {
-          url: resolvedImage,
-          width: imageWidth,
-          height: 630,
-          alt: `${siteName} - ${title ?? (locale === "en" ? "Law firm" : "Cabinet d'avocat")}`,
-        },
-      ],
+      images: socialImages.openGraph,
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
       description,
-      images: [resolvedImage],
+      images: socialImages.twitter,
     },
   };
 }

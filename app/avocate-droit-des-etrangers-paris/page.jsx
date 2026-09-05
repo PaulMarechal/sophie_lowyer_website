@@ -18,7 +18,6 @@ export const metadata = buildMetadata({
     "recours oqtf paris",
     "avocate carte talent paris",
   ],
-  image: "/droit-des-etrangers/opengraph-image",
 });
 
 const faqSchema = buildFaqSchema([

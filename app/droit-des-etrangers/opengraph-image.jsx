@@ -1,20 +1,11 @@
-import {
-  createPageOgImage,
-  ogImageContentType,
-  ogImageSize,
-} from "../og-page-template";
+import { createPageOgImage } from "../og-page-template";
+import { socialCards } from "../../src/lib/social-images";
 
 export const runtime = "edge";
-export const alt = "Droit des étrangers - Sophie Maréchal";
-export const size = ogImageSize;
-export const contentType = ogImageContentType;
+export const alt = "Sophie Maréchal — Cabinet d’avocat à Paris";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
 
 export default function OpengraphImage() {
-  return createPageOgImage({
-    eyebrow: "Droit des étrangers · Paris",
-    title: "Titre de séjour, naturalisation, OQTF",
-    accent: "Accompagnement clair à chaque étape",
-    subtitle:
-      "Le cabinet accompagne les démarches de séjour, la nationalité française et les recours contre les décisions préfectorales.",
-  });
+  return createPageOgImage({ ...socialCards["etrangers"].fr, locale: "fr" });
 }

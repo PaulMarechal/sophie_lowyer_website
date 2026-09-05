@@ -12,7 +12,6 @@ export const metadata = buildMetadata({
     "avocat permis de construire paris",
     "recours refus permis construire paris",
   ],
-  image: "/droit-de-urbanisme/opengraph-image",
 });
 
 const faqSchema = buildFaqSchema([

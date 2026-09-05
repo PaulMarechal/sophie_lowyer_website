@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import PhotoCredit from '../../components/media/PhotoCredit';
+import { immigrationNotice } from '../../content/fr/word-pages';
 import styles from './DroitEtrangers.module.css';
 
 const cards = [
@@ -84,6 +85,23 @@ const DroitEtrangers = () => {
       </section>
 
       <section className={styles.contentSection}>
+        <section className={styles.introCard} data-document-notice>
+          <h2 className={styles.sectionTitle}>{immigrationNotice.title}</h2>
+          <div className={styles.introText}>
+            <p>{immigrationNotice.paragraphs[0]}</p>
+            <p>
+              {immigrationNotice.paragraphs[1].split('Naturalisation')[0]}
+              <Link href="/droit-de-la-nationalite">Naturalisation</Link>
+              {' et '}
+              <Link href="/avocat-carte-talent-carte-resident-paris">Talents &amp; mobilité internationale</Link>.
+            </p>
+            <p>
+              {immigrationNotice.paragraphs[2].split('Avocat OQTF Paris')[0]}
+              <Link href="/avocat-oqtf-paris">Avocat OQTF Paris</Link>.
+            </p>
+          </div>
+        </section>
+
         <div className={styles.introCard}>
           <p className={styles.cardEyebrow}>Présentation</p>
           <h2 className={styles.sectionTitle}>Un contentieux humain, technique et décisif</h2>

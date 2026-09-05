@@ -1,163 +1,33 @@
-import { ImageResponse } from "next/og";
+import React from 'react';
+import { ImageResponse } from 'next/og';
 
-export const ogImageSize = {
-  width: 1200,
-  height: 630,
-};
+export const ogImageSize = { width: 1200, height: 630 };
+export const ogImageContentType = 'image/png';
+export const ogImageRuntime = 'edge';
 
-export const ogImageContentType = "image/png";
-export const ogImageRuntime = "edge";
-
-export function createPageOgImage({
-  eyebrow,
-  title,
-  subtitle,
-  accent,
-  locale = "fr",
-}) {
-  const nav = locale === "en"
-    ? ["About", "Practice areas", "Fees", "Contact"]
-    : ["A propos", "Compétences", "Honoraires", "Contact"];
+// The layout is recomposed for square exports, rather than cropping the landscape card.
+export function createPageOgImage({ eyebrow, title, accent, locale = 'fr' }, size = ogImageSize) {
+  const square = size.height === size.width;
   return new ImageResponse(
-    (
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          position: "relative",
-          overflow: "hidden",
-          background:
-            "linear-gradient(180deg, rgba(18,29,45,0.94) 0%, rgba(24,38,60,1) 100%)",
-          color: "#f7f1e7",
-          fontFamily: "Georgia",
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            display: "flex",
-            background:
-              "radial-gradient(circle at 18% 20%, rgba(103,156,226,0.18), transparent 24%), radial-gradient(circle at 80% 18%, rgba(221,196,154,0.12), transparent 18%), radial-gradient(circle at 72% 78%, rgba(73,120,196,0.18), transparent 22%)",
-          }}
-        />
-
-        <div
-          style={{
-            position: "absolute",
-            top: 34,
-            left: 56,
-            right: 56,
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            color: "rgba(247,241,231,0.88)",
-            fontSize: 22,
-            letterSpacing: 3,
-            textTransform: "uppercase",
-          }}
-        >
-          <div style={{ display: "flex", gap: 42 }}>
-            <span>{nav[0]}</span>
-            <span>{nav[1]}</span>
-          </div>
-          <div
-            style={{
-              fontSize: 34,
-              textTransform: "none",
-              letterSpacing: 0,
-              fontWeight: 700,
-            }}
-          >
-            Sophie Maréchal
-          </div>
-          <div style={{ display: "flex", gap: 42 }}>
-            <span>{nav[2]}</span>
-            <span>{nav[3]}</span>
-          </div>
-        </div>
-
-        <div
-          style={{
-            position: "absolute",
-            left: 90,
-            top: 130,
-            right: 90,
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: 980,
-          }}
-        >
-          <div
-            style={{
-              marginBottom: 24,
-              fontSize: 24,
-              letterSpacing: 4,
-              textTransform: "uppercase",
-              color: "rgba(247,241,231,0.72)",
-            }}
-          >
-            {eyebrow}
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 16,
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                maxWidth: 1020,
-                padding: "22px 28px 26px",
-                borderRadius: 34,
-                background: "rgba(97, 140, 211, 0.22)",
-                border: "1px solid rgba(255,255,255,0.16)",
-                backdropFilter: "blur(14px)",
-                boxShadow: "0 24px 60px rgba(25,39,62,0.18)",
-                fontSize: 76,
-                lineHeight: 0.96,
-                letterSpacing: -2.5,
-              }}
-            >
-              {title}
-            </div>
-
-            {accent ? (
-              <div
-                style={{
-                  display: "flex",
-                  padding: "10px 18px 14px",
-                  borderRadius: 22,
-                  background: "rgba(97, 140, 211, 0.28)",
-                  border: "1px solid rgba(255,255,255,0.14)",
-                  color: "#f7f1e7",
-                  fontSize: 34,
-                  lineHeight: 1.1,
-                }}
-              >
-                {accent}
-              </div>
-            ) : null}
-          </div>
-
-          <div
-            style={{
-              marginTop: 28,
-              maxWidth: 920,
-              fontSize: 30,
-              lineHeight: 1.35,
-              color: "rgba(247,241,231,0.88)",
-            }}
-          >
-            {subtitle}
-          </div>
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column',
+      padding: square ? '104px 88px' : '56px 72px', background: 'linear-gradient(135deg, #162336, #253955)',
+      color: '#f7f1e7', fontFamily: 'sans-serif', justifyContent: 'space-between' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+        <div style={{ fontSize: square ? 76 : 64, fontWeight: 700, letterSpacing: -2 }}>Sophie Maréchal</div>
+        <div style={{ fontSize: 23, color: '#cad5e4' }}>
+          {locale === 'en' ? 'Lawyer admitted to the Paris Bar' : 'Avocate au barreau de Paris'}
         </div>
       </div>
-    ),
-    ogImageSize
+      <div style={{ display: 'flex', flexDirection: 'column', gap: square ? 32 : 20 }}>
+        <div style={{ fontSize: 22, letterSpacing: 3, textTransform: 'uppercase', color: '#a7c7ef' }}>{eyebrow}</div>
+        <div style={{ fontSize: square ? 84 : 64, lineHeight: 1.1, letterSpacing: -2,
+          maxWidth: square ? 1000 : 1040, fontWeight: 700 }}>{title}</div>
+        <div style={{ display: 'flex', width: 88, height: 5, background: '#72a4e5', borderRadius: 3 }} />
+        <div style={{ fontSize: square ? 34 : 28, color: '#d5dfec', lineHeight: 1.3 }}>{accent}</div>
+      </div>
+      <div style={{ display: 'flex', borderTop: '1px solid #526783', paddingTop: 22,
+        fontSize: square ? 27 : 22, color: '#cad5e4' }}>sophiemarechal-avocat.fr</div>
+    </div>,
+    size,
   );
 }

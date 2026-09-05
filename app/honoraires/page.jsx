@@ -1,5 +1,6 @@
 import Desktop from "../../src/components/layout/Desktop";
 import Honoraires from "../../src/views/honoraires/Honoraires";
+import { legalAid } from "../../src/content/fr/word-pages";
 import { buildFaqSchema, buildMetadata } from "../seo";
 
 export const metadata = buildMetadata({
@@ -7,7 +8,6 @@ export const metadata = buildMetadata({
   description:
     "Consultez les modalités d'honoraires du cabinet de Sophie Maréchal, avocate à Paris, en toute transparence avant toute intervention.",
   path: "/honoraires",
-  image: "/Images/og_pages/honoraires.png",
 });
 
 const faqSchema = buildFaqSchema([
@@ -24,7 +24,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "L'aide juridictionnelle est-elle acceptée ?",
     answer:
-      "Oui, l'aide juridictionnelle est acceptée sous réserve d'éligibilité et de résidence du justiciable en région Île-de-France.",
+      legalAid,
   },
 ]);
 

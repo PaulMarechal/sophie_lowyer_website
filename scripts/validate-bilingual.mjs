@@ -93,7 +93,7 @@ for (const pair of pairs) {
       if (!html.includes('property="og:locale" content="en_GB"')) {
         errors.push(`Missing en_GB Open Graph locale on ${route}.`);
       }
-      if (!html.includes('property="og:image" content="https://www.sophiemarechal-avocat.fr/en/opengraph-image"')) {
+      if (!html.includes('property="og:image" content="https://www.sophiemarechal-avocat.fr/social/en/')) {
         errors.push(`English social image is not used on ${route}.`);
       }
       const visibleText = stripScriptsAndTags(html);

@@ -1,4 +1,5 @@
 import "./globals.css";
+import { getSocialImages } from "../src/lib/social-images";
 import ConsentManager from "../src/components/privacy/ConsentManager";
 import { absoluteUrl, lawFirmSchema, websiteSchema } from "./seo";
 
@@ -35,21 +36,14 @@ export const metadata = {
     title: "Sophie Maréchal | Avocate en droit public à Paris",
     description:
       "Cabinet de Sophie Maréchal, avocate à Paris en droit public, droit de l'urbanisme, droit des étrangers et droit de la nationalité.",
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Sophie Maréchal, avocate à Paris",
-      },
-    ],
+    images: getSocialImages("/").openGraph,
   },
   twitter: {
     card: "summary_large_image",
     title: "Sophie Maréchal | Avocate en droit public à Paris",
     description:
       "Cabinet de Sophie Maréchal, avocate à Paris en droit public, droit de l'urbanisme, droit des étrangers et droit de la nationalité.",
-    images: ["/og.png"],
+    images: getSocialImages("/").twitter,
   },
 };
 

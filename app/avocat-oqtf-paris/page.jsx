@@ -12,20 +12,21 @@ export const metadata = buildMetadata({
 
 const faqSchema = buildFaqSchema([
   {
-    question: "Qu'est-ce qu'une OQTF ?",
-    answer:
-      "Une OQTF est une décision administrative prise par le préfet qui ordonne à un étranger de quitter la France. Elle peut être accompagnée d'un délai de départ volontaire ou être prise sans délai.",
+    "question": "Quel est le délai pour contester une OQTF ?",
+    "answer": "Il n'existe pas un délai unique : tout dépend de la situation de la personne au moment de la notification. En dehors de toute mesure de contrainte, le délai de recours devant le tribunal administratif est généralement de 30 jours.\n\nIl est réduit à sept jours en cas d'assignation à résidence, et à quarante-huit heures en cas de placement en rétention administrative.\n\nUne vérification immédiate du cadre applicable est indispensable. Il est préférable de consulter un avocat sans délai dès la notification de l’OQTF."
   },
   {
-    question: "Quels sont les délais de recours contre une OQTF ?",
-    answer:
-      "Le délai dépend de la situation : 30 jours dans le cas général, 7 jours en cas d'assignation à résidence et 48 heures en cas de placement en centre de rétention administrative.",
+    "question": "Le recours contre une OQTF empêche-t-il l'éloignement pendant son examen ?",
+    "answer": "En principe oui. Formé dans les délais, le recours contentieux contre une OQTF est suspensif, ce qui signifie que la personne ne peut pas être éloignée du territoire tant que le tribunal administratif n'a pas rendu sa décision."
   },
   {
-    question: "Que faut-il faire dès réception d'une OQTF ?",
-    answer:
-      "Il faut lire la décision, vérifier la date de notification, identifier le délai de recours, consulter rapidement un avocat ou une association spécialisée et rassembler les pièces utiles.",
+    "question": "Que risque-t-on si le délai de recours contre une OQTF est dépassé ?",
+    "answer": "Passé le délai, l'OQTF devient définitive et exécutoire. La personne s'expose alors à une exécution forcée de la mesure d'éloignement ainsi que, selon les cas, à une interdiction de retour sur le territoire français."
   },
+  {
+    "question": "Peut-on contester en même temps le refus de titre de séjour et l'OQTF qui l'accompagne ?",
+    "answer": "Oui : lorsque ces décisions sont notifiées ensemble, un recours unique devant le tribunal administratif permet de contester à la fois le refus de séjour, l'obligation de quitter le territoire et les mesures qui l'accompagnent (délai de départ volontaire, pays de destination, interdiction de retour, assignation à résidence)."
+  }
 ]);
 
 const sections = [
@@ -34,7 +35,7 @@ const sections = [
     title: "Ce que signifie une obligation de quitter le territoire français",
     paragraphs: [
       "Une OQTF est une décision administrative prise par le préfet qui ordonne à un étranger de quitter la France. Elle est souvent accompagnée d'un délai pour partir volontairement, en général 30 jours, parfois sans aucun délai.",
-      "Recevoir une OQTF ne signifie pas forcément que votre expulsion est inévitable. Vous avez le droit de contester cette décision devant un juge.",
+      "Recevoir une OQTF ne signifie pas forcément que votre éloignement est inévitable. Vous avez le droit de contester cette décision devant un juge.",
     ],
   },
   {

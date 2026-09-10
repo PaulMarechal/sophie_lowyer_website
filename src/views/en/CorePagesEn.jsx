@@ -49,6 +49,7 @@ export function AboutEn() {
           <div className={styles.expertiseList}>
             <Link href="/en/planning-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" /></div><span>Planning law</span></Link>
             <Link href="/en/immigration-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" /><PhotoCredit language="en" /></div><span>Immigration law</span></Link>
+            <Link href="/en/public-service-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-fonction-publique-marianne.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /></div><span>Public Service Law Attorney</span></Link>
             <Link href="/en/french-nationality-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" /></div><span>French nationality law</span></Link>
           </div>
         </section>
@@ -90,6 +91,7 @@ export function PracticeAreasEn() {
           <div className={styles.expertiseGrid}>
             <Link href="/en/planning-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /></div><span>Planning law</span></Link>
             <Link href="/en/talent-passport-resident-card-lawyer-paris" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /><PhotoCredit language="en" /></div><span>Immigration law</span></Link>
+            <Link href="/en/public-service-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-fonction-publique-marianne.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /></div><span>Public Service Law Attorney</span></Link>
             <Link href="/en/french-nationality-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /></div><span>French nationality law</span></Link>
           </div>
         </article>

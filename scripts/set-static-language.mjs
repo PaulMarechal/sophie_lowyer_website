@@ -13,8 +13,8 @@ if (fs.existsSync(englishDirectory)) {
   }
 }
 
-if (englishFiles.length !== 18 || englishFiles.some((file) => !fs.existsSync(file))) {
-  throw new Error(`Expected 18 prerendered English HTML files, found ${englishFiles.length}.`);
+if (englishFiles.length !== 20 || englishFiles.some((file) => !fs.existsSync(file))) {
+  throw new Error(`Expected 20 prerendered English HTML files, found ${englishFiles.length}.`);
 }
 
 let updated = 0;

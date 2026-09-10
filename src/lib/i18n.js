@@ -5,6 +5,8 @@ export const ROUTE_PAIRS = [
   { fr: "/contact", en: "/en/contact" },
   { fr: "/honoraires", en: "/en/fees" },
   { fr: "/droit-de-urbanisme", en: "/en/planning-law" },
+  { fr: "/droit-de-la-fonction-publique", en: "/en/public-service-law" },
+  { fr: "/avocat-conseil-discipline-paris", en: "/en/disciplinary-board-lawyer-paris" },
   { fr: "/droit-des-etrangers", en: "/en/immigration-law" },
   { fr: "/droit-de-la-nationalite", en: "/en/french-nationality-law" },
   { fr: "/avocate-droit-public-paris", en: "/en/public-law-lawyer-paris" },

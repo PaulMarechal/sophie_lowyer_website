@@ -19,7 +19,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "Dans quels cas consulter une avocate en droit public à Paris ?",
     answer:
-      "Il est utile de consulter une avocate en droit public lorsqu'une décision administrative affecte une situation personnelle, professionnelle ou patrimoniale : refus, autorisation, obligation de quitter le territoire ou recours devant le tribunal administratif.",
+      "Il est utile de consulter une avocate en droit public lorsqu’une décision administrative affecte une situation personnelle, professionnelle ou patrimoniale : refus de permis de construire ; refus d’un titre de séjour ; décision d’éloignement (OQTF) ; sanction disciplinaire.",
   },
   {
     question: "Le droit public concerne-t-il seulement les administrations ?",

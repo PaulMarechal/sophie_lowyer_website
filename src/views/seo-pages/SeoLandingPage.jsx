@@ -150,7 +150,9 @@ export default function SeoLandingPage({
             {faqItems.map((item) => (
               <article key={item.question} className={styles.faqItem}>
                 <h3 className={styles.faqQuestion}>{item.question}</h3>
-                <p className={styles.faqAnswer}>{item.answer}</p>
+                {item.answer.split("\n\n").map((paragraph, index) => (
+                  <p key={index} className={styles.faqAnswer}>{paragraph}</p>
+                ))}
               </article>
             ))}
           </div>

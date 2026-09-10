@@ -1,3 +1,5 @@
+import { publicService } from "./public-service";
+
 // Faithful translation of src/content/fr/word-pages.js.
 // Keep the same sections, paragraph order and lists as the supplied French copy.
 export const naturalisation = {
@@ -151,6 +153,22 @@ export const immigrationNotice = {
 export const legalAid = "Legal aid is accepted subject to eligibility and provided the client resides in the Île-de-France region.";
 
 export const englishDocumentPages = {
+  "public-service-law": {
+    metadata: {
+      title: "Public Service Law Attorney",
+      description: publicService.intro[0],
+      path: "/en/public-service-law",
+    },
+    content: publicService,
+  },
+  "disciplinary-board-lawyer-paris": {
+    metadata: {
+      title: publicService.title,
+      description: publicService.intro[0],
+      path: "/en/disciplinary-board-lawyer-paris",
+    },
+    content: publicService,
+  },
   "french-nationality-law": {
     metadata: {
       title: naturalisation.title,

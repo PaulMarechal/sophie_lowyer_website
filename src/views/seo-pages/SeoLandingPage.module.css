@@ -336,6 +336,10 @@
   color: var(--navy);
 }
 
+.faqItem .faqAnswer + .faqAnswer {
+  margin-top: 0.75rem;
+}
+
 .faqItem .faqAnswer {
   margin: 0;
   max-width: 62ch;

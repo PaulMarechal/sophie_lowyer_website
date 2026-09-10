@@ -73,6 +73,12 @@ const Competences = () => {
               </div>
               <span>Droit des étrangers</span>
             </Link>
+            <Link href="/droit-de-la-fonction-publique" className={styles.expertiseItem}>
+              <div className={styles.expertiseImage}>
+                <Image src="/Images/droit-fonction-publique-marianne.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />
+              </div>
+              <span>Avocate en droit de la fonction publique</span>
+            </Link>
             <Link href="/droit-de-la-nationalite" className={styles.expertiseItem}>
               <div className={styles.expertiseImage}>
                 <Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />

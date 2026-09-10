@@ -13,6 +13,21 @@ function ContentBlocks({ blocks }) {
   ));
 }
 
+function SectionTitle({ title }) {
+  const parts = title.match(/^(.*?)\s+(\(.*\))$/);
+
+  return (
+    <h2 className={styles.sectionTitle}>
+      {parts ? (
+        <>
+          {parts[1]}{" "}
+          <span className={styles.titleDetail}>{parts[2]}</span>
+        </>
+      ) : title}
+    </h2>
+  );
+}
+
 // This template only renders supplied copy, without generated FAQ or CTA text.
 export default function DocumentLandingPage({ content, locale = "fr" }) {
   const faqSchema = content.faqItems?.length ? buildFaqSchema(content.faqItems.map((item) => ({
@@ -36,7 +51,7 @@ export default function DocumentLandingPage({ content, locale = "fr" }) {
         <div className={styles.sectionsGrid}>
           {content.sections.map((section) => (
             <article key={section.title} className={`${styles.sectionCard} ${styles.documentCard}`}>
-              <h2 className={styles.sectionTitle}>{section.title}</h2>
+              <SectionTitle title={section.title} />
               <div className={styles.copy}>
                 <ContentBlocks blocks={section.blocks} />
               </div>

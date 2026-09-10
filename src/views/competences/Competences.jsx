@@ -62,26 +62,26 @@ const Competences = () => {
           <div className={styles.expertiseGrid}>
             <Link href="/droit-de-urbanisme" className={styles.expertiseItem}>
               <div className={styles.expertiseImage}>
-                <Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />
+                <Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" />
               </div>
               <span>Droit de l’urbanisme</span>
             </Link>
             <Link href="/avocat-carte-talent-carte-resident-paris" className={styles.expertiseItem}>
               <div className={styles.expertiseImage}>
-                <Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />
+                <Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" />
                 <PhotoCredit />
               </div>
               <span>Droit des étrangers</span>
             </Link>
             <Link href="/droit-de-la-fonction-publique" className={styles.expertiseItem}>
               <div className={styles.expertiseImage}>
-                <Image src="/Images/droit-fonction-publique-marianne.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />
+                <Image src="/Images/droit-fonction-publique-marianne.webp" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" />
               </div>
               <span>Avocate en droit de la fonction publique</span>
             </Link>
             <Link href="/droit-de-la-nationalite" className={styles.expertiseItem}>
               <div className={styles.expertiseImage}>
-                <Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" />
+                <Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" />
               </div>
               <span>Droit de la nationalité</span>
             </Link>

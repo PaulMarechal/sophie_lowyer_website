@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import PhotoCredit from '../../components/media/PhotoCredit';
 import styles from './APropos.module.css';
+import practiceStyles from '../competences/Competences.module.css';
 
 const APropos = () => {
   return (
@@ -65,23 +66,29 @@ const APropos = () => {
         <section className={styles.sideCard}>
           <p className={styles.cardEyebrow}>Intervention</p>
           <h3 className={styles.sideCardTitle}>Domaines du cabinet</h3>
-          <div className={styles.expertiseList}>
-            <Link href="/droit-de-urbanisme" className={styles.expertiseItem}>
-              <div className={styles.expertiseImage}>
-                <Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" />
+          <div className={practiceStyles.expertiseGrid}>
+            <Link href="/droit-de-urbanisme" className={practiceStyles.expertiseItem}>
+              <div className={practiceStyles.expertiseImage}>
+                <Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" />
               </div>
               <span>Droit de l’urbanisme</span>
             </Link>
-            <Link href="/droit-des-etrangers" className={styles.expertiseItem}>
-              <div className={styles.expertiseImage}>
-                <Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" />
+            <Link href="/droit-des-etrangers" className={practiceStyles.expertiseItem}>
+              <div className={practiceStyles.expertiseImage}>
+                <Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" />
                 <PhotoCredit />
               </div>
               <span>Droit des étrangers</span>
             </Link>
-            <Link href="/droit-de-la-nationalite" className={styles.expertiseItem}>
-              <div className={styles.expertiseImage}>
-                <Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" />
+            <Link href="/droit-de-la-fonction-publique" className={practiceStyles.expertiseItem}>
+              <div className={practiceStyles.expertiseImage}>
+                <Image src="/Images/droit-fonction-publique-marianne.webp" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" />
+              </div>
+              <span>Avocate en droit de la fonction publique</span>
+            </Link>
+            <Link href="/droit-de-la-nationalite" className={practiceStyles.expertiseItem}>
+              <div className={practiceStyles.expertiseImage}>
+                <Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" />
               </div>
               <span>Droit de la nationalité</span>
             </Link>

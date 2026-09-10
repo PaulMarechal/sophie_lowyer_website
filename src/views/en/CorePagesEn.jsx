@@ -46,11 +46,11 @@ export function AboutEn() {
         <section className={styles.sideCard}>
           <p className={styles.cardEyebrow}>Areas of practice</p>
           <h3 className={styles.sideCardTitle}>The firm’s areas of practice</h3>
-          <div className={styles.expertiseList}>
-            <Link href="/en/planning-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" /></div><span>Planning law</span></Link>
-            <Link href="/en/immigration-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" /><PhotoCredit language="en" /></div><span>Immigration law</span></Link>
-            <Link href="/en/public-service-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/droit-fonction-publique-marianne.webp" alt="" fill sizes="(max-width: 900px) calc(100vw - 4rem), 33vw" /></div><span>Public Service Law Attorney</span></Link>
-            <Link href="/en/french-nationality-law" className={styles.expertiseItem}><div className={styles.expertiseImage}><Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 900px) 50vw, 33vw" /></div><span>French nationality law</span></Link>
+          <div className={practiceStyles.expertiseGrid}>
+            <Link href="/en/planning-law" className={practiceStyles.expertiseItem}><div className={practiceStyles.expertiseImage}><Image src="/Images/droit_urbanisme.webp" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" /></div><span>Planning law</span></Link>
+            <Link href="/en/immigration-law" className={practiceStyles.expertiseItem}><div className={practiceStyles.expertiseImage}><Image src="/Images/droit-des-etrangers-passeports.webp" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" /><PhotoCredit language="en" /></div><span>Immigration law</span></Link>
+            <Link href="/en/public-service-law" className={practiceStyles.expertiseItem}><div className={practiceStyles.expertiseImage}><Image src="/Images/droit-fonction-publique-marianne.webp" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" /></div><span>Public Service Law Attorney</span></Link>
+            <Link href="/en/french-nationality-law" className={practiceStyles.expertiseItem}><div className={practiceStyles.expertiseImage}><Image src="/Images/paris_monument.jpg" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" /></div><span>French nationality law</span></Link>
           </div>
         </section>
       </section>

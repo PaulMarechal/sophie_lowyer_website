@@ -1,0 +1,1050 @@
+{
+  "generatedAt": "2026-09-10T14:34:24.180Z",
+  "origin": "http://127.0.0.1:3100",
+  "formFactor": "desktop",
+  "pages": 40,
+  "passed": 40,
+  "failed": 0,
+  "results": [
+    {
+      "route": "/",
+      "url": "http://127.0.0.1:3100/",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 10,
+        "total": 10,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/index.html"
+    },
+    {
+      "route": "/a-propos",
+      "url": "http://127.0.0.1:3100/a-propos",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 10,
+        "total": 10,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/a-propos.html"
+    },
+    {
+      "route": "/avocat-carte-talent-carte-resident-paris",
+      "url": "http://127.0.0.1:3100/avocat-carte-talent-carte-resident-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/avocat-carte-talent-carte-resident-paris.html"
+    },
+    {
+      "route": "/avocat-conseil-discipline-paris",
+      "url": "http://127.0.0.1:3100/avocat-conseil-discipline-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/avocat-conseil-discipline-paris.html"
+    },
+    {
+      "route": "/avocat-naturalisation-paris",
+      "url": "http://127.0.0.1:3100/avocat-naturalisation-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/avocat-naturalisation-paris.html"
+    },
+    {
+      "route": "/avocat-oqtf-paris",
+      "url": "http://127.0.0.1:3100/avocat-oqtf-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/avocat-oqtf-paris.html"
+    },
+    {
+      "route": "/avocat-refus-permis-construire-paris",
+      "url": "http://127.0.0.1:3100/avocat-refus-permis-construire-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/avocat-refus-permis-construire-paris.html"
+    },
+    {
+      "route": "/avocate-droit-des-etrangers-paris",
+      "url": "http://127.0.0.1:3100/avocate-droit-des-etrangers-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/avocate-droit-des-etrangers-paris.html"
+    },
+    {
+      "route": "/avocate-droit-public-paris",
+      "url": "http://127.0.0.1:3100/avocate-droit-public-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/avocate-droit-public-paris.html"
+    },
+    {
+      "route": "/avocate-droit-urbanisme-paris",
+      "url": "http://127.0.0.1:3100/avocate-droit-urbanisme-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/avocate-droit-urbanisme-paris.html"
+    },
+    {
+      "route": "/competences",
+      "url": "http://127.0.0.1:3100/competences",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 10,
+        "total": 10,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/competences.html"
+    },
+    {
+      "route": "/confidentialite",
+      "url": "http://127.0.0.1:3100/confidentialite",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/confidentialite.html"
+    },
+    {
+      "route": "/contact",
+      "url": "http://127.0.0.1:3100/contact",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/contact.html"
+    },
+    {
+      "route": "/droit-de-la-fonction-publique",
+      "url": "http://127.0.0.1:3100/droit-de-la-fonction-publique",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/droit-de-la-fonction-publique.html"
+    },
+    {
+      "route": "/droit-de-la-nationalite",
+      "url": "http://127.0.0.1:3100/droit-de-la-nationalite",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/droit-de-la-nationalite.html"
+    },
+    {
+      "route": "/droit-de-urbanisme",
+      "url": "http://127.0.0.1:3100/droit-de-urbanisme",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/droit-de-urbanisme.html"
+    },
+    {
+      "route": "/droit-des-etrangers",
+      "url": "http://127.0.0.1:3100/droit-des-etrangers",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/droit-des-etrangers.html"
+    },
+    {
+      "route": "/en",
+      "url": "http://127.0.0.1:3100/en",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 10,
+        "total": 10,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en.html"
+    },
+    {
+      "route": "/en/about",
+      "url": "http://127.0.0.1:3100/en/about",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 10,
+        "total": 10,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--about.html"
+    },
+    {
+      "route": "/en/building-permit-refusal-lawyer-paris",
+      "url": "http://127.0.0.1:3100/en/building-permit-refusal-lawyer-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--building-permit-refusal-lawyer-paris.html"
+    },
+    {
+      "route": "/en/contact",
+      "url": "http://127.0.0.1:3100/en/contact",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--contact.html"
+    },
+    {
+      "route": "/en/cookie-settings",
+      "url": "http://127.0.0.1:3100/en/cookie-settings",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--cookie-settings.html"
+    },
+    {
+      "route": "/en/disciplinary-board-lawyer-paris",
+      "url": "http://127.0.0.1:3100/en/disciplinary-board-lawyer-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--disciplinary-board-lawyer-paris.html"
+    },
+    {
+      "route": "/en/fees",
+      "url": "http://127.0.0.1:3100/en/fees",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--fees.html"
+    },
+    {
+      "route": "/en/french-nationality-law",
+      "url": "http://127.0.0.1:3100/en/french-nationality-law",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--french-nationality-law.html"
+    },
+    {
+      "route": "/en/immigration-law",
+      "url": "http://127.0.0.1:3100/en/immigration-law",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--immigration-law.html"
+    },
+    {
+      "route": "/en/immigration-lawyer-paris",
+      "url": "http://127.0.0.1:3100/en/immigration-lawyer-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--immigration-lawyer-paris.html"
+    },
+    {
+      "route": "/en/legal-notice",
+      "url": "http://127.0.0.1:3100/en/legal-notice",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--legal-notice.html"
+    },
+    {
+      "route": "/en/naturalisation-lawyer-paris",
+      "url": "http://127.0.0.1:3100/en/naturalisation-lawyer-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--naturalisation-lawyer-paris.html"
+    },
+    {
+      "route": "/en/oqtf-lawyer-paris",
+      "url": "http://127.0.0.1:3100/en/oqtf-lawyer-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--oqtf-lawyer-paris.html"
+    },
+    {
+      "route": "/en/planning-law",
+      "url": "http://127.0.0.1:3100/en/planning-law",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--planning-law.html"
+    },
+    {
+      "route": "/en/planning-law-lawyer-paris",
+      "url": "http://127.0.0.1:3100/en/planning-law-lawyer-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--planning-law-lawyer-paris.html"
+    },
+    {
+      "route": "/en/practice-areas",
+      "url": "http://127.0.0.1:3100/en/practice-areas",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 10,
+        "total": 10,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--practice-areas.html"
+    },
+    {
+      "route": "/en/privacy",
+      "url": "http://127.0.0.1:3100/en/privacy",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--privacy.html"
+    },
+    {
+      "route": "/en/public-law-lawyer-paris",
+      "url": "http://127.0.0.1:3100/en/public-law-lawyer-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--public-law-lawyer-paris.html"
+    },
+    {
+      "route": "/en/public-service-law",
+      "url": "http://127.0.0.1:3100/en/public-service-law",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--public-service-law.html"
+    },
+    {
+      "route": "/en/talent-passport-resident-card-lawyer-paris",
+      "url": "http://127.0.0.1:3100/en/talent-passport-resident-card-lawyer-paris",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/en--talent-passport-resident-card-lawyer-paris.html"
+    },
+    {
+      "route": "/gestion-des-cookies",
+      "url": "http://127.0.0.1:3100/gestion-des-cookies",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/gestion-des-cookies.html"
+    },
+    {
+      "route": "/honoraires",
+      "url": "http://127.0.0.1:3100/honoraires",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/honoraires.html"
+    },
+    {
+      "route": "/mentions-legales",
+      "url": "http://127.0.0.1:3100/mentions-legales",
+      "lighthouse": "13.4.1",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "formFactor": "desktop",
+      "seo": {
+        "score": 1,
+        "passed": 9,
+        "total": 9,
+        "failures": []
+      },
+      "agentic": {
+        "score": 1,
+        "passed": 3,
+        "total": 3,
+        "failures": []
+      },
+      "runtimeError": null,
+      "webmcp": {
+        "webmcp-form-coverage": "notApplicable",
+        "webmcp-registered-tools": "notApplicable",
+        "webmcp-schema-validity": "notApplicable"
+      },
+      "report": "/private/tmp/sophie-seo-final/desktop/mentions-legales.html"
+    }
+  ]
+}

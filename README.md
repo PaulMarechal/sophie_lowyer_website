@@ -38,3 +38,19 @@ Le paysage est déclaré en premier dans Open Graph et le carré en alternative.
 Pour modifier les textes : `src/lib/social-images.js`. Pour modifier la composition : `app/og-page-template.js`. Régénérer les fichiers avec `npm run images:social`, puis lancer `npm run build`. Les anciennes URL `/og.png` et `/Images/og_pages/*.png` restent utilisables.
 
 Pour tester un partage après déploiement, utiliser le domaine public `https://www.sophiemarechal-avocat.fr`. Une URL d’aperçu protégée peut afficher « Protected Deployment – Vercel » à la place des métadonnées du cabinet : cela dépend de [Deployment Protection](https://vercel.com/docs/deployment-protection), pas des dimensions des images. Les applications peuvent également conserver un ancien aperçu en cache.
+
+## Audit SEO et navigation agentique
+
+Auditer la version de production avec Lighthouse, sur le domaine public ou avec `npm run build` puis `npm run start -- --hostname 127.0.0.1 --port 3100`. Les aperçus Vercel protégés renvoient `X-Robots-Tag: noindex` : leur score SEO n'est pas celui du domaine public. Conserver cette protection des aperçus.
+
+Le script ci-dessous nécessite Node.js 22.19 ou plus récent et Chrome installé. Lighthouse est installé dans un dossier temporaire, sans changer les dépendances du site :
+
+```sh
+npm install --prefix /tmp/sophie-seo-tools --no-audit --no-fund --ignore-scripts lighthouse@13.4.1
+node scripts/audit-site.mjs --tools-dir /tmp/sophie-seo-tools --base-url http://127.0.0.1:3100 --output-dir /tmp/sophie-audit/desktop --form-factor desktop
+node scripts/audit-site.mjs --tools-dir /tmp/sophie-seo-tools --base-url http://127.0.0.1:3100 --output-dir /tmp/sophie-audit/mobile --form-factor mobile
+```
+
+Le script parcourt les pages du sitemap, conserve un rapport HTML et JSON pour chacune, puis écrit `summary.json`. Il échoue si une page ne peut pas être auditée, n'atteint pas 100 en SEO ou échoue à un contrôle agentique applicable. Les contrôles WebMCP non applicables sont identifiés séparément ; ils ne sont pas comptés comme des contrôles réussis.
+
+Après publication, relancer avec `--base-url https://www.sophiemarechal-avocat.fr`. Pour une nouvelle page, ajouter ses liens français et anglais dans `public/llms.txt` au format Markdown `[titre](URL)` et veiller à ce qu'elle soit accessible depuis un lien du site, en plus du sitemap.

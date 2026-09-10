@@ -20,18 +20,18 @@ Le cabinet accompagne particuliers et professionnels dans leurs démarches admin
 
 ## Important URLs
 
-- https://www.sophiemarechal-avocat.fr/
-- https://www.sophiemarechal-avocat.fr/a-propos
-- https://www.sophiemarechal-avocat.fr/competences
-- https://www.sophiemarechal-avocat.fr/droit-des-etrangers
-- https://www.sophiemarechal-avocat.fr/avocat-carte-talent-carte-resident-paris
-- https://www.sophiemarechal-avocat.fr/droit-de-la-nationalite
-- https://www.sophiemarechal-avocat.fr/avocat-naturalisation-paris
-- https://www.sophiemarechal-avocat.fr/droit-de-urbanisme
-- https://www.sophiemarechal-avocat.fr/avocat-oqtf-paris
-- https://www.sophiemarechal-avocat.fr/avocat-refus-permis-construire-paris
-- https://www.sophiemarechal-avocat.fr/honoraires
-- https://www.sophiemarechal-avocat.fr/contact
+- [Sophie Maréchal, avocate à Paris en droit public](https://www.sophiemarechal-avocat.fr/)
+- [À propos du cabinet](https://www.sophiemarechal-avocat.fr/a-propos)
+- [Compétences](https://www.sophiemarechal-avocat.fr/competences)
+- [Droit des étrangers : séjour, OQTF et recours](https://www.sophiemarechal-avocat.fr/droit-des-etrangers)
+- [Talents & mobilité internationale](https://www.sophiemarechal-avocat.fr/avocat-carte-talent-carte-resident-paris)
+- [Naturalisation française](https://www.sophiemarechal-avocat.fr/droit-de-la-nationalite)
+- [Avocat naturalisation Paris](https://www.sophiemarechal-avocat.fr/avocat-naturalisation-paris)
+- [Droit de l'urbanisme : autorisations et recours](https://www.sophiemarechal-avocat.fr/droit-de-urbanisme)
+- [Avocate OQTF à Paris](https://www.sophiemarechal-avocat.fr/avocat-oqtf-paris)
+- [Avocate refus de permis de construire à Paris](https://www.sophiemarechal-avocat.fr/avocat-refus-permis-construire-paris)
+- [Honoraires](https://www.sophiemarechal-avocat.fr/honoraires)
+- [Contact](https://www.sophiemarechal-avocat.fr/contact)
 
 ## Contact
 
@@ -56,18 +56,37 @@ The full website is available in English. Each English page has a French equival
 
 ### Important English URLs
 
-- https://www.sophiemarechal-avocat.fr/en
-- https://www.sophiemarechal-avocat.fr/en/about
-- https://www.sophiemarechal-avocat.fr/en/practice-areas
-- https://www.sophiemarechal-avocat.fr/en/public-law-lawyer-paris
-- https://www.sophiemarechal-avocat.fr/en/planning-law
-- https://www.sophiemarechal-avocat.fr/en/planning-law-lawyer-paris
-- https://www.sophiemarechal-avocat.fr/en/building-permit-refusal-lawyer-paris
-- https://www.sophiemarechal-avocat.fr/en/immigration-law
-- https://www.sophiemarechal-avocat.fr/en/immigration-lawyer-paris
-- https://www.sophiemarechal-avocat.fr/en/oqtf-lawyer-paris
-- https://www.sophiemarechal-avocat.fr/en/talent-passport-resident-card-lawyer-paris
-- https://www.sophiemarechal-avocat.fr/en/french-nationality-law
-- https://www.sophiemarechal-avocat.fr/en/naturalisation-lawyer-paris
-- https://www.sophiemarechal-avocat.fr/en/fees
-- https://www.sophiemarechal-avocat.fr/en/contact
+- [French public law lawyer in Paris](https://www.sophiemarechal-avocat.fr/en)
+- [About the firm](https://www.sophiemarechal-avocat.fr/en/about)
+- [Areas of practice](https://www.sophiemarechal-avocat.fr/en/practice-areas)
+- [Public law lawyer in Paris](https://www.sophiemarechal-avocat.fr/en/public-law-lawyer-paris)
+- [French planning law: permits and appeals](https://www.sophiemarechal-avocat.fr/en/planning-law)
+- [Planning law lawyer in Paris](https://www.sophiemarechal-avocat.fr/en/planning-law-lawyer-paris)
+- [Building permit refusal lawyer in Paris](https://www.sophiemarechal-avocat.fr/en/building-permit-refusal-lawyer-paris)
+- [French immigration law: OQTF appeals](https://www.sophiemarechal-avocat.fr/en/immigration-law)
+- [Immigration lawyer in Paris](https://www.sophiemarechal-avocat.fr/en/immigration-lawyer-paris)
+- [OQTF lawyer in Paris](https://www.sophiemarechal-avocat.fr/en/oqtf-lawyer-paris)
+- [Talent & international mobility](https://www.sophiemarechal-avocat.fr/en/talent-passport-resident-card-lawyer-paris)
+- [French naturalisation](https://www.sophiemarechal-avocat.fr/en/french-nationality-law)
+- [Naturalisation lawyer in Paris](https://www.sophiemarechal-avocat.fr/en/naturalisation-lawyer-paris)
+- [Fees](https://www.sophiemarechal-avocat.fr/en/fees)
+- [Contact and appointments](https://www.sophiemarechal-avocat.fr/en/contact)
+
+## Autres pages en français
+
+- [Avocate conseil de discipline à Paris](https://www.sophiemarechal-avocat.fr/avocat-conseil-discipline-paris)
+- [Avocate en droit des étrangers à Paris](https://www.sophiemarechal-avocat.fr/avocate-droit-des-etrangers-paris)
+- [Avocate en droit public à Paris](https://www.sophiemarechal-avocat.fr/avocate-droit-public-paris)
+- [Avocate en droit de l'urbanisme à Paris](https://www.sophiemarechal-avocat.fr/avocate-droit-urbanisme-paris)
+- [Politique de confidentialité](https://www.sophiemarechal-avocat.fr/confidentialite)
+- [Avocate en droit de la fonction publique](https://www.sophiemarechal-avocat.fr/droit-de-la-fonction-publique)
+- [Gestion des cookies et services externes](https://www.sophiemarechal-avocat.fr/gestion-des-cookies)
+- [Mentions légales](https://www.sophiemarechal-avocat.fr/mentions-legales)
+
+## Other English pages
+
+- [Cookie and external service settings](https://www.sophiemarechal-avocat.fr/en/cookie-settings)
+- [Disciplinary Board Attorney in Paris](https://www.sophiemarechal-avocat.fr/en/disciplinary-board-lawyer-paris)
+- [Legal notice](https://www.sophiemarechal-avocat.fr/en/legal-notice)
+- [Privacy policy](https://www.sophiemarechal-avocat.fr/en/privacy)
+- [Public Service Law Attorney](https://www.sophiemarechal-avocat.fr/en/public-service-law)

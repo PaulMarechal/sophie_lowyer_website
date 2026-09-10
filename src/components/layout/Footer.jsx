@@ -10,6 +10,7 @@ export default function Footer({ locale = "fr" }) {
         contact: "/en/contact",
         publicLaw: "/en/public-law-lawyer-paris",
         publicService: "/en/public-service-law",
+        discipline: "/en/disciplinary-board-lawyer-paris",
         planningLaw: "/en/planning-law-lawyer-paris",
         immigrationLaw: "/en/immigration-lawyer-paris",
         talent: "/en/talent-passport-resident-card-lawyer-paris",
@@ -24,6 +25,7 @@ export default function Footer({ locale = "fr" }) {
         contact: "/contact",
         publicLaw: "/avocate-droit-public-paris",
         publicService: "/droit-de-la-fonction-publique",
+        discipline: "/avocat-conseil-discipline-paris",
         planningLaw: "/avocate-droit-urbanisme-paris",
         immigrationLaw: "/avocate-droit-des-etrangers-paris",
         talent: "/avocat-carte-talent-carte-resident-paris",
@@ -59,6 +61,7 @@ export default function Footer({ locale = "fr" }) {
           <Link href={paths.talent}>{isEnglish ? "Talent passport and resident card" : "Carte talent et résident Paris"}</Link>
           <Link href={paths.oqtf}>{isEnglish ? "OQTF lawyer Paris" : "Avocate OQTF Paris"}</Link>
           <Link href={paths.publicService}>{isEnglish ? "Public Service Law Attorney" : "Avocate en droit de la fonction publique"}</Link>
+          <Link href={paths.discipline}>{isEnglish ? "Disciplinary Board Attorney in Paris" : "Avocate conseil de discipline à Paris"}</Link>
           <Link href={paths.nationality}>{isEnglish ? "Nationality law" : "Droit de la nationalité"}</Link>
           <Link href={paths.naturalisation}>{isEnglish ? "Naturalisation lawyer Paris" : "Avocate naturalisation Paris"}</Link>
         </nav>

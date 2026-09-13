@@ -66,6 +66,26 @@ const domainCards = [
       },
     ],
   },
+  {
+    label: "Disciplinary hearings & appeals",
+    title: "Public service law",
+    bg: "/Images/droit-fonction-publique-marianne.webp",
+    href: "/en/public-service-law",
+    intro: "The firm assists public employees summoned to appear before a disciplinary board, from preparing the case file to defending you during the hearing.",
+    groups: [
+      {
+        label: "Disciplinary hearings",
+        lines: [
+          "Preparing the case file",
+          "Assistance during the disciplinary board hearing",
+        ],
+      },
+      {
+        label: "If a disciplinary sanction is imposed",
+        text: "The attorney can develop a strategy for the next steps in the proceedings and help you file an appeal with the administrative court.",
+      },
+    ],
+  },
 ];
 
 const resources = [
@@ -243,9 +263,9 @@ export default function HomeEn() {
         <div className={styles.sectionIntro}>
           <p className={styles.sectionMarker}>Areas of practice</p>
           <div>
-            <h2 className={styles.sectionTitle}>Three areas, with the same commitment to <span className={styles.sectionHighlight}>clarity and strategy.</span></h2>
+            <h2 className={styles.sectionTitle}>Four areas with the same commitment to <span className={styles.sectionHighlight}>clarity and strategy.</span></h2>
             <p className={styles.sectionLead}>
-              The firm works primarily in planning, immigration and French nationality law. Each of these areas involves administrative decisions that are often technical and far-reaching.
+              The firm works primarily in planning, immigration, French nationality law and public service law. Each of these areas involves administrative decisions that are often technical and far-reaching.
             </p>
           </div>
         </div>

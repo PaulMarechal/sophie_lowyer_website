@@ -8,8 +8,12 @@ export const publicService = {
   ],
   "sections": [
     {
-      "title": "Summons: Review the case file before the disciplinary hearing (request access to the disciplinary file and verify the deadlines)",
+      "title": "Summons: Review the case file before the disciplinary hearing",
       "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As soon as you are notified that disciplinary proceedings have been initiated, you should request prompt access to the administrative file. An attorney can assist you while you review your file."
+        },
         {
           "type": "paragraph",
           "text": "A summons to appear before a disciplinary board is a sensitive step for a public employee."
@@ -125,7 +129,7 @@ export const publicService = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Yes, a disciplinary sanction is not final: in certain cases, it can be challenged."
+          "text": "Yes, a disciplinary sanction is not final: it can be challenged."
         },
         {
           "type": "paragraph",

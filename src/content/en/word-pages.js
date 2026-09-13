@@ -150,7 +150,7 @@ export const immigrationNotice = {
   ],
 };
 
-export const legalAid = "Legal aid is accepted subject to eligibility and provided the client resides in the Île-de-France region.";
+export const legalAid = "Legal aid is accepted subject to eligibility and provided the client resides in the departments of Paris (75), Hauts-de-Seine (92), Seine-Saint-Denis (93), and Val-de-Marne (94) in the Île-de-France region.";
 
 export const englishDocumentPages = {
   "public-service-law": {

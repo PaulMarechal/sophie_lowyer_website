@@ -66,6 +66,26 @@ const domainCards = [
       },
     ],
   },
+  {
+    label: "Conseil de discipline & recours",
+    title: "Droit de la fonction publique",
+    bg: "/Images/droit-fonction-publique-marianne.webp",
+    href: "/droit-de-la-fonction-publique",
+    intro: "Le cabinet accompagne les agents publics convoqués devant un conseil de discipline, de la préparation du dossier à la défense pendant la séance.",
+    groups: [
+      {
+        label: "Conseil de discipline",
+        lines: [
+          "Préparation du dossier",
+          "Assistance pendant la séance du conseil de discipline",
+        ],
+      },
+      {
+        label: "En cas de sanction disciplinaire",
+        text: "L’avocat peut définir une stratégie pour la suite de la procédure et vous aider à former un recours devant le tribunal administratif.",
+      },
+    ],
+  },
 ];
 
 const resources = [
@@ -243,9 +263,9 @@ export default function Home() {
         <div className={styles.sectionIntro}>
           <p className={styles.sectionMarker}>Domaines d’intervention</p>
           <div>
-            <h2 className={styles.sectionTitle}>Trois domaines, une même exigence de <span className={styles.sectionHighlight}>clarté et de stratégie.</span></h2>
+            <h2 className={styles.sectionTitle}>Quatre domaines, une même exigence de <span className={styles.sectionHighlight}>clarté et de stratégie.</span></h2>
             <p className={styles.sectionLead}>
-              Le cabinet intervient principalement en droit de l’urbanisme, droit des étrangers et droit de la nationalité. Ces matières ont en commun des décisions administratives souvent techniques et lourdes de conséquences.
+              Le cabinet intervient principalement en droit de l’urbanisme, droit des étrangers, droit de la nationalité et droit de la fonction publique. Ces matières ont en commun des décisions administratives souvent techniques et lourdes de conséquences.
             </p>
           </div>
         </div>

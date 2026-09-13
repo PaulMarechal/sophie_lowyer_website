@@ -247,4 +247,4 @@ export const immigrationNotice = {
   ]
 };
 
-export const legalAid = "l’aide juridictionnelle est acceptée sous réserve d’éligibilité et de résidence du justiciable en région Ile-de-France";
+export const legalAid = "L’aide juridictionnelle est acceptée sous réserve d’éligibilité et de résidence du justiciable dans les départements de Paris (75), des Hauts-de-Seine (92), de Seine-Saint-Denis (93), et du Val-de-Marne (94) de la région Ile-de-France.";

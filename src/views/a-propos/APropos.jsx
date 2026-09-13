@@ -84,7 +84,7 @@ const APropos = () => {
               <div className={practiceStyles.expertiseImage}>
                 <Image src="/Images/droit-fonction-publique-marianne.webp" alt="" fill sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1200px) calc(50vw - 5rem), 520px" />
               </div>
-              <span>Avocate en droit de la fonction publique</span>
+              <span>Fonction publique</span>
             </Link>
             <Link href="/droit-de-la-nationalite" className={practiceStyles.expertiseItem}>
               <div className={practiceStyles.expertiseImage}>

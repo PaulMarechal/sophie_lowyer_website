@@ -8,8 +8,12 @@ export const publicService = {
   ],
   "sections": [
     {
-      "title": "Convocation : relire le dossier avant le conseil de discipline (demander l’accès au dossier disciplinaire et vérifier les délais)",
+      "title": "Convocation : relire le dossier avant le conseil de discipline",
       "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dès l’information de l’ouverture d’une procédure disciplinaire, il faut demander à consulter rapidement le dossier administratif. Un avocat peut vous accompagner lors de la consultation de votre dossier."
+        },
         {
           "type": "paragraph",
           "text": "Une convocation devant le conseil de discipline est une étape sensible pour un agent public."
@@ -125,7 +129,7 @@ export const publicService = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Oui, une sanction disciplinaire n’est pas définitive : elle peut, dans certains cas, être contestée."
+          "text": "Une sanction disciplinaire peut être contestée."
         },
         {
           "type": "paragraph",

@@ -4,7 +4,7 @@ import { publicService } from "../../src/content/fr/public-service";
 import { buildMetadata, buildServiceSchema } from "../seo";
 
 export const metadata = buildMetadata({
-  title: "Avocate en droit de la fonction publique",
+  title: "Droit de la fonction publique",
   description: publicService.intro[0],
   path: "/droit-de-la-fonction-publique",
 });
@@ -19,7 +19,7 @@ const serviceSchema = buildServiceSchema({
 export default function Page() {
   return (
     <Desktop>
-      <DocumentLandingPage content={publicService} />
+      <DocumentLandingPage content={{ ...publicService, title: "Droit de la fonction publique" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
     </Desktop>
   );
